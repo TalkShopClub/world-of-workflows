@@ -1,0 +1,1131 @@
+[
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Data Analytics Software"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog category: Data Analytics Software",
+      "data": {
+        "sys_id": "193f9821535cf210f8bb51a0a0490ef6",
+        "title": "Data Analytics Software",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Data Analytics Software",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Business Intelligence Tools"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog category: Business Intelligence Tools",
+      "data": {
+        "sys_id": "5e6fd861535cf210f8bb51a0a0490ee6",
+        "title": "Business Intelligence Tools",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "title",
+          "newvalue": "Business Intelligence Tools",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Remote Work Accessories"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog category: Remote Work Accessories",
+      "data": {
+        "sys_id": "0a8fd861535cf210f8bb51a0a0490ef0",
+        "title": "Remote Work Accessories",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Remote Work Accessories",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Statistical Analysis Suite",
+        "category": "193f9821535cf210f8bb51a0a0490ef6"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog item: Statistical Analysis Suite",
+      "data": {
+        "sys_id": "19bf9c61535cf210f8bb51a0a0490e67",
+        "name": "Statistical Analysis Suite",
+        "short_description": "",
+        "category": {
+          "link": "https://dev281136.service-now.com/api/now/table/sc_category/193f9821535cf210f8bb51a0a0490ef6",
+          "value": "193f9821535cf210f8bb51a0a0490ef6"
+        },
+        "price": "0",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "visible_bundle",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ignore_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "19bf9c61535cf210f8bb51a0a0490e67",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_plan",
+          "newvalue": "523da512c611228900811a37c97c2014",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "calculated",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "193f9821535cf210f8bb51a0a0490ef6",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "availability",
+          "newvalue": "on_desktop",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "19bf9c61535cf210f8bb51a0a0490e67",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_wishlist_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_time",
+          "newvalue": "1970-01-03 00:00:00",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_picture_type",
+          "newvalue": "use_desktop_picture",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_price_property",
+          "newvalue": "non_zero",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "fulfillment_automation_level",
+          "newvalue": "unspecified",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_delivery_time_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order_now",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_attachment_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_proceed_checkout",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_closed",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "billable",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access_type",
+          "newvalue": "restricted",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_search",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "193f9821535cf210f8bb51a0a0490ef6",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "owner",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Statistical Analysis Suite",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "show_variable_help_on_load",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "sc_cat_item",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "price",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_save_as_draft",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mandatory_attachment",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hide_sp",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "preview",
+          "newvalue": "JavaScript: popupOpenStandard(\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=19bf9c61535cf210f8bb51a0a0490e67&sysparm_preview=true\", \"summary\");",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "make_item_non_conversational",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "omit_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_sc_layout",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 52,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 52,
+        "operation_type": [],
+        "tables_modified": [
+          "sc_cat_item_category",
+          "fx_price",
+          "sc_cat_item"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Executive Dashboard Platform",
+        "category": "5e6fd861535cf210f8bb51a0a0490ee6"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog item: Executive Dashboard Platform",
+      "data": {
+        "sys_id": "3820e4a1535cf210f8bb51a0a0490e86",
+        "name": "Executive Dashboard Platform",
+        "short_description": "",
+        "category": {
+          "link": "https://dev281136.service-now.com/api/now/table/sc_category/5e6fd861535cf210f8bb51a0a0490ee6",
+          "value": "5e6fd861535cf210f8bb51a0a0490ee6"
+        },
+        "price": "0",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "visible_bundle",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ignore_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "3820e4a1535cf210f8bb51a0a0490e86",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_plan",
+          "newvalue": "523da512c611228900811a37c97c2014",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "calculated",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "5e6fd861535cf210f8bb51a0a0490ee6",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "availability",
+          "newvalue": "on_desktop",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "5e6fd861535cf210f8bb51a0a0490ee6",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_wishlist_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_time",
+          "newvalue": "1970-01-03 00:00:00",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_picture_type",
+          "newvalue": "use_desktop_picture",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_price_property",
+          "newvalue": "non_zero",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "fulfillment_automation_level",
+          "newvalue": "unspecified",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_delivery_time_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order_now",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_attachment_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_proceed_checkout",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_closed",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "3820e4a1535cf210f8bb51a0a0490e86",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "billable",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access_type",
+          "newvalue": "restricted",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_search",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "owner",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Executive Dashboard Platform",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "show_variable_help_on_load",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "sc_cat_item",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "price",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_save_as_draft",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mandatory_attachment",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hide_sp",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "preview",
+          "newvalue": "JavaScript: popupOpenStandard(\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=3820e4a1535cf210f8bb51a0a0490e86&sysparm_preview=true\", \"summary\");",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "make_item_non_conversational",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "omit_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_sc_layout",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 52,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 52,
+        "operation_type": [],
+        "tables_modified": [
+          "sc_cat_item",
+          "fx_price",
+          "sc_cat_item_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_catalog_category",
+      "parameters": {
+        "category_id": "0a8fd861535cf210f8bb51a0a0490ef0",
+        "active": false
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Updated catalog category: 0a8fd861535cf210f8bb51a0a0490ef0",
+      "data": {
+        "sys_id": "0a8fd861535cf210f8bb51a0a0490ef0",
+        "title": "Remote Work Accessories",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "false",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": "1"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "move_catalog_items",
+      "parameters": {
+        "item_ids": [
+          "3820e4a1535cf210f8bb51a0a0490e86"
+        ],
+        "target_category_id": "193f9821535cf210f8bb51a0a0490ef6"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Successfully moved 1 catalog items to category 193f9821535cf210f8bb51a0a0490ef6",
+      "data": {
+        "moved_items_count": 1
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "193f9821535cf210f8bb51a0a0490ef6",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "3820e4a1535cf210f8bb51a0a0490e86",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "193f9821535cf210f8bb51a0a0490ef6",
+          "tablename": "sc_cat_item",
+          "oldvalue": "5e6fd861535cf210f8bb51a0a0490ee6"
+        },
+        {
+          "fieldname": "version",
+          "newvalue": "2",
+          "tablename": "sc_cat_item",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 1,
+        "num_created_entries": 3,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sc_cat_item_category",
+          "sc_cat_item"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "move_catalog_items",
+      "parameters": {
+        "item_ids": [
+          "19bf9c61535cf210f8bb51a0a0490e67"
+        ],
+        "target_category_id": "0a8fd861535cf210f8bb51a0a0490ef0"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Successfully moved 1 catalog items to category 0a8fd861535cf210f8bb51a0a0490ef0",
+      "data": {
+        "moved_items_count": 1
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "0a8fd861535cf210f8bb51a0a0490ef0",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "19bf9c61535cf210f8bb51a0a0490e67",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "0a8fd861535cf210f8bb51a0a0490ef0",
+          "tablename": "sc_cat_item",
+          "oldvalue": "193f9821535cf210f8bb51a0a0490ef6"
+        },
+        {
+          "fieldname": "version",
+          "newvalue": "2",
+          "tablename": "sc_cat_item",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 1,
+        "num_created_entries": 3,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sc_cat_item",
+          "sc_cat_item_category"
+        ]
+      }
+    }
+  }
+]

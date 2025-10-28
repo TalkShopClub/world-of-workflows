@@ -1,0 +1,20 @@
+{
+  "invalid_action_idxs": [
+    8,
+    17,
+    28,
+    36
+  ],
+  "invalid_policy_names": [
+    "Incidents with priority 1 cannot be assigned to users who already have more than 3 priority 1 incidents",
+    "Catalog items cannot be moved to categories that are inactive",
+    "Catalog categories cannot be deleted if they contain active items",
+    "Change requests with risk level 'Moderate' or higher cannot be scheduled on Fridays"
+  ],
+  "invalid_policy_nums": [
+    2,
+    4,
+    3,
+    5
+  ]
+}

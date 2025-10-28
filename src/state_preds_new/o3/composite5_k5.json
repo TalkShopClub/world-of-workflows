@@ -1,0 +1,444 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-20T02:54:35.123429",
+    "model": "openai/o3",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/composite5.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "July.August.022",
+        "first_name": "July",
+        "last_name": "August",
+        "email": "july.august@example.com"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Awesome Group",
+        "description": "A group of awesome people"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "July.March.032",
+        "first_name": "July",
+        "last_name": "March",
+        "email": "july.march@example.com",
+        "location": "New York",
+        "title": "Software Engineer"
+      }
+    },
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Office chair broken",
+        "description": "The office chairs are broken and people have to sit on the floor",
+        "impact": "1",
+        "urgency": "1",
+        "priority": "1",
+        "assigned_to": "382b29f1c390b2107bd371edd40131cb"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "7d6be931c390b2107bd371edd4013103",
+        "assigned_to": "3c6aedfdc350b2107bd371edd401316a",
+        "priority": "1"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:30",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:28"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "July.August.022",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "July",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "August",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "july.august@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 5,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:59:57"
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Awesome Group",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "A group of awesome people",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 3,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sys_user_group"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "user_name",
+          "newvalue": "July.March.032",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "July",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "March",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "july.march@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "New York",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Software Engineer",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 6,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "number",
+          "newvalue": "INC0010001",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Office chair broken",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "The office chairs are broken and people have to sit on the floor",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-10-20 10:20:05",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "382b29f1c390b2107bd371edd40131cb",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 10:20:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 10:19:55"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 13,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 12,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "incident",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:10",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:00:07"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:07",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:00:05"
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "92.17",
+          "tablename": "task_sla",
+          "oldvalue": "88.73"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-02 15:00:04",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 12:00:04"
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "78",
+          "tablename": "task_sla",
+          "oldvalue": "75"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-07 06:00:04",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-07 00:00:04"
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 10:59:53",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 11:59:53"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-02 01:59:57",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 02:59:57"
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "92.17",
+          "tablename": "task_sla",
+          "oldvalue": "88.73"
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "78",
+          "tablename": "task_sla",
+          "oldvalue": "75"
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 10:59:55",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 11:59:55"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-02 15:00:06",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 12:00:06"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-07 06:00:06",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-07 00:00:06"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-02 01:59:56",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 02:59:56"
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "78",
+          "tablename": "task_sla",
+          "oldvalue": "75"
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "92.17",
+          "tablename": "task_sla",
+          "oldvalue": "88.73"
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 10:59:56",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 11:59:56"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-02 01:59:54",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 02:59:54"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-07 06:00:03",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-07 00:00:03"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "3c6aedfdc350b2107bd371edd401316a",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": "3"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 22,
+        "num_modified_entries": 22,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "task_sla",
+          "incident",
+          "sys_user"
+        ]
+      }
+    }
+  ]
+}

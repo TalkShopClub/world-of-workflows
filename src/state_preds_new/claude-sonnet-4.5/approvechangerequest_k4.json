@@ -1,0 +1,432 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-17T12:00:13.379822",
+    "model": "anthropic/claude-sonnet-4.5",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/approvechangerequest.json",
+    "k": 4,
+    "total_actions_predicted": 4,
+    "total_states_generated": 4
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_change_request",
+      "parameters": {
+        "short_description": "Test Change Request 20251007_135930",
+        "description": "This is a test change request created at 20251007_135930 for testing purposes.",
+        "type": "normal",
+        "risk": "Low",
+        "impact": "Low",
+        "category": "General",
+        "requested_by": null,
+        "assignment_group": null,
+        "start_date": null,
+        "end_date": null,
+        "fields": null
+      }
+    },
+    {
+      "tool_name": "update_change_request",
+      "parameters": {
+        "change_id": "ba1df0c4c3a83e1024163942b4013127",
+        "short_description": null,
+        "description": "This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.",
+        "state": null,
+        "risk": null,
+        "impact": null,
+        "category": null,
+        "assignment_group": null,
+        "start_date": null,
+        "end_date": null,
+        "work_notes": "Initial assessment completed. Ready for approval."
+      }
+    },
+    {
+      "tool_name": "submit_change_for_approval",
+      "parameters": {
+        "change_id": "ba1df0c4c3a83e1024163942b4013127",
+        "approval_comments": "Change request submitted for approval at 20251007_135930"
+      }
+    },
+    {
+      "tool_name": "approve_change",
+      "parameters": {
+        "change_id": "ba1df0c4c3a83e1024163942b4013127",
+        "approver_id": null,
+        "approval_comments": "Change request approved at 20251007_135930 for testing purposes"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 13:59:32",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 13:59:30"
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "normal",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "risk",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "General",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "4",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "-5",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-10-07 13:59:30",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "change_request",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "CHG0030001",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Test Change Request 20251007_135930",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "This is a test change request created at 20251007_135930 for testing purposes.",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "CHG0030001",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 13:59:30",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 13:59:28"
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "change_request_metric_def_001",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-10-07 13:59:30",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "change_request",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 30,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 28,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "change_request",
+          "sys_user",
+          "metric_instance"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 13:59:32",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 13:59:30"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 13:59:30",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 13:59:28"
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.",
+          "tablename": "change_request",
+          "oldvalue": "This is a test change request created at 20251007_135930 for testing purposes."
+        },
+        {
+          "fieldname": "work_notes",
+          "newvalue": "Initial assessment completed. Ready for approval.",
+          "tablename": "change_request",
+          "oldvalue": "JOURNAL FIELD ADDITION"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 4,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "change_request"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 13:59:32",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 13:59:30"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 13:59:30",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 13:59:28"
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "requested",
+          "tablename": "change_request",
+          "oldvalue": "not requested"
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "-5",
+          "tablename": "change_request",
+          "oldvalue": "-4"
+        },
+        {
+          "fieldname": "work_notes",
+          "newvalue": "Change request submitted for approval at 20251007_135930",
+          "tablename": "change_request",
+          "oldvalue": "JOURNAL FIELD ADDITION"
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "requested",
+          "tablename": "sysapproval_approver",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "change_request",
+          "tablename": "sysapproval_approver",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sysapproval",
+          "newvalue": "ba1df0c4c3a83e1024163942b4013127",
+          "tablename": "sysapproval_approver",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_created_on",
+          "newvalue": "2025-10-07 13:59:30",
+          "tablename": "sysapproval_approver",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 9,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 6,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "change_request",
+          "sysapproval_approver"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 13:59:32",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 13:59:30"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 13:59:30",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 13:59:28"
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "approved",
+          "tablename": "sysapproval_approver",
+          "oldvalue": "requested"
+        },
+        {
+          "fieldname": "comments",
+          "newvalue": "Change request approved at 20251007_135930 for testing purposes",
+          "tablename": "sysapproval_approver",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_updated_on",
+          "newvalue": "2025-10-07 13:59:30",
+          "tablename": "sysapproval_approver",
+          "oldvalue": "2025-10-07 13:59:28"
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "approved",
+          "tablename": "change_request",
+          "oldvalue": "requested"
+        },
+        {
+          "fieldname": "sys_updated_on",
+          "newvalue": "2025-10-07 13:59:30",
+          "tablename": "change_request",
+          "oldvalue": "2025-10-07 13:59:28"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 7,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sysapproval_approver",
+          "change_request"
+        ]
+      }
+    }
+  ]
+}

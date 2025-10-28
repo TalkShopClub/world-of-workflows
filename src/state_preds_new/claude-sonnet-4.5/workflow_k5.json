@@ -1,0 +1,267 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-17T11:43:02.681887",
+    "model": "anthropic/claude-sonnet-4.5",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/workflow.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_workflow",
+      "parameters": {
+        "name": "GPU Order Workflow",
+        "description": "Workflow to order GPUs"
+      }
+    },
+    {
+      "tool_name": "update_workflow",
+      "parameters": {
+        "workflow_id": "f17306e9c3d832107bd371edd4013119",
+        "description": "Workflow to order GPUs, temporarily disabled",
+        "active": false
+      }
+    },
+    {
+      "tool_name": "add_workflow_activity",
+      "parameters": {
+        "workflow_version_id": "fff3f5a2eb113200c2b9666cd206fecf",
+        "name": "Change Review Process",
+        "activity_type": "approval"
+      }
+    },
+    {
+      "tool_name": "update_workflow_activity",
+      "parameters": {
+        "activity_id": "40758a6dc3d832107bd371edd4013127",
+        "name": "Knowledge Review Workflow"
+      }
+    },
+    {
+      "tool_name": "delete_workflow_activity",
+      "parameters": {
+        "activity_id": "40758a6dc3d832107bd371edd4013127"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:28",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "GPU Order Workflow",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Workflow to order GPUs",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "published",
+          "newvalue": "0",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 5,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "wf_workflow"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:28",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Workflow to order GPUs, temporarily disabled",
+          "tablename": "wf_workflow",
+          "oldvalue": "Workflow to order GPUs"
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "wf_workflow",
+          "oldvalue": "1"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "wf_workflow"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:28",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "workflow_version",
+          "newvalue": "fff3f5a2eb113200c2b9666cd206fecf",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Change Review Process",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_type",
+          "newvalue": "approval",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "100",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 5,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "wf_activity"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Knowledge Review Workflow",
+          "tablename": "wf_activity",
+          "oldvalue": "Previous Activity Name"
+        },
+        {
+          "fieldname": "sys_mod_count",
+          "newvalue": "1",
+          "tablename": "wf_activity",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "sys_updated_on",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "wf_activity",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "sys_updated_by",
+          "newvalue": "admin",
+          "tablename": "wf_activity",
+          "oldvalue": "admin"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 5,
+        "num_modified_entries": 5,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "wf_activity"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "wf_activity",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "wf_activity"
+        ]
+      }
+    }
+  ]
+}

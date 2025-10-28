@@ -1,0 +1,14 @@
+{
+  "invalid_action_idxs": [
+    8,
+    19
+  ],
+  "invalid_policy_names": [
+    "Serial numbers cannot be modified once asset is marked as 'In Use'",
+    "Catalog categories cannot be deleted if they contain active items"
+  ],
+  "invalid_policy_nums": [
+    7,
+    3
+  ]
+}

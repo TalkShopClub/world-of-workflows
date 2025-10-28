@@ -1,0 +1,4294 @@
+[
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "IT Support Team"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": "IT Support Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "IT Support Team",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "IT Support Team",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "HR Department"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": "HR Department"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "HR Department",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "HR Department",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Finance Team"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "27c7c26d53543610f8bb51a0a0490e0f",
+      "group_name": "Finance Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Finance Team",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "27c7c26d53543610f8bb51a0a0490e0f",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Finance Team",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "manager": "5137153cc611227c000bbd1bd8cd2005"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": "IT Support Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:681ccaf9c0a8016400b98a06818d57c7"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:9ee1b13dc6112271007f9d0efdb69cd0"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:46b87022a9fe198101a78787e40d7547"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "upload_status",
+          "newvalue": "1",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_window_end",
+          "newvalue": "2025-09-30 05:08:47",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_log",
+          "newvalue": "71ba466153943610f8bb51a0a0490e1c",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_number",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "num_retries",
+          "newvalue": "0",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_status",
+          "newvalue": "1",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_size",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_type",
+          "newvalue": "ua_gcf_cp_hourly",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_window_start",
+          "newvalue": "2025-09-30 04:08:47",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "num_records",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_id",
+          "newvalue": "31ba466164943610b41b6791b856a51c",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "46b87022a9fe198101a78787e40d7547",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 13,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 13,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "ua_upload_log_details",
+          "sys_user_grmember",
+          "ua_upload_log"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "manager": "46b87022a9fe198101a78787e40d7547"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": "HR Department"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "46b87022a9fe198101a78787e40d7547",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "27c7c26d53543610f8bb51a0a0490e0f",
+        "manager": "9ee1b13dc6112271007f9d0efdb69cd0"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "27c7c26d53543610f8bb51a0a0490e0f",
+      "group_name": "Finance Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members removed from the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members removed from the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:681ccaf9c0a8016400b98a06818d57c7"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members removed from the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "laksh_gupta",
+        "first_name": "Lakshya",
+        "last_name": "Gupta",
+        "email": "lakshgupta@skyfall.ai"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "User created successfully. The sys_id of the user is: 2423743153d43210f8bb51a0a0490e65",
+      "user_id": "2423743153d43210f8bb51a0a0490e65",
+      "user_name": "laksh_gupta"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "status",
+          "newvalue": "2",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "verification",
+          "newvalue": "12c34f0deb6001006a668c505206fefd",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "2423743153d43210f8bb51a0a0490e65",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "vip",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Gupta",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Primary email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hashed_user_id",
+          "newvalue": "fae32ed8952832516f5fcc569903297960f7e514ac9baaf7e8deebd2a53fca79",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "lakshgupta@skyfall.ai",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Lakshya Gupta",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "enable_multifactor_authn",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "2423743153d43210f8bb51a0a0490e65",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "lakshgupta@skyfall.ai",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "edu_status",
+          "newvalue": "faculty",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Lakshya",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "laksh_gupta",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "identity_type",
+          "newvalue": "unclassified",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 30,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 30,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "pwd_enrollment_snapshot",
+          "sys_user",
+          "cmn_notif_device"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "mike_litao",
+        "first_name": "Mike",
+        "last_name": "Litao",
+        "email": "mike@skyfall.ai"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "User created successfully. The sys_id of the user is: 0e53b43153d43210f8bb51a0a0490ed6",
+      "user_id": "0e53b43153d43210f8bb51a0a0490ed6",
+      "user_name": "mike_litao"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "Primary email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "vip",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Litao",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "mike@skyfall.ai",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Mike Litao",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hashed_user_id",
+          "newvalue": "117b82702ef11de3e3798a3da12ce8af77ba8e1baef4e5ce3f3cd353aa265b17",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "edu_status",
+          "newvalue": "faculty",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "enable_multifactor_authn",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "0e53b43153d43210f8bb51a0a0490ed6",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "mike@skyfall.ai",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "mike_litao",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "identity_type",
+          "newvalue": "unclassified",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Mike",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 26,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 26,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "cmn_notif_device",
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "HR Department"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "b3e3bcb153143210f8bb51a0a0490ea3",
+      "group_name": "HR Department"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "b3e3bcb153143210f8bb51a0a0490ea3",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "HR Department",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "HR Department",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_group",
+          "asmt_assessable_record"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Finance Team"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "a014f87153d43210f8bb51a0a0490ee3",
+      "group_name": "Finance Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "Finance Team",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Finance Team",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "a014f87153d43210f8bb51a0a0490ee3",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "yizhe_liu",
+        "first_name": "Yizhe",
+        "last_name": "Liu",
+        "email": "yizheliu@skyfall.ai"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "User created successfully. The sys_id of the user is: 1fb4fc7153d43210f8bb51a0a0490e51",
+      "user_id": "1fb4fc7153d43210f8bb51a0a0490e51",
+      "user_name": "yizhe_liu"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "user",
+          "newvalue": "1fb4fc7153d43210f8bb51a0a0490e51",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "status",
+          "newvalue": "2",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "verification",
+          "newvalue": "12c34f0deb6001006a668c505206fefd",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Primary email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "vip",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Liu",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "yizheliu@skyfall.ai",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Yizhe Liu",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hashed_user_id",
+          "newvalue": "ed2e8ed28d41e05330c1f74dcb6e08792b2f5740123eb383c9d2305b2f05c958",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "edu_status",
+          "newvalue": "faculty",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "enable_multifactor_authn",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "1fb4fc7153d43210f8bb51a0a0490e51",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "yizheliu@skyfall.ai",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "yizhe_liu",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "identity_type",
+          "newvalue": "unclassified",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Yizhe",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 30,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 30,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "cmn_notif_device",
+          "pwd_enrollment_snapshot",
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "b3e3bcb153143210f8bb51a0a0490ea3",
+        "members": [
+          "sys_id:2423743153d43210f8bb51a0a0490e65",
+          "sys_id:1fb4fc7153d43210f8bb51a0a0490e51"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "b3e3bcb153143210f8bb51a0a0490ea3",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "b3e3bcb153143210f8bb51a0a0490ea3",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "group",
+          "newvalue": "b3e3bcb153143210f8bb51a0a0490ea3",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "2423743153d43210f8bb51a0a0490e65",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "1fb4fc7153d43210f8bb51a0a0490e51",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 4,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a014f87153d43210f8bb51a0a0490ee3",
+        "members": [
+          "sys_id:0e53b43153d43210f8bb51a0a0490ed6"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a014f87153d43210f8bb51a0a0490ee3",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "a014f87153d43210f8bb51a0a0490ee3",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "0e53b43153d43210f8bb51a0a0490ed6",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "b3e3bcb153143210f8bb51a0a0490ea3",
+        "manager": "1fb4fc7153d43210f8bb51a0a0490e51"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "b3e3bcb153143210f8bb51a0a0490ea3",
+      "group_name": "HR Department"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "1fb4fc7153d43210f8bb51a0a0490e51",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "b3e3bcb153143210f8bb51a0a0490ea3",
+        "members": [
+          "sys_id:2423743153d43210f8bb51a0a0490e65"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members removed from the group successfully",
+      "group_id": "b3e3bcb153143210f8bb51a0a0490ea3",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "1fb4fc7153d43210f8bb51a0a0490e51",
+        "manager": "0e53b43153d43210f8bb51a0a0490ed6"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "User updated successfully",
+      "user_id": "1fb4fc7153d43210f8bb51a0a0490e51",
+      "user_name": "yizhe_liu"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "priority",
+          "newvalue": "0",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "topic",
+          "newvalue": "HeartbeatProbe",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "agent",
+          "newvalue": "mid.server.*",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "queue",
+          "newvalue": "output",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sequence",
+          "newvalue": "1999bb95e930000001",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "processed",
+          "newvalue": "2025-09-30 17:44:00",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "manager",
+          "newvalue": "0e53b43153d43210f8bb51a0a0490ed6",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 9,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 9,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "ecc_queue"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "0e53b43153d43210f8bb51a0a0490ed6",
+        "manager": "2423743153d43210f8bb51a0a0490e65"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "User updated successfully",
+      "user_id": "0e53b43153d43210f8bb51a0a0490ed6",
+      "user_name": "mike_litao"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "2423743153d43210f8bb51a0a0490e65",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "0e53b43153d43210f8bb51a0a0490ed6",
+        "active": false
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "User updated successfully",
+      "user_id": "0e53b43153d43210f8bb51a0a0490ed6",
+      "user_name": "mike_litao"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "locked_out",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": "1"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "chris_evans",
+        "first_name": "Chris",
+        "last_name": "Evans",
+        "email": "chris.evans@servicenow.com"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "User created successfully. The sys_id of the user is: 6727787553d43210f8bb51a0a0490e67",
+      "user_id": "6727787553d43210f8bb51a0a0490e67",
+      "user_name": "chris_evans"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "verification",
+          "newvalue": "12c34f0deb6001006a668c505206fefd",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "6727787553d43210f8bb51a0a0490e67",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "status",
+          "newvalue": "2",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hashed_user_id",
+          "newvalue": "498f50a6699b013653ebf45ba91bc18c78482b0238f5387520084428f0aeaec8",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "chris.evans@servicenow.com",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Chris Evans",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "enable_multifactor_authn",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "6727787553d43210f8bb51a0a0490e67",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "chris.evans@servicenow.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "edu_status",
+          "newvalue": "faculty",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Chris",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "chris_evans",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "identity_type",
+          "newvalue": "unclassified",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Evans",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Primary email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "vip",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 30,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 30,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "pwd_enrollment_snapshot",
+          "sys_user",
+          "cmn_notif_device"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "6727787553d43210f8bb51a0a0490e67",
+        "manager": "0e53b43153d43210f8bb51a0a0490ed6"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "User updated successfully",
+      "user_id": "6727787553d43210f8bb51a0a0490e67",
+      "user_name": "chris_evans"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "0e53b43153d43210f8bb51a0a0490ed6",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Data Analytics Software"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog category: Data Analytics Software",
+      "data": {
+        "sys_id": "ef92d8ed53d8f210f8bb51a0a0490e4c",
+        "title": "Data Analytics Software",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Data Analytics Software",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Business Intelligence Tools"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog category: Business Intelligence Tools",
+      "data": {
+        "sys_id": "15131c21531cf210f8bb51a0a0490eee",
+        "title": "Business Intelligence Tools",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Business Intelligence Tools",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Remote Work Accessories"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog category: Remote Work Accessories",
+      "data": {
+        "sys_id": "7d431861531cf210f8bb51a0a0490e48",
+        "title": "Remote Work Accessories",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "title",
+          "newvalue": "Remote Work Accessories",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Statistical Analysis Suite",
+        "category": "ef92d8ed53d8f210f8bb51a0a0490e4c"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog item: Statistical Analysis Suite",
+      "data": {
+        "sys_id": "356694a1531cf210f8bb51a0a0490ebb",
+        "name": "Statistical Analysis Suite",
+        "short_description": "",
+        "category": {
+          "link": "https://dev281136.service-now.com/api/now/table/sc_category/ef92d8ed53d8f210f8bb51a0a0490e4c",
+          "value": "ef92d8ed53d8f210f8bb51a0a0490e4c"
+        },
+        "price": "0",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "ef92d8ed53d8f210f8bb51a0a0490e4c",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "sc_cat_item",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "price",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "356694a1531cf210f8bb51a0a0490ebb",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "calculated",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "356694a1531cf210f8bb51a0a0490ebb",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_plan",
+          "newvalue": "523da512c611228900811a37c97c2014",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_save_as_draft",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "availability",
+          "newvalue": "on_desktop",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_wishlist_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_time",
+          "newvalue": "1970-01-03 00:00:00",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "make_item_non_conversational",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ignore_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "ef92d8ed53d8f210f8bb51a0a0490e4c",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "fulfillment_automation_level",
+          "newvalue": "unspecified",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order_now",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_bundle",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_closed",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_price_property",
+          "newvalue": "non_zero",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access_type",
+          "newvalue": "restricted",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_search",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_delivery_time_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Statistical Analysis Suite",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "show_variable_help_on_load",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_picture_type",
+          "newvalue": "use_desktop_picture",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_proceed_checkout",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mandatory_attachment",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hide_sp",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "billable",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "preview",
+          "newvalue": "JavaScript: popupOpenStandard(\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=356694a1531cf210f8bb51a0a0490ebb&sysparm_preview=true\", \"summary\");",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "owner",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "omit_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_sc_layout",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_attachment_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 52,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 52,
+        "operation_type": [],
+        "tables_modified": [
+          "fx_price",
+          "sc_cat_item_category",
+          "sc_cat_item"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Data Visualization Tool License",
+        "category": "ef92d8ed53d8f210f8bb51a0a0490e4c"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog item: Data Visualization Tool License",
+      "data": {
+        "sys_id": "a1d65c65531cf210f8bb51a0a0490e96",
+        "name": "Data Visualization Tool License",
+        "short_description": "",
+        "category": {
+          "link": "https://dev281136.service-now.com/api/now/table/sc_category/ef92d8ed53d8f210f8bb51a0a0490e4c",
+          "value": "ef92d8ed53d8f210f8bb51a0a0490e4c"
+        },
+        "price": "0",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "field",
+          "newvalue": "price",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_save_as_draft",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mandatory_attachment",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "availability",
+          "newvalue": "on_desktop",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:54:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:53:00"
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "90",
+          "tablename": "task_sla",
+          "oldvalue": "88.33"
+        },
+        {
+          "fieldname": "no_wishlist_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_time",
+          "newvalue": "1970-01-03 00:00:00",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "make_item_non_conversational",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 00:06:00",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:07:00"
+        },
+        {
+          "fieldname": "ignore_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "sc_cat_item",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_plan",
+          "newvalue": "523da512c611228900811a37c97c2014",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "calculated",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "ef92d8ed53d8f210f8bb51a0a0490e4c",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "fulfillment_automation_level",
+          "newvalue": "unspecified",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "ef92d8ed53d8f210f8bb51a0a0490e4c",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 20:47:30",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "2025-09-29 20:46:30"
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "90",
+          "tablename": "task_sla",
+          "oldvalue": "88.33"
+        },
+        {
+          "fieldname": "mobile_hide_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order_now",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_bundle",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "a1d65c65531cf210f8bb51a0a0490e96",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_price_property",
+          "newvalue": "non_zero",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access_type",
+          "newvalue": "restricted",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_search",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_delivery_time_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:54:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:53:00"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 00:06:00",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:07:00"
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Data Visualization Tool License",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "show_variable_help_on_load",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_picture_type",
+          "newvalue": "use_desktop_picture",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_proceed_checkout",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_closed",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "a1d65c65531cf210f8bb51a0a0490e96",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "billable",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:54:00",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:53:00"
+        },
+        {
+          "fieldname": "preview",
+          "newvalue": "JavaScript: popupOpenStandard(\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=a1d65c65531cf210f8bb51a0a0490e96&sysparm_preview=true\", \"summary\");",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "owner",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "90",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "88.33"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:54:00",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:53:00"
+        },
+        {
+          "fieldname": "omit_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_sc_layout",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_attachment_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hide_sp",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 62,
+        "num_modified_entries": 10,
+        "num_deleted_entries": 0,
+        "num_created_entries": 52,
+        "operation_type": [],
+        "tables_modified": [
+          "task_sla",
+          "sla_breakdown_by_assignment",
+          "sc_cat_item",
+          "fx_price",
+          "sc_cat_item_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Executive Dashboard Platform",
+        "category": "15131c21531cf210f8bb51a0a0490eee"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog item: Executive Dashboard Platform",
+      "data": {
+        "sys_id": "e467d4a5531cf210f8bb51a0a0490e09",
+        "name": "Executive Dashboard Platform",
+        "short_description": "",
+        "category": {
+          "link": "https://dev281136.service-now.com/api/now/table/sc_category/15131c21531cf210f8bb51a0a0490eee",
+          "value": "15131c21531cf210f8bb51a0a0490eee"
+        },
+        "price": "0",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "make_item_non_conversational",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "omit_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_sc_layout",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "sc_cat_item",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "price",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_save_as_draft",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mandatory_attachment",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hide_sp",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "preview",
+          "newvalue": "JavaScript: popupOpenStandard(\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=e467d4a5531cf210f8bb51a0a0490e09&sysparm_preview=true\", \"summary\");",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_bundle",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ignore_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "e467d4a5531cf210f8bb51a0a0490e09",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_plan",
+          "newvalue": "523da512c611228900811a37c97c2014",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "calculated",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "15131c21531cf210f8bb51a0a0490eee",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "availability",
+          "newvalue": "on_desktop",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "15131c21531cf210f8bb51a0a0490eee",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_wishlist_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_time",
+          "newvalue": "1970-01-03 00:00:00",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_picture_type",
+          "newvalue": "use_desktop_picture",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_price_property",
+          "newvalue": "non_zero",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "fulfillment_automation_level",
+          "newvalue": "unspecified",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_delivery_time_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order_now",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_attachment_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_proceed_checkout",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_closed",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "e467d4a5531cf210f8bb51a0a0490e09",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "billable",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access_type",
+          "newvalue": "restricted",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_search",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "owner",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Executive Dashboard Platform",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "show_variable_help_on_load",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 52,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 52,
+        "operation_type": [],
+        "tables_modified": [
+          "fx_price",
+          "sc_cat_item_category",
+          "sc_cat_item"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Ergonomic Desk Converter",
+        "category": "7d431861531cf210f8bb51a0a0490e48",
+        "active": false
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog item: Ergonomic Desk Converter",
+      "data": {
+        "sys_id": "34d7d0e553d8f210f8bb51a0a0490e80",
+        "name": "Ergonomic Desk Converter",
+        "short_description": "",
+        "category": {
+          "link": "https://dev281136.service-now.com/api/now/table/sc_category/7d431861531cf210f8bb51a0a0490e48",
+          "value": "7d431861531cf210f8bb51a0a0490e48"
+        },
+        "price": "0",
+        "active": "false",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_wishlist_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_time",
+          "newvalue": "1970-01-03 00:00:00",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_bundle",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ignore_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "sc_cat_item",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_plan",
+          "newvalue": "523da512c611228900811a37c97c2014",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "price",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "7d431861531cf210f8bb51a0a0490e48",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "availability",
+          "newvalue": "on_desktop",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "7d431861531cf210f8bb51a0a0490e48",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_delivery_time_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order_now",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_picture_type",
+          "newvalue": "use_desktop_picture",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "34d7d0e553d8f210f8bb51a0a0490e80",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "calculated",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_price_property",
+          "newvalue": "non_zero",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "fulfillment_automation_level",
+          "newvalue": "unspecified",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "owner",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Ergonomic Desk Converter",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "show_variable_help_on_load",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_attachment_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_proceed_checkout",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_closed",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "billable",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access_type",
+          "newvalue": "restricted",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_search",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "make_item_non_conversational",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "omit_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_sc_layout",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_save_as_draft",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mandatory_attachment",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hide_sp",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "34d7d0e553d8f210f8bb51a0a0490e80",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "preview",
+          "newvalue": "JavaScript: popupOpenStandard(\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=34d7d0e553d8f210f8bb51a0a0490e80&sysparm_preview=true\", \"summary\");",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 52,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 52,
+        "operation_type": [],
+        "tables_modified": [
+          "sc_cat_item",
+          "sc_cat_item_category",
+          "fx_price"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "move_catalog_items",
+      "parameters": {
+        "item_ids": [
+          "e467d4a5531cf210f8bb51a0a0490e09"
+        ],
+        "target_category_id": "ef92d8ed53d8f210f8bb51a0a0490e4c"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Successfully moved 1 catalog items to category ef92d8ed53d8f210f8bb51a0a0490e4c",
+      "data": {
+        "moved_items_count": 1
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "ef92d8ed53d8f210f8bb51a0a0490e4c",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": "DELETED"
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "e467d4a5531cf210f8bb51a0a0490e09",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "version",
+          "newvalue": "2",
+          "tablename": "sc_cat_item",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "ef92d8ed53d8f210f8bb51a0a0490e4c",
+          "tablename": "sc_cat_item",
+          "oldvalue": "15131c21531cf210f8bb51a0a0490eee"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 1,
+        "num_created_entries": 3,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sc_cat_item",
+          "sc_cat_item_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_catalog_item",
+      "parameters": {
+        "item_id": "a1d65c65531cf210f8bb51a0a0490e96",
+        "active": false
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Catalog item updated successfully",
+      "data": {
+        "entitlement_script": "",
+        "use_sc_layout": "true",
+        "show_variable_help_on_load": "false",
+        "no_order_now": "false",
+        "sc_ic_version": "",
+        "delivery_time": "1970-01-03 00:00:00",
+        "sys_updated_on": "2025-09-29 21:06:00",
+        "type": "item",
+        "published_ref": "",
+        "no_search": "false",
+        "sys_updated_by": "admin",
+        "price": "0",
+        "sys_created_on": "2025-09-29 20:47:30",
+        "recurring_frequency": "",
+        "sys_name": "Data Visualization Tool License",
+        "model": "",
+        "state": "",
+        "no_cart": "false",
+        "sys_created_by": "admin",
+        "group": "",
+        "hide_sp": "false",
+        "order": "0",
+        "start_closed": "false",
+        "image": "",
+        "no_quantity": "false",
+        "workflow": "",
+        "delivery_plan": {
+          "link": "https://dev281136.service-now.com/api/now/table/sc_cat_item_delivery_plan/523da512c611228900811a37c97c2014",
+          "value": "523da512c611228900811a37c97c2014"
+        },
+        "active": "false",
+        "checked_out": "",
+        "custom_cart": "",
+        "no_cart_v2": "false",
+        "no_proceed_checkout": "false",
+        "version": "2",
+        "ignore_price": "true",
+        "sys_update_name": "sc_cat_item_a1d65c65531cf210f8bb51a0a0490e96",
+        "meta": "",
+        "omit_price": "false",
+        "name": "Data Visualization Tool License",
+        "flow_designer_flow": "",
+        "mobile_hide_price": "false",
+        "no_wishlist_v2": "false",
+        "sys_policy": "",
+        "preview": "JavaScript: popupOpenStandard(\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=a1d65c65531cf210f8bb51a0a0490e96&sysparm_preview=true\", \"summary\");",
+        "template": "",
+        "short_description": "",
+        "access_type": "restricted",
+        "fulfillment_automation_level": "unspecified",
+        "roles": "",
+        "icon": "",
+        "description": "",
+        "mobile_picture": "",
+        "sc_template": "",
+        "availability": "on_desktop",
+        "mandatory_attachment": "false",
+        "request_method": "",
+        "visible_guide": "true",
+        "visible_standalone": "true",
+        "sys_class_name": "sc_cat_item",
+        "sys_id": "a1d65c65531cf210f8bb51a0a0490e96",
+        "no_order": "false",
+        "vendor": "",
+        "no_attachment_v2": "false",
+        "mobile_picture_type": "use_desktop_picture",
+        "sys_scope": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_scope/global",
+          "value": "global"
+        },
+        "visible_bundle": "true",
+        "sc_catalogs": "",
+        "make_item_non_conversational": "false",
+        "ordered_item_link": "",
+        "owner": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+          "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "no_delivery_time_v2": "false",
+        "cost": "0",
+        "no_quantity_v2": "false",
+        "sys_mod_count": "2",
+        "recurring_price": "0",
+        "list_price": "0",
+        "sc_ic_item_staging": "",
+        "sys_tags": "",
+        "billable": "false",
+        "picture": "",
+        "sys_package": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_package/global",
+          "value": "global"
+        },
+        "display_price_property": "non_zero",
+        "taxonomy_topic": "",
+        "delivery_plan_script": "",
+        "location": "",
+        "category": {
+          "link": "https://dev281136.service-now.com/api/now/table/sc_category/ef92d8ed53d8f210f8bb51a0a0490e4c",
+          "value": "ef92d8ed53d8f210f8bb51a0a0490e4c"
+        },
+        "no_save_as_draft": "false"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "version",
+          "newvalue": "2",
+          "tablename": "sc_cat_item",
+          "oldvalue": "1"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sc_cat_item"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "delete_catalog_category",
+      "parameters": {
+        "category_id": "7d431861531cf210f8bb51a0a0490e48"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Deleted catalog category: 7d431861531cf210f8bb51a0a0490e48",
+      "data": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_category",
+          "oldvalue": "DELETED"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 2,
+        "num_created_entries": 0,
+        "operation_type": [],
+        "tables_modified": [
+          "sc_cat_item_category",
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "delete_catalog_category",
+      "parameters": {
+        "category_id": "ef92d8ed53d8f210f8bb51a0a0490e4c"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Deleted catalog category: ef92d8ed53d8f210f8bb51a0a0490e4c",
+      "data": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": "DELETED"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": "DELETED"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": "DELETED"
+        },
+        {
+          "fieldname": "version",
+          "newvalue": "3",
+          "tablename": "sc_cat_item",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "",
+          "tablename": "sc_cat_item",
+          "oldvalue": "ef92d8ed53d8f210f8bb51a0a0490e4c"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_category",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 5,
+        "num_deleted_entries": 4,
+        "num_created_entries": 0,
+        "operation_type": [],
+        "tables_modified": [
+          "sc_cat_item_category",
+          "sc_cat_item",
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "delete_catalog_category",
+      "parameters": {
+        "category_id": "15131c21531cf210f8bb51a0a0490eee"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Deleted catalog category: 15131c21531cf210f8bb51a0a0490eee",
+      "data": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_category",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  }
+]

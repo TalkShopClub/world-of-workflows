@@ -1,0 +1,606 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-17T11:58:17.398191",
+    "model": "anthropic/claude-sonnet-4.5",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/composite5.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "July.August.022",
+        "first_name": "July",
+        "last_name": "August",
+        "email": "july.august@example.com"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Awesome Group",
+        "description": "A group of awesome people"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "July.March.032",
+        "first_name": "July",
+        "last_name": "March",
+        "email": "july.march@example.com",
+        "location": "New York",
+        "title": "Software Engineer"
+      }
+    },
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Office chair broken",
+        "description": "The office chairs are broken and people have to sit on the floor",
+        "impact": "1",
+        "urgency": "1",
+        "priority": "1",
+        "assigned_to": "382b29f1c390b2107bd371edd40131cb"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "7d6be931c390b2107bd371edd4013103",
+        "assigned_to": "3c6aedfdc350b2107bd371edd401316a",
+        "priority": "1"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:52",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:50"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "July.August.022",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "July",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "August",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "july.august@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "July August",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 6,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:52",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:50"
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Awesome Group",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "A group of awesome people",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source",
+          "newvalue": "",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 5,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_group",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "July.March.032",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "July",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "March",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "july.march@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "New York",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Software Engineer",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "July March",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 9,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 8,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:57",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:55"
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-25 20:50:55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-25 20:50:55",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-25 20:50:55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0026874",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "New",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "6841fb00c3d832107bd371edd401318e",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Office chair broken",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "The office chairs are broken and people have to sit on the floor",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "6841fb00c3d832107bd371edd401318e",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0026874",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "382b29f1c390b2107bd371edd40131cb",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:55",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:52"
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "6841fb00c3d832107bd371edd401318e",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 51,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 49,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "metric_instance",
+          "incident",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "3c6aedfdc350b2107bd371edd401316a",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": "5"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:00"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 4,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "incident",
+          "sys_user"
+        ]
+      }
+    }
+  ]
+}

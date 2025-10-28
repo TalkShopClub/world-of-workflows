@@ -1,0 +1,545 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-16T18:42:14.150564",
+    "model": "google/gemini-2.5-pro",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/catalogitem.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Test Category 20251007_135838",
+        "description": "Test category created at 20251007_135838",
+        "parent": null,
+        "icon": null,
+        "active": true,
+        "order": null
+      }
+    },
+    {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Test Catalog Item 20251007_135838",
+        "category": "4eecfc84c3a83e1024163942b40131f6",
+        "active": true,
+        "order": null,
+        "description": "Test catalog item created at 20251007_135838",
+        "price": null
+      }
+    },
+    {
+      "tool_name": "create_catalog_item_variable",
+      "parameters": {
+        "catalog_item_id": "6cfcfc84c3a83e1024163942b40131fd",
+        "name": "test_field",
+        "type": "string",
+        "label": "Test Field",
+        "mandatory": false,
+        "help_text": "This is a test field for the catalog item",
+        "default_value": null,
+        "description": null,
+        "order": null,
+        "reference_table": null,
+        "reference_qualifier": null,
+        "max_length": null,
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "tool_name": "update_catalog_item",
+      "parameters": {
+        "item_id": "6cfcfc84c3a83e1024163942b40131fd",
+        "name": "Test Catalog Item 20251007_135838 (Updated)",
+        "short_description": null,
+        "description": "Updated test catalog item at 20251007_135838",
+        "category": null,
+        "price": null,
+        "active": null,
+        "order": null
+      }
+    },
+    {
+      "tool_name": "order_catalog_item",
+      "parameters": {
+        "item": "6cfcfc84c3a83e1024163942b40131fd",
+        "quantity": "1",
+        "requested_for": ""
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 13:58:38",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 13:58:36"
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_catalog",
+          "newvalue": "e0d08b13c3330100c8b837659bba8fb4",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Test category created at 20251007_135838",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Test Category 20251007_135838",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 6,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sc_category"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_sc_layout",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Test catalog item created at 20251007_135838",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "request_method",
+          "newvalue": "submit",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_bundle",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "4eecfc84c3a83e1024163942b40131f6",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Test Catalog Item 20251007_135838",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 13,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 13,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_cat_item"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-16 10:00:03",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-16 10:00:00"
+        },
+        {
+          "fieldname": "cat_item",
+          "newvalue": "6cfcfc84c3a83e1024163942b40131fd",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "test_field",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "6",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "question_text",
+          "newvalue": "Test Field",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mandatory",
+          "newvalue": "0",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "help_text",
+          "newvalue": "This is a test field for the catalog item",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "item_option_new",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_summary",
+          "newvalue": "1",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "show_help",
+          "newvalue": "1",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "help_tag",
+          "newvalue": "More information",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "global",
+          "newvalue": "1",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_dynamic_default",
+          "newvalue": "0",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pricing_implications",
+          "newvalue": "0",
+          "tablename": "item_option_new",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 18,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 17,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "item_option_new"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "Test Catalog Item 20251007_135838 (Updated)",
+          "tablename": "sc_cat_item",
+          "oldvalue": "Test Catalog Item 20251007_135838"
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Updated test catalog item at 20251007_135838",
+          "tablename": "sc_cat_item",
+          "oldvalue": "Test catalog item at 20251007_135838"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 13:58:42",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 13:58:40"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sc_cat_item",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "request_state",
+          "newvalue": "requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "fulfillment",
+          "tablename": "sc_req_item",
+          "oldvalue": "requested"
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "SCTASK0019003",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "price",
+          "newvalue": "0",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "quantity",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "request",
+          "newvalue": "340e30c8c3a83e1024163942b40131a3",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval_set",
+          "newvalue": "2024-05-22 19:41:01",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "price",
+          "newvalue": "0",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "RITM0017003",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "due_date",
+          "newvalue": "2024-05-24 19:41:01",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "request_item",
+          "newvalue": "7c0e30c8c3a83e1024163942b40131a5",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "requested",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cat_item",
+          "newvalue": "6cfcfc84c3a83e1024163942b40131fd",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "REQ0018003",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "due_date",
+          "newvalue": "2024-05-24 19:41:01",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 23,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 22,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_req_item",
+          "sc_task",
+          "sc_request"
+        ]
+      }
+    }
+  ]
+}

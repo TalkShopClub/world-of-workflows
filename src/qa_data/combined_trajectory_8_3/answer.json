@@ -1,0 +1,20 @@
+{
+  "invalid_action_idxs": [
+    8,
+    15,
+    30,
+    38
+  ],
+  "invalid_policy_names": [
+    "Serial numbers cannot be modified once asset is marked as 'In Use'",
+    "Assets that cost over $10000 cannot be transferred",
+    "Inactive users cannot be assigned as managers of active users",
+    "Ticket being resolved must have someone assigned to the ticket."
+  ],
+  "invalid_policy_nums": [
+    7,
+    6,
+    10,
+    1
+  ]
+}

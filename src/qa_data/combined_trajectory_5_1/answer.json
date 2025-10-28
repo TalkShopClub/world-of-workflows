@@ -1,0 +1,14 @@
+{
+  "invalid_action_idxs": [
+    7,
+    16
+  ],
+  "invalid_policy_names": [
+    "Catalog items cannot be moved to categories that are inactive",
+    "Incidents with priority 1 cannot be assigned to users who already have more than 3 priority 1 incidents"
+  ],
+  "invalid_policy_nums": [
+    4,
+    2
+  ]
+}

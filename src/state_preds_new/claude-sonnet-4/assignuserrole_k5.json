@@ -1,0 +1,105 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:25:33.570493",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/assignuserrole.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140046_3344",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_140046_3344@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    {
+      "tool_name": "check_user_has_role",
+      "parameters": {
+        "user_id": "9d6d7484c3a83e1024163942b40131b8",
+        "role_id": "b05926fa0a0a0aa7000130023e0bde98"
+      }
+    },
+    {
+      "tool_name": "assign_roles_to_user",
+      "parameters": {
+        "user_id": "9d6d7484c3a83e1024163942b40131b8",
+        "roles": [
+          "user"
+        ]
+      }
+    },
+    {
+      "tool_name": "check_user_has_role",
+      "parameters": {
+        "user_id": "9d6d7484c3a83e1024163942b40131b8",
+        "role_id": "b05926fa0a0a0aa7000130023e0bde98"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "9d6d7484c3a83e1024163942b40131b8",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": false
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    }
+  ]
+}

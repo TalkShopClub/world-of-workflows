@@ -1,0 +1,354 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-17T12:02:18.668377",
+    "model": "anthropic/claude-sonnet-4.5",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/promoteuser.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "user_a_20251007_140912_5773",
+        "first_name": "User",
+        "last_name": "A",
+        "email": "user_a_20251007_140912_5773@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "user_b_20251007_140912_1334",
+        "first_name": "User",
+        "last_name": "B",
+        "email": "user_b_20251007_140912_1334@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "b85fbc48c3a83e1024163942b401318e",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": "db5fbc48c3a83e1024163942b4013193",
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": null
+      }
+    },
+    {
+      "tool_name": "assign_roles_to_user",
+      "parameters": {
+        "user_id": "db5fbc48c3a83e1024163942b4013193",
+        "roles": [
+          "admin"
+        ]
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "b85fbc48c3a83e1024163942b401318e",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": false
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "user_a_20251007_140912_5773",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "User",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "A",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "user_a_20251007_140912_5773@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:59"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 9,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 14:09:14",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 14:09:12"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 14:09:12",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 14:09:10"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "user_b_20251007_140912_1334",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "User",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "B",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "user_b_20251007_140912_1334@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 8,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 6,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:52",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:50"
+        },
+        {
+          "fieldname": "manager",
+          "newvalue": "db5fbc48c3a83e1024163942b4013193",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:50",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:48"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:59"
+        },
+        {
+          "fieldname": "role",
+          "newvalue": "2831a114c611228501d4ea6c309d626d",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "db5fbc48c3a83e1024163942b4013193",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "active",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 4,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sys_user_has_role"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:52",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:50"
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:50",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:48"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    }
+  ]
+}

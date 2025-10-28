@@ -1,0 +1,20 @@
+{
+  "invalid_action_idxs": [
+    6,
+    15,
+    29,
+    38
+  ],
+  "invalid_policy_names": [
+    "Change requests with risk level 'Moderate' or higher cannot be scheduled on Fridays",
+    "Ticket being resolved must have someone assigned to the ticket.",
+    "Inactive users cannot be assigned as managers of active users",
+    "Serial numbers cannot be modified once asset is marked as 'In Use'"
+  ],
+  "invalid_policy_nums": [
+    5,
+    1,
+    10,
+    7
+  ]
+}

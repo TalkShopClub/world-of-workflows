@@ -1,0 +1,1558 @@
+{
+  "trajectory_file": "approvechangerequest.json",
+  "generated_at": "2025-10-15T23:35:20.545443",
+  "num_actions": 4,
+  "num_tool_calls": 24,
+  "schema_context_size": 49737,
+  "tool_calls": [
+    {
+      "observation_id": "26a1ecb77323976e",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'fields': ['sys_id', 'state', 'workflow_version'], 'table': 'wf_context', 'filters': 'id=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:34:45.638000+00:00",
+      "end_time": "2025-10-16T03:34:46.477000+00:00"
+    },
+    {
+      "observation_id": "65482a4e28f4471e",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'wf_history', 'fields': ['sys_id', 'activity.name', 'state', 'ended'], 'filters': 'context=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:34:45.638000+00:00",
+      "end_time": "2025-10-16T03:34:46.478000+00:00"
+    },
+    {
+      "observation_id": "00a5058153c371a3",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'fields': ['sys_id', 'number', 'state', 'approval', 'description', 'work_notes'], 'table': 'change_request', 'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "sys_id": "ba1df0c4c3a83e1024163942b4013127",
+            "number": "CHG0030091",
+            "approval": "not requested",
+            "description": "This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.",
+            "state": "-5",
+            "work_notes": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-16T03:34:45.637000+00:00",
+      "end_time": "2025-10-16T03:34:46.092000+00:00"
+    },
+    {
+      "observation_id": "141e9e410b61addd",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'filters': 'sysapproval=ba1df0c4c3a83e1024163942b4013127', 'table': 'sysapproval_approver', 'fields': ['sys_id', 'state', 'approver', 'comments']}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:34:45.637000+00:00",
+      "end_time": "2025-10-16T03:34:46.476000+00:00"
+    },
+    {
+      "observation_id": "b0b712cf798ba8a7",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'filters': 'context=ba1df0c4c3a83e1024163942b4013127', 'table': 'wf_history'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:34:28.662000+00:00",
+      "end_time": "2025-10-16T03:34:29.672000+00:00"
+    },
+    {
+      "observation_id": "d1a5dd705f80e36f",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'sysapproval_approver', 'filters': 'sysapproval=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:34:28.662000+00:00",
+      "end_time": "2025-10-16T03:34:29.671000+00:00"
+    },
+    {
+      "observation_id": "c97ebcc63105d44b",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'asmt_assessable_record', 'filters': 'documentkey=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 10 records",
+        "data": [
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2013-12-04 21:34:16",
+            "live_feed": "false",
+            "sys_domain_path": "",
+            "sys_tags": "",
+            "sys_id": "003a2c44d7211100158ba6859e6103ff",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2013-12-04 21:34:16",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe",
+              "value": "8c3a2c44d7211100158ba6859e6103fe"
+            },
+            "name": "Service Request Satisfaction Survey",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe",
+              "value": "8c3a2c44d7211100158ba6859e6103fe"
+            },
+            "metric_type_group": "",
+            "source_table": "asmt_metric_type",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "009d5cfd9f610200736af84bc42e7023",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Electronic Messaging",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d18f6fc0a8000b00ad14d4929d1b45",
+              "value": "27d18f6fc0a8000b00ad14d4929d1b45"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "009d5cfd9f610200736af84bc42e7024",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "PeopleSoft Financials",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fccf1580a0a0bb400877808a2961ac6",
+              "value": "2fccf1580a0a0bb400877808a2961ac6"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2025-10-07 18:02:20",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "00cd3008c3a83e1024163942b40131c0",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2025-10-07 18:02:20",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c",
+              "value": "ee910ea7bf2201007a6d257b3f07398c"
+            },
+            "name": "test_group_a_20251007_140209_2035",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/00cd3008c3a83e1024163942b40131be",
+              "value": "00cd3008c3a83e1024163942b40131be"
+            },
+            "metric_type_group": "",
+            "source_table": "sys_user_group",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "049d5cfd9f610200736af84bc42e7023",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Windows Mobile",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d415a8c0a8000b00ffe2ab0f82e8d2",
+              "value": "27d415a8c0a8000b00ffe2ab0f82e8d2"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "049d5cfd9f610200736af84bc42e7024",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "PeopleSoft Reporting",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fd114e10a0a0bb400f07732a4131e72",
+              "value": "2fd114e10a0a0bb400f07732a4131e72"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2025-10-06 04:32:48",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "04eab4e7c354ba1024163942b401315c",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2025-10-06 04:32:48",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c",
+              "value": "ee910ea7bf2201007a6d257b3f07398c"
+            },
+            "name": "test_group_20251006_003248_5670",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/4ceab4e7c354ba1024163942b401315a",
+              "value": "4ceab4e7c354ba1024163942b401315a"
+            },
+            "metric_type_group": "",
+            "source_table": "sys_user_group",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "089d5cfd9f610200736af84bc42e7022",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "SAP Financial Accounting",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/26e426be0a0a0bb40046890d90059eaa",
+              "value": "26e426be0a0a0bb40046890d90059eaa"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "089d5cfd9f610200736af84bc42e7023",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Retail Client Registration",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/28c2131fc0a8000b0020787c5d6816f0",
+              "value": "28c2131fc0a8000b0020787c5d6816f0"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "089d5cfd9f610200736af84bc42e7024",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Securities Lending",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/5f5e007ec0a8010e002551dd40f0ad97",
+              "value": "5f5e007ec0a8010e002551dd40f0ad97"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          }
+        ]
+      },
+      "start_time": "2025-10-16T03:34:28.661000+00:00",
+      "end_time": "2025-10-16T03:34:29.483000+00:00"
+    },
+    {
+      "observation_id": "de5e38c6ef63fda9",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'wf_context', 'filters': 'id=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:34:28.661000+00:00",
+      "end_time": "2025-10-16T03:34:29.670000+00:00"
+    },
+    {
+      "observation_id": "fd308bb33b48dc46",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127', 'fields': ['approval', 'state', 'work_notes'], 'table': 'change_request'}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "approval": "not requested",
+            "state": "-5",
+            "work_notes": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-16T03:34:28.660000+00:00",
+      "end_time": "2025-10-16T03:34:29.115000+00:00"
+    },
+    {
+      "observation_id": "a17cadf0f49764d7",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'wf_context', 'filters': 'id=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:34:16.449000+00:00",
+      "end_time": "2025-10-16T03:34:17.289000+00:00"
+    },
+    {
+      "observation_id": "242460c789745573",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'filters': 'sysapproval=ba1df0c4c3a83e1024163942b4013127', 'table': 'sysapproval_approver'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:34:16.448000+00:00",
+      "end_time": "2025-10-16T03:34:17.288000+00:00"
+    },
+    {
+      "observation_id": "ce1a52aad732e636",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'wf_history', 'filters': 'context=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:34:16.448000+00:00",
+      "end_time": "2025-10-16T03:34:17.289000+00:00"
+    },
+    {
+      "observation_id": "82aa90e3b12a0ee8",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'change_request', 'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "parent": "",
+            "reason": "",
+            "watch_list": "",
+            "upon_reject": "cancel",
+            "sys_updated_on": "2025-10-07 17:59:52",
+            "type": "normal",
+            "approval_history": "",
+            "number": "CHG0030091",
+            "test_plan": "",
+            "cab_delegate": "",
+            "requested_by_date": "",
+            "state": "-5",
+            "sys_created_by": "admin",
+            "knowledge": "false",
+            "order": "",
+            "phase": "requested",
+            "cmdb_ci": "",
+            "delivery_plan": "",
+            "contract": "",
+            "impact": "3",
+            "active": "true",
+            "work_notes_list": "",
+            "priority": "4",
+            "sys_domain_path": "/",
+            "cab_recommendation": "",
+            "production_system": "false",
+            "review_date": "",
+            "business_duration": "",
+            "group_list": "",
+            "requested_by": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+              "value": "6816f79cc0a8016401c5a33be04be441"
+            },
+            "change_plan": "",
+            "approval_set": "",
+            "copied_from": "",
+            "implementation_plan": "",
+            "universal_request": "",
+            "end_date": "",
+            "short_description": "Test Change Request 20251007_135930",
+            "correlation_display": "",
+            "delivery_task": "",
+            "work_start": "",
+            "additional_assignee_list": "",
+            "outside_maintenance_schedule": "false",
+            "std_change_producer_version": "",
+            "service_offering": "",
+            "sys_class_name": "change_request",
+            "closed_by": "",
+            "follow_up": "",
+            "reassignment_count": "0",
+            "review_status": "",
+            "assigned_to": "",
+            "start_date": "",
+            "sla_due": "",
+            "comments_and_work_notes": "",
+            "escalation": "0",
+            "upon_approval": "proceed",
+            "correlation_id": "",
+            "made_sla": "true",
+            "backout_plan": "",
+            "conflict_status": "Not Run",
+            "task_effective_number": "CHG0030091",
+            "sys_updated_by": "admin",
+            "opened_by": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+              "value": "6816f79cc0a8016401c5a33be04be441"
+            },
+            "user_input": "",
+            "sys_created_on": "2025-10-07 17:59:31",
+            "on_hold_task": "",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "route_reason": "",
+            "closed_at": "",
+            "review_comments": "",
+            "business_service": "",
+            "time_worked": "",
+            "chg_model": {
+              "link": "https://dev185199.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2",
+              "value": "007c4001c343101035ae3f52c1d3aeb2"
+            },
+            "expected_start": "",
+            "opened_at": "2025-10-07 17:59:31",
+            "work_end": "",
+            "phase_state": "open",
+            "work_notes": "",
+            "close_code": "",
+            "assignment_group": "",
+            "description": "This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.",
+            "on_hold_reason": "",
+            "calendar_duration": "",
+            "close_notes": "",
+            "sys_id": "ba1df0c4c3a83e1024163942b4013127",
+            "contact_type": "",
+            "cab_required": "false",
+            "urgency": "3",
+            "scope": "3",
+            "company": "",
+            "justification": "",
+            "activity_due": "",
+            "comments": "",
+            "approval": "not requested",
+            "due_date": "",
+            "sys_mod_count": "2",
+            "on_hold": "false",
+            "sys_tags": "",
+            "cab_date_time": "",
+            "conflict_last_run": "",
+            "unauthorized": "false",
+            "location": "",
+            "risk": "4",
+            "category": "Other",
+            "risk_impact_analysis": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-16T03:34:16.447000+00:00",
+      "end_time": "2025-10-16T03:34:16.828000+00:00"
+    },
+    {
+      "observation_id": "bd78ad2e98942f27",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'wf_context', 'filters': 'id=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:33:59.419000+00:00",
+      "end_time": "2025-10-16T03:34:00.053000+00:00"
+    },
+    {
+      "observation_id": "99c6771ad38d3607",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'change_request', 'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "parent": "",
+            "reason": "",
+            "watch_list": "",
+            "upon_reject": "cancel",
+            "sys_updated_on": "2025-10-07 17:59:52",
+            "type": "normal",
+            "approval_history": "",
+            "number": "CHG0030091",
+            "test_plan": "",
+            "cab_delegate": "",
+            "requested_by_date": "",
+            "state": "-5",
+            "sys_created_by": "admin",
+            "knowledge": "false",
+            "order": "",
+            "phase": "requested",
+            "cmdb_ci": "",
+            "delivery_plan": "",
+            "contract": "",
+            "impact": "3",
+            "active": "true",
+            "work_notes_list": "",
+            "priority": "4",
+            "sys_domain_path": "/",
+            "cab_recommendation": "",
+            "production_system": "false",
+            "review_date": "",
+            "business_duration": "",
+            "group_list": "",
+            "requested_by": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+              "value": "6816f79cc0a8016401c5a33be04be441"
+            },
+            "change_plan": "",
+            "approval_set": "",
+            "copied_from": "",
+            "implementation_plan": "",
+            "universal_request": "",
+            "end_date": "",
+            "short_description": "Test Change Request 20251007_135930",
+            "correlation_display": "",
+            "delivery_task": "",
+            "work_start": "",
+            "additional_assignee_list": "",
+            "outside_maintenance_schedule": "false",
+            "std_change_producer_version": "",
+            "service_offering": "",
+            "sys_class_name": "change_request",
+            "closed_by": "",
+            "follow_up": "",
+            "reassignment_count": "0",
+            "review_status": "",
+            "assigned_to": "",
+            "start_date": "",
+            "sla_due": "",
+            "comments_and_work_notes": "",
+            "escalation": "0",
+            "upon_approval": "proceed",
+            "correlation_id": "",
+            "made_sla": "true",
+            "backout_plan": "",
+            "conflict_status": "Not Run",
+            "task_effective_number": "CHG0030091",
+            "sys_updated_by": "admin",
+            "opened_by": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+              "value": "6816f79cc0a8016401c5a33be04be441"
+            },
+            "user_input": "",
+            "sys_created_on": "2025-10-07 17:59:31",
+            "on_hold_task": "",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "route_reason": "",
+            "closed_at": "",
+            "review_comments": "",
+            "business_service": "",
+            "time_worked": "",
+            "chg_model": {
+              "link": "https://dev185199.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2",
+              "value": "007c4001c343101035ae3f52c1d3aeb2"
+            },
+            "expected_start": "",
+            "opened_at": "2025-10-07 17:59:31",
+            "work_end": "",
+            "phase_state": "open",
+            "work_notes": "",
+            "close_code": "",
+            "assignment_group": "",
+            "description": "This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.",
+            "on_hold_reason": "",
+            "calendar_duration": "",
+            "close_notes": "",
+            "sys_id": "ba1df0c4c3a83e1024163942b4013127",
+            "contact_type": "",
+            "cab_required": "false",
+            "urgency": "3",
+            "scope": "3",
+            "company": "",
+            "justification": "",
+            "activity_due": "",
+            "comments": "",
+            "approval": "not requested",
+            "due_date": "",
+            "sys_mod_count": "2",
+            "on_hold": "false",
+            "sys_tags": "",
+            "cab_date_time": "",
+            "conflict_last_run": "",
+            "unauthorized": "false",
+            "location": "",
+            "risk": "4",
+            "category": "Other",
+            "risk_impact_analysis": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-16T03:33:59.418000+00:00",
+      "end_time": "2025-10-16T03:33:59.799000+00:00"
+    },
+    {
+      "observation_id": "bd7e3409aed1adde",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'filters': 'sysapproval=ba1df0c4c3a83e1024163942b4013127', 'table': 'sysapproval_approver'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:33:59.418000+00:00",
+      "end_time": "2025-10-16T03:34:00.052000+00:00"
+    },
+    {
+      "observation_id": "328cd97e4f602a59",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'wf_history', 'filters': 'context=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:33:32.474000+00:00",
+      "end_time": "2025-10-16T03:33:33.519000+00:00"
+    },
+    {
+      "observation_id": "6a01b0e94fde8f5b",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'sysapproval_approver', 'filters': 'sysapproval=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:33:32.474000+00:00",
+      "end_time": "2025-10-16T03:33:33.519000+00:00"
+    },
+    {
+      "observation_id": "308e794a915aaab1",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'filters': 'id=ba1df0c4c3a83e1024163942b4013127', 'table': 'wf_context'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:33:32.473000+00:00",
+      "end_time": "2025-10-16T03:33:33.519000+00:00"
+    },
+    {
+      "observation_id": "9763217b5818e4b0",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'filters': 'documentkey=ba1df0c4c3a83e1024163942b4013127', 'table': 'asmt_assessable_record'}",
+      "output": {
+        "success": true,
+        "message": "Found 10 records",
+        "data": [
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2013-12-04 21:34:16",
+            "live_feed": "false",
+            "sys_domain_path": "",
+            "sys_tags": "",
+            "sys_id": "003a2c44d7211100158ba6859e6103ff",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2013-12-04 21:34:16",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe",
+              "value": "8c3a2c44d7211100158ba6859e6103fe"
+            },
+            "name": "Service Request Satisfaction Survey",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe",
+              "value": "8c3a2c44d7211100158ba6859e6103fe"
+            },
+            "metric_type_group": "",
+            "source_table": "asmt_metric_type",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "009d5cfd9f610200736af84bc42e7023",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Electronic Messaging",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d18f6fc0a8000b00ad14d4929d1b45",
+              "value": "27d18f6fc0a8000b00ad14d4929d1b45"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "009d5cfd9f610200736af84bc42e7024",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "PeopleSoft Financials",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fccf1580a0a0bb400877808a2961ac6",
+              "value": "2fccf1580a0a0bb400877808a2961ac6"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2025-10-07 18:02:20",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "00cd3008c3a83e1024163942b40131c0",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2025-10-07 18:02:20",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c",
+              "value": "ee910ea7bf2201007a6d257b3f07398c"
+            },
+            "name": "test_group_a_20251007_140209_2035",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/00cd3008c3a83e1024163942b40131be",
+              "value": "00cd3008c3a83e1024163942b40131be"
+            },
+            "metric_type_group": "",
+            "source_table": "sys_user_group",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "049d5cfd9f610200736af84bc42e7023",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Windows Mobile",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d415a8c0a8000b00ffe2ab0f82e8d2",
+              "value": "27d415a8c0a8000b00ffe2ab0f82e8d2"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "049d5cfd9f610200736af84bc42e7024",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "PeopleSoft Reporting",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fd114e10a0a0bb400f07732a4131e72",
+              "value": "2fd114e10a0a0bb400f07732a4131e72"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2025-10-06 04:32:48",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "04eab4e7c354ba1024163942b401315c",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2025-10-06 04:32:48",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c",
+              "value": "ee910ea7bf2201007a6d257b3f07398c"
+            },
+            "name": "test_group_20251006_003248_5670",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/4ceab4e7c354ba1024163942b401315a",
+              "value": "4ceab4e7c354ba1024163942b401315a"
+            },
+            "metric_type_group": "",
+            "source_table": "sys_user_group",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "089d5cfd9f610200736af84bc42e7022",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "SAP Financial Accounting",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/26e426be0a0a0bb40046890d90059eaa",
+              "value": "26e426be0a0a0bb40046890d90059eaa"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "089d5cfd9f610200736af84bc42e7023",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Retail Client Registration",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/28c2131fc0a8000b0020787c5d6816f0",
+              "value": "28c2131fc0a8000b0020787c5d6816f0"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "089d5cfd9f610200736af84bc42e7024",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Securities Lending",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/5f5e007ec0a8010e002551dd40f0ad97",
+              "value": "5f5e007ec0a8010e002551dd40f0ad97"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          }
+        ]
+      },
+      "start_time": "2025-10-16T03:33:32.473000+00:00",
+      "end_time": "2025-10-16T03:33:33.322000+00:00"
+    },
+    {
+      "observation_id": "147c4cb682059dab",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'change_request', 'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "parent": "",
+            "reason": "",
+            "watch_list": "",
+            "upon_reject": "cancel",
+            "sys_updated_on": "2025-10-07 17:59:52",
+            "type": "normal",
+            "approval_history": "",
+            "number": "CHG0030091",
+            "test_plan": "",
+            "cab_delegate": "",
+            "requested_by_date": "",
+            "state": "-5",
+            "sys_created_by": "admin",
+            "knowledge": "false",
+            "order": "",
+            "phase": "requested",
+            "cmdb_ci": "",
+            "delivery_plan": "",
+            "contract": "",
+            "impact": "3",
+            "active": "true",
+            "work_notes_list": "",
+            "priority": "4",
+            "sys_domain_path": "/",
+            "cab_recommendation": "",
+            "production_system": "false",
+            "review_date": "",
+            "business_duration": "",
+            "group_list": "",
+            "requested_by": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+              "value": "6816f79cc0a8016401c5a33be04be441"
+            },
+            "change_plan": "",
+            "approval_set": "",
+            "copied_from": "",
+            "implementation_plan": "",
+            "universal_request": "",
+            "end_date": "",
+            "short_description": "Test Change Request 20251007_135930",
+            "correlation_display": "",
+            "delivery_task": "",
+            "work_start": "",
+            "additional_assignee_list": "",
+            "outside_maintenance_schedule": "false",
+            "std_change_producer_version": "",
+            "service_offering": "",
+            "sys_class_name": "change_request",
+            "closed_by": "",
+            "follow_up": "",
+            "reassignment_count": "0",
+            "review_status": "",
+            "assigned_to": "",
+            "start_date": "",
+            "sla_due": "",
+            "comments_and_work_notes": "",
+            "escalation": "0",
+            "upon_approval": "proceed",
+            "correlation_id": "",
+            "made_sla": "true",
+            "backout_plan": "",
+            "conflict_status": "Not Run",
+            "task_effective_number": "CHG0030091",
+            "sys_updated_by": "admin",
+            "opened_by": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+              "value": "6816f79cc0a8016401c5a33be04be441"
+            },
+            "user_input": "",
+            "sys_created_on": "2025-10-07 17:59:31",
+            "on_hold_task": "",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "route_reason": "",
+            "closed_at": "",
+            "review_comments": "",
+            "business_service": "",
+            "time_worked": "",
+            "chg_model": {
+              "link": "https://dev185199.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2",
+              "value": "007c4001c343101035ae3f52c1d3aeb2"
+            },
+            "expected_start": "",
+            "opened_at": "2025-10-07 17:59:31",
+            "work_end": "",
+            "phase_state": "open",
+            "work_notes": "",
+            "close_code": "",
+            "assignment_group": "",
+            "description": "This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.",
+            "on_hold_reason": "",
+            "calendar_duration": "",
+            "close_notes": "",
+            "sys_id": "ba1df0c4c3a83e1024163942b4013127",
+            "contact_type": "",
+            "cab_required": "false",
+            "urgency": "3",
+            "scope": "3",
+            "company": "",
+            "justification": "",
+            "activity_due": "",
+            "comments": "",
+            "approval": "not requested",
+            "due_date": "",
+            "sys_mod_count": "2",
+            "on_hold": "false",
+            "sys_tags": "",
+            "cab_date_time": "",
+            "conflict_last_run": "",
+            "unauthorized": "false",
+            "location": "",
+            "risk": "4",
+            "category": "Other",
+            "risk_impact_analysis": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-16T03:33:32.472000+00:00",
+      "end_time": "2025-10-16T03:33:32.924000+00:00"
+    },
+    {
+      "observation_id": "492fe8f1382c8084",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'filters': 'document=ba1df0c4c3a83e1024163942b4013127', 'table': 'asmt_assessable_record'}",
+      "output": {
+        "success": true,
+        "message": "Found 10 records",
+        "data": [
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2013-12-04 21:34:16",
+            "live_feed": "false",
+            "sys_domain_path": "",
+            "sys_tags": "",
+            "sys_id": "003a2c44d7211100158ba6859e6103ff",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2013-12-04 21:34:16",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe",
+              "value": "8c3a2c44d7211100158ba6859e6103fe"
+            },
+            "name": "Service Request Satisfaction Survey",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe",
+              "value": "8c3a2c44d7211100158ba6859e6103fe"
+            },
+            "metric_type_group": "",
+            "source_table": "asmt_metric_type",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "009d5cfd9f610200736af84bc42e7023",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Electronic Messaging",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d18f6fc0a8000b00ad14d4929d1b45",
+              "value": "27d18f6fc0a8000b00ad14d4929d1b45"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "009d5cfd9f610200736af84bc42e7024",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "PeopleSoft Financials",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fccf1580a0a0bb400877808a2961ac6",
+              "value": "2fccf1580a0a0bb400877808a2961ac6"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2025-10-07 18:02:20",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "00cd3008c3a83e1024163942b40131c0",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2025-10-07 18:02:20",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c",
+              "value": "ee910ea7bf2201007a6d257b3f07398c"
+            },
+            "name": "test_group_a_20251007_140209_2035",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/00cd3008c3a83e1024163942b40131be",
+              "value": "00cd3008c3a83e1024163942b40131be"
+            },
+            "metric_type_group": "",
+            "source_table": "sys_user_group",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "049d5cfd9f610200736af84bc42e7023",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Windows Mobile",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d415a8c0a8000b00ffe2ab0f82e8d2",
+              "value": "27d415a8c0a8000b00ffe2ab0f82e8d2"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "049d5cfd9f610200736af84bc42e7024",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "PeopleSoft Reporting",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fd114e10a0a0bb400f07732a4131e72",
+              "value": "2fd114e10a0a0bb400f07732a4131e72"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2025-10-06 04:32:48",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "04eab4e7c354ba1024163942b401315c",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2025-10-06 04:32:48",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c",
+              "value": "ee910ea7bf2201007a6d257b3f07398c"
+            },
+            "name": "test_group_20251006_003248_5670",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/4ceab4e7c354ba1024163942b401315a",
+              "value": "4ceab4e7c354ba1024163942b401315a"
+            },
+            "metric_type_group": "",
+            "source_table": "sys_user_group",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "089d5cfd9f610200736af84bc42e7022",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "SAP Financial Accounting",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/26e426be0a0a0bb40046890d90059eaa",
+              "value": "26e426be0a0a0bb40046890d90059eaa"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "089d5cfd9f610200736af84bc42e7023",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Retail Client Registration",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/28c2131fc0a8000b0020787c5d6816f0",
+              "value": "28c2131fc0a8000b0020787c5d6816f0"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          },
+          {
+            "dm_display": "true",
+            "sys_mod_count": "0",
+            "sys_updated_on": "2015-07-29 19:41:57",
+            "live_feed": "false",
+            "sys_domain_path": "/",
+            "sys_tags": "",
+            "sys_id": "089d5cfd9f610200736af84bc42e7024",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2015-07-29 19:41:57",
+            "sys_domain": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global",
+              "value": "global"
+            },
+            "metric_type": {
+              "link": "https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020",
+              "value": "4c9d5cfd9f610200736af84bc42e7020"
+            },
+            "name": "Securities Lending",
+            "live_feed_group": "",
+            "source_id": {
+              "link": "https://dev185199.service-now.com/api/now/table/cmdb_ci_service/5f5e007ec0a8010e002551dd40f0ad97",
+              "value": "5f5e007ec0a8010e002551dd40f0ad97"
+            },
+            "metric_type_group": "",
+            "source_table": "cmdb_ci_service",
+            "sys_created_by": "admin"
+          }
+        ]
+      },
+      "start_time": "2025-10-16T03:33:21.420000+00:00",
+      "end_time": "2025-10-16T03:33:22.111000+00:00"
+    },
+    {
+      "observation_id": "6856f8088ba22acc",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'filters': 'id=ba1df0c4c3a83e1024163942b4013127', 'table': 'wf_context'}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-16T03:33:21.420000+00:00",
+      "end_time": "2025-10-16T03:33:22.112000+00:00"
+    },
+    {
+      "observation_id": "7389604ffc70015f",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'change_request', 'fields': ['sys_id', 'number', 'state', 'short_description', 'description', 'work_notes', 'risk', 'impact', 'category', 'requested_by', 'assignment_group', 'start_date', 'end_date', 'approval', 'approval_history'], 'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "end_date": "",
+            "short_description": "Test Change Request 20251007_135930",
+            "assignment_group": "",
+            "approval": "not requested",
+            "impact": "3",
+            "description": "This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.",
+            "approval_history": "",
+            "sys_id": "ba1df0c4c3a83e1024163942b4013127",
+            "number": "CHG0030091",
+            "requested_by": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+              "value": "6816f79cc0a8016401c5a33be04be441"
+            },
+            "risk": "4",
+            "state": "-5",
+            "work_notes": "",
+            "category": "Other",
+            "start_date": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-16T03:33:21.419000+00:00",
+      "end_time": "2025-10-16T03:33:21.916000+00:00"
+    }
+  ],
+  "schema_context": "## Retrieved Schema Information\n\nThe following information was retrieved by calling MCP tools:\n\n### Tool Call 1: search_any_table\n**Input:** \"{'fields': ['sys_id', 'state', 'workflow_version'], 'table': 'wf_context', 'filters': 'id=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 2: search_any_table\n**Input:** \"{'table': 'wf_history', 'fields': ['sys_id', 'activity.name', 'state', 'ended'], 'filters': 'context=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 3: search_any_table\n**Input:** \"{'fields': ['sys_id', 'number', 'state', 'approval', 'description', 'work_notes'], 'table': 'change_request', 'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"sys_id\": \"ba1df0c4c3a83e1024163942b4013127\",\n      \"number\": \"CHG0030091\",\n      \"approval\": \"not requested\",\n      \"description\": \"This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.\",\n      \"state\": \"-5\",\n      \"work_notes\": \"\"\n    }\n  ]\n}\n```\n\n### Tool Call 4: search_any_table\n**Input:** \"{'filters': 'sysapproval=ba1df0c4c3a83e1024163942b4013127', 'table': 'sysapproval_approver', 'fields': ['sys_id', 'state', 'approver', 'comments']}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 5: search_any_table\n**Input:** \"{'filters': 'context=ba1df0c4c3a83e1024163942b4013127', 'table': 'wf_history'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 6: search_any_table\n**Input:** \"{'table': 'sysapproval_approver', 'filters': 'sysapproval=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 7: search_any_table\n**Input:** \"{'table': 'asmt_assessable_record', 'filters': 'documentkey=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 10 records\",\n  \"data\": [\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2013-12-04 21:34:16\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"003a2c44d7211100158ba6859e6103ff\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2013-12-04 21:34:16\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe\",\n        \"value\": \"8c3a2c44d7211100158ba6859e6103fe\"\n      },\n      \"name\": \"Service Request Satisfaction Survey\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe\",\n        \"value\": \"8c3a2c44d7211100158ba6859e6103fe\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"asmt_metric_type\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"009d5cfd9f610200736af84bc42e7023\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Electronic Messaging\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d18f6fc0a8000b00ad14d4929d1b45\",\n        \"value\": \"27d18f6fc0a8000b00ad14d4929d1b45\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"009d5cfd9f610200736af84bc42e7024\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"PeopleSoft Financials\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fccf1580a0a0bb400877808a2961ac6\",\n        \"value\": \"2fccf1580a0a0bb400877808a2961ac6\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2025-10-07 18:02:20\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"00cd3008c3a83e1024163942b40131c0\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2025-10-07 18:02:20\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c\",\n        \"value\": \"ee910ea7bf2201007a6d257b3f07398c\"\n      },\n      \"name\": \"test_group_a_20251007_140209_2035\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/00cd3008c3a83e1024163942b40131be\",\n        \"value\": \"00cd3008c3a83e1024163942b40131be\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"sys_user_group\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"049d5cfd9f610200736af84bc42e7023\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Windows Mobile\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d415a8c0a8000b00ffe2ab0f82e8d2\",\n        \"value\": \"27d415a8c0a8000b00ffe2ab0f82e8d2\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"049d5cfd9f610200736af84bc42e7024\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"PeopleSoft Reporting\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fd114e10a0a0bb400f07732a4131e72\",\n        \"value\": \"2fd114e10a0a0bb400f07732a4131e72\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2025-10-06 04:32:48\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"04eab4e7c354ba1024163942b401315c\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2025-10-06 04:32:48\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c\",\n        \"value\": \"ee910ea7bf2201007a6d257b3f07398c\"\n      },\n      \"name\": \"test_group_20251006_003248_5670\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/4ceab4e7c354ba1024163942b401315a\",\n        \"value\": \"4ceab4e7c354ba1024163942b401315a\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"sys_user_group\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"089d5cfd9f610200736af84bc42e7022\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"SAP Financial Accounting\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/26e426be0a0a0bb40046890d90059eaa\",\n        \"value\": \"26e426be0a0a0bb40046890d90059eaa\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"089d5cfd9f610200736af84bc42e7023\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Retail Client Registration\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/28c2131fc0a8000b0020787c5d6816f0\",\n        \"value\": \"28c2131fc0a8000b0020787c5d6816f0\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"089d5cfd9f610200736af84bc42e7024\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Securities Lending\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/5f5e007ec0a8010e002551dd40f0ad97\",\n        \"value\": \"5f5e007ec0a8010e002551dd40f0ad97\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    }\n  ]\n}\n```\n\n### Tool Call 8: search_any_table\n**Input:** \"{'table': 'wf_context', 'filters': 'id=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 9: search_any_table\n**Input:** \"{'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127', 'fields': ['approval', 'state', 'work_notes'], 'table': 'change_request'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"approval\": \"not requested\",\n      \"state\": \"-5\",\n      \"work_notes\": \"\"\n    }\n  ]\n}\n```\n\n### Tool Call 10: search_any_table\n**Input:** \"{'table': 'wf_context', 'filters': 'id=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 11: search_any_table\n**Input:** \"{'filters': 'sysapproval=ba1df0c4c3a83e1024163942b4013127', 'table': 'sysapproval_approver'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 12: search_any_table\n**Input:** \"{'table': 'wf_history', 'filters': 'context=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 13: search_any_table\n**Input:** \"{'table': 'change_request', 'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"parent\": \"\",\n      \"reason\": \"\",\n      \"watch_list\": \"\",\n      \"upon_reject\": \"cancel\",\n      \"sys_updated_on\": \"2025-10-07 17:59:52\",\n      \"type\": \"normal\",\n      \"approval_history\": \"\",\n      \"number\": \"CHG0030091\",\n      \"test_plan\": \"\",\n      \"cab_delegate\": \"\",\n      \"requested_by_date\": \"\",\n      \"state\": \"-5\",\n      \"sys_created_by\": \"admin\",\n      \"knowledge\": \"false\",\n      \"order\": \"\",\n      \"phase\": \"requested\",\n      \"cmdb_ci\": \"\",\n      \"delivery_plan\": \"\",\n      \"contract\": \"\",\n      \"impact\": \"3\",\n      \"active\": \"true\",\n      \"work_notes_list\": \"\",\n      \"priority\": \"4\",\n      \"sys_domain_path\": \"/\",\n      \"cab_recommendation\": \"\",\n      \"production_system\": \"false\",\n      \"review_date\": \"\",\n      \"business_duration\": \"\",\n      \"group_list\": \"\",\n      \"requested_by\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n        \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n      },\n      \"change_plan\": \"\",\n      \"approval_set\": \"\",\n      \"copied_from\": \"\",\n      \"implementation_plan\": \"\",\n      \"universal_request\": \"\",\n      \"end_date\": \"\",\n      \"short_description\": \"Test Change Request 20251007_135930\",\n      \"correlation_display\": \"\",\n      \"delivery_task\": \"\",\n      \"work_start\": \"\",\n      \"additional_assignee_list\": \"\",\n      \"outside_maintenance_schedule\": \"false\",\n      \"std_change_producer_version\": \"\",\n      \"service_offering\": \"\",\n      \"sys_class_name\": \"change_request\",\n      \"closed_by\": \"\",\n      \"follow_up\": \"\",\n      \"reassignment_count\": \"0\",\n      \"review_status\": \"\",\n      \"assigned_to\": \"\",\n      \"start_date\": \"\",\n      \"sla_due\": \"\",\n      \"comments_and_work_notes\": \"\",\n      \"escalation\": \"0\",\n      \"upon_approval\": \"proceed\",\n      \"correlation_id\": \"\",\n      \"made_sla\": \"true\",\n      \"backout_plan\": \"\",\n      \"conflict_status\": \"Not Run\",\n      \"task_effective_number\": \"CHG0030091\",\n      \"sys_updated_by\": \"admin\",\n      \"opened_by\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n        \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n      },\n      \"user_input\": \"\",\n      \"sys_created_on\": \"2025-10-07 17:59:31\",\n      \"on_hold_task\": \"\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"route_reason\": \"\",\n      \"closed_at\": \"\",\n      \"review_comments\": \"\",\n      \"business_service\": \"\",\n      \"time_worked\": \"\",\n      \"chg_model\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2\",\n        \"value\": \"007c4001c343101035ae3f52c1d3aeb2\"\n      },\n      \"expected_start\": \"\",\n      \"opened_at\": \"2025-10-07 17:59:31\",\n      \"work_end\": \"\",\n      \"phase_state\": \"open\",\n      \"work_notes\": \"\",\n      \"close_code\": \"\",\n      \"assignment_group\": \"\",\n      \"description\": \"This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.\",\n      \"on_hold_reason\": \"\",\n      \"calendar_duration\": \"\",\n      \"close_notes\": \"\",\n      \"sys_id\": \"ba1df0c4c3a83e1024163942b4013127\",\n      \"contact_type\": \"\",\n      \"cab_required\": \"false\",\n      \"urgency\": \"3\",\n      \"scope\": \"3\",\n      \"company\": \"\",\n      \"justification\": \"\",\n      \"activity_due\": \"\",\n      \"comments\": \"\",\n      \"approval\": \"not requested\",\n      \"due_date\": \"\",\n      \"sys_mod_count\": \"2\",\n      \"on_hold\": \"false\",\n      \"sys_tags\": \"\",\n      \"cab_date_time\": \"\",\n      \"conflict_last_run\": \"\",\n      \"unauthorized\": \"false\",\n      \"location\": \"\",\n      \"risk\": \"4\",\n      \"category\": \"Other\",\n      \"risk_impact_analysis\": \"\"\n    }\n  ]\n}\n```\n\n### Tool Call 14: search_any_table\n**Input:** \"{'table': 'wf_context', 'filters': 'id=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 15: search_any_table\n**Input:** \"{'table': 'change_request', 'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"parent\": \"\",\n      \"reason\": \"\",\n      \"watch_list\": \"\",\n      \"upon_reject\": \"cancel\",\n      \"sys_updated_on\": \"2025-10-07 17:59:52\",\n      \"type\": \"normal\",\n      \"approval_history\": \"\",\n      \"number\": \"CHG0030091\",\n      \"test_plan\": \"\",\n      \"cab_delegate\": \"\",\n      \"requested_by_date\": \"\",\n      \"state\": \"-5\",\n      \"sys_created_by\": \"admin\",\n      \"knowledge\": \"false\",\n      \"order\": \"\",\n      \"phase\": \"requested\",\n      \"cmdb_ci\": \"\",\n      \"delivery_plan\": \"\",\n      \"contract\": \"\",\n      \"impact\": \"3\",\n      \"active\": \"true\",\n      \"work_notes_list\": \"\",\n      \"priority\": \"4\",\n      \"sys_domain_path\": \"/\",\n      \"cab_recommendation\": \"\",\n      \"production_system\": \"false\",\n      \"review_date\": \"\",\n      \"business_duration\": \"\",\n      \"group_list\": \"\",\n      \"requested_by\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n        \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n      },\n      \"change_plan\": \"\",\n      \"approval_set\": \"\",\n      \"copied_from\": \"\",\n      \"implementation_plan\": \"\",\n      \"universal_request\": \"\",\n      \"end_date\": \"\",\n      \"short_description\": \"Test Change Request 20251007_135930\",\n      \"correlation_display\": \"\",\n      \"delivery_task\": \"\",\n      \"work_start\": \"\",\n      \"additional_assignee_list\": \"\",\n      \"outside_maintenance_schedule\": \"false\",\n      \"std_change_producer_version\": \"\",\n      \"service_offering\": \"\",\n      \"sys_class_name\": \"change_request\",\n      \"closed_by\": \"\",\n      \"follow_up\": \"\",\n      \"reassignment_count\": \"0\",\n      \"review_status\": \"\",\n      \"assigned_to\": \"\",\n      \"start_date\": \"\",\n      \"sla_due\": \"\",\n      \"comments_and_work_notes\": \"\",\n      \"escalation\": \"0\",\n      \"upon_approval\": \"proceed\",\n      \"correlation_id\": \"\",\n      \"made_sla\": \"true\",\n      \"backout_plan\": \"\",\n      \"conflict_status\": \"Not Run\",\n      \"task_effective_number\": \"CHG0030091\",\n      \"sys_updated_by\": \"admin\",\n      \"opened_by\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n        \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n      },\n      \"user_input\": \"\",\n      \"sys_created_on\": \"2025-10-07 17:59:31\",\n      \"on_hold_task\": \"\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"route_reason\": \"\",\n      \"closed_at\": \"\",\n      \"review_comments\": \"\",\n      \"business_service\": \"\",\n      \"time_worked\": \"\",\n      \"chg_model\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2\",\n        \"value\": \"007c4001c343101035ae3f52c1d3aeb2\"\n      },\n      \"expected_start\": \"\",\n      \"opened_at\": \"2025-10-07 17:59:31\",\n      \"work_end\": \"\",\n      \"phase_state\": \"open\",\n      \"work_notes\": \"\",\n      \"close_code\": \"\",\n      \"assignment_group\": \"\",\n      \"description\": \"This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.\",\n      \"on_hold_reason\": \"\",\n      \"calendar_duration\": \"\",\n      \"close_notes\": \"\",\n      \"sys_id\": \"ba1df0c4c3a83e1024163942b4013127\",\n      \"contact_type\": \"\",\n      \"cab_required\": \"false\",\n      \"urgency\": \"3\",\n      \"scope\": \"3\",\n      \"company\": \"\",\n      \"justification\": \"\",\n      \"activity_due\": \"\",\n      \"comments\": \"\",\n      \"approval\": \"not requested\",\n      \"due_date\": \"\",\n      \"sys_mod_count\": \"2\",\n      \"on_hold\": \"false\",\n      \"sys_tags\": \"\",\n      \"cab_date_time\": \"\",\n      \"conflict_last_run\": \"\",\n      \"unauthorized\": \"false\",\n      \"location\": \"\",\n      \"risk\": \"4\",\n      \"category\": \"Other\",\n      \"risk_impact_analysis\": \"\"\n    }\n  ]\n}\n```\n\n### Tool Call 16: search_any_table\n**Input:** \"{'filters': 'sysapproval=ba1df0c4c3a83e1024163942b4013127', 'table': 'sysapproval_approver'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 17: search_any_table\n**Input:** \"{'table': 'wf_history', 'filters': 'context=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 18: search_any_table\n**Input:** \"{'table': 'sysapproval_approver', 'filters': 'sysapproval=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 19: search_any_table\n**Input:** \"{'filters': 'id=ba1df0c4c3a83e1024163942b4013127', 'table': 'wf_context'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 20: search_any_table\n**Input:** \"{'filters': 'documentkey=ba1df0c4c3a83e1024163942b4013127', 'table': 'asmt_assessable_record'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 10 records\",\n  \"data\": [\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2013-12-04 21:34:16\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"003a2c44d7211100158ba6859e6103ff\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2013-12-04 21:34:16\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe\",\n        \"value\": \"8c3a2c44d7211100158ba6859e6103fe\"\n      },\n      \"name\": \"Service Request Satisfaction Survey\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe\",\n        \"value\": \"8c3a2c44d7211100158ba6859e6103fe\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"asmt_metric_type\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"009d5cfd9f610200736af84bc42e7023\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Electronic Messaging\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d18f6fc0a8000b00ad14d4929d1b45\",\n        \"value\": \"27d18f6fc0a8000b00ad14d4929d1b45\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"009d5cfd9f610200736af84bc42e7024\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"PeopleSoft Financials\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fccf1580a0a0bb400877808a2961ac6\",\n        \"value\": \"2fccf1580a0a0bb400877808a2961ac6\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2025-10-07 18:02:20\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"00cd3008c3a83e1024163942b40131c0\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2025-10-07 18:02:20\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c\",\n        \"value\": \"ee910ea7bf2201007a6d257b3f07398c\"\n      },\n      \"name\": \"test_group_a_20251007_140209_2035\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/00cd3008c3a83e1024163942b40131be\",\n        \"value\": \"00cd3008c3a83e1024163942b40131be\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"sys_user_group\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"049d5cfd9f610200736af84bc42e7023\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Windows Mobile\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d415a8c0a8000b00ffe2ab0f82e8d2\",\n        \"value\": \"27d415a8c0a8000b00ffe2ab0f82e8d2\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"049d5cfd9f610200736af84bc42e7024\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"PeopleSoft Reporting\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fd114e10a0a0bb400f07732a4131e72\",\n        \"value\": \"2fd114e10a0a0bb400f07732a4131e72\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2025-10-06 04:32:48\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"04eab4e7c354ba1024163942b401315c\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2025-10-06 04:32:48\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c\",\n        \"value\": \"ee910ea7bf2201007a6d257b3f07398c\"\n      },\n      \"name\": \"test_group_20251006_003248_5670\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/4ceab4e7c354ba1024163942b401315a\",\n        \"value\": \"4ceab4e7c354ba1024163942b401315a\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"sys_user_group\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"089d5cfd9f610200736af84bc42e7022\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"SAP Financial Accounting\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/26e426be0a0a0bb40046890d90059eaa\",\n        \"value\": \"26e426be0a0a0bb40046890d90059eaa\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"089d5cfd9f610200736af84bc42e7023\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Retail Client Registration\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/28c2131fc0a8000b0020787c5d6816f0\",\n        \"value\": \"28c2131fc0a8000b0020787c5d6816f0\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"089d5cfd9f610200736af84bc42e7024\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Securities Lending\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/5f5e007ec0a8010e002551dd40f0ad97\",\n        \"value\": \"5f5e007ec0a8010e002551dd40f0ad97\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    }\n  ]\n}\n```\n\n### Tool Call 21: search_any_table\n**Input:** \"{'table': 'change_request', 'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"parent\": \"\",\n      \"reason\": \"\",\n      \"watch_list\": \"\",\n      \"upon_reject\": \"cancel\",\n      \"sys_updated_on\": \"2025-10-07 17:59:52\",\n      \"type\": \"normal\",\n      \"approval_history\": \"\",\n      \"number\": \"CHG0030091\",\n      \"test_plan\": \"\",\n      \"cab_delegate\": \"\",\n      \"requested_by_date\": \"\",\n      \"state\": \"-5\",\n      \"sys_created_by\": \"admin\",\n      \"knowledge\": \"false\",\n      \"order\": \"\",\n      \"phase\": \"requested\",\n      \"cmdb_ci\": \"\",\n      \"delivery_plan\": \"\",\n      \"contract\": \"\",\n      \"impact\": \"3\",\n      \"active\": \"true\",\n      \"work_notes_list\": \"\",\n      \"priority\": \"4\",\n      \"sys_domain_path\": \"/\",\n      \"cab_recommendation\": \"\",\n      \"production_system\": \"false\",\n      \"review_date\": \"\",\n      \"business_duration\": \"\",\n      \"group_list\": \"\",\n      \"requested_by\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n        \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n      },\n      \"change_plan\": \"\",\n      \"approval_set\": \"\",\n      \"copied_from\": \"\",\n      \"implementation_plan\": \"\",\n      \"universal_request\": \"\",\n      \"end_date\": \"\",\n      \"short_description\": \"Test Change Request 20251007_135930\",\n      \"correlation_display\": \"\",\n      \"delivery_task\": \"\",\n      \"work_start\": \"\",\n      \"additional_assignee_list\": \"\",\n      \"outside_maintenance_schedule\": \"false\",\n      \"std_change_producer_version\": \"\",\n      \"service_offering\": \"\",\n      \"sys_class_name\": \"change_request\",\n      \"closed_by\": \"\",\n      \"follow_up\": \"\",\n      \"reassignment_count\": \"0\",\n      \"review_status\": \"\",\n      \"assigned_to\": \"\",\n      \"start_date\": \"\",\n      \"sla_due\": \"\",\n      \"comments_and_work_notes\": \"\",\n      \"escalation\": \"0\",\n      \"upon_approval\": \"proceed\",\n      \"correlation_id\": \"\",\n      \"made_sla\": \"true\",\n      \"backout_plan\": \"\",\n      \"conflict_status\": \"Not Run\",\n      \"task_effective_number\": \"CHG0030091\",\n      \"sys_updated_by\": \"admin\",\n      \"opened_by\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n        \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n      },\n      \"user_input\": \"\",\n      \"sys_created_on\": \"2025-10-07 17:59:31\",\n      \"on_hold_task\": \"\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"route_reason\": \"\",\n      \"closed_at\": \"\",\n      \"review_comments\": \"\",\n      \"business_service\": \"\",\n      \"time_worked\": \"\",\n      \"chg_model\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2\",\n        \"value\": \"007c4001c343101035ae3f52c1d3aeb2\"\n      },\n      \"expected_start\": \"\",\n      \"opened_at\": \"2025-10-07 17:59:31\",\n      \"work_end\": \"\",\n      \"phase_state\": \"open\",\n      \"work_notes\": \"\",\n      \"close_code\": \"\",\n      \"assignment_group\": \"\",\n      \"description\": \"This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.\",\n      \"on_hold_reason\": \"\",\n      \"calendar_duration\": \"\",\n      \"close_notes\": \"\",\n      \"sys_id\": \"ba1df0c4c3a83e1024163942b4013127\",\n      \"contact_type\": \"\",\n      \"cab_required\": \"false\",\n      \"urgency\": \"3\",\n      \"scope\": \"3\",\n      \"company\": \"\",\n      \"justification\": \"\",\n      \"activity_due\": \"\",\n      \"comments\": \"\",\n      \"approval\": \"not requested\",\n      \"due_date\": \"\",\n      \"sys_mod_count\": \"2\",\n      \"on_hold\": \"false\",\n      \"sys_tags\": \"\",\n      \"cab_date_time\": \"\",\n      \"conflict_last_run\": \"\",\n      \"unauthorized\": \"false\",\n      \"location\": \"\",\n      \"risk\": \"4\",\n      \"category\": \"Other\",\n      \"risk_impact_analysis\": \"\"\n    }\n  ]\n}\n```\n\n### Tool Call 22: search_any_table\n**Input:** \"{'filters': 'document=ba1df0c4c3a83e1024163942b4013127', 'table': 'asmt_assessable_record'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 10 records\",\n  \"data\": [\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2013-12-04 21:34:16\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"003a2c44d7211100158ba6859e6103ff\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2013-12-04 21:34:16\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe\",\n        \"value\": \"8c3a2c44d7211100158ba6859e6103fe\"\n      },\n      \"name\": \"Service Request Satisfaction Survey\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/8c3a2c44d7211100158ba6859e6103fe\",\n        \"value\": \"8c3a2c44d7211100158ba6859e6103fe\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"asmt_metric_type\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"009d5cfd9f610200736af84bc42e7023\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Electronic Messaging\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d18f6fc0a8000b00ad14d4929d1b45\",\n        \"value\": \"27d18f6fc0a8000b00ad14d4929d1b45\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"009d5cfd9f610200736af84bc42e7024\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"PeopleSoft Financials\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fccf1580a0a0bb400877808a2961ac6\",\n        \"value\": \"2fccf1580a0a0bb400877808a2961ac6\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2025-10-07 18:02:20\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"00cd3008c3a83e1024163942b40131c0\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2025-10-07 18:02:20\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c\",\n        \"value\": \"ee910ea7bf2201007a6d257b3f07398c\"\n      },\n      \"name\": \"test_group_a_20251007_140209_2035\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/00cd3008c3a83e1024163942b40131be\",\n        \"value\": \"00cd3008c3a83e1024163942b40131be\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"sys_user_group\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"049d5cfd9f610200736af84bc42e7023\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Windows Mobile\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/27d415a8c0a8000b00ffe2ab0f82e8d2\",\n        \"value\": \"27d415a8c0a8000b00ffe2ab0f82e8d2\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"049d5cfd9f610200736af84bc42e7024\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"PeopleSoft Reporting\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/2fd114e10a0a0bb400f07732a4131e72\",\n        \"value\": \"2fd114e10a0a0bb400f07732a4131e72\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2025-10-06 04:32:48\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"04eab4e7c354ba1024163942b401315c\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2025-10-06 04:32:48\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/ee910ea7bf2201007a6d257b3f07398c\",\n        \"value\": \"ee910ea7bf2201007a6d257b3f07398c\"\n      },\n      \"name\": \"test_group_20251006_003248_5670\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/4ceab4e7c354ba1024163942b401315a\",\n        \"value\": \"4ceab4e7c354ba1024163942b401315a\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"sys_user_group\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"089d5cfd9f610200736af84bc42e7022\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"SAP Financial Accounting\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/26e426be0a0a0bb40046890d90059eaa\",\n        \"value\": \"26e426be0a0a0bb40046890d90059eaa\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"089d5cfd9f610200736af84bc42e7023\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Retail Client Registration\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/28c2131fc0a8000b0020787c5d6816f0\",\n        \"value\": \"28c2131fc0a8000b0020787c5d6816f0\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    },\n    {\n      \"dm_display\": \"true\",\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2015-07-29 19:41:57\",\n      \"live_feed\": \"false\",\n      \"sys_domain_path\": \"/\",\n      \"sys_tags\": \"\",\n      \"sys_id\": \"089d5cfd9f610200736af84bc42e7024\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2015-07-29 19:41:57\",\n      \"sys_domain\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\",\n        \"value\": \"global\"\n      },\n      \"metric_type\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/asmt_metric_type/4c9d5cfd9f610200736af84bc42e7020\",\n        \"value\": \"4c9d5cfd9f610200736af84bc42e7020\"\n      },\n      \"name\": \"Securities Lending\",\n      \"live_feed_group\": \"\",\n      \"source_id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/cmdb_ci_service/5f5e007ec0a8010e002551dd40f0ad97\",\n        \"value\": \"5f5e007ec0a8010e002551dd40f0ad97\"\n      },\n      \"metric_type_group\": \"\",\n      \"source_table\": \"cmdb_ci_service\",\n      \"sys_created_by\": \"admin\"\n    }\n  ]\n}\n```\n\n### Tool Call 23: search_any_table\n**Input:** \"{'filters': 'id=ba1df0c4c3a83e1024163942b4013127', 'table': 'wf_context'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 24: search_any_table\n**Input:** \"{'table': 'change_request', 'fields': ['sys_id', 'number', 'state', 'short_description', 'description', 'work_notes', 'risk', 'impact', 'category', 'requested_by', 'assignment_group', 'start_date', 'end_date', 'approval', 'approval_history'], 'filters': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"end_date\": \"\",\n      \"short_description\": \"Test Change Request 20251007_135930\",\n      \"assignment_group\": \"\",\n      \"approval\": \"not requested\",\n      \"impact\": \"3\",\n      \"description\": \"This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.\",\n      \"approval_history\": \"\",\n      \"sys_id\": \"ba1df0c4c3a83e1024163942b4013127\",\n      \"number\": \"CHG0030091\",\n      \"requested_by\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n        \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n      },\n      \"risk\": \"4\",\n      \"state\": \"-5\",\n      \"work_notes\": \"\",\n      \"category\": \"Other\",\n      \"start_date\": \"\"\n    }\n  ]\n}\n```\n\n"
+}

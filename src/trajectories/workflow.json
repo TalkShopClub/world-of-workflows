@@ -1,0 +1,446 @@
+[
+  {
+    "action": {
+      "tool_name": "create_workflow",
+      "parameters": {
+        "name": "GPU Order Workflow",
+        "description": "Workflow to order GPUs"
+      }
+    },
+    "tool_response": "{\n  \"workflow\": {\n    \"preview\": \"\",\n    \"template\": \"false\",\n    \"access\": \"public\",\n    \"sys_mod_count\": \"0\",\n    \"description\": \"Workflow to order GPUs\",\n    \"sys_overrides\": \"\",\n    \"sys_updated_on\": \"2025-09-30 04:42:06\",\n    \"sys_domain_path\": \"/\",\n    \"sys_tags\": \"\",\n    \"sys_class_name\": \"wf_workflow\",\n    \"sys_id\": \"f17306e9c3d832107bd371edd4013119\",\n    \"sys_package\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_package/global\",\n      \"value\": \"global\"\n    },\n    \"sys_update_name\": \"wf_workflow_f17306e9c3d832107bd371edd4013119\",\n    \"sys_updated_by\": \"admin\",\n    \"sys_created_on\": \"2025-09-30 04:42:06\",\n    \"sys_domain\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_user_group/global\",\n      \"value\": \"global\"\n    },\n    \"name\": \"GPU Order Workflow\",\n    \"sys_name\": \"GPU Order Workflow\",\n    \"sys_scope\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"vars\": \"\",\n    \"sys_created_by\": \"admin\",\n    \"table\": \"\",\n    \"sys_policy\": \"\"\n  },\n  \"message\": \"Workflow created successfully\"\n}",
+    "audits": [
+      {
+        "fieldname": "sys_class_name",
+        "reason": "",
+        "sys_id": "f97306e9c3d832107bd371edd4013119",
+        "newvalue": "wf_workflow",
+        "sys_created_on": "2025-09-30 04:42:06",
+        "documentkey": "f17306e9c3d832107bd371edd4013119",
+        "internal_checkpoint": "19998ed83f00000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_workflow",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "description",
+        "reason": "",
+        "sys_id": "b97306e9c3d832107bd371edd4013119",
+        "newvalue": "Workflow to order GPUs",
+        "sys_created_on": "2025-09-30 04:42:06",
+        "documentkey": "f17306e9c3d832107bd371edd4013119",
+        "internal_checkpoint": "19998ed83f00000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_workflow",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "name",
+        "reason": "",
+        "sys_id": "7d7306e9c3d832107bd371edd4013119",
+        "newvalue": "GPU Order Workflow",
+        "sys_created_on": "2025-09-30 04:42:06",
+        "documentkey": "f17306e9c3d832107bd371edd4013119",
+        "internal_checkpoint": "19998ed83f00000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_workflow",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "access",
+        "reason": "",
+        "sys_id": "797306e9c3d832107bd371edd4013119",
+        "newvalue": "public",
+        "sys_created_on": "2025-09-30 04:42:06",
+        "documentkey": "f17306e9c3d832107bd371edd4013119",
+        "internal_checkpoint": "19998ed83f00000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_workflow",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "sys_domain",
+        "reason": "",
+        "sys_id": "3d7306e9c3d832107bd371edd4013119",
+        "newvalue": "global",
+        "sys_created_on": "2025-09-30 04:42:06",
+        "documentkey": "f17306e9c3d832107bd371edd4013119",
+        "internal_checkpoint": "19998ed83f00000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_workflow",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "template",
+        "reason": "",
+        "sys_id": "397306e9c3d832107bd371edd4013119",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 04:42:06",
+        "documentkey": "f17306e9c3d832107bd371edd4013119",
+        "internal_checkpoint": "19998ed83f00000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_workflow",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"sys_class_name\",\n      \"newvalue\": \"wf_workflow\",\n      \"tablename\": \"wf_workflow\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"description\",\n      \"newvalue\": \"Workflow to order GPUs\",\n      \"tablename\": \"wf_workflow\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"name\",\n      \"newvalue\": \"GPU Order Workflow\",\n      \"tablename\": \"wf_workflow\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"access\",\n      \"newvalue\": \"public\",\n      \"tablename\": \"wf_workflow\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"sys_domain\",\n      \"newvalue\": \"global\",\n      \"tablename\": \"wf_workflow\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"template\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"wf_workflow\",\n      \"oldvalue\": \"\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 6,\n    \"num_modified_entries\": 0,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 6,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"wf_workflow\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "update_workflow",
+      "parameters": {
+        "workflow_id": "f17306e9c3d832107bd371edd4013119",
+        "description": "Workflow to order GPUs, temporarily disabled",
+        "active": false
+      }
+    },
+    "tool_response": "{\n  \"workflow\": {\n    \"preview\": \"\",\n    \"template\": \"false\",\n    \"access\": \"public\",\n    \"sys_mod_count\": \"1\",\n    \"description\": \"Workflow to order GPUs, temporarily disabled\",\n    \"sys_overrides\": \"\",\n    \"sys_updated_on\": \"2025-09-30 04:44:04\",\n    \"sys_domain_path\": \"/\",\n    \"sys_tags\": \"\",\n    \"sys_class_name\": \"wf_workflow\",\n    \"sys_id\": \"f17306e9c3d832107bd371edd4013119\",\n    \"sys_package\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_package/global\",\n      \"value\": \"global\"\n    },\n    \"sys_update_name\": \"wf_workflow_f17306e9c3d832107bd371edd4013119\",\n    \"sys_updated_by\": \"admin\",\n    \"sys_created_on\": \"2025-09-30 04:42:06\",\n    \"sys_domain\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_user_group/global\",\n      \"value\": \"global\"\n    },\n    \"name\": \"GPU Order Workflow\",\n    \"sys_name\": \"GPU Order Workflow\",\n    \"sys_scope\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"vars\": \"\",\n    \"sys_created_by\": \"admin\",\n    \"table\": \"\",\n    \"sys_policy\": \"\"\n  },\n  \"message\": \"Workflow updated successfully\"\n}",
+    "audits": [
+      {
+        "fieldname": "description",
+        "reason": "",
+        "sys_id": "66e30e2dc3d832107bd371edd4013164",
+        "newvalue": "Workflow to order GPUs, temporarily disabled",
+        "sys_created_on": "2025-09-30 04:44:04",
+        "documentkey": "f17306e9c3d832107bd371edd4013119",
+        "internal_checkpoint": "19998ef51320000001",
+        "record_checkpoint": "1",
+        "tablename": "wf_workflow",
+        "user": "admin",
+        "oldvalue": "Workflow to order GPUs",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"description\",\n      \"newvalue\": \"Workflow to order GPUs, temporarily disabled\",\n      \"tablename\": \"wf_workflow\",\n      \"oldvalue\": \"Workflow to order GPUs\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 1,\n    \"num_modified_entries\": 1,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 0,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"wf_workflow\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "add_workflow_activity",
+      "parameters": {
+        "workflow_version_id": "fff3f5a2eb113200c2b9666cd206fecf",
+        "name": "Change Review Process",
+        "activity_type": "approval"
+      }
+    },
+    "tool_response": "{\n  \"activity\": {\n    \"parent\": \"\",\n    \"pinned\": \"false\",\n    \"notes\": \"\",\n    \"sys_updated_on\": \"2025-09-30 04:50:44\",\n    \"is_parent\": \"false\",\n    \"timeout\": \"1970-01-01 00:00:00\",\n    \"sys_id\": \"40758a6dc3d832107bd371edd4013127\",\n    \"sys_updated_by\": \"admin\",\n    \"sys_created_on\": \"2025-09-30 04:50:44\",\n    \"vars\": \"\",\n    \"activity_definition\": \"\",\n    \"sys_created_by\": \"admin\",\n    \"height\": \"\",\n    \"pinned_version\": \"\",\n    \"sys_mod_count\": \"0\",\n    \"databus_lookup_id\": \"8\",\n    \"sys_tags\": \"\",\n    \"activity_definition_updated\": \"false\",\n    \"workflow_version\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/wf_workflow_version/fff3f5a2eb113200c2b9666cd206fecf\",\n      \"value\": \"fff3f5a2eb113200c2b9666cd206fecf\"\n    },\n    \"input\": \"\",\n    \"out_of_date\": \"false\",\n    \"stage\": \"\",\n    \"name\": \"Change Review Process\",\n    \"width\": \"\",\n    \"x\": \"\",\n    \"y\": \"\",\n    \"new_activity_definition\": \"\"\n  },\n  \"message\": \"Workflow activity added successfully\"\n}",
+    "audits": [
+      {
+        "fieldname": "name",
+        "reason": "",
+        "sys_id": "c8750a21c31c32107bd371edd401313b",
+        "newvalue": "Always",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "8c750a21c31c32107bd371edd4013139",
+        "internal_checkpoint": "19998f5694b0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_condition",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "out_of_date",
+        "reason": "",
+        "sys_id": "c4758a6dc3d832107bd371edd401312a",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "40758a6dc3d832107bd371edd4013127",
+        "internal_checkpoint": "19998f5692e0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_activity",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "skip_during_generate",
+        "reason": "",
+        "sys_id": "c4750a21c31c32107bd371edd401313b",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "8c750a21c31c32107bd371edd4013139",
+        "internal_checkpoint": "19998f5694b0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_condition",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "timeout",
+        "reason": "",
+        "sys_id": "c0758a6dc3d832107bd371edd401312a",
+        "newvalue": "1970-01-01 00:00:00",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "40758a6dc3d832107bd371edd4013127",
+        "internal_checkpoint": "19998f5692e0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_activity",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "order",
+        "reason": "",
+        "sys_id": "8c750a21c31c32107bd371edd401313b",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "8c750a21c31c32107bd371edd4013139",
+        "internal_checkpoint": "19998f5694b0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_condition",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "condition",
+        "reason": "",
+        "sys_id": "88750a21c31c32107bd371edd401313b",
+        "newvalue": "true",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "8c750a21c31c32107bd371edd4013139",
+        "internal_checkpoint": "19998f5694b0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_condition",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "workflow_version",
+        "reason": "",
+        "sys_id": "84758a6dc3d832107bd371edd401312a",
+        "newvalue": "fff3f5a2eb113200c2b9666cd206fecf",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "40758a6dc3d832107bd371edd4013127",
+        "internal_checkpoint": "19998f5692e0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_activity",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "condition_type",
+        "reason": "",
+        "sys_id": "84750a21c31c32107bd371edd401313b",
+        "newvalue": "standard",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "8c750a21c31c32107bd371edd4013139",
+        "internal_checkpoint": "19998f5694b0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_condition",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "is_parent",
+        "reason": "",
+        "sys_id": "80758a6dc3d832107bd371edd401312a",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "40758a6dc3d832107bd371edd4013127",
+        "internal_checkpoint": "19998f5692e0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_activity",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "else_flag",
+        "reason": "",
+        "sys_id": "4c750a21c31c32107bd371edd401313b",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "8c750a21c31c32107bd371edd4013139",
+        "internal_checkpoint": "19998f5694b0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_condition",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "is_positive",
+        "reason": "",
+        "sys_id": "48750a21c31c32107bd371edd401313b",
+        "newvalue": "1",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "8c750a21c31c32107bd371edd4013139",
+        "internal_checkpoint": "19998f5694b0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_condition",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "activity_definition_updated",
+        "reason": "",
+        "sys_id": "44758a6dc3d832107bd371edd401312a",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "40758a6dc3d832107bd371edd4013127",
+        "internal_checkpoint": "19998f5692e0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_activity",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "activity",
+        "reason": "",
+        "sys_id": "44750a21c31c32107bd371edd401313b",
+        "newvalue": "40758a6dc3d832107bd371edd4013127",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "8c750a21c31c32107bd371edd4013139",
+        "internal_checkpoint": "19998f5694b0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_condition",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "pinned",
+        "reason": "",
+        "sys_id": "40758a6dc3d832107bd371edd401312a",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "40758a6dc3d832107bd371edd4013127",
+        "internal_checkpoint": "19998f5692e0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_activity",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "event",
+        "reason": "",
+        "sys_id": "0c750a21c31c32107bd371edd401313b",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "8c750a21c31c32107bd371edd4013139",
+        "internal_checkpoint": "19998f5694b0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_condition",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "name",
+        "reason": "",
+        "sys_id": "08758a6dc3d832107bd371edd401312a",
+        "newvalue": "Change Review Process",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "40758a6dc3d832107bd371edd4013127",
+        "internal_checkpoint": "19998f5692e0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_activity",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "error",
+        "reason": "",
+        "sys_id": "08750a21c31c32107bd371edd401313b",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "8c750a21c31c32107bd371edd4013139",
+        "internal_checkpoint": "19998f5694b0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_condition",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "databus_lookup_id",
+        "reason": "",
+        "sys_id": "04758a6dc3d832107bd371edd401312a",
+        "newvalue": "8",
+        "sys_created_on": "2025-09-30 04:50:44",
+        "documentkey": "40758a6dc3d832107bd371edd4013127",
+        "internal_checkpoint": "19998f5692e0000001",
+        "record_checkpoint": "0",
+        "tablename": "wf_activity",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"name\",\n      \"newvalue\": \"Always\",\n      \"tablename\": \"wf_condition\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"out_of_date\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"wf_activity\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"skip_during_generate\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"wf_condition\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"timeout\",\n      \"newvalue\": \"1970-01-01 00:00:00\",\n      \"tablename\": \"wf_activity\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"order\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"wf_condition\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"condition\",\n      \"newvalue\": \"true\",\n      \"tablename\": \"wf_condition\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"workflow_version\",\n      \"newvalue\": \"fff3f5a2eb113200c2b9666cd206fecf\",\n      \"tablename\": \"wf_activity\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"condition_type\",\n      \"newvalue\": \"standard\",\n      \"tablename\": \"wf_condition\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"is_parent\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"wf_activity\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"else_flag\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"wf_condition\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"is_positive\",\n      \"newvalue\": \"1\",\n      \"tablename\": \"wf_condition\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"activity_definition_updated\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"wf_activity\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"activity\",\n      \"newvalue\": \"40758a6dc3d832107bd371edd4013127\",\n      \"tablename\": \"wf_condition\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"pinned\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"wf_activity\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"event\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"wf_condition\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"name\",\n      \"newvalue\": \"Change Review Process\",\n      \"tablename\": \"wf_activity\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"error\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"wf_condition\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"databus_lookup_id\",\n      \"newvalue\": \"8\",\n      \"tablename\": \"wf_activity\",\n      \"oldvalue\": \"\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 18,\n    \"num_modified_entries\": 0,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 18,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"wf_condition\",\n      \"wf_activity\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "update_workflow_activity",
+      "parameters": {
+        "activity_id": "40758a6dc3d832107bd371edd4013127",
+        "name": "Knowledge Review Workflow"
+      }
+    },
+    "tool_response": "{\n  \"activity\": {\n    \"parent\": \"\",\n    \"pinned\": \"false\",\n    \"notes\": \"\",\n    \"sys_updated_on\": \"2025-09-30 04:52:07\",\n    \"is_parent\": \"false\",\n    \"timeout\": \"1970-01-01 00:00:00\",\n    \"sys_id\": \"40758a6dc3d832107bd371edd4013127\",\n    \"sys_updated_by\": \"admin\",\n    \"sys_created_on\": \"2025-09-30 04:50:44\",\n    \"vars\": \"\",\n    \"activity_definition\": \"\",\n    \"sys_created_by\": \"admin\",\n    \"height\": \"\",\n    \"pinned_version\": \"\",\n    \"sys_mod_count\": \"1\",\n    \"databus_lookup_id\": \"8\",\n    \"sys_tags\": \"\",\n    \"activity_definition_updated\": \"false\",\n    \"workflow_version\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/wf_workflow_version/fff3f5a2eb113200c2b9666cd206fecf\",\n      \"value\": \"fff3f5a2eb113200c2b9666cd206fecf\"\n    },\n    \"input\": \"\",\n    \"out_of_date\": \"false\",\n    \"stage\": \"\",\n    \"name\": \"Knowledge Review Workflow\",\n    \"width\": \"\",\n    \"x\": \"\",\n    \"y\": \"\",\n    \"new_activity_definition\": \"\"\n  },\n  \"message\": \"Activity updated successfully\"\n}",
+    "audits": [
+      {
+        "fieldname": "name",
+        "reason": "",
+        "sys_id": "60c50a21c31c32107bd371edd4013141",
+        "newvalue": "Knowledge Review Workflow",
+        "sys_created_on": "2025-09-30 04:52:07",
+        "documentkey": "40758a6dc3d832107bd371edd4013127",
+        "internal_checkpoint": "19998f6afef0000001",
+        "record_checkpoint": "1",
+        "tablename": "wf_activity",
+        "user": "admin",
+        "oldvalue": "Change Review Process",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"name\",\n      \"newvalue\": \"Knowledge Review Workflow\",\n      \"tablename\": \"wf_activity\",\n      \"oldvalue\": \"Change Review Process\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 1,\n    \"num_modified_entries\": 1,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 0,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"wf_activity\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "delete_workflow_activity",
+      "parameters": {
+        "activity_id": "40758a6dc3d832107bd371edd4013127"
+      }
+    },
+    "tool_response": "{\n  \"message\": \"Activity deleted successfully\",\n  \"activity_id\": \"40758a6dc3d832107bd371edd4013127\"\n}",
+    "audits": [
+      {
+        "fieldname": "DELETED",
+        "reason": "",
+        "sys_id": "84f5c261c31c32107bd371edd40131f5",
+        "newvalue": "DELETED",
+        "sys_created_on": "2025-09-30 04:52:54",
+        "documentkey": "40758a6dc3d832107bd371edd4013127",
+        "internal_checkpoint": "",
+        "record_checkpoint": "-1",
+        "tablename": "var__m_wf_activity_variable_",
+        "user": "admin",
+        "oldvalue": "DELETED",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"DELETED\",\n      \"newvalue\": \"DELETED\",\n      \"tablename\": \"var__m_wf_activity_variable_\",\n      \"oldvalue\": \"DELETED\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 1,\n    \"num_modified_entries\": 1,\n    \"num_deleted_entries\": 1,\n    \"num_created_entries\": 0,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"var__m_wf_activity_variable_\"\n    ]\n  }\n}"
+  }
+]

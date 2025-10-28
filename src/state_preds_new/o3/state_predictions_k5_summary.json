@@ -1,0 +1,273 @@
+{
+  "model_used": "openai/o3",
+  "k": 5,
+  "custom_schema_path": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/schemas/openai/o3",
+  "total_files": 37,
+  "successful": 37,
+  "failed": 0,
+  "skipped": 0,
+  "force_reprocess": false,
+  "verbose": false,
+  "timestamp": "2025-10-20T03:09:11.029754",
+  "results": [
+    {
+      "file": "catalog_management.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "workflow.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "catalogitem.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "kb_article2.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "changeuserinfo.json",
+      "status": "success",
+      "total_actions_predicted": 3,
+      "total_states_generated": 3,
+      "k": 3
+    },
+    {
+      "file": "composite1.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "incident.json",
+      "status": "success",
+      "total_actions_predicted": 4,
+      "total_states_generated": 4,
+      "k": 4
+    },
+    {
+      "file": "script_development.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "movecatalogitem.json",
+      "status": "success",
+      "total_actions_predicted": 4,
+      "total_states_generated": 4,
+      "k": 4
+    },
+    {
+      "file": "catalog_variable.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "user_management.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "removeuserfromgroup.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "createhardwareasset.json",
+      "status": "success",
+      "total_actions_predicted": 4,
+      "total_states_generated": 4,
+      "k": 4
+    },
+    {
+      "file": "user_management2.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "problem_management.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "createrequest.json",
+      "status": "success",
+      "total_actions_predicted": 3,
+      "total_states_generated": 3,
+      "k": 3
+    },
+    {
+      "file": "rejectchangerequest.json",
+      "status": "success",
+      "total_actions_predicted": 3,
+      "total_states_generated": 3,
+      "k": 3
+    },
+    {
+      "file": "incident1.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "usergroupasset.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "createhierarchy.json",
+      "status": "success",
+      "total_actions_predicted": 4,
+      "total_states_generated": 4,
+      "k": 4
+    },
+    {
+      "file": "composite4.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "assignuserrole.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "script_development2.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "changeset.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "incident2.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "workflow2.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "catalog_development2.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "composite5.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "knowledgebasearticle.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "transferasset.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "approvechangerequest.json",
+      "status": "success",
+      "total_actions_predicted": 4,
+      "total_states_generated": 4,
+      "k": 4
+    },
+    {
+      "file": "composite2.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "kb_article.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "deactivateuser.json",
+      "status": "success",
+      "total_actions_predicted": 2,
+      "total_states_generated": 2,
+      "k": 2
+    },
+    {
+      "file": "promoteuser.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "publishknowledgebasearticle.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    },
+    {
+      "file": "composite3.json",
+      "status": "success",
+      "total_actions_predicted": 5,
+      "total_states_generated": 5,
+      "k": 5
+    }
+  ]
+}

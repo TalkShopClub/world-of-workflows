@@ -1,0 +1,437 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-20T03:09:11.027779",
+    "model": "openai/o3",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/composite3.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Network problem",
+        "description": "Software license renewal required",
+        "caller_id": "john.doe",
+        "category": "Hardware",
+        "subcategory": "Server",
+        "priority": "3",
+        "impact": "2",
+        "urgency": "2"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "485025bdc310b2107bd371edd40131c1",
+        "short_description": "License renewal",
+        "description": "Network connectivity issues in building A",
+        "category": "Hardware",
+        "subcategory": "Application"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "485025bdc310b2107bd371edd40131c1",
+        "short_description": "Database error",
+        "description": "Network connectivity issues in building A",
+        "state": "In Progress",
+        "category": "Database",
+        "subcategory": "Laptop",
+        "priority": "Medium",
+        "impact": "Sample_impact_649",
+        "urgency": "Sample_urgency_226"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "May.March.092",
+        "first_name": "May",
+        "last_name": "March",
+        "email": "may.march@example.com",
+        "title": "Software Engineer",
+        "department": "IT",
+        "location": "New York"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "485025bdc310b2107bd371edd40131c1",
+        "assigned_to": "2e81adf1c350b2107bd371edd401318a"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 14:00:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 13:59:50"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 13:59:50",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 13:59:45"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Network problem",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Software license renewal required",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "Hardware",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "subcategory",
+          "newvalue": "Server",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-10-20 14:00:00",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0030001",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "New",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 20,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 18,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident",
+          "metric_instance"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-26 10:15:30",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-26 10:12:25"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-26 10:12:25",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-26 10:10:20"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "License renewal",
+          "tablename": "incident",
+          "oldvalue": "Previous short description"
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Network connectivity issues in building A",
+          "tablename": "incident",
+          "oldvalue": "Previous description"
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "Hardware",
+          "tablename": "incident",
+          "oldvalue": "Software"
+        },
+        {
+          "fieldname": "subcategory",
+          "newvalue": "Application",
+          "tablename": "incident",
+          "oldvalue": "Network"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 6,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 10:14:03",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 10:14:00"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 10:14:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 10:13:58"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Database error",
+          "tablename": "incident",
+          "oldvalue": "Server database error"
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Network connectivity issues in building A",
+          "tablename": "incident",
+          "oldvalue": "Intermittent connectivity issue"
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "In Progress",
+          "tablename": "incident",
+          "oldvalue": "New"
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "Database",
+          "tablename": "incident",
+          "oldvalue": "Hardware"
+        },
+        {
+          "fieldname": "subcategory",
+          "newvalue": "Laptop",
+          "tablename": "incident",
+          "oldvalue": "Desktop"
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "Medium",
+          "tablename": "incident",
+          "oldvalue": "Low"
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "Sample_impact_649",
+          "tablename": "incident",
+          "oldvalue": "Sample_impact_prev"
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "Sample_urgency_226",
+          "tablename": "incident",
+          "oldvalue": "Sample_urgency_prev"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 10,
+        "num_modified_entries": 10,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:59:59"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "May.March.092",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "May",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "March",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "may.march@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Software Engineer",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "department",
+          "newvalue": "IT",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "New York",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 8,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:26",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:23"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "2e81adf1c350b2107bd371edd401318a",
+          "tablename": "incident",
+          "oldvalue": "485025bdc310b2107bd371edd4013100"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident"
+        ]
+      }
+    }
+  ]
+}

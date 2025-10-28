@@ -1,0 +1,4 @@
+{
+  "policy_name": "Ticket being resolved must have someone assigned to the ticket.",
+  "invalid_action_idx": 7
+}

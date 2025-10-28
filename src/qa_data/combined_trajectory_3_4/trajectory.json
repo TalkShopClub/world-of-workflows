@@ -1,0 +1,5837 @@
+[
+  {
+    "action": {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Cannot sign into the company portal app",
+        "urgency": "1",
+        "impact": "1",
+        "assigned_to": "5137153cc611227c000bbd1bd8cd2005"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident created successfully",
+      "incident_id": "18a680e95398f210f8bb51a0a0490e45",
+      "incident_number": "INC0010441"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:36:42",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Fred Luddy",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "In Progress",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "18a680e95398f210f8bb51a0a0490e45",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "18a680e95398f210f8bb51a0a0490e45",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "18a680e95398f210f8bb51a0a0490e45",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "18a680e95398f210f8bb51a0a0490e45",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:36:42",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:36:42",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "18a680e95398f210f8bb51a0a0490e45",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "18a680e95398f210f8bb51a0a0490e45",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0010441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:36:42",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-29 19:36:42",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-29 20:36:42",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Cannot sign into the company portal app",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-29 19:36:42",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "35420982d732220035ae23c7ce610393",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-29 21:36:42",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "a8a680e95398f210f8bb51a0a0490e49",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-29 20:36:42",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:36:42",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0010441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 87,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 87,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "task_sla",
+          "incident",
+          "sla_breakdown_by_assignment",
+          "metric_instance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Performance problems with wifi",
+        "urgency": "1",
+        "impact": "1",
+        "assigned_to": "5137153cc611227c000bbd1bd8cd2005"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident created successfully",
+      "incident_id": "9f278c2153d8f210f8bb51a0a0490ead",
+      "incident_number": "INC0010442"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Fred Luddy",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "In Progress",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "9f278c2153d8f210f8bb51a0a0490ead",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "9f278c2153d8f210f8bb51a0a0490ead",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "9f278c2153d8f210f8bb51a0a0490ead",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "9f278c2153d8f210f8bb51a0a0490ead",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:39:04",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:39:04",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:39:04",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-29 20:39:04",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-29 21:39:04",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "9f278c2153d8f210f8bb51a0a0490ead",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:39:04",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "9f278c2153d8f210f8bb51a0a0490ead",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0010442",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-29 19:39:04",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0010442",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-29 20:39:04",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:39:04",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-29 19:39:04",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "35420982d732220035ae23c7ce610393",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Performance problems with wifi",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "1b278c2153d8f210f8bb51a0a0490eb1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 87,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 87,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sla_breakdown_by_assignment",
+          "task_sla",
+          "metric_instance",
+          "incident"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Unable to access team file share",
+        "urgency": "1",
+        "impact": "1",
+        "assigned_to": "5137153cc611227c000bbd1bd8cd2005"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident created successfully",
+      "incident_id": "fe08886153d8f210f8bb51a0a0490ed2",
+      "incident_number": "INC0010443"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:42:52",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Fred Luddy",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "In Progress",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "fe08886153d8f210f8bb51a0a0490ed2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "fe08886153d8f210f8bb51a0a0490ed2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "fe08886153d8f210f8bb51a0a0490ed2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "fe08886153d8f210f8bb51a0a0490ed2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:42:52",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:42:52",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "fe08886153d8f210f8bb51a0a0490ed2",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0010443",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "7a08886153d8f210f8bb51a0a0490ed6",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "fe08886153d8f210f8bb51a0a0490ed2",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-29 19:42:52",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0010443",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-29 20:42:52",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:42:52",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-29 19:42:52",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "35420982d732220035ae23c7ce610393",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Unable to access team file share",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:42:52",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-29 20:42:52",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-29 21:42:52",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 87,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 87,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "metric_instance",
+          "sla_breakdown_by_assignment",
+          "incident",
+          "task_sla"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Unable to access the shared folder.",
+        "urgency": "1",
+        "impact": "2",
+        "assigned_to": "681ccaf9c0a8016400b98a06818d57c7"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident created successfully",
+      "incident_id": "21984ca153d8f210f8bb51a0a0490e47",
+      "incident_number": "INC0010444"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Joe Employee",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "21984ca153d8f210f8bb51a0a0490e47",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "In Progress",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "21984ca153d8f210f8bb51a0a0490e47",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "21984ca153d8f210f8bb51a0a0490e47",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:45:14",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:45:14",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "21984ca153d8f210f8bb51a0a0490e47",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:45:14",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:45:14",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 07:59:59",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 08:00:00"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0010444",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "schedule",
+          "newvalue": "08fcd0830a0a0b2600079f56b1adb9ae",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 08:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0010444",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-29 19:45:14",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-30 18:45:14",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-30 18:45:14",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-29 19:45:14",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "e5984ca153d8f210f8bb51a0a0490e4a",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "af420982d732220035ae23c7ce6103f3",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:45:14",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Unable to access the shared folder.",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "21984ca153d8f210f8bb51a0a0490e47",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "21984ca153d8f210f8bb51a0a0490e47",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 23:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 88,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 87,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "incident",
+          "task_sla",
+          "metric_instance",
+          "sla_breakdown_by_assignment"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "SAP Materials Management is slow or there is an outage",
+        "urgency": "3",
+        "impact": "1",
+        "assigned_to": "9ee1b13dc6112271007f9d0efdb69cd0"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident created successfully",
+      "incident_id": "7a3908e153d8f210f8bb51a0a0490ea5",
+      "incident_number": "INC0010445"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:48:03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Don Goodliffe",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7a3908e153d8f210f8bb51a0a0490ea5",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "In Progress",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7a3908e153d8f210f8bb51a0a0490ea5",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7a3908e153d8f210f8bb51a0a0490ea5",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:48:03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:48:03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7a3908e153d8f210f8bb51a0a0490ea5",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-29 19:48:03",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-10-02 16:48:03",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-02 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0010445",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 23:59:59",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 00:00:00"
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "d1524982d732220035ae23c7ce61035d",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "SAP Materials Management is slow or there is an outage",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-10-02 16:48:03",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-29 19:48:03",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-03 21:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7a3908e153d8f210f8bb51a0a0490ea5",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0010445",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "schedule",
+          "newvalue": "08fcd0830a0a0b2600079f56b1adb9ae",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 73,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 72,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "metric_instance",
+          "task_sla",
+          "incident"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "21984ca153d8f210f8bb51a0a0490e47",
+        "impact": "1",
+        "urgency": "1"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident updated successfully",
+      "incident_id": "21984ca153d8f210f8bb51a0a0490e47",
+      "incident_number": "INC0010444"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:51:31",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "2025-09-29 19:45:14"
+        },
+        {
+          "fieldname": "stage_status",
+          "newvalue": "[]",
+          "tablename": "stage_state",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end_time",
+          "newvalue": "2025-09-29 19:51:31",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:06:17",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-29 19:51:31",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "cancelled",
+          "tablename": "task_sla",
+          "oldvalue": "in_progress"
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "1.31",
+          "tablename": "task_sla",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 07:53:43",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 07:59:59"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:06:17",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:06:17",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0.46",
+          "tablename": "task_sla",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:06:17",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "column_renderer",
+          "newvalue": "007c2f021b020100adca1e094f0713b4",
+          "tablename": "stage_state",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "1.31",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 22:53:43",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 23:00:00"
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:51:31",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-29 20:45:14",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "21984ca153d8f210f8bb51a0a0490e47",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 00:53:43",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "ad0a446553d8f210f8bb51a0a0490ed7",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-29 19:51:31",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:06:17",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "21984ca153d8f210f8bb51a0a0490e47",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "10.47",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "21984ca153d8f210f8bb51a0a0490e47",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:51:31",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:06:17",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:51:31",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:06:17",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:06:17",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-29 19:45:14",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-29 20:45:14",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 00:53:43",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "ad0a446553d8f210f8bb51a0a0490ed7",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "10.47",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "35420982d732220035ae23c7ce610393",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-29 21:51:31",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:45:14",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "10.47",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 66,
+        "num_modified_entries": 15,
+        "num_deleted_entries": 0,
+        "num_created_entries": 51,
+        "operation_type": [
+          "get",
+          "put"
+        ],
+        "tables_modified": [
+          "sla_breakdown_by_assignment",
+          "stage_state",
+          "task_sla",
+          "incident"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Having problems with Sales Tools performance",
+        "urgency": "1",
+        "impact": "1",
+        "assigned_to": "681ccaf9c0a8016400b98a06818d57c7"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident created successfully",
+      "incident_id": "7a7a846553d8f210f8bb51a0a0490e1d",
+      "incident_number": "INC0010446"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:01",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Joe Employee",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:53:31",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "2025-09-29 19:53:30"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:01",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0.03",
+          "tablename": "task_sla",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "In Progress",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7a7a846553d8f210f8bb51a0a0490e1d",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:01",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 00:59:59",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 01:00:00"
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7a7a846553d8f210f8bb51a0a0490e1d",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0.03",
+          "tablename": "task_sla",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7a7a846553d8f210f8bb51a0a0490e1d",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0.03",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:53:30",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:01",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 00:59:59",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 01:00:00"
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:53:30",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:53:30",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Having problems with Sales Tools performance",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-29 20:53:30",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-29 21:53:30",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "327acc6553d8f210f8bb51a0a0490e37",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7a7a846553d8f210f8bb51a0a0490e1d",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7a7a846553d8f210f8bb51a0a0490e1d",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7a7a846553d8f210f8bb51a0a0490e1d",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-29 20:53:30",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:53:30",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0010446",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-29 19:53:30",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:53:30",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-29 19:53:30",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0010446",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "35420982d732220035ae23c7ce610393",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 97,
+        "num_modified_entries": 10,
+        "num_deleted_entries": 0,
+        "num_created_entries": 87,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "incident",
+          "task_sla",
+          "metric_instance",
+          "sla_breakdown_by_assignment"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "7a3908e153d8f210f8bb51a0a0490ea5",
+        "assigned_to": "5137153cc611227c000bbd1bd8cd2005"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident updated successfully",
+      "incident_id": "7a3908e153d8f210f8bb51a0a0490ea5",
+      "incident_number": "INC0010445"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "id",
+          "newvalue": "7a3908e153d8f210f8bb51a0a0490ea5",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:06:32",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:54:35",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "incident",
+          "oldvalue": "9ee1b13dc6112271007f9d0efdb69cd0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Fred Luddy",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-29 19:54:35",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 12,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 10,
+        "operation_type": [
+          "get",
+          "put"
+        ],
+        "tables_modified": [
+          "metric_instance",
+          "incident"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "7a3908e153d8f210f8bb51a0a0490ea5",
+        "impact": "1",
+        "urgency": "1"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident updated successfully",
+      "incident_id": "7a3908e153d8f210f8bb51a0a0490ea5",
+      "incident_number": "INC0010445"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "column_renderer",
+          "newvalue": "007c2f021b020100adca1e094f0713b4",
+          "tablename": "stage_state",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0.19",
+          "tablename": "task_sla",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:08:01",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "stage_status",
+          "newvalue": "[]",
+          "tablename": "stage_state",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-03 20:51:59",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-03 21:00:00"
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:08:01",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "end_time",
+          "newvalue": "2025-09-29 19:56:04",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 23:51:59",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 23:59:59"
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "cancelled",
+          "tablename": "task_sla",
+          "oldvalue": "in_progress"
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0.56",
+          "tablename": "task_sla",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7a3908e153d8f210f8bb51a0a0490ea5",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:56:04",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:08:01",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-29 19:56:04",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:08:01",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7a3908e153d8f210f8bb51a0a0490ea5",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "13.36",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 00:51:59",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:56:04",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:08:01",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:08:01",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-29 19:48:03",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-29 20:48:03",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-29 21:56:04",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "941b04a553d8f210f8bb51a0a0490e7f",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "13.36",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "35420982d732220035ae23c7ce610393",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:48:03",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "13.36",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": "3"
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:56:04",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-29 20:48:03",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "941b04a553d8f210f8bb51a0a0490e7f",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7a3908e153d8f210f8bb51a0a0490ea5",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 00:51:59",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": "3"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 60,
+        "num_modified_entries": 10,
+        "num_deleted_entries": 0,
+        "num_created_entries": 50,
+        "operation_type": [
+          "get",
+          "put"
+        ],
+        "tables_modified": [
+          "stage_state",
+          "task_sla",
+          "sla_breakdown_by_assignment",
+          "incident"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "18a680e95398f210f8bb51a0a0490e45",
+        "impact": "1",
+        "urgency": "2"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident updated successfully",
+      "incident_id": "18a680e95398f210f8bb51a0a0490e45",
+      "incident_number": "INC0010441"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:20:48",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "18a680e95398f210f8bb51a0a0490e45",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:57:30",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "2025-09-29 19:55:01"
+        },
+        {
+          "fieldname": "end_time",
+          "newvalue": "2025-09-29 19:57:30",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "18a680e95398f210f8bb51a0a0490e45",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:57:30",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 22:39:12",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:20:48",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:18:19"
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "4.34",
+          "tablename": "task_sla",
+          "oldvalue": "4.33"
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-29 19:57:30",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "schedule",
+          "newvalue": "08fcd0830a0a0b2600079f56b1adb9ae",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "cancelled",
+          "tablename": "task_sla",
+          "oldvalue": "in_progress"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "4.33",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-29 19:57:30",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "34.67",
+          "tablename": "task_sla",
+          "oldvalue": "30.53"
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:20:48",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "column_renderer",
+          "newvalue": "007c2f021b020100adca1e094f0713b4",
+          "tablename": "stage_state",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 00:39:12",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:41:41"
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 07:39:11",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 07:39:12"
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-29 19:57:30",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:20:48",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:20:48",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-29 19:36:42",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:20:48",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:18:19"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:20:48",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:18:19"
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:36:42",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-30 18:36:42",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:20:48",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:18:19"
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "34.67",
+          "tablename": "task_sla",
+          "oldvalue": "30.53"
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 07:39:12",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage_status",
+          "newvalue": "[]",
+          "tablename": "stage_state",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "516b0ca553d8f210f8bb51a0a0490e9a",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "4.33",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "516b0ca553d8f210f8bb51a0a0490e9a",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "18a680e95398f210f8bb51a0a0490e45",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "af420982d732220035ae23c7ce6103f3",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "1.51",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "34.67",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "30.53"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 00:39:12",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:41:41"
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 19:57:30",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-30 18:36:42",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 68,
+        "num_modified_entries": 17,
+        "num_deleted_entries": 0,
+        "num_created_entries": 51,
+        "operation_type": [
+          "get",
+          "put"
+        ],
+        "tables_modified": [
+          "sla_breakdown_by_assignment",
+          "task_sla",
+          "stage_state",
+          "incident"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Data Analytics Software"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog category: Data Analytics Software",
+      "data": {
+        "sys_id": "193f9821535cf210f8bb51a0a0490ef6",
+        "title": "Data Analytics Software",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Data Analytics Software",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Business Intelligence Tools"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog category: Business Intelligence Tools",
+      "data": {
+        "sys_id": "5e6fd861535cf210f8bb51a0a0490ee6",
+        "title": "Business Intelligence Tools",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "title",
+          "newvalue": "Business Intelligence Tools",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Remote Work Accessories"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog category: Remote Work Accessories",
+      "data": {
+        "sys_id": "0a8fd861535cf210f8bb51a0a0490ef0",
+        "title": "Remote Work Accessories",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Remote Work Accessories",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Statistical Analysis Suite",
+        "category": "193f9821535cf210f8bb51a0a0490ef6"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog item: Statistical Analysis Suite",
+      "data": {
+        "sys_id": "19bf9c61535cf210f8bb51a0a0490e67",
+        "name": "Statistical Analysis Suite",
+        "short_description": "",
+        "category": {
+          "link": "https://dev281136.service-now.com/api/now/table/sc_category/193f9821535cf210f8bb51a0a0490ef6",
+          "value": "193f9821535cf210f8bb51a0a0490ef6"
+        },
+        "price": "0",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "visible_bundle",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ignore_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "19bf9c61535cf210f8bb51a0a0490e67",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_plan",
+          "newvalue": "523da512c611228900811a37c97c2014",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "calculated",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "193f9821535cf210f8bb51a0a0490ef6",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "availability",
+          "newvalue": "on_desktop",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "19bf9c61535cf210f8bb51a0a0490e67",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_wishlist_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_time",
+          "newvalue": "1970-01-03 00:00:00",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_picture_type",
+          "newvalue": "use_desktop_picture",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_price_property",
+          "newvalue": "non_zero",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "fulfillment_automation_level",
+          "newvalue": "unspecified",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_delivery_time_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order_now",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_attachment_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_proceed_checkout",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_closed",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "billable",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access_type",
+          "newvalue": "restricted",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_search",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "193f9821535cf210f8bb51a0a0490ef6",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "owner",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Statistical Analysis Suite",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "show_variable_help_on_load",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "sc_cat_item",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "price",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_save_as_draft",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mandatory_attachment",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hide_sp",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "preview",
+          "newvalue": "JavaScript: popupOpenStandard(\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=19bf9c61535cf210f8bb51a0a0490e67&sysparm_preview=true\", \"summary\");",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "make_item_non_conversational",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "omit_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_sc_layout",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 52,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 52,
+        "operation_type": [],
+        "tables_modified": [
+          "sc_cat_item_category",
+          "fx_price",
+          "sc_cat_item"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Executive Dashboard Platform",
+        "category": "5e6fd861535cf210f8bb51a0a0490ee6"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Created catalog item: Executive Dashboard Platform",
+      "data": {
+        "sys_id": "3820e4a1535cf210f8bb51a0a0490e86",
+        "name": "Executive Dashboard Platform",
+        "short_description": "",
+        "category": {
+          "link": "https://dev281136.service-now.com/api/now/table/sc_category/5e6fd861535cf210f8bb51a0a0490ee6",
+          "value": "5e6fd861535cf210f8bb51a0a0490ee6"
+        },
+        "price": "0",
+        "active": "true",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "visible_bundle",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ignore_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "3820e4a1535cf210f8bb51a0a0490e86",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_plan",
+          "newvalue": "523da512c611228900811a37c97c2014",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "calculated",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "5e6fd861535cf210f8bb51a0a0490ee6",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "availability",
+          "newvalue": "on_desktop",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "5e6fd861535cf210f8bb51a0a0490ee6",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_wishlist_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "delivery_time",
+          "newvalue": "1970-01-03 00:00:00",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_picture_type",
+          "newvalue": "use_desktop_picture",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_price_property",
+          "newvalue": "non_zero",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "fulfillment_automation_level",
+          "newvalue": "unspecified",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_delivery_time_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order_now",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_attachment_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_proceed_checkout",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_closed",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "3820e4a1535cf210f8bb51a0a0490e86",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "billable",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access_type",
+          "newvalue": "restricted",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_search",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "owner",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Executive Dashboard Platform",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "show_variable_help_on_load",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "sc_cat_item",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "price",
+          "tablename": "fx_price",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_save_as_draft",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mandatory_attachment",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hide_sp",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity_v2",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "preview",
+          "newvalue": "JavaScript: popupOpenStandard(\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=3820e4a1535cf210f8bb51a0a0490e86&sysparm_preview=true\", \"summary\");",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "make_item_non_conversational",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "omit_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_sc_layout",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 52,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 52,
+        "operation_type": [],
+        "tables_modified": [
+          "sc_cat_item",
+          "fx_price",
+          "sc_cat_item_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_catalog_category",
+      "parameters": {
+        "category_id": "0a8fd861535cf210f8bb51a0a0490ef0",
+        "active": false
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Updated catalog category: 0a8fd861535cf210f8bb51a0a0490ef0",
+      "data": {
+        "sys_id": "0a8fd861535cf210f8bb51a0a0490ef0",
+        "title": "Remote Work Accessories",
+        "description": "",
+        "parent": "",
+        "icon": "",
+        "active": "false",
+        "order": "0"
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": "1"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sc_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "move_catalog_items",
+      "parameters": {
+        "item_ids": [
+          "3820e4a1535cf210f8bb51a0a0490e86"
+        ],
+        "target_category_id": "193f9821535cf210f8bb51a0a0490ef6"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Successfully moved 1 catalog items to category 193f9821535cf210f8bb51a0a0490ef6",
+      "data": {
+        "moved_items_count": 1
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "193f9821535cf210f8bb51a0a0490ef6",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "3820e4a1535cf210f8bb51a0a0490e86",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "193f9821535cf210f8bb51a0a0490ef6",
+          "tablename": "sc_cat_item",
+          "oldvalue": "5e6fd861535cf210f8bb51a0a0490ee6"
+        },
+        {
+          "fieldname": "version",
+          "newvalue": "2",
+          "tablename": "sc_cat_item",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 1,
+        "num_created_entries": 3,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sc_cat_item_category",
+          "sc_cat_item"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "move_catalog_items",
+      "parameters": {
+        "item_ids": [
+          "19bf9c61535cf210f8bb51a0a0490e67"
+        ],
+        "target_category_id": "0a8fd861535cf210f8bb51a0a0490ef0"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Successfully moved 1 catalog items to category 0a8fd861535cf210f8bb51a0a0490ef0",
+      "data": {
+        "moved_items_count": 1
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_cat_item_category",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "0a8fd861535cf210f8bb51a0a0490ef0",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "19bf9c61535cf210f8bb51a0a0490e67",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "0a8fd861535cf210f8bb51a0a0490ef0",
+          "tablename": "sc_cat_item",
+          "oldvalue": "193f9821535cf210f8bb51a0a0490ef6"
+        },
+        {
+          "fieldname": "version",
+          "newvalue": "2",
+          "tablename": "sc_cat_item",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 1,
+        "num_created_entries": 3,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sc_cat_item",
+          "sc_cat_item_category"
+        ]
+      }
+    }
+  }
+]

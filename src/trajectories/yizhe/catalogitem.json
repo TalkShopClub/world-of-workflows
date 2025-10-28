@@ -1,0 +1,215 @@
+[
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Test Category 20251007_135838",
+        "description": "Test category created at 20251007_135838",
+        "parent": null,
+        "icon": null,
+        "active": true,
+        "order": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Created catalog category: Test Category 20251007_135838\",\n  \"data\": {\n    \"sys_id\": \"4eecfc84c3a83e1024163942b40131f6\",\n    \"title\": \"Test Category 20251007_135838\",\n    \"description\": \"Test category created at 20251007_135838\",\n    \"parent\": \"\",\n    \"icon\": \"\",\n    \"active\": \"true\",\n    \"order\": \"0\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "6cfcfc84c3a83e1024163942b4013168",
+        "newvalue": "2025-10-07 17:58:48",
+        "sys_created_on": "2025-10-07 17:58:48",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd36f9f0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:58:38",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "caecfc84c3a83e1024163942b4013165",
+        "newvalue": "2025-10-07 17:58:38",
+        "sys_created_on": "2025-10-07 17:58:38",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd3471c0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:58:28",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Test Catalog Item 20251007_135838",
+        "category": "4eecfc84c3a83e1024163942b40131f6",
+        "active": true,
+        "order": null,
+        "description": "Test catalog item created at 20251007_135838",
+        "price": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Created catalog item: Test Catalog Item 20251007_135838\",\n  \"data\": {\n    \"sys_id\": \"6cfcfc84c3a83e1024163942b40131fd\",\n    \"name\": \"Test Catalog Item 20251007_135838\",\n    \"short_description\": \"\",\n    \"category\": {\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sc_category/4eecfc84c3a83e1024163942b40131f6\",\n      \"value\": \"4eecfc84c3a83e1024163942b40131f6\"\n    },\n    \"price\": \"0\",\n    \"active\": \"true\",\n    \"order\": \"0\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "83fc70c4c3a83e1024163942b40131ff",
+        "newvalue": "2025-10-07 17:58:59",
+        "sys_created_on": "2025-10-07 17:58:59",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd399420000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:58:49",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "a0fcfc84c3a83e1024163942b40131fc",
+        "newvalue": "2025-10-07 17:58:49",
+        "sys_created_on": "2025-10-07 17:58:49",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd370910000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:58:48",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item_variable",
+      "parameters": {
+        "catalog_item_id": "6cfcfc84c3a83e1024163942b40131fd",
+        "name": "test_field",
+        "type": "string",
+        "label": "Test Field",
+        "mandatory": false,
+        "help_text": "This is a test field for the catalog item",
+        "default_value": null,
+        "description": null,
+        "order": null,
+        "reference_table": null,
+        "reference_qualifier": null,
+        "max_length": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Catalog item variable created successfully\",\n  \"variable_id\": \"93fc70c4c3a83e1024163942b401315c\",\n  \"details\": {\n    \"dynamic_ref_qual\": \"\",\n    \"rec_lookup_price\": \"\",\n    \"rec_price_if_checked\": \"0\",\n    \"display_title\": \"false\",\n    \"tooltip\": \"\",\n    \"show_help_on_load\": \"false\",\n    \"sys_updated_on\": \"2025-10-07 17:58:59\",\n    \"type\": \"6\",\n    \"published_ref\": \"\",\n    \"lookup_table\": \"\",\n    \"read_only\": \"false\",\n    \"record\": \"\",\n    \"sys_name\": \"Test Field\",\n    \"sys_created_by\": \"admin\",\n    \"order\": \"\",\n    \"map_to_field\": \"false\",\n    \"choice_direction\": \"down\",\n    \"delivery_plan\": \"\",\n    \"delete_roles\": \"\",\n    \"active\": \"true\",\n    \"dynamic_value_field\": \"\",\n    \"sys_update_name\": \"item_option_new_93fc70c4c3a83e1024163942b401315c\",\n    \"field\": \"\",\n    \"unique\": \"false\",\n    \"macroponent\": \"\",\n    \"variable_width\": \"\",\n    \"help_text\": \"This is a test field for the catalog item\",\n    \"global\": \"false\",\n    \"mandatory\": \"false\",\n    \"sys_class_name\": \"item_option_new\",\n    \"dynamic_default_value\": \"\",\n    \"example_text\": \"\",\n    \"conversational_label\": \"\",\n    \"pricing_implications\": \"false\",\n    \"read_roles\": \"\",\n    \"sys_scope\": {\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"visible_bundle\": \"true\",\n    \"create_roles\": \"\",\n    \"dynamic_value_dot_walk_path\": \"\",\n    \"table\": \"\",\n    \"mask_use_encryption\": \"false\",\n    \"include_none\": \"false\",\n    \"default_value\": \"\",\n    \"price_if_checked\": \"0\",\n    \"help_tag\": \"More information\",\n    \"question_text\": \"Test Field\",\n    \"sys_package\": {\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sys_package/global\",\n      \"value\": \"global\"\n    },\n    \"cat_item\": {\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sc_cat_item/6cfcfc84c3a83e1024163942b40131fd\",\n      \"value\": \"6cfcfc84c3a83e1024163942b40131fd\"\n    },\n    \"validate_regex\": \"\",\n    \"rich_text\": \"\",\n    \"record_producer_table\": \"\",\n    \"attributes\": \"\",\n    \"not_available_conversation\": \"false\",\n    \"lookup_unique\": \"false\",\n    \"reference_qual\": \"\",\n    \"default_html_value\": \"\",\n    \"instructions\": \"\",\n    \"lookup_label\": \"\",\n    \"choice_field\": \"\",\n    \"save_script\": \"/** This script is executed before the Record is generated\\r\\n* `current`- GlideRecord produced by Record Producer\\r\\n* Don't use `current.update()` or `current.insert()` as the record is generated by Record Producer\\r\\n* Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss\\r\\n* Avoid `current.setAbortAction()` and generate a separate record\\r\\n* Use `producer.var1` to access variables\\r\\n*/\",\n    \"ui_page\": \"\",\n    \"reference\": \"\",\n    \"sys_updated_by\": \"admin\",\n    \"lookup_value\": \"\",\n    \"sys_created_on\": \"2025-10-07 17:58:59\",\n    \"roles_to_use_also_request_for\": \"\",\n    \"mask_use_confirmation\": \"false\",\n    \"reference_qual_condition\": \"\",\n    \"read_script\": \"\",\n    \"visibility\": \"1\",\n    \"choice_table\": \"\",\n    \"name\": \"test_field\",\n    \"sys_policy\": \"\",\n    \"hidden\": \"false\",\n    \"use_dynamic_default\": \"false\",\n    \"description\": \"\",\n    \"scale_min\": \"0\",\n    \"show_help\": \"false\",\n    \"visible_guide\": \"true\",\n    \"visible_standalone\": \"true\",\n    \"do_not_select_first\": \"false\",\n    \"sys_id\": \"93fc70c4c3a83e1024163942b401315c\",\n    \"variable_set\": \"\",\n    \"write_roles\": \"\",\n    \"variable_name\": \"\",\n    \"list_table\": \"\",\n    \"sp_widget\": \"\",\n    \"macro\": \"\",\n    \"use_reference_qualifier\": \"simple\",\n    \"sys_mod_count\": \"0\",\n    \"visible_summary\": \"true\",\n    \"lookup_price\": \"\",\n    \"post_insert_script\": \"\",\n    \"sys_tags\": \"\",\n    \"layout\": \"normal\",\n    \"enable_also_request_for\": \"false\",\n    \"summary_macro\": \"\",\n    \"scale_max\": \"5\",\n    \"category\": \"\",\n    \"topic_block\": \"\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "350db0c4c3a83e1024163942b4013102",
+        "newvalue": "2025-10-07 17:59:10",
+        "sys_created_on": "2025-10-07 17:59:10",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd3c2b50000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:58:59",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "update_catalog_item",
+      "parameters": {
+        "item_id": "6cfcfc84c3a83e1024163942b40131fd",
+        "name": "Test Catalog Item 20251007_135838 (Updated)",
+        "short_description": null,
+        "description": "Updated test catalog item at 20251007_135838",
+        "category": null,
+        "price": null,
+        "active": null,
+        "order": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Catalog item updated successfully\",\n  \"data\": {\n    \"entitlement_script\": \"\",\n    \"use_sc_layout\": \"true\",\n    \"show_variable_help_on_load\": \"false\",\n    \"no_order_now\": \"false\",\n    \"sc_ic_version\": \"\",\n    \"delivery_time\": \"1970-01-03 00:00:00\",\n    \"sys_updated_on\": \"2025-10-07 17:59:10\",\n    \"type\": \"item\",\n    \"published_ref\": \"\",\n    \"no_search\": \"false\",\n    \"sys_updated_by\": \"admin\",\n    \"price\": \"0\",\n    \"sys_created_on\": \"2025-10-07 17:58:49\",\n    \"recurring_frequency\": \"\",\n    \"sys_name\": \"Test Catalog Item 20251007_135838 (Updated)\",\n    \"model\": \"\",\n    \"state\": \"\",\n    \"no_cart\": \"false\",\n    \"sys_created_by\": \"admin\",\n    \"group\": \"\",\n    \"hide_sp\": \"false\",\n    \"order\": \"0\",\n    \"start_closed\": \"false\",\n    \"image\": \"\",\n    \"no_quantity\": \"false\",\n    \"workflow\": \"\",\n    \"delivery_plan\": {\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sc_cat_item_delivery_plan/523da512c611228900811a37c97c2014\",\n      \"value\": \"523da512c611228900811a37c97c2014\"\n    },\n    \"active\": \"true\",\n    \"checked_out\": \"\",\n    \"custom_cart\": \"\",\n    \"no_cart_v2\": \"false\",\n    \"no_proceed_checkout\": \"false\",\n    \"version\": \"3\",\n    \"ignore_price\": \"true\",\n    \"sys_update_name\": \"sc_cat_item_6cfcfc84c3a83e1024163942b40131fd\",\n    \"meta\": \"\",\n    \"omit_price\": \"false\",\n    \"name\": \"Test Catalog Item 20251007_135838 (Updated)\",\n    \"flow_designer_flow\": \"\",\n    \"mobile_hide_price\": \"false\",\n    \"no_wishlist_v2\": \"false\",\n    \"sys_policy\": \"\",\n    \"preview\": \"JavaScript: popupOpenStandard(\\\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=6cfcfc84c3a83e1024163942b40131fd&sysparm_preview=true\\\", \\\"summary\\\");\",\n    \"template\": \"\",\n    \"short_description\": \"\",\n    \"access_type\": \"restricted\",\n    \"fulfillment_automation_level\": \"unspecified\",\n    \"roles\": \"\",\n    \"icon\": \"\",\n    \"description\": \"Updated test catalog item at 20251007_135838\",\n    \"mobile_picture\": \"\",\n    \"sc_template\": \"\",\n    \"availability\": \"on_desktop\",\n    \"mandatory_attachment\": \"false\",\n    \"request_method\": \"\",\n    \"visible_guide\": \"true\",\n    \"visible_standalone\": \"true\",\n    \"sys_class_name\": \"sc_cat_item\",\n    \"sys_id\": \"6cfcfc84c3a83e1024163942b40131fd\",\n    \"no_order\": \"false\",\n    \"vendor\": \"\",\n    \"no_attachment_v2\": \"false\",\n    \"mobile_picture_type\": \"use_desktop_picture\",\n    \"sys_scope\": {\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"visible_bundle\": \"true\",\n    \"sc_catalogs\": \"\",\n    \"make_item_non_conversational\": \"false\",\n    \"ordered_item_link\": \"\",\n    \"owner\": {\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n      \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n    },\n    \"no_delivery_time_v2\": \"false\",\n    \"cost\": \"0\",\n    \"no_quantity_v2\": \"false\",\n    \"sys_mod_count\": \"3\",\n    \"recurring_price\": \"0\",\n    \"list_price\": \"0\",\n    \"sc_ic_item_staging\": \"\",\n    \"sys_tags\": \"\",\n    \"billable\": \"false\",\n    \"picture\": \"\",\n    \"sys_package\": {\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sys_package/global\",\n      \"value\": \"global\"\n    },\n    \"display_price_property\": \"non_zero\",\n    \"taxonomy_topic\": \"\",\n    \"delivery_plan_script\": \"\",\n    \"location\": \"\",\n    \"category\": {\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sc_category/4eecfc84c3a83e1024163942b40131f6\",\n      \"value\": \"4eecfc84c3a83e1024163942b40131f6\"\n    },\n    \"no_save_as_draft\": \"false\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "941db0c4c3a83e1024163942b4013105",
+        "newvalue": "2025-10-07 17:59:20",
+        "sys_created_on": "2025-10-07 17:59:20",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd3eb5d0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:59:10",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "350db0c4c3a83e1024163942b4013102",
+        "newvalue": "2025-10-07 17:59:10",
+        "sys_created_on": "2025-10-07 17:59:10",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd3c2b50000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:58:59",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "order_catalog_item",
+      "parameters": {
+        "item": "6cfcfc84c3a83e1024163942b40131fd",
+        "quantity": "1",
+        "requested_for": ""
+      }
+    },
+    "tool_response": "{\n  \"error\": \"No catalog item found for item sys_id: 6cfcfc84c3a83e1024163942b40131fd\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "3a1db0c4c3a83e1024163942b4013108",
+        "newvalue": "2025-10-07 17:59:30",
+        "sys_created_on": "2025-10-07 17:59:30",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd413a30000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:59:20",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "941db0c4c3a83e1024163942b4013105",
+        "newvalue": "2025-10-07 17:59:20",
+        "sys_created_on": "2025-10-07 17:59:20",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd3eb5d0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:59:10",
+        "sys_created_by": "guest"
+      }
+    ]
+  }
+]

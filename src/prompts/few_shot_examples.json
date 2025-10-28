@@ -1,0 +1,462 @@
+[
+  {
+    "task_description": "Retrieve list of users",
+    "action": {
+      "tool_name": "list_users",
+      "parameters": {
+        "limit": "1"
+      }
+    },
+    "predicted_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:57:06",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:57:03"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:57:03",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:57:01"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "task_description": "Create a new incident record",
+    "action": {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Test incident for few-shot example",
+        "description": "This is a test incident created for generating training examples"
+      }
+    },
+    "predicted_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-25 20:57:08",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:57:10",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:57:08"
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7ba2ff80c3d832107bd371edd401311f",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "New",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7ba2ff80c3d832107bd371edd401311f",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-25 20:57:08",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7ba2ff80c3d832107bd371edd401311f",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "5",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-25 20:57:08",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0026876",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Test incident for few-shot example",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "This is a test incident created for generating training examples",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0026876",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:57:08",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:57:06"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 50,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 48,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "incident",
+          "metric_instance",
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "task_description": "Update an existing user record",
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "000753bdc3ff6a107bd371edd40131ab",
+        "title": "Senior Software Engineer II"
+      }
+    },
+    "predicted_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:57:15",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:57:13"
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Senior Software Engineer II",
+          "tablename": "sys_user",
+          "oldvalue": "Senior Software Engineer III"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:57:13",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:57:10"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "task_description": "Delete an asset record",
+    "action": {
+      "tool_name": "delete_asset",
+      "parameters": {
+        "asset_id": "4ea23780c3d832107bd371edd40131e5"
+      }
+    },
+    "predicted_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:57:20",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:57:17"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:57:17",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:57:15"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "fm_expense_line",
+          "oldvalue": "DELETED"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "alm_asset",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 4,
+        "num_deleted_entries": 2,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "alm_asset",
+          "sys_user"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,559 @@
+[
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "test_user_20251007_135537_3352",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_135537_3352@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User created successfully. The sys_id of the user is: f93c7084c3a83e1024163942b40131fd\",\n  \"user_id\": \"f93c7084c3a83e1024163942b40131fd\",\n  \"user_name\": \"test_user_20251007_135537_3352\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "504cf084c3a83e1024163942b40131dc",
+        "newvalue": "2025-10-07 17:55:48",
+        "sys_created_on": "2025-10-07 17:55:48",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd0ad600000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:55:37",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "test_group_20251007_135537_1683",
+        "description": "Test group for test_user_20251007_135537_3352",
+        "manager": null,
+        "parent": null,
+        "type": null,
+        "email": null,
+        "members": null,
+        "active": true
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Group created successfully\",\n  \"group_id\": \"c94c3484c3a83e1024163942b401310d\",\n  \"group_name\": \"test_group_20251007_135537_1683\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "174cf084c3a83e1024163942b40131df",
+        "newvalue": "2025-10-07 17:56:00",
+        "sys_created_on": "2025-10-07 17:56:00",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd0dda60000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:55:50",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "active",
+        "reason": "",
+        "sys_id": "c54c3484c3a83e1024163942b401310e",
+        "newvalue": "1",
+        "sys_created_on": "2025-10-07 17:55:50",
+        "documentkey": "c94c3484c3a83e1024163942b401310d",
+        "internal_checkpoint": "199bfd0b5e30000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user_group",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "include_members",
+        "reason": "",
+        "sys_id": "894c3484c3a83e1024163942b401310e",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:55:50",
+        "documentkey": "c94c3484c3a83e1024163942b401310d",
+        "internal_checkpoint": "199bfd0b5e30000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user_group",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "description",
+        "reason": "",
+        "sys_id": "854c3484c3a83e1024163942b401310e",
+        "newvalue": "Test group for test_user_20251007_135537_3352",
+        "sys_created_on": "2025-10-07 17:55:50",
+        "documentkey": "c94c3484c3a83e1024163942b401310d",
+        "internal_checkpoint": "199bfd0b5e30000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user_group",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "exclude_manager",
+        "reason": "",
+        "sys_id": "494c3484c3a83e1024163942b401310e",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:55:50",
+        "documentkey": "c94c3484c3a83e1024163942b401310d",
+        "internal_checkpoint": "199bfd0b5e30000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user_group",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "414cb084c3a83e1024163942b4013102",
+        "newvalue": "2025-10-07 17:55:50",
+        "sys_created_on": "2025-10-07 17:55:50",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd0b5d10000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:55:48",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "name",
+        "reason": "",
+        "sys_id": "094c3484c3a83e1024163942b401310e",
+        "newvalue": "test_group_20251007_135537_1683",
+        "sys_created_on": "2025-10-07 17:55:50",
+        "documentkey": "c94c3484c3a83e1024163942b401310d",
+        "internal_checkpoint": "199bfd0b5e30000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user_group",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "c94c3484c3a83e1024163942b401310d",
+        "members": [
+          "sys_id:f93c7084c3a83e1024163942b40131fd"
+        ]
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"All members added to the group successfully\",\n  \"group_id\": \"c94c3484c3a83e1024163942b401310d\",\n  \"group_name\": null\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "e65cf084c3a83e1024163942b40131e2",
+        "newvalue": "2025-10-07 17:56:12",
+        "sys_created_on": "2025-10-07 17:56:12",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd10df60000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:02",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "group",
+        "reason": "",
+        "sys_id": "4c5c3484c3a83e1024163942b4013114",
+        "newvalue": "c94c3484c3a83e1024163942b401310d",
+        "sys_created_on": "2025-10-07 17:56:02",
+        "documentkey": "0c5c3484c3a83e1024163942b4013113",
+        "internal_checkpoint": "199bfd0e62c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user_grmember",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "user",
+        "reason": "",
+        "sys_id": "0c5c3484c3a83e1024163942b4013114",
+        "newvalue": "f93c7084c3a83e1024163942b40131fd",
+        "sys_created_on": "2025-10-07 17:56:02",
+        "documentkey": "0c5c3484c3a83e1024163942b4013113",
+        "internal_checkpoint": "199bfd0e62c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user_grmember",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "085c3484c3a83e1024163942b4013112",
+        "newvalue": "2025-10-07 17:56:02",
+        "sys_created_on": "2025-10-07 17:56:02",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd0e6160000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:00",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "ASSET_20251007_135537_5975",
+        "model": "Test Model",
+        "state": "1",
+        "model_category": "Computer",
+        "serial_number": "SN20251007_135537",
+        "vendor": "Test Vendor",
+        "fields": null,
+        "cost": null,
+        "assigned_to": "f93c7084c3a83e1024163942b40131fd"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Hardware asset created successfully. The sys_id of the asset is: 2e5c7484c3a83e1024163942b40131b4\",\n  \"asset_id\": \"2e5c7484c3a83e1024163942b40131b4\",\n  \"asset_tag\": \"ASSET_20251007_135537_5975\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "c96c7c44c3a83e1024163942b40131cd",
+        "newvalue": "2025-10-07 17:56:23",
+        "sys_created_on": "2025-10-07 17:56:23",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd136680000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:13",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "install_status",
+        "reason": "",
+        "sys_id": "e65c7484c3a83e1024163942b40131b5",
+        "newvalue": "1",
+        "sys_created_on": "2025-10-07 17:56:13",
+        "documentkey": "2e5c7484c3a83e1024163942b40131b4",
+        "internal_checkpoint": "199bfd10eaa0000001",
+        "record_checkpoint": "0",
+        "tablename": "alm_hardware",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "ae5c3484c3a83e1024163942b4013118",
+        "newvalue": "2025-10-07 17:56:13",
+        "sys_created_on": "2025-10-07 17:56:13",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd10e910000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:12",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "eligible_for_refresh",
+        "reason": "",
+        "sys_id": "6a5c7484c3a83e1024163942b40131b5",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:56:13",
+        "documentkey": "2e5c7484c3a83e1024163942b40131b4",
+        "internal_checkpoint": "199bfd10eaa0000001",
+        "record_checkpoint": "0",
+        "tablename": "alm_hardware",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "assigned_to",
+        "reason": "",
+        "sys_id": "2a5c7484c3a83e1024163942b40131b5",
+        "newvalue": "f93c7084c3a83e1024163942b40131fd",
+        "sys_created_on": "2025-10-07 17:56:13",
+        "documentkey": "2e5c7484c3a83e1024163942b40131b4",
+        "internal_checkpoint": "199bfd10eaa0000001",
+        "record_checkpoint": "0",
+        "tablename": "alm_hardware",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "2e5c7484c3a83e1024163942b40131b4",
+        "display_name": null,
+        "model": null,
+        "serial_number": null,
+        "assigned_to": "",
+        "location": null,
+        "cost": null,
+        "purchase_date": null,
+        "warranty_expiration": null,
+        "category": null,
+        "subcategory": null,
+        "manufacturer": null,
+        "model_category": null,
+        "install_status": null,
+        "substatus": null,
+        "comments": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Asset updated successfully\",\n  \"asset_id\": \"2e5c7484c3a83e1024163942b40131b4\",\n  \"asset_tag\": \"ASSET_20251007_135537_5975\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "6f6c7c44c3a83e1024163942b40131d0",
+        "newvalue": "2025-10-07 17:56:33",
+        "sys_created_on": "2025-10-07 17:56:33",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd15ec00000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:23",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "c96c7c44c3a83e1024163942b40131cd",
+        "newvalue": "2025-10-07 17:56:23",
+        "sys_created_on": "2025-10-07 17:56:23",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd136680000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:13",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "delete_asset",
+      "parameters": {
+        "asset_id": "2e5c7484c3a83e1024163942b40131b4",
+        "reason": "Test cleanup"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Asset deleted successfully\",\n  \"asset_id\": \"2e5c7484c3a83e1024163942b40131b4\",\n  \"asset_tag\": null\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "ce7c7c44c3a83e1024163942b40131d3",
+        "newvalue": "2025-10-07 17:56:43",
+        "sys_created_on": "2025-10-07 17:56:43",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd187140000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:33",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "DELETED",
+        "reason": "",
+        "sys_id": "a36cb484c3a83e1024163942b40131a5",
+        "newvalue": "DELETED",
+        "sys_created_on": "2025-10-07 17:56:33",
+        "documentkey": "2e5c7484c3a83e1024163942b40131b4",
+        "internal_checkpoint": "",
+        "record_checkpoint": "-1",
+        "tablename": "alm_hardware",
+        "user": "admin",
+        "oldvalue": "DELETED",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "6f6c7c44c3a83e1024163942b40131d0",
+        "newvalue": "2025-10-07 17:56:33",
+        "sys_created_on": "2025-10-07 17:56:33",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd15ec00000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:23",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "c94c3484c3a83e1024163942b401310d",
+        "members": [
+          "sys_id:f93c7084c3a83e1024163942b40131fd"
+        ]
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"All members removed from the group successfully\",\n  \"group_id\": \"c94c3484c3a83e1024163942b401310d\",\n  \"group_name\": null\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "a48cb484c3a83e1024163942b40131ab",
+        "newvalue": "2025-10-07 17:56:54",
+        "sys_created_on": "2025-10-07 17:56:54",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd1b0140000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:44",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "DELETED",
+        "reason": "",
+        "sys_id": "ca7cf484c3a83e1024163942b40131da",
+        "newvalue": "DELETED",
+        "sys_created_on": "2025-10-07 17:56:44",
+        "documentkey": "0c5c3484c3a83e1024163942b4013113",
+        "internal_checkpoint": "",
+        "record_checkpoint": "-1",
+        "tablename": "sys_user_grmember",
+        "user": "admin",
+        "oldvalue": "DELETED",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "467cb484c3a83e1024163942b40131a8",
+        "newvalue": "2025-10-07 17:56:44",
+        "sys_created_on": "2025-10-07 17:56:44",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd187a60000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:43",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "f93c7084c3a83e1024163942b40131fd",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": false
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User updated successfully\",\n  \"user_id\": \"f93c7084c3a83e1024163942b40131fd\",\n  \"user_name\": \"test_user_20251007_135537_3352\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "c78c3884c3a83e1024163942b40131ac",
+        "newvalue": "2025-10-07 17:57:04",
+        "sys_created_on": "2025-10-07 17:57:04",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd1d8620000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:54",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "active",
+        "reason": "",
+        "sys_id": "a88cf484c3a83e1024163942b40131e0",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:56:54",
+        "documentkey": "f93c7084c3a83e1024163942b40131fd",
+        "internal_checkpoint": "199bfd1b0bc0000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "1",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "a48cb484c3a83e1024163942b40131ab",
+        "newvalue": "2025-10-07 17:56:54",
+        "sys_created_on": "2025-10-07 17:56:54",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd1b0140000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:56:44",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "locked_out",
+        "reason": "",
+        "sys_id": "2c8cf484c3a83e1024163942b40131e0",
+        "newvalue": "1",
+        "sys_created_on": "2025-10-07 17:56:54",
+        "documentkey": "f93c7084c3a83e1024163942b40131fd",
+        "internal_checkpoint": "199bfd1b0bc0000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "0",
+        "sys_created_by": "admin"
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    11,
+    27,
+    38
+  ],
+  "invalid_policy_names": [
+    "Users cannot be removed from groups they manage",
+    "Inactive users cannot be assigned as managers of active users",
+    "Catalog categories cannot be deleted if they contain active items"
+  ],
+  "invalid_policy_nums": [
+    9,
+    10,
+    3
+  ]
+}

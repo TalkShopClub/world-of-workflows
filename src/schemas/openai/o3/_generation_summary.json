@@ -1,0 +1,111 @@
+{
+  "model": "openai/o3",
+  "generated_at": "2025-10-20T01:59:25.355802",
+  "total_files": 17,
+  "successful": 17,
+  "failed": 0,
+  "results": [
+    {
+      "file": "approvechangerequest.json",
+      "status": "success",
+      "num_tool_calls": 6,
+      "schema_size": 20619
+    },
+    {
+      "file": "assignuserrole.json",
+      "status": "success",
+      "num_tool_calls": 10,
+      "schema_size": 25802
+    },
+    {
+      "file": "catalogitem.json",
+      "status": "success",
+      "num_tool_calls": 19,
+      "schema_size": 35836
+    },
+    {
+      "file": "changeuserinfo.json",
+      "status": "success",
+      "num_tool_calls": 21,
+      "schema_size": 39953
+    },
+    {
+      "file": "createhardwareasset.json",
+      "status": "success",
+      "num_tool_calls": 25,
+      "schema_size": 43084
+    },
+    {
+      "file": "createhierarchy.json",
+      "status": "success",
+      "num_tool_calls": 31,
+      "schema_size": 48116
+    },
+    {
+      "file": "createrequest.json",
+      "status": "success",
+      "num_tool_calls": 34,
+      "schema_size": 54081
+    },
+    {
+      "file": "deactivateuser.json",
+      "status": "success",
+      "num_tool_calls": 37,
+      "schema_size": 57167
+    },
+    {
+      "file": "incident.json",
+      "status": "success",
+      "num_tool_calls": 42,
+      "schema_size": 63564
+    },
+    {
+      "file": "knowledgebasearticle.json",
+      "status": "success",
+      "num_tool_calls": 46,
+      "schema_size": 67036
+    },
+    {
+      "file": "movecatalogitem.json",
+      "status": "success",
+      "num_tool_calls": 51,
+      "schema_size": 71536
+    },
+    {
+      "file": "promoteuser.json",
+      "status": "success",
+      "num_tool_calls": 56,
+      "schema_size": 105269
+    },
+    {
+      "file": "publishknowledgebasearticle.json",
+      "status": "success",
+      "num_tool_calls": 60,
+      "schema_size": 108747
+    },
+    {
+      "file": "rejectchangerequest.json",
+      "status": "success",
+      "num_tool_calls": 65,
+      "schema_size": 126460
+    },
+    {
+      "file": "removeuserfromgroup.json",
+      "status": "success",
+      "num_tool_calls": 69,
+      "schema_size": 130177
+    },
+    {
+      "file": "transferasset.json",
+      "status": "success",
+      "num_tool_calls": 75,
+      "schema_size": 143751
+    },
+    {
+      "file": "usergroupasset.json",
+      "status": "success",
+      "num_tool_calls": 81,
+      "schema_size": 147871
+    }
+  ]
+}

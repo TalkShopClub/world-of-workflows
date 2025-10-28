@@ -1,0 +1,363 @@
+[
+  {
+    "action": {
+      "tool_name": "create_script_include",
+      "parameters": {
+        "name": "UserValidation",
+        "script": "function DataSync() { /* Sample script code */ }"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Created script include: UserValidation\",\n  \"script_include_id\": \"ce1d8ae9c31c32107bd371edd40131fd\",\n  \"script_include_name\": \"UserValidation\"\n}",
+    "audits": [
+      {
+        "fieldname": "script",
+        "reason": "",
+        "sys_id": "c61d8ae9c31c32107bd371edd40131fe",
+        "newvalue": "function DataSync() { /* Sample script code */ }",
+        "sys_created_on": "2025-09-30 05:24:10",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999914061c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "access",
+        "reason": "",
+        "sys_id": "c21d8ae9c31c32107bd371edd40131fe",
+        "newvalue": "package_private",
+        "sys_created_on": "2025-09-30 05:24:10",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999914061c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "name",
+        "reason": "",
+        "sys_id": "8a1d8ae9c31c32107bd371edd40131fe",
+        "newvalue": "UserValidation",
+        "sys_created_on": "2025-09-30 05:24:10",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999914061c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "sandbox_callable",
+        "reason": "",
+        "sys_id": "861d8ae9c31c32107bd371edd40131fe",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 05:24:10",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999914061c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "client_callable",
+        "reason": "",
+        "sys_id": "821d8ae9c31c32107bd371edd40131fe",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 05:24:10",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999914061c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "api_name",
+        "reason": "",
+        "sys_id": "4a1d8ae9c31c32107bd371edd40131fe",
+        "newvalue": "global.UserValidation",
+        "sys_created_on": "2025-09-30 05:24:10",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999914061c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "active",
+        "reason": "",
+        "sys_id": "461d8ae9c31c32107bd371edd40131fe",
+        "newvalue": "1",
+        "sys_created_on": "2025-09-30 05:24:10",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999914061c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "sys_class_name",
+        "reason": "",
+        "sys_id": "0a1d8ae9c31c32107bd371edd40131fe",
+        "newvalue": "sys_script_include",
+        "sys_created_on": "2025-09-30 05:24:10",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999914061c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "mobile_callable",
+        "reason": "",
+        "sys_id": "061d8ae9c31c32107bd371edd40131fe",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 05:24:10",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999914061c0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"script\",\n      \"newvalue\": \"function DataSync() { /* Sample script code */ }\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"access\",\n      \"newvalue\": \"package_private\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"name\",\n      \"newvalue\": \"UserValidation\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"sandbox_callable\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"client_callable\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"api_name\",\n      \"newvalue\": \"global.UserValidation\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"active\",\n      \"newvalue\": \"1\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"sys_class_name\",\n      \"newvalue\": \"sys_script_include\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"mobile_callable\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 9,\n    \"num_modified_entries\": 0,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 9,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"sys_script_include\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "update_script_include",
+      "parameters": {
+        "script_include_id": "ce1d8ae9c31c32107bd371edd40131fd",
+        "script": "function ReportGenerator() { /* Sample script code */ }",
+        "description": "Sample_description_420",
+        "api_name": "Sample_api_name_383"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Updated script include: UserValidation\",\n  \"script_include_id\": \"ce1d8ae9c31c32107bd371edd40131fd\",\n  \"script_include_name\": \"UserValidation\"\n}",
+    "audits": [
+      {
+        "fieldname": "description",
+        "reason": "",
+        "sys_id": "ca6d42e9c31c32107bd371edd4013178",
+        "newvalue": "Sample_description_420",
+        "sys_created_on": "2025-09-30 05:25:32",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999915479c0000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "script",
+        "reason": "",
+        "sys_id": "0e6d42e9c31c32107bd371edd4013178",
+        "newvalue": "function ReportGenerator() { /* Sample script code */ }",
+        "sys_created_on": "2025-09-30 05:25:32",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "1999915479c0000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "function DataSync() { /* Sample script code */ }",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"description\",\n      \"newvalue\": \"Sample_description_420\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"script\",\n      \"newvalue\": \"function ReportGenerator() { /* Sample script code */ }\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"function DataSync() { /* Sample script code */ }\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 2,\n    \"num_modified_entries\": 1,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 1,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"sys_script_include\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "delete_script_include",
+      "parameters": {
+        "script_include_id": "ce1d8ae9c31c32107bd371edd40131fd"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Deleted script include: ce1d8ae9c31c32107bd371edd40131fd\",\n  \"script_include_id\": \"ce1d8ae9c31c32107bd371edd40131fd\",\n  \"script_include_name\": null\n}",
+    "audits": [
+      {
+        "fieldname": "DELETED",
+        "reason": "",
+        "sys_id": "a68d4ee9c31c32107bd371edd4013178",
+        "newvalue": "DELETED",
+        "sys_created_on": "2025-09-30 05:26:07",
+        "documentkey": "ce1d8ae9c31c32107bd371edd40131fd",
+        "internal_checkpoint": "",
+        "record_checkpoint": "-1",
+        "tablename": "sys_script_include",
+        "user": "admin",
+        "oldvalue": "DELETED",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"DELETED\",\n      \"newvalue\": \"DELETED\",\n      \"tablename\": \"sys_script_include\",\n      \"oldvalue\": \"DELETED\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 1,\n    \"num_modified_entries\": 1,\n    \"num_deleted_entries\": 1,\n    \"num_created_entries\": 0,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"sys_script_include\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "create_changeset",
+      "parameters": {
+        "name": "Sample Name 809",
+        "description": "Sample_description_296",
+        "application": "Sample_application_166",
+        "developer": "Sample_developer_696"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Changeset created successfully\",\n  \"changeset\": {\n    \"base_update_set\": \"\",\n    \"parent\": \"\",\n    \"origin_sys_id\": \"\",\n    \"completed_on\": \"2025-09-30 05:28:34\",\n    \"installed_from\": \"\",\n    \"sys_mod_count\": \"0\",\n    \"description\": \"Sample_description_296\",\n    \"remote_sys_id\": \"\",\n    \"sys_updated_on\": \"2025-09-30 05:28:34\",\n    \"is_default\": \"false\",\n    \"sys_tags\": \"\",\n    \"merged_to\": \"\",\n    \"sys_id\": \"a21e0a6dc31c32107bd371edd4013101\",\n    \"sys_updated_by\": \"admin\",\n    \"application\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"release_date\": \"\",\n    \"sys_created_on\": \"2025-09-30 05:28:34\",\n    \"name\": \"Sample Name 809\",\n    \"install_date\": \"\",\n    \"state\": \"in progress\",\n    \"completed_by\": \"\",\n    \"sys_created_by\": \"admin\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "application",
+        "reason": "",
+        "sys_id": "e61e0a6dc31c32107bd371edd4013101",
+        "newvalue": "global",
+        "sys_created_on": "2025-09-30 05:28:34",
+        "documentkey": "a21e0a6dc31c32107bd371edd4013101",
+        "internal_checkpoint": "19999180e2d0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "is_default",
+        "reason": "",
+        "sys_id": "a61e0a6dc31c32107bd371edd4013101",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 05:28:34",
+        "documentkey": "a21e0a6dc31c32107bd371edd4013101",
+        "internal_checkpoint": "19999180e2d0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "state",
+        "reason": "",
+        "sys_id": "6a1e0a6dc31c32107bd371edd4013101",
+        "newvalue": "in progress",
+        "sys_created_on": "2025-09-30 05:28:34",
+        "documentkey": "a21e0a6dc31c32107bd371edd4013101",
+        "internal_checkpoint": "19999180e2d0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "description",
+        "reason": "",
+        "sys_id": "661e0a6dc31c32107bd371edd4013101",
+        "newvalue": "Sample_description_296",
+        "sys_created_on": "2025-09-30 05:28:34",
+        "documentkey": "a21e0a6dc31c32107bd371edd4013101",
+        "internal_checkpoint": "19999180e2d0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "name",
+        "reason": "",
+        "sys_id": "2a1e0a6dc31c32107bd371edd4013101",
+        "newvalue": "Sample Name 809",
+        "sys_created_on": "2025-09-30 05:28:34",
+        "documentkey": "a21e0a6dc31c32107bd371edd4013101",
+        "internal_checkpoint": "19999180e2d0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "completed_on",
+        "reason": "",
+        "sys_id": "261e0a6dc31c32107bd371edd4013101",
+        "newvalue": "2025-09-30 05:28:34",
+        "sys_created_on": "2025-09-30 05:28:34",
+        "documentkey": "a21e0a6dc31c32107bd371edd4013101",
+        "internal_checkpoint": "19999180e2d0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"application\",\n      \"newvalue\": \"global\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"is_default\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"state\",\n      \"newvalue\": \"in progress\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"description\",\n      \"newvalue\": \"Sample_description_296\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"name\",\n      \"newvalue\": \"Sample Name 809\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"completed_on\",\n      \"newvalue\": \"2025-09-30 05:28:34\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 6,\n    \"num_modified_entries\": 0,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 6,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"sys_update_set\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "commit_changeset",
+      "parameters": {
+        "changeset_id": "a21e0a6dc31c32107bd371edd4013101"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Changeset committed successfully\",\n  \"changeset\": {\n    \"base_update_set\": \"\",\n    \"parent\": \"\",\n    \"origin_sys_id\": \"\",\n    \"completed_on\": \"2025-09-30 05:29:13\",\n    \"installed_from\": \"\",\n    \"sys_mod_count\": \"1\",\n    \"description\": \"Sample_description_296\",\n    \"remote_sys_id\": \"\",\n    \"sys_updated_on\": \"2025-09-30 05:29:13\",\n    \"is_default\": \"false\",\n    \"sys_tags\": \"\",\n    \"merged_to\": \"\",\n    \"sys_id\": \"a21e0a6dc31c32107bd371edd4013101\",\n    \"sys_updated_by\": \"admin\",\n    \"application\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"release_date\": \"\",\n    \"sys_created_on\": \"2025-09-30 05:28:34\",\n    \"name\": \"Sample Name 809\",\n    \"install_date\": \"\",\n    \"state\": \"complete\",\n    \"completed_by\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n      \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n    },\n    \"sys_created_by\": \"admin\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "completed_on",
+        "reason": "",
+        "sys_id": "f73e866dc31c32107bd371edd401315b",
+        "newvalue": "2025-09-30 05:29:13",
+        "sys_created_on": "2025-09-30 05:29:13",
+        "documentkey": "a21e0a6dc31c32107bd371edd4013101",
+        "internal_checkpoint": "1999918a52e0000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "2025-09-30 05:28:34",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "completed_by",
+        "reason": "",
+        "sys_id": "7b3e866dc31c32107bd371edd401315b",
+        "newvalue": "6816f79cc0a8016401c5a33be04be441",
+        "sys_created_on": "2025-09-30 05:29:13",
+        "documentkey": "a21e0a6dc31c32107bd371edd4013101",
+        "internal_checkpoint": "1999918a52e0000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "state",
+        "reason": "",
+        "sys_id": "3b3e866dc31c32107bd371edd401315b",
+        "newvalue": "complete",
+        "sys_created_on": "2025-09-30 05:29:13",
+        "documentkey": "a21e0a6dc31c32107bd371edd4013101",
+        "internal_checkpoint": "1999918a52e0000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "in progress",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"completed_on\",\n      \"newvalue\": \"2025-09-30 05:29:13\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"2025-09-30 05:28:34\"\n    },\n    {\n      \"fieldname\": \"completed_by\",\n      \"newvalue\": \"6816f79cc0a8016401c5a33be04be441\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"state\",\n      \"newvalue\": \"complete\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"in progress\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 3,\n    \"num_modified_entries\": 2,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 1,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"sys_update_set\"\n    ]\n  }\n}"
+  }
+]

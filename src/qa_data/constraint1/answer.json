@@ -1,0 +1,4 @@
+{
+  "policy_name": "Editing the assigned user for priority 1 incident ticket is not allowed unless there is no user assigned to the incident ticket",
+  "invalid_action_idx": 5
+}

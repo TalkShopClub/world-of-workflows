@@ -1,0 +1,591 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-20T00:39:54.778627",
+    "model": "openai/gpt-5",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/problem_management.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_problem",
+      "parameters": {
+        "short_description": "Email server performance degradation"
+      }
+    },
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "text": "Software installation and licensing information",
+        "short_description": "Problem Resolution Guide",
+        "knowledge_base": "Sample_knowledge_base_342",
+        "category": "Security"
+      }
+    },
+    {
+      "tool_name": "create_asset",
+      "parameters": {
+        "asset_tag": "Sample_asset_tag_465",
+        "display_name": "Nuclear Power Plant"
+      }
+    },
+    {
+      "tool_name": "create_problem",
+      "parameters": {
+        "short_description": "SQL database performance degradation",
+        "urgency": "1",
+        "impact": "1",
+        "assigned_to": "000753bdc3ff6a107bd371edd40131ab"
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "17370261c31c32107bd371edd401317f",
+        "location": "Toronto",
+        "assigned_to": "000e6e0dc33326107bd371edd4013118",
+        "cost": "Sample_cost_493",
+        "purchase_date": "Sample_purchase_date_515",
+        "warranty_expiration": "Sample_warranty_expiration_231",
+        "category": "Security"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 10:00:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 10:00:00"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 10:00:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 09:59:58"
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "problem",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "PRB0001234",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Email server performance degradation",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "4",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "3",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "3",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-10-20 10:00:00",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "problem",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 18,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 16,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "problem"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "kb_knowledge",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "KB0010001",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Problem Resolution Guide",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "text",
+          "newvalue": "Software installation and licensing information",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_knowledge_base",
+          "newvalue": "Sample_knowledge_base_342",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_category",
+          "newvalue": "Security",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_state",
+          "newvalue": "draft",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "kb_knowledge"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 10:00:03",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 10:00:00"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 10:00:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 09:59:58"
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "Sample_asset_tag_465",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "Nuclear Power Plant",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "alm_asset",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 4,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "alm_asset"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 12:00:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 12:00:00"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 12:00:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 12:00:02"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "SQL database performance degradation",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-10-20 12:00:02",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "problem",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "PRB0012345",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "PRB0012345",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "000753bdc3ff6a107bd371edd40131ab",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "problem",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "problem",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-10-20 12:00:02",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "9a9a9a00c3d832107bd371edd4013001",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "problem",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-10-20 12:00:02",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "New",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "9a9a9a00c3d832107bd371edd4013002",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 39,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 37,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "problem",
+          "metric_instance"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "location",
+          "newvalue": "Toronto",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "000e6e0dc33326107bd371edd4013118",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "Sample_cost_493",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "purchase_date",
+          "newvalue": "Sample_purchase_date_515",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "warranty_expiration",
+          "newvalue": "Sample_warranty_expiration_231",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "Security",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 6,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "alm_asset"
+        ]
+      }
+    }
+  ]
+}

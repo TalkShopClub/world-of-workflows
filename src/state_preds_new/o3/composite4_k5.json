@@ -1,0 +1,297 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-20T02:41:51.505199",
+    "model": "openai/o3",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/composite4.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_asset",
+      "parameters": {
+        "asset_tag": "CIVH1929",
+        "display_name": "AMD Sample",
+        "serial_number": "CIVH1929",
+        "location": "San Francisco",
+        "cost": "1000",
+        "category": "Network",
+        "subcategory": "Server",
+        "manufacturer": "AMD"
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b",
+        "assigned_to": "admin",
+        "comments": "AMD Sample"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "May.June.092",
+        "first_name": "May",
+        "last_name": "June",
+        "email": "may.june@example.com"
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b",
+        "assigned_to": "be48edfdc350b2107bd371edd4013162"
+      }
+    },
+    {
+      "tool_name": "delete_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "CIVH1929",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "AMD Sample",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "serial_number",
+          "newvalue": "CIVH1929",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "San Francisco",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "1000",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "Network",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "subcategory",
+          "newvalue": "Server",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "manufacturer",
+          "newvalue": "AMD",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 8,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 8,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "alm_asset"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:10:15",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:10:12"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:10:12",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:10:10"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "comments",
+          "newvalue": "AMD Sample",
+          "tablename": "alm_asset",
+          "oldvalue": "JOURNAL FIELD ADDITION"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 4,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "alm_asset"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 10:00:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 09:59:57"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 09:59:57",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 09:59:55"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "May.June.092",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "May",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "June",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "may.june@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 5,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:10",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:00:07"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:07",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:00:05"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "be48edfdc350b2107bd371edd4013162",
+          "tablename": "alm_asset",
+          "oldvalue": "a3f9c2e1c350b2107bd371edd4013100"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "alm_asset"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 15:30:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 15:30:02"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 15:30:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 15:29:59"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "fm_expense_line",
+          "oldvalue": "DELETED"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "alm_asset",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 2,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "fm_expense_line",
+          "alm_asset"
+        ]
+      }
+    }
+  ]
+}

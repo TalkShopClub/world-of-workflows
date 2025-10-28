@@ -1,0 +1,419 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:21:04.847189",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/movecatalogitem.json",
+    "k": 4,
+    "total_actions_predicted": 4,
+    "total_states_generated": 4
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Source Category 20251007_140809",
+        "description": "Source category created at 20251007_140809",
+        "parent": null,
+        "icon": null,
+        "active": true,
+        "order": null
+      }
+    },
+    {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Target Category 20251007_140809",
+        "description": "Target category created at 20251007_140809",
+        "parent": null,
+        "icon": null,
+        "active": true,
+        "order": null
+      }
+    },
+    {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Test Catalog Item 20251007_140809",
+        "category": "e91f3848c3a83e1024163942b4013183",
+        "active": true,
+        "order": null,
+        "description": "Test catalog item created at 20251007_140809",
+        "price": null
+      }
+    },
+    {
+      "tool_name": "move_catalog_items",
+      "parameters": {
+        "item_ids": [
+          "a22fb848c3a83e1024163942b40131bf"
+        ],
+        "target_category_id": "482fb848c3a83e1024163942b40131b9"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 14:08:11",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 14:08:09"
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Source Category 20251007_140809",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Source category created at 20251007_140809",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 8,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 14:08:09",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 14:08:07"
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Target Category 20251007_140809",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Target category created at 20251007_140809",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "homepage_renderer",
+          "newvalue": "47ebe8aa3742300054b6a3549dbe5dfa",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_subcategory_render_type",
+          "newvalue": "list",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_hide_description",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 8,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_category",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 14:08:09",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 14:08:07"
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Test Catalog Item 20251007_140809",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "e91f3848c3a83e1024163942b4013183",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Test catalog item created at 20251007_140809",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "item",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "draft",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access_type",
+          "newvalue": "restricted",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "price",
+          "newvalue": "0.00",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cost",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_quantity",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "availability",
+          "newvalue": "on_desktop",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "show_variable_help_on_load",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hide_sp",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "owner",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ignore_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_bundle",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_standalone",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "visible_guide",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "omit_price",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "fulfillment_automation_level",
+          "newvalue": "unspecified",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_sc_layout",
+          "newvalue": "1",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "mobile_picture_type",
+          "newvalue": "use_desktop_picture",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_proceed_checkout",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order_now",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_search",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "no_cart",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "sc_cat_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_cat_item",
+          "newvalue": "",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "e91f3848c3a83e1024163942b4013183",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 30,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 29,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_cat_item",
+          "sc_cat_item_category",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "sc_category",
+          "newvalue": "482fb848c3a83e1024163942b40131b9",
+          "tablename": "sc_cat_item_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sc_cat_item_category"
+        ]
+      }
+    }
+  ]
+}

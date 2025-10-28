@@ -1,0 +1,285 @@
+{
+  "activate_workflow": [
+    "put"
+  ],
+  "add_change_task": [
+    "post"
+  ],
+  "add_comment": [
+    "get",
+    "put"
+  ],
+  "add_file_to_changeset": [
+    "post"
+  ],
+  "add_group_members": [
+    "post"
+  ],
+  "add_workflow_activity": [
+    "post"
+  ],
+  "approve_change": [
+    "get",
+    "put"
+  ],
+  "commit_changeset": [
+    "put"
+  ],
+  "create_article": [
+    "post"
+  ],
+  "create_asset": [
+    "post"
+  ],
+  "create_catalog_category": [
+    "post"
+  ],
+  "create_catalog_item": [
+    "post"
+  ],
+  "create_catalog_item_variable": [
+    "post"
+  ],
+  "create_category": [
+    "post"
+  ],
+  "create_change_request": [
+    "post"
+  ],
+  "create_changeset": [
+    "post"
+  ],
+  "create_group": [
+    "post"
+  ],
+  "create_hardware_asset": [
+    "post"
+  ],
+  "create_incident": [
+    "post"
+  ],
+  "create_item_request": [
+    "post"
+  ],
+  "create_knowledge_base": [
+    "post"
+  ],
+  "create_problem": [
+    "post"
+  ],
+  "create_script_include": [
+    "post"
+  ],
+  "create_user": [
+    "post"
+  ],
+  "create_workflow": [
+    "post"
+  ],
+  "deactivate_workflow": [
+    "put"
+  ],
+  "delete_asset": [
+    "delete"
+  ],
+  "delete_catalog_category": [
+    "delete"
+  ],
+  "delete_expense_line": [
+    "delete"
+  ],
+  "delete_script_include": [
+    "delete"
+  ],
+  "delete_workflow": [
+    "delete"
+  ],
+  "delete_workflow_activity": [
+    "delete"
+  ],
+  "get_article": [
+    "get"
+  ],
+  "get_assets": [
+    "get"
+  ],
+  "get_canvas": [
+    "get"
+  ],
+  "get_catalog_item": [
+    "get"
+  ],
+  "get_change_request_details": [
+    "get"
+  ],
+  "get_changeset_details": [
+    "get"
+  ],
+  "get_dashboard_tab": [
+    "get"
+  ],
+  "get_optimization_recommendations": [
+    "get"
+  ],
+  "get_portal_widgets": [
+    "get"
+  ],
+  "get_report": [
+    "get"
+  ],
+  "get_report_ids_from_portal_widgets": [
+    "get"
+  ],
+  "get_script_include": [
+    "get"
+  ],
+  "get_table_schema": [
+    "get"
+  ],
+  "get_user": [
+    "get"
+  ],
+  "get_workflow_activities": [
+    "get"
+  ],
+  "get_workflow_details": [
+    "get"
+  ],
+  "list_articles": [
+    "get"
+  ],
+  "list_catalog_categories": [
+    "get"
+  ],
+  "list_catalog_item_variables": [
+    "get"
+  ],
+  "list_catalog_items": [
+    "get"
+  ],
+  "list_categories": [
+    "get"
+  ],
+  "list_change_requests": [
+    "get"
+  ],
+  "list_changesets": [
+    "get"
+  ],
+  "list_expense_lines": [
+    "get"
+  ],
+  "list_group_members": [
+    "get"
+  ],
+  "list_groups": [
+    "get"
+  ],
+  "list_hardware_assets": [
+    "get"
+  ],
+  "list_incidents": [
+    "get"
+  ],
+  "list_item_requests": [
+    "get"
+  ],
+  "list_knowledge_bases": [
+    "get"
+  ],
+  "list_script_includes": [
+    "get"
+  ],
+  "list_tool_packages": [
+    "get"
+  ],
+  "list_users": [
+    "get"
+  ],
+  "list_workflow_versions": [
+    "get"
+  ],
+  "list_workflows": [
+    "get"
+  ],
+  "move_catalog_items": [
+    "put"
+  ],
+  "order_catalog_item": [
+    "post"
+  ],
+  "publish_article": [
+    "put"
+  ],
+  "publish_changeset": [
+    "put"
+  ],
+  "reject_change": [
+    "get",
+    "put"
+  ],
+  "remove_group_members": [
+    "delete",
+    "get"
+  ],
+  "reorder_workflow_activities": [
+    "put"
+  ],
+  "resolve_incident": [
+    "get",
+    "put"
+  ],
+  "search_any_table": [
+    "get"
+  ],
+  "submit_change_for_approval": [
+    "post",
+    "put"
+  ],
+  "transfer_asset": [
+    "put"
+  ],
+  "update_article": [
+    "put"
+  ],
+  "update_asset": [
+    "put"
+  ],
+  "update_catalog_category": [
+    "put"
+  ],
+  "update_catalog_item": [
+    "put"
+  ],
+  "update_catalog_item_variable": [
+    "put"
+  ],
+  "update_change_request": [
+    "put"
+  ],
+  "update_changeset": [
+    "put"
+  ],
+  "update_group": [
+    "put"
+  ],
+  "update_hardware_asset": [
+    "put"
+  ],
+  "update_incident": [
+    "get",
+    "put"
+  ],
+  "update_script_include": [
+    "put"
+  ],
+  "update_user": [
+    "put"
+  ],
+  "update_workflow": [
+    "put"
+  ],
+  "update_workflow_activity": [
+    "put"
+  ]
+}

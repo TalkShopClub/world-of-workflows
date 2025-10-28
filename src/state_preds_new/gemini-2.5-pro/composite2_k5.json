@@ -1,0 +1,347 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-16T19:35:13.953197",
+    "model": "google/gemini-2.5-pro",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/composite2.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Steven.Ding.092",
+        "first_name": "Steven",
+        "last_name": "Ding",
+        "email": "stevending@example.com"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Skyfall collaborator group",
+        "description": "Skyfall collaborator group",
+        "manager": "a30d49f1c3dc72107bd371edd40131cf"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Skyfall Corp",
+        "description": "Skyfall Corp group"
+      }
+    },
+    {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "66601df9c3dc72107bd371edd40131f3",
+        "parent": "4831dd3dc3dc72107bd371edd4013181"
+      }
+    },
+    {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "66601df9c3dc72107bd371edd40131f3",
+        "members": [
+          "sys_id:a30d49f1c3dc72107bd371edd40131cf"
+        ]
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:48",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:45"
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Ding",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "Steven.Ding.092",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Steven",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "stevending@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Steven Ding",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 14,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 13,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:04",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user_group",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Skyfall collaborator group",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "manager",
+          "newvalue": "a30d49f1c3dc72107bd371edd40131cf",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "itil",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Skyfall collaborator group",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 10,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 9,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_group",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:04",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user_group",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Skyfall Corp group",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Skyfall Corp",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 6,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_group",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "parent",
+          "newvalue": "4831dd3dc3dc72107bd371edd4013181",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:23",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:21"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "user",
+          "newvalue": "a30d49f1c3dc72107bd371edd40131cf",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "group",
+          "newvalue": "66601df9c3dc72107bd371edd40131f3",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  ]
+}

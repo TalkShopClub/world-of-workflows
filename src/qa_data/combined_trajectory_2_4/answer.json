@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    7,
+    18,
+    25
+  ],
+  "invalid_policy_names": [
+    "Ticket being resolved must have someone assigned to the ticket.",
+    "Assets cannot be assigned to users who already have more than 5 active assets",
+    "Change requests with risk level 'Moderate' or higher cannot be scheduled on Fridays"
+  ],
+  "invalid_policy_nums": [
+    1,
+    8,
+    5
+  ]
+}

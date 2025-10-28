@@ -1,0 +1,83 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:26:02.033933",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/kb_article.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "text": "Security guidelines and compliance requirements",
+        "short_description": "Security Best Practices",
+        "knowledge_base": "Sample_knowledge_base_948",
+        "category": "HR Services"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "62563d6dc35832107bd371edd4013158",
+        "short_description": "Security Best Practices for ServiceNow IT operations"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "62563d6dc35832107bd371edd4013158",
+        "category": "IT operations"
+      }
+    },
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "text": "HR services are provided to the employees of the organization.",
+        "short_description": "HR Services with updated category",
+        "knowledge_base": "Sample_knowledge_base_949",
+        "category": "HR Services"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "b7c735e5c39832107bd371edd40131a6",
+        "short_description": "HR guidelines"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    }
+  ]
+}

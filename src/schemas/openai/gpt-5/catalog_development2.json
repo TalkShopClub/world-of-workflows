@@ -1,0 +1,1778 @@
+{
+  "trajectory_file": "catalog_development2.json",
+  "generated_at": "2025-10-15T18:07:42.394236",
+  "num_actions": 5,
+  "num_tool_calls": 8,
+  "schema_context_size": 49016,
+  "tool_calls": [
+    {
+      "observation_id": "78850dbdb3e977c6",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'sc_category', 'fields': None, 'filters': 'descriptionLIKECatalog category for meeting room booking', 'limit': 10}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "homepage_renderer": {
+              "link": "https://dev268210.service-now.com/api/now/table/sc_homepage_renderer/47ebe8aa3742300054b6a3549dbe5dfa",
+              "value": "47ebe8aa3742300054b6a3549dbe5dfa"
+            },
+            "parent": "",
+            "entitlement_script": "",
+            "mobile_subcategory_render_type": "list",
+            "mobile_hide_description": "false",
+            "roles": "",
+            "icon": "Meeting Room Booking",
+            "description": "Catalog category for meeting room booking",
+            "mobile_picture": "",
+            "sc_catalog": "",
+            "sys_updated_on": "2025-09-30 20:26:33",
+            "title": "Office Supplies",
+            "sys_class_name": "sc_category",
+            "sys_id": "64f91939c310b2107bd371edd401313b",
+            "sys_updated_by": "admin",
+            "homepage_image": "",
+            "sys_created_on": "2025-09-30 20:19:11",
+            "sys_name": "Office Supplies",
+            "sys_scope": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_scope/global",
+              "value": "global"
+            },
+            "sys_created_by": "admin",
+            "order": "24",
+            "image": "",
+            "header_icon": "",
+            "module": "",
+            "sys_mod_count": "1",
+            "active": "true",
+            "sys_tags": "",
+            "sys_package": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_package/global",
+              "value": "global"
+            },
+            "sys_update_name": "sc_category_64f91939c310b2107bd371edd401313b",
+            "location": "",
+            "sys_policy": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-15T22:05:35.077000+00:00",
+      "end_time": "2025-10-15T22:05:35.642000+00:00"
+    },
+    {
+      "observation_id": "06cd06a9e11c961f",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'sc_category', 'fields': None, 'filters': 'sys_id=64f91939c310b2107bd371edd401313b', 'limit': 10}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "homepage_renderer": {
+              "link": "https://dev268210.service-now.com/api/now/table/sc_homepage_renderer/47ebe8aa3742300054b6a3549dbe5dfa",
+              "value": "47ebe8aa3742300054b6a3549dbe5dfa"
+            },
+            "parent": "",
+            "entitlement_script": "",
+            "mobile_subcategory_render_type": "list",
+            "mobile_hide_description": "false",
+            "roles": "",
+            "icon": "Meeting Room Booking",
+            "description": "Catalog category for meeting room booking",
+            "mobile_picture": "",
+            "sc_catalog": "",
+            "sys_updated_on": "2025-09-30 20:26:33",
+            "title": "Office Supplies",
+            "sys_class_name": "sc_category",
+            "sys_id": "64f91939c310b2107bd371edd401313b",
+            "sys_updated_by": "admin",
+            "homepage_image": "",
+            "sys_created_on": "2025-09-30 20:19:11",
+            "sys_name": "Office Supplies",
+            "sys_scope": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_scope/global",
+              "value": "global"
+            },
+            "sys_created_by": "admin",
+            "order": "24",
+            "image": "",
+            "header_icon": "",
+            "module": "",
+            "sys_mod_count": "1",
+            "active": "true",
+            "sys_tags": "",
+            "sys_package": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_package/global",
+              "value": "global"
+            },
+            "sys_update_name": "sc_category_64f91939c310b2107bd371edd401313b",
+            "location": "",
+            "sys_policy": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-15T22:04:46.822000+00:00",
+      "end_time": "2025-10-15T22:04:48.011000+00:00"
+    },
+    {
+      "observation_id": "7f56008a86c5d072",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'sc_category', 'fields': None, 'filters': 'titleLIKEMeeting Room Booking', 'limit': 10}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-15T22:04:46.822000+00:00",
+      "end_time": "2025-10-15T22:04:49.120000+00:00"
+    },
+    {
+      "observation_id": "523c22478052b8a1",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'sc_cat_item_category', 'fields': None, 'filters': 'sc_cat_item=99c1de1081136500772e95d75e286273', 'limit': 50}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "sc_category": {
+              "link": "https://dev268210.service-now.com/api/now/table/sc_category/64f91939c310b2107bd371edd401313b",
+              "value": "64f91939c310b2107bd371edd401313b"
+            },
+            "sys_mod_count": "0",
+            "sys_updated_on": "2025-09-30 20:30:41",
+            "sys_tags": "",
+            "sys_class_name": "sc_cat_item_category",
+            "sys_id": "419c15bdc310b2107bd371edd4013191",
+            "sys_package": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_package/global",
+              "value": "global"
+            },
+            "sys_update_name": "sc_cat_item_category_419c15bdc310b2107bd371edd4013191",
+            "sys_updated_by": "admin",
+            "sys_created_on": "2025-09-30 20:30:41",
+            "sys_name": "Office Supplies.StarTech USB to DVI Adapter",
+            "sys_scope": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_scope/global",
+              "value": "global"
+            },
+            "sc_cat_item": {
+              "link": "https://dev268210.service-now.com/api/now/table/sc_cat_item/99c1de1081136500772e95d75e286273",
+              "value": "99c1de1081136500772e95d75e286273"
+            },
+            "sys_created_by": "admin",
+            "sys_policy": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-15T22:04:46.822000+00:00",
+      "end_time": "2025-10-15T22:04:50.229000+00:00"
+    },
+    {
+      "observation_id": "5be372db9d4940af",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'item_option_new', 'fields': None, 'filters': 'cat_item=99c1de1081136500772e95d75e286273^name=requested_for', 'limit': 50}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "dynamic_ref_qual": "",
+            "rec_lookup_price": "",
+            "rec_price_if_checked": "0",
+            "display_title": "false",
+            "tooltip": "",
+            "show_help_on_load": "false",
+            "sys_updated_on": "2025-09-30 20:27:36",
+            "type": "31",
+            "published_ref": "",
+            "lookup_table": "",
+            "read_only": "false",
+            "record": "",
+            "sys_name": "Sample_label_965",
+            "sys_created_by": "admin",
+            "order": "39",
+            "map_to_field": "false",
+            "choice_direction": "down",
+            "delivery_plan": "",
+            "delete_roles": "",
+            "active": "true",
+            "dynamic_value_field": "",
+            "sys_update_name": "item_option_new_913bd9f5c310b2107bd371edd40131c2",
+            "field": "",
+            "unique": "false",
+            "macroponent": "",
+            "variable_width": "",
+            "help_text": "Sample_help_text_661",
+            "global": "false",
+            "mandatory": "false",
+            "sys_class_name": "item_option_new",
+            "dynamic_default_value": "",
+            "example_text": "",
+            "conversational_label": "",
+            "pricing_implications": "false",
+            "read_roles": "",
+            "sys_scope": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_scope/global",
+              "value": "global"
+            },
+            "visible_bundle": "true",
+            "create_roles": "",
+            "dynamic_value_dot_walk_path": "",
+            "table": "",
+            "mask_use_encryption": "false",
+            "include_none": "false",
+            "default_value": "Sample_default_value_404",
+            "price_if_checked": "0",
+            "help_tag": "More information",
+            "question_text": "Sample_label_965",
+            "sys_package": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_package/global",
+              "value": "global"
+            },
+            "cat_item": {
+              "link": "https://dev268210.service-now.com/api/now/table/sc_cat_item/99c1de1081136500772e95d75e286273",
+              "value": "99c1de1081136500772e95d75e286273"
+            },
+            "validate_regex": "",
+            "rich_text": "",
+            "record_producer_table": "",
+            "attributes": "",
+            "not_available_conversation": "false",
+            "lookup_unique": "false",
+            "reference_qual": "Sample_reference_qualifier_250",
+            "default_html_value": "",
+            "instructions": "",
+            "lookup_label": "",
+            "choice_field": "",
+            "save_script": "/** This script is executed before the Record is generated\r\n* `current`- GlideRecord produced by Record Producer\r\n* Don't use `current.update()` or `current.insert()` as the record is generated by Record Producer\r\n* Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss\r\n* Avoid `current.setAbortAction()` and generate a separate record\r\n* Use `producer.var1` to access variables\r\n*/",
+            "ui_page": "",
+            "reference": "",
+            "sys_updated_by": "admin",
+            "lookup_value": "",
+            "sys_created_on": "2025-09-30 20:24:41",
+            "roles_to_use_also_request_for": "",
+            "mask_use_confirmation": "false",
+            "reference_qual_condition": "",
+            "read_script": "",
+            "visibility": "1",
+            "choice_table": "",
+            "name": "requested_for",
+            "sys_policy": "",
+            "hidden": "false",
+            "use_dynamic_default": "false",
+            "description": "Sample_description_676",
+            "scale_min": "0",
+            "show_help": "false",
+            "visible_guide": "true",
+            "visible_standalone": "true",
+            "do_not_select_first": "false",
+            "sys_id": "913bd9f5c310b2107bd371edd40131c2",
+            "variable_set": "",
+            "write_roles": "",
+            "variable_name": "",
+            "list_table": "",
+            "sp_widget": "",
+            "macro": "",
+            "use_reference_qualifier": "simple",
+            "sys_mod_count": "1",
+            "visible_summary": "true",
+            "lookup_price": "",
+            "post_insert_script": "",
+            "sys_tags": "",
+            "layout": "normal",
+            "enable_also_request_for": "false",
+            "summary_macro": "",
+            "scale_max": "5",
+            "category": "",
+            "topic_block": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-15T22:04:46.822000+00:00",
+      "end_time": "2025-10-15T22:04:50.229000+00:00"
+    },
+    {
+      "observation_id": "9a7734157c4444ab",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'sc_cat_item', 'fields': None, 'filters': 'sys_id=99c1de1081136500772e95d75e286273', 'limit': 10}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "entitlement_script": "",
+            "use_sc_layout": "true",
+            "show_variable_help_on_load": "false",
+            "no_order_now": "false",
+            "sc_ic_version": "",
+            "delivery_time": "1970-01-03 00:00:00",
+            "sys_updated_on": "2025-09-30 20:30:40",
+            "type": "item",
+            "published_ref": "",
+            "no_search": "false",
+            "sys_updated_by": "admin",
+            "price": "49.99",
+            "sys_created_on": "2014-09-17 19:46:22",
+            "recurring_frequency": "",
+            "sys_name": "StarTech USB to DVI Adapter",
+            "model": "",
+            "state": "",
+            "no_cart": "false",
+            "sys_created_by": "bharath.rajan",
+            "group": "",
+            "hide_sp": "false",
+            "order": "620",
+            "start_closed": "false",
+            "image": "",
+            "no_quantity": "false",
+            "workflow": {
+              "link": "https://dev268210.service-now.com/api/now/table/wf_workflow/5961b91037023000158bbfc8bcbe5ddf",
+              "value": "5961b91037023000158bbfc8bcbe5ddf"
+            },
+            "delivery_plan": "",
+            "active": "true",
+            "checked_out": "",
+            "custom_cart": "",
+            "no_cart_v2": "false",
+            "no_proceed_checkout": "false",
+            "version": "3",
+            "ignore_price": "false",
+            "sys_update_name": "pc_hardware_cat_item_99c1de1081136500772e95d75e286273",
+            "meta": "",
+            "omit_price": "false",
+            "name": "StarTech USB to DVI Adapter",
+            "flow_designer_flow": "",
+            "mobile_hide_price": "false",
+            "no_wishlist_v2": "false",
+            "sys_policy": "",
+            "preview": "JavaScript: popupOpenStandard(\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=99c1de1081136500772e95d75e286273&sysparm_preview=true\", \"summary\");",
+            "template": "",
+            "short_description": "Multi Monitor Adapter",
+            "access_type": "",
+            "fulfillment_automation_level": "",
+            "roles": "",
+            "icon": "",
+            "description": "\n\t\t\n\t\t<p><span style=\"font-size: 10pt;\">Compact, USB powered adapter provides the easiest way add a high-resolution secondary or additional display to your PC</span></p>",
+            "mobile_picture": "",
+            "sc_template": "",
+            "availability": "on_desktop",
+            "mandatory_attachment": "false",
+            "request_method": "",
+            "visible_guide": "true",
+            "visible_standalone": "true",
+            "sys_class_name": "pc_hardware_cat_item",
+            "sys_id": "99c1de1081136500772e95d75e286273",
+            "no_order": "false",
+            "vendor": "",
+            "no_attachment_v2": "false",
+            "mobile_picture_type": "use_desktop_picture",
+            "sys_scope": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_scope/global",
+              "value": "global"
+            },
+            "visible_bundle": "true",
+            "sc_catalogs": "e0d08b13c3330100c8b837659bba8fb4",
+            "make_item_non_conversational": "false",
+            "ordered_item_link": "",
+            "owner": "",
+            "no_delivery_time_v2": "false",
+            "cost": "30",
+            "no_quantity_v2": "false",
+            "sys_mod_count": "17",
+            "recurring_price": "0",
+            "list_price": "0",
+            "sc_ic_item_staging": "",
+            "sys_tags": "",
+            "billable": "false",
+            "picture": "01587fbe775a11105e3db2a07b5a996d",
+            "sys_package": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_package/9de73c6c99a1221008ddd351c8920ac9",
+              "value": "9de73c6c99a1221008ddd351c8920ac9"
+            },
+            "display_price_property": "non_zero",
+            "taxonomy_topic": {
+              "link": "https://dev268210.service-now.com/api/now/table/topic/0fb45ba7c3053010069aec4b7d40dd40",
+              "value": "0fb45ba7c3053010069aec4b7d40dd40"
+            },
+            "delivery_plan_script": "",
+            "location": "",
+            "category": {
+              "link": "https://dev268210.service-now.com/api/now/table/sc_category/64f91939c310b2107bd371edd401313b",
+              "value": "64f91939c310b2107bd371edd401313b"
+            },
+            "no_save_as_draft": "false"
+          }
+        ]
+      },
+      "start_time": "2025-10-15T22:04:46.822000+00:00",
+      "end_time": "2025-10-15T22:04:50.229000+00:00"
+    },
+    {
+      "observation_id": "ff0a17babd258936",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'item_option_new', 'fields': None, 'filters': 'sys_id=913bd9f5c310b2107bd371edd40131c2', 'limit': 10}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "dynamic_ref_qual": "",
+            "rec_lookup_price": "",
+            "rec_price_if_checked": "0",
+            "display_title": "false",
+            "tooltip": "",
+            "show_help_on_load": "false",
+            "sys_updated_on": "2025-09-30 20:27:36",
+            "type": "31",
+            "published_ref": "",
+            "lookup_table": "",
+            "read_only": "false",
+            "record": "",
+            "sys_name": "Sample_label_965",
+            "sys_created_by": "admin",
+            "order": "39",
+            "map_to_field": "false",
+            "choice_direction": "down",
+            "delivery_plan": "",
+            "delete_roles": "",
+            "active": "true",
+            "dynamic_value_field": "",
+            "sys_update_name": "item_option_new_913bd9f5c310b2107bd371edd40131c2",
+            "field": "",
+            "unique": "false",
+            "macroponent": "",
+            "variable_width": "",
+            "help_text": "Sample_help_text_661",
+            "global": "false",
+            "mandatory": "false",
+            "sys_class_name": "item_option_new",
+            "dynamic_default_value": "",
+            "example_text": "",
+            "conversational_label": "",
+            "pricing_implications": "false",
+            "read_roles": "",
+            "sys_scope": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_scope/global",
+              "value": "global"
+            },
+            "visible_bundle": "true",
+            "create_roles": "",
+            "dynamic_value_dot_walk_path": "",
+            "table": "",
+            "mask_use_encryption": "false",
+            "include_none": "false",
+            "default_value": "Sample_default_value_404",
+            "price_if_checked": "0",
+            "help_tag": "More information",
+            "question_text": "Sample_label_965",
+            "sys_package": {
+              "link": "https://dev268210.service-now.com/api/now/table/sys_package/global",
+              "value": "global"
+            },
+            "cat_item": {
+              "link": "https://dev268210.service-now.com/api/now/table/sc_cat_item/99c1de1081136500772e95d75e286273",
+              "value": "99c1de1081136500772e95d75e286273"
+            },
+            "validate_regex": "",
+            "rich_text": "",
+            "record_producer_table": "",
+            "attributes": "",
+            "not_available_conversation": "false",
+            "lookup_unique": "false",
+            "reference_qual": "Sample_reference_qualifier_250",
+            "default_html_value": "",
+            "instructions": "",
+            "lookup_label": "",
+            "choice_field": "",
+            "save_script": "/** This script is executed before the Record is generated\r\n* `current`- GlideRecord produced by Record Producer\r\n* Don't use `current.update()` or `current.insert()` as the record is generated by Record Producer\r\n* Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss\r\n* Avoid `current.setAbortAction()` and generate a separate record\r\n* Use `producer.var1` to access variables\r\n*/",
+            "ui_page": "",
+            "reference": "",
+            "sys_updated_by": "admin",
+            "lookup_value": "",
+            "sys_created_on": "2025-09-30 20:24:41",
+            "roles_to_use_also_request_for": "",
+            "mask_use_confirmation": "false",
+            "reference_qual_condition": "",
+            "read_script": "",
+            "visibility": "1",
+            "choice_table": "",
+            "name": "requested_for",
+            "sys_policy": "",
+            "hidden": "false",
+            "use_dynamic_default": "false",
+            "description": "Sample_description_676",
+            "scale_min": "0",
+            "show_help": "false",
+            "visible_guide": "true",
+            "visible_standalone": "true",
+            "do_not_select_first": "false",
+            "sys_id": "913bd9f5c310b2107bd371edd40131c2",
+            "variable_set": "",
+            "write_roles": "",
+            "variable_name": "",
+            "list_table": "",
+            "sp_widget": "",
+            "macro": "",
+            "use_reference_qualifier": "simple",
+            "sys_mod_count": "1",
+            "visible_summary": "true",
+            "lookup_price": "",
+            "post_insert_script": "",
+            "sys_tags": "",
+            "layout": "normal",
+            "enable_also_request_for": "false",
+            "summary_macro": "",
+            "scale_max": "5",
+            "category": "",
+            "topic_block": ""
+          }
+        ]
+      },
+      "start_time": "2025-10-15T22:04:46.822000+00:00",
+      "end_time": "2025-10-15T22:04:50.229000+00:00"
+    },
+    {
+      "observation_id": "76b929f684cce164",
+      "name": "get_table_schema",
+      "type": "TOOL",
+      "input": "{'table_names': ['sc_category', 'sc_cat_item', 'sc_cat_item_category', 'item_option_new']}",
+      "output": {
+        "sc_category": {
+          "schema": [
+            {
+              "column_name": "",
+              "internal_type": "collection",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "description",
+              "internal_type": "translated_text",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "location",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "cmn_location",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "parent",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_category",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "sc_catalog",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_catalog",
+              "default_value": "javascript: new Category().getDefaultCatalogValue();",
+              "choices": []
+            },
+            {
+              "column_name": "image",
+              "internal_type": "image",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "active",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "true",
+              "choices": []
+            },
+            {
+              "column_name": "roles",
+              "internal_type": "user_roles",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "icon",
+              "internal_type": "user_image",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "header_icon",
+              "internal_type": "user_image",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "entitlement_script",
+              "internal_type": "script_plain",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "order",
+              "internal_type": "integer",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "0",
+              "choices": []
+            },
+            {
+              "column_name": "homepage_image",
+              "internal_type": "user_image",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "mobile_picture",
+              "internal_type": "user_image",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "mobile_hide_description",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "mobile_subcategory_render_type",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "list",
+              "choices": [
+                {
+                  "value": "card",
+                  "label": "Card"
+                },
+                {
+                  "value": "list",
+                  "label": "List"
+                }
+              ]
+            },
+            {
+              "column_name": "homepage_renderer",
+              "internal_type": "reference",
+              "mandatory": "true",
+              "reference": "sc_homepage_renderer",
+              "default_value": "47ebe8aa3742300054b6a3549dbe5dfa",
+              "choices": []
+            },
+            {
+              "column_name": "module",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sys_app_module",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "sys_id",
+              "internal_type": "GUID",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "title",
+              "internal_type": "translated_text",
+              "mandatory": "true",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            }
+          ]
+        },
+        "sc_cat_item": {
+          "schema": [
+            {
+              "column_name": "state",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": [
+                {
+                  "value": "published",
+                  "label": "Published"
+                },
+                {
+                  "value": "reviewed",
+                  "label": "Reviewed"
+                },
+                {
+                  "value": "draft",
+                  "label": "Draft"
+                },
+                {
+                  "value": "publishing",
+                  "label": "Publishing"
+                },
+                {
+                  "value": "in_review",
+                  "label": "In review"
+                }
+              ]
+            },
+            {
+              "column_name": "access_type",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "restricted",
+              "choices": [
+                {
+                  "value": "delegated",
+                  "label": "Delegated"
+                },
+                {
+                  "value": "restricted",
+                  "label": "Restricted"
+                }
+              ]
+            },
+            {
+              "column_name": "list_price",
+              "internal_type": "currency",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "checked_out",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": [
+                {
+                  "value": "true",
+                  "label": "true"
+                },
+                {
+                  "value": "false",
+                  "label": "false"
+                }
+              ]
+            },
+            {
+              "column_name": "template_manager_roles",
+              "internal_type": "user_roles",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "",
+              "internal_type": "collection",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "no_quantity",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "custom_cart",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sys_ui_macro",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "preview",
+              "internal_type": "catalog_preview",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "cost",
+              "internal_type": "decimal",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "0",
+              "choices": []
+            },
+            {
+              "column_name": "recurring_price",
+              "internal_type": "price",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "recurring_frequency",
+              "internal_type": "choice",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "ordered_item_link",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_ordered_item_link",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "vendor",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "core_company",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "availability",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "on_desktop",
+              "choices": [
+                {
+                  "value": "on_both",
+                  "label": "Desktop and Classic Mobile"
+                },
+                {
+                  "value": "on_desktop",
+                  "label": "Desktop Only"
+                },
+                {
+                  "value": "on_mobile",
+                  "label": "Classic Mobile Only"
+                }
+              ]
+            },
+            {
+              "column_name": "sc_ic_item_staging",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_ic_item_staging",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "sc_ic_version",
+              "internal_type": "integer",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "workflow",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "wf_workflow",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "show_variable_help_on_load",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "hide_sp",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "display_price_property",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "owner",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sys_user",
+              "default_value": "javascript:gs.getUserID()",
+              "choices": []
+            },
+            {
+              "column_name": "version",
+              "internal_type": "integer",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "make_item_non_conversational",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "published_ref",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_cat_item",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "taxonomy_topic",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "topic",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "price",
+              "internal_type": "price",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "0.00",
+              "choices": []
+            },
+            {
+              "column_name": "ignore_price",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "billable",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "image",
+              "internal_type": "image",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "category",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_category",
+              "default_value": "javascript: new SNCCatalogUtil().getCategoryIDFromURL();",
+              "choices": []
+            },
+            {
+              "column_name": "sc_catalogs",
+              "internal_type": "glide_list",
+              "mandatory": "false",
+              "reference": "sc_catalog",
+              "default_value": "javascript:SNC.Catalog.getDefaultCatalog();",
+              "choices": []
+            },
+            {
+              "column_name": "short_description",
+              "internal_type": "translated_text",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "description",
+              "internal_type": "translated_html",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "meta",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "location",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "cmn_location",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "group",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sys_user_group",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "delivery_time",
+              "internal_type": "glide_duration",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "2 00:00:00",
+              "choices": []
+            },
+            {
+              "column_name": "model",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "cmdb_model",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "type",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "item",
+              "choices": [
+                {
+                  "value": "template",
+                  "label": "Template"
+                },
+                {
+                  "value": "item",
+                  "label": "Item"
+                },
+                {
+                  "value": "package",
+                  "label": "Package"
+                },
+                {
+                  "value": "task",
+                  "label": "Task"
+                },
+                {
+                  "value": "bundle",
+                  "label": "Bundle"
+                }
+              ]
+            },
+            {
+              "column_name": "template",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sys_template",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "active",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "true",
+              "choices": []
+            },
+            {
+              "column_name": "roles",
+              "internal_type": "user_roles",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "delivery_plan",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_cat_item_delivery_plan",
+              "default_value": "javascript:getDefaultDeliveryPlan()",
+              "choices": []
+            },
+            {
+              "column_name": "picture",
+              "internal_type": "user_image",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "mobile_picture",
+              "internal_type": "user_image",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "mobile_picture_type",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "use_desktop_picture",
+              "choices": [
+                {
+                  "value": "use_mobile_picture",
+                  "label": "Classic Mobile"
+                },
+                {
+                  "value": "use_no_picture",
+                  "label": "None"
+                },
+                {
+                  "value": "use_desktop_picture",
+                  "label": "Desktop"
+                }
+              ]
+            },
+            {
+              "column_name": "mobile_hide_price",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "icon",
+              "internal_type": "user_image",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "order",
+              "internal_type": "integer",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "0",
+              "choices": []
+            },
+            {
+              "column_name": "start_closed",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "no_proceed_checkout",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "no_order_now",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "no_order",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "no_search",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "no_cart",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "use_sc_layout",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "true",
+              "choices": []
+            },
+            {
+              "column_name": "delivery_plan_script",
+              "internal_type": "script_plain",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "entitlement_script",
+              "internal_type": "script_plain",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "visible_bundle",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "true",
+              "choices": []
+            },
+            {
+              "column_name": "visible_standalone",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "true",
+              "choices": []
+            },
+            {
+              "column_name": "visible_guide",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "true",
+              "choices": []
+            },
+            {
+              "column_name": "omit_price",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "fulfillment_automation_level",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "unspecified",
+              "choices": [
+                {
+                  "value": "fully_automated",
+                  "label": "Fully automated"
+                },
+                {
+                  "value": "unspecified",
+                  "label": "Unspecified"
+                },
+                {
+                  "value": "manual",
+                  "label": "Manual"
+                },
+                {
+                  "value": "semi_automated",
+                  "label": "Semi-automated"
+                }
+              ]
+            },
+            {
+              "column_name": "mandatory_attachment",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "no_quantity_v2",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "request_method",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": [
+                {
+                  "value": "submit",
+                  "label": "Submit"
+                },
+                {
+                  "value": "NULL_OVERRIDE",
+                  "label": "Order"
+                },
+                {
+                  "value": "request",
+                  "label": "Request"
+                }
+              ]
+            },
+            {
+              "column_name": "no_save_as_draft",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "no_wishlist_v2",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "no_attachment_v2",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "no_cart_v2",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "no_delivery_time_v2",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "sys_id",
+              "internal_type": "GUID",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "sc_template",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_template",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "flow_designer_flow",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sys_hub_flow",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "name",
+              "internal_type": "translated_text",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            }
+          ]
+        },
+        "sc_cat_item_category": {
+          "schema": [
+            {
+              "column_name": "",
+              "internal_type": "collection",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "sc_category",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_category",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "sc_cat_item",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_cat_item",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "sys_id",
+              "internal_type": "GUID",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            }
+          ]
+        },
+        "item_option_new": {
+          "schema": [
+            {
+              "column_name": "published_ref",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "item_option_new",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "cat_item",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_cat_item",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "variable_set",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "item_option_new_set",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "description",
+              "internal_type": "html",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "delivery_plan",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sc_cat_item_delivery_plan",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "category",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "item_option_category",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "visibility",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "1",
+              "choices": [
+                {
+                  "value": "1",
+                  "label": "Always"
+                },
+                {
+                  "value": "2",
+                  "label": "Bundles"
+                },
+                {
+                  "value": "3",
+                  "label": "Standalone"
+                }
+              ]
+            },
+            {
+              "column_name": "visible_bundle",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "true",
+              "choices": []
+            },
+            {
+              "column_name": "visible_standalone",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "true",
+              "choices": []
+            },
+            {
+              "column_name": "visible_guide",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "true",
+              "choices": []
+            },
+            {
+              "column_name": "visible_summary",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "true",
+              "choices": []
+            },
+            {
+              "column_name": "not_available_conversation",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "global",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "unique",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "variable_width",
+              "internal_type": "string",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": [
+                {
+                  "value": "50",
+                  "label": "50%"
+                },
+                {
+                  "value": "75",
+                  "label": "75%"
+                },
+                {
+                  "value": "NULL_OVERRIDE",
+                  "label": "System Default Width"
+                },
+                {
+                  "value": "100",
+                  "label": "100%"
+                },
+                {
+                  "value": "25",
+                  "label": "25%"
+                }
+              ]
+            },
+            {
+              "column_name": "rich_text",
+              "internal_type": "translated_html",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "instructions",
+              "internal_type": "translated_html",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "validate_regex",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "question_regex",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "macroponent",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sys_ux_macroponent",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "read_script",
+              "internal_type": "script_plain",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "save_script",
+              "internal_type": "script_plain",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "/** This script is executed before the Record is generated\r\n* `current`- GlideRecord produced by Record Producer\r\n* Don't use `current.update()` or `current.insert()` as the record is generated by Record Producer\r\n* Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss\r\n* Avoid `current.setAbortAction()` and generate a separate record\r\n* Use `producer.var1` to access variables\r\n*/",
+              "choices": []
+            },
+            {
+              "column_name": "post_insert_script",
+              "internal_type": "script_plain",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "dynamic_value_field",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "item_option_new",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "dynamic_value_dot_walk_path",
+              "internal_type": "field_name",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "conversational_label",
+              "internal_type": "translated_text",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "enable_also_request_for",
+              "internal_type": "boolean",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "false",
+              "choices": []
+            },
+            {
+              "column_name": "roles_to_use_also_request_for",
+              "internal_type": "user_roles",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "",
+              "internal_type": "collection",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "sys_id",
+              "internal_type": "GUID",
+              "mandatory": "false",
+              "reference": "",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "topic_block",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sys_cs_topic",
+              "default_value": "",
+              "choices": []
+            },
+            {
+              "column_name": "sp_widget",
+              "internal_type": "reference",
+              "mandatory": "false",
+              "reference": "sp_widget",
+              "default_value": "",
+              "choices": []
+            }
+          ]
+        }
+      },
+      "start_time": "2025-10-15T22:03:58.214000+00:00",
+      "end_time": "2025-10-15T22:04:02.697000+00:00"
+    }
+  ],
+  "schema_context": "## Retrieved Schema Information\n\nThe following information was retrieved by calling MCP tools:\n\n### Tool Call 1: search_any_table\n**Input:** \"{'table': 'sc_category', 'fields': None, 'filters': 'descriptionLIKECatalog category for meeting room booking', 'limit': 10}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"homepage_renderer\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sc_homepage_renderer/47ebe8aa3742300054b6a3549dbe5dfa\",\n        \"value\": \"47ebe8aa3742300054b6a3549dbe5dfa\"\n      },\n      \"parent\": \"\",\n      \"entitlement_script\": \"\",\n      \"mobile_subcategory_render_type\": \"list\",\n      \"mobile_hide_description\": \"false\",\n      \"roles\": \"\",\n      \"icon\": \"Meeting Room Booking\",\n      \"description\": \"Catalog category for meeting room booking\",\n      \"mobile_picture\": \"\",\n      \"sc_catalog\": \"\",\n      \"sys_updated_on\": \"2025-09-30 20:26:33\",\n      \"title\": \"Office Supplies\",\n      \"sys_class_name\": \"sc_category\",\n      \"sys_id\": \"64f91939c310b2107bd371edd401313b\",\n      \"sys_updated_by\": \"admin\",\n      \"homepage_image\": \"\",\n      \"sys_created_on\": \"2025-09-30 20:19:11\",\n      \"sys_name\": \"Office Supplies\",\n      \"sys_scope\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n        \"value\": \"global\"\n      },\n      \"sys_created_by\": \"admin\",\n      \"order\": \"24\",\n      \"image\": \"\",\n      \"header_icon\": \"\",\n      \"module\": \"\",\n      \"sys_mod_count\": \"1\",\n      \"active\": \"true\",\n      \"sys_tags\": \"\",\n      \"sys_package\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_package/global\",\n        \"value\": \"global\"\n      },\n      \"sys_update_name\": \"sc_category_64f91939c310b2107bd371edd401313b\",\n      \"location\": \"\",\n      \"sys_policy\": \"\"\n    }\n  ]\n}\n```\n\n### Tool Call 2: search_any_table\n**Input:** \"{'table': 'sc_category', 'fields': None, 'filters': 'sys_id=64f91939c310b2107bd371edd401313b', 'limit': 10}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"homepage_renderer\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sc_homepage_renderer/47ebe8aa3742300054b6a3549dbe5dfa\",\n        \"value\": \"47ebe8aa3742300054b6a3549dbe5dfa\"\n      },\n      \"parent\": \"\",\n      \"entitlement_script\": \"\",\n      \"mobile_subcategory_render_type\": \"list\",\n      \"mobile_hide_description\": \"false\",\n      \"roles\": \"\",\n      \"icon\": \"Meeting Room Booking\",\n      \"description\": \"Catalog category for meeting room booking\",\n      \"mobile_picture\": \"\",\n      \"sc_catalog\": \"\",\n      \"sys_updated_on\": \"2025-09-30 20:26:33\",\n      \"title\": \"Office Supplies\",\n      \"sys_class_name\": \"sc_category\",\n      \"sys_id\": \"64f91939c310b2107bd371edd401313b\",\n      \"sys_updated_by\": \"admin\",\n      \"homepage_image\": \"\",\n      \"sys_created_on\": \"2025-09-30 20:19:11\",\n      \"sys_name\": \"Office Supplies\",\n      \"sys_scope\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n        \"value\": \"global\"\n      },\n      \"sys_created_by\": \"admin\",\n      \"order\": \"24\",\n      \"image\": \"\",\n      \"header_icon\": \"\",\n      \"module\": \"\",\n      \"sys_mod_count\": \"1\",\n      \"active\": \"true\",\n      \"sys_tags\": \"\",\n      \"sys_package\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_package/global\",\n        \"value\": \"global\"\n      },\n      \"sys_update_name\": \"sc_category_64f91939c310b2107bd371edd401313b\",\n      \"location\": \"\",\n      \"sys_policy\": \"\"\n    }\n  ]\n}\n```\n\n### Tool Call 3: search_any_table\n**Input:** \"{'table': 'sc_category', 'fields': None, 'filters': 'titleLIKEMeeting Room Booking', 'limit': 10}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 4: search_any_table\n**Input:** \"{'table': 'sc_cat_item_category', 'fields': None, 'filters': 'sc_cat_item=99c1de1081136500772e95d75e286273', 'limit': 50}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"sc_category\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sc_category/64f91939c310b2107bd371edd401313b\",\n        \"value\": \"64f91939c310b2107bd371edd401313b\"\n      },\n      \"sys_mod_count\": \"0\",\n      \"sys_updated_on\": \"2025-09-30 20:30:41\",\n      \"sys_tags\": \"\",\n      \"sys_class_name\": \"sc_cat_item_category\",\n      \"sys_id\": \"419c15bdc310b2107bd371edd4013191\",\n      \"sys_package\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_package/global\",\n        \"value\": \"global\"\n      },\n      \"sys_update_name\": \"sc_cat_item_category_419c15bdc310b2107bd371edd4013191\",\n      \"sys_updated_by\": \"admin\",\n      \"sys_created_on\": \"2025-09-30 20:30:41\",\n      \"sys_name\": \"Office Supplies.StarTech USB to DVI Adapter\",\n      \"sys_scope\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n        \"value\": \"global\"\n      },\n      \"sc_cat_item\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sc_cat_item/99c1de1081136500772e95d75e286273\",\n        \"value\": \"99c1de1081136500772e95d75e286273\"\n      },\n      \"sys_created_by\": \"admin\",\n      \"sys_policy\": \"\"\n    }\n  ]\n}\n```\n\n### Tool Call 5: search_any_table\n**Input:** \"{'table': 'item_option_new', 'fields': None, 'filters': 'cat_item=99c1de1081136500772e95d75e286273^name=requested_for', 'limit': 50}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"dynamic_ref_qual\": \"\",\n      \"rec_lookup_price\": \"\",\n      \"rec_price_if_checked\": \"0\",\n      \"display_title\": \"false\",\n      \"tooltip\": \"\",\n      \"show_help_on_load\": \"false\",\n      \"sys_updated_on\": \"2025-09-30 20:27:36\",\n      \"type\": \"31\",\n      \"published_ref\": \"\",\n      \"lookup_table\": \"\",\n      \"read_only\": \"false\",\n      \"record\": \"\",\n      \"sys_name\": \"Sample_label_965\",\n      \"sys_created_by\": \"admin\",\n      \"order\": \"39\",\n      \"map_to_field\": \"false\",\n      \"choice_direction\": \"down\",\n      \"delivery_plan\": \"\",\n      \"delete_roles\": \"\",\n      \"active\": \"true\",\n      \"dynamic_value_field\": \"\",\n      \"sys_update_name\": \"item_option_new_913bd9f5c310b2107bd371edd40131c2\",\n      \"field\": \"\",\n      \"unique\": \"false\",\n      \"macroponent\": \"\",\n      \"variable_width\": \"\",\n      \"help_text\": \"Sample_help_text_661\",\n      \"global\": \"false\",\n      \"mandatory\": \"false\",\n      \"sys_class_name\": \"item_option_new\",\n      \"dynamic_default_value\": \"\",\n      \"example_text\": \"\",\n      \"conversational_label\": \"\",\n      \"pricing_implications\": \"false\",\n      \"read_roles\": \"\",\n      \"sys_scope\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n        \"value\": \"global\"\n      },\n      \"visible_bundle\": \"true\",\n      \"create_roles\": \"\",\n      \"dynamic_value_dot_walk_path\": \"\",\n      \"table\": \"\",\n      \"mask_use_encryption\": \"false\",\n      \"include_none\": \"false\",\n      \"default_value\": \"Sample_default_value_404\",\n      \"price_if_checked\": \"0\",\n      \"help_tag\": \"More information\",\n      \"question_text\": \"Sample_label_965\",\n      \"sys_package\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_package/global\",\n        \"value\": \"global\"\n      },\n      \"cat_item\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sc_cat_item/99c1de1081136500772e95d75e286273\",\n        \"value\": \"99c1de1081136500772e95d75e286273\"\n      },\n      \"validate_regex\": \"\",\n      \"rich_text\": \"\",\n      \"record_producer_table\": \"\",\n      \"attributes\": \"\",\n      \"not_available_conversation\": \"false\",\n      \"lookup_unique\": \"false\",\n      \"reference_qual\": \"Sample_reference_qualifier_250\",\n      \"default_html_value\": \"\",\n      \"instructions\": \"\",\n      \"lookup_label\": \"\",\n      \"choice_field\": \"\",\n      \"save_script\": \"/** This script is executed before the Record is generated\\r\\n* `current`- GlideRecord produced by Record Producer\\r\\n* Don't use `current.update()` or `current.insert()` as the record is generated by Record Producer\\r\\n* Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss\\r\\n* Avoid `current.setAbortAction()` and generate a separate record\\r\\n* Use `producer.var1` to access variables\\r\\n*/\",\n      \"ui_page\": \"\",\n      \"reference\": \"\",\n      \"sys_updated_by\": \"admin\",\n      \"lookup_value\": \"\",\n      \"sys_created_on\": \"2025-09-30 20:24:41\",\n      \"roles_to_use_also_request_for\": \"\",\n      \"mask_use_confirmation\": \"false\",\n      \"reference_qual_condition\": \"\",\n      \"read_script\": \"\",\n      \"visibility\": \"1\",\n      \"choice_table\": \"\",\n      \"name\": \"requested_for\",\n      \"sys_policy\": \"\",\n      \"hidden\": \"false\",\n      \"use_dynamic_default\": \"false\",\n      \"description\": \"Sample_description_676\",\n      \"scale_min\": \"0\",\n      \"show_help\": \"false\",\n      \"visible_guide\": \"true\",\n      \"visible_standalone\": \"true\",\n      \"do_not_select_first\": \"false\",\n      \"sys_id\": \"913bd9f5c310b2107bd371edd40131c2\",\n      \"variable_set\": \"\",\n      \"write_roles\": \"\",\n      \"variable_name\": \"\",\n      \"list_table\": \"\",\n      \"sp_widget\": \"\",\n      \"macro\": \"\",\n      \"use_reference_qualifier\": \"simple\",\n      \"sys_mod_count\": \"1\",\n      \"visible_summary\": \"true\",\n      \"lookup_price\": \"\",\n      \"post_insert_script\": \"\",\n      \"sys_tags\": \"\",\n      \"layout\": \"normal\",\n      \"enable_also_request_for\": \"false\",\n      \"summary_macro\": \"\",\n      \"scale_max\": \"5\",\n      \"category\": \"\",\n      \"topic_block\": \"\"\n    }\n  ]\n}\n```\n\n### Tool Call 6: search_any_table\n**Input:** \"{'table': 'sc_cat_item', 'fields': None, 'filters': 'sys_id=99c1de1081136500772e95d75e286273', 'limit': 10}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"entitlement_script\": \"\",\n      \"use_sc_layout\": \"true\",\n      \"show_variable_help_on_load\": \"false\",\n      \"no_order_now\": \"false\",\n      \"sc_ic_version\": \"\",\n      \"delivery_time\": \"1970-01-03 00:00:00\",\n      \"sys_updated_on\": \"2025-09-30 20:30:40\",\n      \"type\": \"item\",\n      \"published_ref\": \"\",\n      \"no_search\": \"false\",\n      \"sys_updated_by\": \"admin\",\n      \"price\": \"49.99\",\n      \"sys_created_on\": \"2014-09-17 19:46:22\",\n      \"recurring_frequency\": \"\",\n      \"sys_name\": \"StarTech USB to DVI Adapter\",\n      \"model\": \"\",\n      \"state\": \"\",\n      \"no_cart\": \"false\",\n      \"sys_created_by\": \"bharath.rajan\",\n      \"group\": \"\",\n      \"hide_sp\": \"false\",\n      \"order\": \"620\",\n      \"start_closed\": \"false\",\n      \"image\": \"\",\n      \"no_quantity\": \"false\",\n      \"workflow\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/wf_workflow/5961b91037023000158bbfc8bcbe5ddf\",\n        \"value\": \"5961b91037023000158bbfc8bcbe5ddf\"\n      },\n      \"delivery_plan\": \"\",\n      \"active\": \"true\",\n      \"checked_out\": \"\",\n      \"custom_cart\": \"\",\n      \"no_cart_v2\": \"false\",\n      \"no_proceed_checkout\": \"false\",\n      \"version\": \"3\",\n      \"ignore_price\": \"false\",\n      \"sys_update_name\": \"pc_hardware_cat_item_99c1de1081136500772e95d75e286273\",\n      \"meta\": \"\",\n      \"omit_price\": \"false\",\n      \"name\": \"StarTech USB to DVI Adapter\",\n      \"flow_designer_flow\": \"\",\n      \"mobile_hide_price\": \"false\",\n      \"no_wishlist_v2\": \"false\",\n      \"sys_policy\": \"\",\n      \"preview\": \"JavaScript: popupOpenStandard(\\\"com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=99c1de1081136500772e95d75e286273&sysparm_preview=true\\\", \\\"summary\\\");\",\n      \"template\": \"\",\n      \"short_description\": \"Multi Monitor Adapter\",\n      \"access_type\": \"\",\n      \"fulfillment_automation_level\": \"\",\n      \"roles\": \"\",\n      \"icon\": \"\",\n      \"description\": \"\\n\\t\\t\\n\\t\\t<p><span style=\\\"font-size: 10pt;\\\">Compact, USB powered adapter provides the easiest way add a high-resolution secondary or additional display to your PC</span></p>\",\n      \"mobile_picture\": \"\",\n      \"sc_template\": \"\",\n      \"availability\": \"on_desktop\",\n      \"mandatory_attachment\": \"false\",\n      \"request_method\": \"\",\n      \"visible_guide\": \"true\",\n      \"visible_standalone\": \"true\",\n      \"sys_class_name\": \"pc_hardware_cat_item\",\n      \"sys_id\": \"99c1de1081136500772e95d75e286273\",\n      \"no_order\": \"false\",\n      \"vendor\": \"\",\n      \"no_attachment_v2\": \"false\",\n      \"mobile_picture_type\": \"use_desktop_picture\",\n      \"sys_scope\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n        \"value\": \"global\"\n      },\n      \"visible_bundle\": \"true\",\n      \"sc_catalogs\": \"e0d08b13c3330100c8b837659bba8fb4\",\n      \"make_item_non_conversational\": \"false\",\n      \"ordered_item_link\": \"\",\n      \"owner\": \"\",\n      \"no_delivery_time_v2\": \"false\",\n      \"cost\": \"30\",\n      \"no_quantity_v2\": \"false\",\n      \"sys_mod_count\": \"17\",\n      \"recurring_price\": \"0\",\n      \"list_price\": \"0\",\n      \"sc_ic_item_staging\": \"\",\n      \"sys_tags\": \"\",\n      \"billable\": \"false\",\n      \"picture\": \"01587fbe775a11105e3db2a07b5a996d\",\n      \"sys_package\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_package/9de73c6c99a1221008ddd351c8920ac9\",\n        \"value\": \"9de73c6c99a1221008ddd351c8920ac9\"\n      },\n      \"display_price_property\": \"non_zero\",\n      \"taxonomy_topic\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/topic/0fb45ba7c3053010069aec4b7d40dd40\",\n        \"value\": \"0fb45ba7c3053010069aec4b7d40dd40\"\n      },\n      \"delivery_plan_script\": \"\",\n      \"location\": \"\",\n      \"category\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sc_category/64f91939c310b2107bd371edd401313b\",\n        \"value\": \"64f91939c310b2107bd371edd401313b\"\n      },\n      \"no_save_as_draft\": \"false\"\n    }\n  ]\n}\n```\n\n### Tool Call 7: search_any_table\n**Input:** \"{'table': 'item_option_new', 'fields': None, 'filters': 'sys_id=913bd9f5c310b2107bd371edd40131c2', 'limit': 10}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"dynamic_ref_qual\": \"\",\n      \"rec_lookup_price\": \"\",\n      \"rec_price_if_checked\": \"0\",\n      \"display_title\": \"false\",\n      \"tooltip\": \"\",\n      \"show_help_on_load\": \"false\",\n      \"sys_updated_on\": \"2025-09-30 20:27:36\",\n      \"type\": \"31\",\n      \"published_ref\": \"\",\n      \"lookup_table\": \"\",\n      \"read_only\": \"false\",\n      \"record\": \"\",\n      \"sys_name\": \"Sample_label_965\",\n      \"sys_created_by\": \"admin\",\n      \"order\": \"39\",\n      \"map_to_field\": \"false\",\n      \"choice_direction\": \"down\",\n      \"delivery_plan\": \"\",\n      \"delete_roles\": \"\",\n      \"active\": \"true\",\n      \"dynamic_value_field\": \"\",\n      \"sys_update_name\": \"item_option_new_913bd9f5c310b2107bd371edd40131c2\",\n      \"field\": \"\",\n      \"unique\": \"false\",\n      \"macroponent\": \"\",\n      \"variable_width\": \"\",\n      \"help_text\": \"Sample_help_text_661\",\n      \"global\": \"false\",\n      \"mandatory\": \"false\",\n      \"sys_class_name\": \"item_option_new\",\n      \"dynamic_default_value\": \"\",\n      \"example_text\": \"\",\n      \"conversational_label\": \"\",\n      \"pricing_implications\": \"false\",\n      \"read_roles\": \"\",\n      \"sys_scope\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n        \"value\": \"global\"\n      },\n      \"visible_bundle\": \"true\",\n      \"create_roles\": \"\",\n      \"dynamic_value_dot_walk_path\": \"\",\n      \"table\": \"\",\n      \"mask_use_encryption\": \"false\",\n      \"include_none\": \"false\",\n      \"default_value\": \"Sample_default_value_404\",\n      \"price_if_checked\": \"0\",\n      \"help_tag\": \"More information\",\n      \"question_text\": \"Sample_label_965\",\n      \"sys_package\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sys_package/global\",\n        \"value\": \"global\"\n      },\n      \"cat_item\": {\n        \"link\": \"https://dev268210.service-now.com/api/now/table/sc_cat_item/99c1de1081136500772e95d75e286273\",\n        \"value\": \"99c1de1081136500772e95d75e286273\"\n      },\n      \"validate_regex\": \"\",\n      \"rich_text\": \"\",\n      \"record_producer_table\": \"\",\n      \"attributes\": \"\",\n      \"not_available_conversation\": \"false\",\n      \"lookup_unique\": \"false\",\n      \"reference_qual\": \"Sample_reference_qualifier_250\",\n      \"default_html_value\": \"\",\n      \"instructions\": \"\",\n      \"lookup_label\": \"\",\n      \"choice_field\": \"\",\n      \"save_script\": \"/** This script is executed before the Record is generated\\r\\n* `current`- GlideRecord produced by Record Producer\\r\\n* Don't use `current.update()` or `current.insert()` as the record is generated by Record Producer\\r\\n* Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss\\r\\n* Avoid `current.setAbortAction()` and generate a separate record\\r\\n* Use `producer.var1` to access variables\\r\\n*/\",\n      \"ui_page\": \"\",\n      \"reference\": \"\",\n      \"sys_updated_by\": \"admin\",\n      \"lookup_value\": \"\",\n      \"sys_created_on\": \"2025-09-30 20:24:41\",\n      \"roles_to_use_also_request_for\": \"\",\n      \"mask_use_confirmation\": \"false\",\n      \"reference_qual_condition\": \"\",\n      \"read_script\": \"\",\n      \"visibility\": \"1\",\n      \"choice_table\": \"\",\n      \"name\": \"requested_for\",\n      \"sys_policy\": \"\",\n      \"hidden\": \"false\",\n      \"use_dynamic_default\": \"false\",\n      \"description\": \"Sample_description_676\",\n      \"scale_min\": \"0\",\n      \"show_help\": \"false\",\n      \"visible_guide\": \"true\",\n      \"visible_standalone\": \"true\",\n      \"do_not_select_first\": \"false\",\n      \"sys_id\": \"913bd9f5c310b2107bd371edd40131c2\",\n      \"variable_set\": \"\",\n      \"write_roles\": \"\",\n      \"variable_name\": \"\",\n      \"list_table\": \"\",\n      \"sp_widget\": \"\",\n      \"macro\": \"\",\n      \"use_reference_qualifier\": \"simple\",\n      \"sys_mod_count\": \"1\",\n      \"visible_summary\": \"true\",\n      \"lookup_price\": \"\",\n      \"post_insert_script\": \"\",\n      \"sys_tags\": \"\",\n      \"layout\": \"normal\",\n      \"enable_also_request_for\": \"false\",\n      \"summary_macro\": \"\",\n      \"scale_max\": \"5\",\n      \"category\": \"\",\n      \"topic_block\": \"\"\n    }\n  ]\n}\n```\n\n### Tool Call 8: get_table_schema\n**Input:** \"{'table_names': ['sc_category', 'sc_cat_item', 'sc_cat_item_category', 'item_option_new']}\"\n\n**Output:**\n```json\n{\n  \"sc_category\": {\n    \"schema\": [\n      {\n        \"column_name\": \"\",\n        \"internal_type\": \"collection\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"description\",\n        \"internal_type\": \"translated_text\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"location\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"cmn_location\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"parent\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_category\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sc_catalog\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_catalog\",\n        \"default_value\": \"javascript: new Category().getDefaultCatalogValue();\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"image\",\n        \"internal_type\": \"image\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"active\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"true\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"roles\",\n        \"internal_type\": \"user_roles\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"icon\",\n        \"internal_type\": \"user_image\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"header_icon\",\n        \"internal_type\": \"user_image\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"entitlement_script\",\n        \"internal_type\": \"script_plain\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"order\",\n        \"internal_type\": \"integer\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"0\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"homepage_image\",\n        \"internal_type\": \"user_image\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"mobile_picture\",\n        \"internal_type\": \"user_image\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"mobile_hide_description\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"mobile_subcategory_render_type\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"list\",\n        \"choices\": [\n          {\n            \"value\": \"card\",\n            \"label\": \"Card\"\n          },\n          {\n            \"value\": \"list\",\n            \"label\": \"List\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"homepage_renderer\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"true\",\n        \"reference\": \"sc_homepage_renderer\",\n        \"default_value\": \"47ebe8aa3742300054b6a3549dbe5dfa\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"module\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sys_app_module\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sys_id\",\n        \"internal_type\": \"GUID\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"title\",\n        \"internal_type\": \"translated_text\",\n        \"mandatory\": \"true\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      }\n    ]\n  },\n  \"sc_cat_item\": {\n    \"schema\": [\n      {\n        \"column_name\": \"state\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": [\n          {\n            \"value\": \"published\",\n            \"label\": \"Published\"\n          },\n          {\n            \"value\": \"reviewed\",\n            \"label\": \"Reviewed\"\n          },\n          {\n            \"value\": \"draft\",\n            \"label\": \"Draft\"\n          },\n          {\n            \"value\": \"publishing\",\n            \"label\": \"Publishing\"\n          },\n          {\n            \"value\": \"in_review\",\n            \"label\": \"In review\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"access_type\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"restricted\",\n        \"choices\": [\n          {\n            \"value\": \"delegated\",\n            \"label\": \"Delegated\"\n          },\n          {\n            \"value\": \"restricted\",\n            \"label\": \"Restricted\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"list_price\",\n        \"internal_type\": \"currency\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"checked_out\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": [\n          {\n            \"value\": \"true\",\n            \"label\": \"true\"\n          },\n          {\n            \"value\": \"false\",\n            \"label\": \"false\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"template_manager_roles\",\n        \"internal_type\": \"user_roles\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"\",\n        \"internal_type\": \"collection\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_quantity\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"custom_cart\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sys_ui_macro\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"preview\",\n        \"internal_type\": \"catalog_preview\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"cost\",\n        \"internal_type\": \"decimal\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"0\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"recurring_price\",\n        \"internal_type\": \"price\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"recurring_frequency\",\n        \"internal_type\": \"choice\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"ordered_item_link\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_ordered_item_link\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"vendor\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"core_company\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"availability\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"on_desktop\",\n        \"choices\": [\n          {\n            \"value\": \"on_both\",\n            \"label\": \"Desktop and Classic Mobile\"\n          },\n          {\n            \"value\": \"on_desktop\",\n            \"label\": \"Desktop Only\"\n          },\n          {\n            \"value\": \"on_mobile\",\n            \"label\": \"Classic Mobile Only\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"sc_ic_item_staging\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_ic_item_staging\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sc_ic_version\",\n        \"internal_type\": \"integer\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"workflow\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"wf_workflow\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"show_variable_help_on_load\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"hide_sp\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"display_price_property\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"owner\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sys_user\",\n        \"default_value\": \"javascript:gs.getUserID()\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"version\",\n        \"internal_type\": \"integer\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"make_item_non_conversational\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"published_ref\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_cat_item\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"taxonomy_topic\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"topic\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"price\",\n        \"internal_type\": \"price\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"0.00\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"ignore_price\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"billable\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"image\",\n        \"internal_type\": \"image\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"category\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_category\",\n        \"default_value\": \"javascript: new SNCCatalogUtil().getCategoryIDFromURL();\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sc_catalogs\",\n        \"internal_type\": \"glide_list\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_catalog\",\n        \"default_value\": \"javascript:SNC.Catalog.getDefaultCatalog();\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"short_description\",\n        \"internal_type\": \"translated_text\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"description\",\n        \"internal_type\": \"translated_html\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"meta\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"location\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"cmn_location\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"group\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sys_user_group\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"delivery_time\",\n        \"internal_type\": \"glide_duration\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"2 00:00:00\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"model\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"cmdb_model\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"type\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"item\",\n        \"choices\": [\n          {\n            \"value\": \"template\",\n            \"label\": \"Template\"\n          },\n          {\n            \"value\": \"item\",\n            \"label\": \"Item\"\n          },\n          {\n            \"value\": \"package\",\n            \"label\": \"Package\"\n          },\n          {\n            \"value\": \"task\",\n            \"label\": \"Task\"\n          },\n          {\n            \"value\": \"bundle\",\n            \"label\": \"Bundle\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"template\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sys_template\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"active\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"true\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"roles\",\n        \"internal_type\": \"user_roles\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"delivery_plan\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_cat_item_delivery_plan\",\n        \"default_value\": \"javascript:getDefaultDeliveryPlan()\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"picture\",\n        \"internal_type\": \"user_image\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"mobile_picture\",\n        \"internal_type\": \"user_image\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"mobile_picture_type\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"use_desktop_picture\",\n        \"choices\": [\n          {\n            \"value\": \"use_mobile_picture\",\n            \"label\": \"Classic Mobile\"\n          },\n          {\n            \"value\": \"use_no_picture\",\n            \"label\": \"None\"\n          },\n          {\n            \"value\": \"use_desktop_picture\",\n            \"label\": \"Desktop\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"mobile_hide_price\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"icon\",\n        \"internal_type\": \"user_image\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"order\",\n        \"internal_type\": \"integer\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"0\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"start_closed\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_proceed_checkout\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_order_now\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_order\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_search\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_cart\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"use_sc_layout\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"true\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"delivery_plan_script\",\n        \"internal_type\": \"script_plain\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"entitlement_script\",\n        \"internal_type\": \"script_plain\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"visible_bundle\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"true\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"visible_standalone\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"true\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"visible_guide\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"true\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"omit_price\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"fulfillment_automation_level\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"unspecified\",\n        \"choices\": [\n          {\n            \"value\": \"fully_automated\",\n            \"label\": \"Fully automated\"\n          },\n          {\n            \"value\": \"unspecified\",\n            \"label\": \"Unspecified\"\n          },\n          {\n            \"value\": \"manual\",\n            \"label\": \"Manual\"\n          },\n          {\n            \"value\": \"semi_automated\",\n            \"label\": \"Semi-automated\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"mandatory_attachment\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_quantity_v2\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"request_method\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": [\n          {\n            \"value\": \"submit\",\n            \"label\": \"Submit\"\n          },\n          {\n            \"value\": \"NULL_OVERRIDE\",\n            \"label\": \"Order\"\n          },\n          {\n            \"value\": \"request\",\n            \"label\": \"Request\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"no_save_as_draft\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_wishlist_v2\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_attachment_v2\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_cart_v2\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"no_delivery_time_v2\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sys_id\",\n        \"internal_type\": \"GUID\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sc_template\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_template\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"flow_designer_flow\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sys_hub_flow\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"name\",\n        \"internal_type\": \"translated_text\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      }\n    ]\n  },\n  \"sc_cat_item_category\": {\n    \"schema\": [\n      {\n        \"column_name\": \"\",\n        \"internal_type\": \"collection\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sc_category\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_category\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sc_cat_item\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_cat_item\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sys_id\",\n        \"internal_type\": \"GUID\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      }\n    ]\n  },\n  \"item_option_new\": {\n    \"schema\": [\n      {\n        \"column_name\": \"published_ref\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"item_option_new\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"cat_item\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_cat_item\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"variable_set\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"item_option_new_set\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"description\",\n        \"internal_type\": \"html\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"delivery_plan\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sc_cat_item_delivery_plan\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"category\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"item_option_category\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"visibility\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"1\",\n        \"choices\": [\n          {\n            \"value\": \"1\",\n            \"label\": \"Always\"\n          },\n          {\n            \"value\": \"2\",\n            \"label\": \"Bundles\"\n          },\n          {\n            \"value\": \"3\",\n            \"label\": \"Standalone\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"visible_bundle\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"true\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"visible_standalone\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"true\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"visible_guide\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"true\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"visible_summary\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"true\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"not_available_conversation\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"global\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"unique\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"variable_width\",\n        \"internal_type\": \"string\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": [\n          {\n            \"value\": \"50\",\n            \"label\": \"50%\"\n          },\n          {\n            \"value\": \"75\",\n            \"label\": \"75%\"\n          },\n          {\n            \"value\": \"NULL_OVERRIDE\",\n            \"label\": \"System Default Width\"\n          },\n          {\n            \"value\": \"100\",\n            \"label\": \"100%\"\n          },\n          {\n            \"value\": \"25\",\n            \"label\": \"25%\"\n          }\n        ]\n      },\n      {\n        \"column_name\": \"rich_text\",\n        \"internal_type\": \"translated_html\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"instructions\",\n        \"internal_type\": \"translated_html\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"validate_regex\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"question_regex\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"macroponent\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sys_ux_macroponent\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"read_script\",\n        \"internal_type\": \"script_plain\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"save_script\",\n        \"internal_type\": \"script_plain\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"/** This script is executed before the Record is generated\\r\\n* `current`- GlideRecord produced by Record Producer\\r\\n* Don't use `current.update()` or `current.insert()` as the record is generated by Record Producer\\r\\n* Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss\\r\\n* Avoid `current.setAbortAction()` and generate a separate record\\r\\n* Use `producer.var1` to access variables\\r\\n*/\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"post_insert_script\",\n        \"internal_type\": \"script_plain\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"dynamic_value_field\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"item_option_new\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"dynamic_value_dot_walk_path\",\n        \"internal_type\": \"field_name\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"conversational_label\",\n        \"internal_type\": \"translated_text\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"enable_also_request_for\",\n        \"internal_type\": \"boolean\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"false\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"roles_to_use_also_request_for\",\n        \"internal_type\": \"user_roles\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"\",\n        \"internal_type\": \"collection\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sys_id\",\n        \"internal_type\": \"GUID\",\n        \"mandatory\": \"false\",\n        \"reference\": \"\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"topic_block\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sys_cs_topic\",\n        \"default_value\": \"\",\n        \"choices\": []\n      },\n      {\n        \"column_name\": \"sp_widget\",\n        \"internal_type\": \"reference\",\n        \"mandatory\": \"false\",\n        \"reference\": \"sp_widget\",\n        \"default_value\": \"\",\n        \"choices\": []\n      }\n    ]\n  }\n}\n```\n\n"
+}
