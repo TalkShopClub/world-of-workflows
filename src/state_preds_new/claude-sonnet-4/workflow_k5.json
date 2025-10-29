@@ -1,0 +1,310 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:13:49.978291",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/workflow.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_workflow",
+      "parameters": {
+        "name": "GPU Order Workflow",
+        "description": "Workflow to order GPUs"
+      }
+    },
+    {
+      "tool_name": "update_workflow",
+      "parameters": {
+        "workflow_id": "f17306e9c3d832107bd371edd4013119",
+        "description": "Workflow to order GPUs, temporarily disabled",
+        "active": false
+      }
+    },
+    {
+      "tool_name": "add_workflow_activity",
+      "parameters": {
+        "workflow_version_id": "fff3f5a2eb113200c2b9666cd206fecf",
+        "name": "Change Review Process",
+        "activity_type": "approval"
+      }
+    },
+    {
+      "tool_name": "update_workflow_activity",
+      "parameters": {
+        "activity_id": "40758a6dc3d832107bd371edd4013127",
+        "name": "Knowledge Review Workflow"
+      }
+    },
+    {
+      "tool_name": "delete_workflow_activity",
+      "parameters": {
+        "activity_id": "40758a6dc3d832107bd371edd4013127"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "GPU Order Workflow",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Workflow to order GPUs",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access",
+          "newvalue": "public",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "template",
+          "newvalue": "0",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain_path",
+          "newvalue": "/",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "wf_workflow",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Workflow to order GPUs, temporarily disabled",
+          "tablename": "wf_workflow",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "wf_workflow",
+          "oldvalue": "1"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "wf_workflow",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "workflow_version",
+          "newvalue": "fff3f5a2eb113200c2b9666cd206fecf",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Change Review Process",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_definition",
+          "newvalue": "fdda6d0ac0a80164001c4c7bd1e70012",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "x",
+          "newvalue": "100",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "y",
+          "newvalue": "100",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "width",
+          "newvalue": "80",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "height",
+          "newvalue": "40",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_index",
+          "newvalue": "1",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "is_parent",
+          "newvalue": "0",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pinned",
+          "newvalue": "0",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_definition_updated",
+          "newvalue": "0",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "out_of_date",
+          "newvalue": "0",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "after_business_rules",
+          "newvalue": "0",
+          "tablename": "wf_activity",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 14,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "wf_activity",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Knowledge Review Workflow",
+          "tablename": "wf_activity",
+          "oldvalue": "Knowledge Review"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "wf_activity"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "wf_activity",
+          "oldvalue": "DELETED"
+        },
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "wf_condition",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 2,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "wf_activity",
+          "wf_condition"
+        ]
+      }
+    }
+  ]
+}

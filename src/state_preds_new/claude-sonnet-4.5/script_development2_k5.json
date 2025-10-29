@@ -1,0 +1,340 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-17T11:54:50.160174",
+    "model": "anthropic/claude-sonnet-4.5",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/script_development2.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_script_include",
+      "parameters": {
+        "name": "data_sync",
+        "script": "function DataSync() { /* Sample script code */ }",
+        "description": "Sample code for data sync",
+        "api_name": "data_sync",
+        "client_callable": true,
+        "active": false
+      }
+    },
+    {
+      "tool_name": "create_changeset",
+      "parameters": {
+        "name": "data_sync",
+        "description": "update set for data sync",
+        "application": "data_sync"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "developer.bob.283",
+        "first_name": "Bob",
+        "last_name": "Developer",
+        "email": "bob.developer@example.com",
+        "title": "Developer",
+        "department": "IT"
+      }
+    },
+    {
+      "tool_name": "update_script_include",
+      "parameters": {
+        "script_include_id": "4a6555f1c310b2107bd371edd4013155",
+        "api_name": "data_sync_skyfall",
+        "client_callable": false
+      }
+    },
+    {
+      "tool_name": "commit_changeset",
+      "parameters": {
+        "changeset_id": "c8b51df1c310b2107bd371edd40131ad"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:28",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "data_sync",
+          "tablename": "sys_script_include",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "script",
+          "newvalue": "function DataSync() { /* Sample script code */ }",
+          "tablename": "sys_script_include",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Sample code for data sync",
+          "tablename": "sys_script_include",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "api_name",
+          "newvalue": "data_sync",
+          "tablename": "sys_script_include",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "client_callable",
+          "newvalue": "1",
+          "tablename": "sys_script_include",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sys_script_include",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "access",
+          "newvalue": "package_private",
+          "tablename": "sys_script_include",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_script_include",
+          "tablename": "sys_script_include",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 9,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 8,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sys_script_include"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:00"
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "data_sync",
+          "tablename": "sys_update_set",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "update set for data sync",
+          "tablename": "sys_update_set",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "application",
+          "newvalue": "data_sync",
+          "tablename": "sys_update_set",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "in progress",
+          "tablename": "sys_update_set",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "is_default",
+          "newvalue": "0",
+          "tablename": "sys_update_set",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "release_date",
+          "newvalue": "2025-09-25 20:50:00",
+          "tablename": "sys_update_set",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:49:58"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 8,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 6,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_update_set",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:52",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:50"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "developer.bob.283",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Bob",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Developer",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "bob.developer@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Developer",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "department",
+          "newvalue": "IT",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 10,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 9,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "api_name",
+          "newvalue": "data_sync_skyfall",
+          "tablename": "sys_script_include",
+          "oldvalue": "DataSyncSkyfall"
+        },
+        {
+          "fieldname": "client_callable",
+          "newvalue": "0",
+          "tablename": "sys_script_include",
+          "oldvalue": "1"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sys_script_include"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "complete",
+          "tablename": "sys_update_set",
+          "oldvalue": "in progress"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:00"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sys_update_set"
+        ]
+      }
+    }
+  ]
+}

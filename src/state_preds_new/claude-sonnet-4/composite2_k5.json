@@ -1,0 +1,84 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:25:58.373860",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/composite2.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Steven.Ding.092",
+        "first_name": "Steven",
+        "last_name": "Ding",
+        "email": "stevending@example.com"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Skyfall collaborator group",
+        "description": "Skyfall collaborator group",
+        "manager": "a30d49f1c3dc72107bd371edd40131cf"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Skyfall Corp",
+        "description": "Skyfall Corp group"
+      }
+    },
+    {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "66601df9c3dc72107bd371edd40131f3",
+        "parent": "4831dd3dc3dc72107bd371edd4013181"
+      }
+    },
+    {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "66601df9c3dc72107bd371edd40131f3",
+        "members": [
+          "sys_id:a30d49f1c3dc72107bd371edd40131cf"
+        ]
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:25:18.717862",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/problem_management.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_problem",
+      "parameters": {
+        "short_description": "Email server performance degradation"
+      }
+    },
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "text": "Software installation and licensing information",
+        "short_description": "Problem Resolution Guide",
+        "knowledge_base": "Sample_knowledge_base_342",
+        "category": "Security"
+      }
+    },
+    {
+      "tool_name": "create_asset",
+      "parameters": {
+        "asset_tag": "Sample_asset_tag_465",
+        "display_name": "Nuclear Power Plant"
+      }
+    },
+    {
+      "tool_name": "create_problem",
+      "parameters": {
+        "short_description": "SQL database performance degradation",
+        "urgency": "1",
+        "impact": "1",
+        "assigned_to": "000753bdc3ff6a107bd371edd40131ab"
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "17370261c31c32107bd371edd401317f",
+        "location": "Toronto",
+        "assigned_to": "000e6e0dc33326107bd371edd4013118",
+        "cost": "Sample_cost_493",
+        "purchase_date": "Sample_purchase_date_515",
+        "warranty_expiration": "Sample_warranty_expiration_231",
+        "category": "Security"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    }
+  ]
+}

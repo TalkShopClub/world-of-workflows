@@ -1,0 +1,494 @@
+[
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140046_3344",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_140046_3344@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User created successfully. The sys_id of the user is: 9d6d7484c3a83e1024163942b40131b8\",\n  \"user_id\": \"9d6d7484c3a83e1024163942b40131b8\",\n  \"user_name\": \"test_user_20251007_140046_3344\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "3b6df8c4c3a83e1024163942b401315f",
+        "newvalue": "2025-10-07 18:00:56",
+        "sys_created_on": "2025-10-07 18:00:56",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd563a20000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:00:46",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "vip",
+        "reason": "",
+        "sys_id": "dd6d7484c3a83e1024163942b40131b9",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "web_service_access_only",
+        "reason": "",
+        "sys_id": "d96d7484c3a83e1024163942b40131b9",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "first_name",
+        "reason": "",
+        "sys_id": "d56d7484c3a83e1024163942b40131ba",
+        "newvalue": "Test",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "user_name",
+        "reason": "",
+        "sys_id": "d16d7484c3a83e1024163942b40131ba",
+        "newvalue": "test_user_20251007_140046_3344",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "sys_domain",
+        "reason": "",
+        "sys_id": "9d6d7484c3a83e1024163942b40131b9",
+        "newvalue": "global",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "last_name",
+        "reason": "",
+        "sys_id": "996d7484c3a83e1024163942b40131ba",
+        "newvalue": "User",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "hashed_user_id",
+        "reason": "",
+        "sys_id": "996d7484c3a83e1024163942b40131b9",
+        "newvalue": "9a6a60c8f7228cead45c66d236a731d2ec61687452d209f5223950aaec4a85fd",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "internal_integration_user",
+        "reason": "",
+        "sys_id": "956d7484c3a83e1024163942b40131ba",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "password_needs_reset",
+        "reason": "",
+        "sys_id": "916d7484c3a83e1024163942b40131ba",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "enable_multifactor_authn",
+        "reason": "",
+        "sys_id": "5d6d7484c3a83e1024163942b40131b9",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "596df044c3a83e1024163942b40131f5",
+        "newvalue": "2025-10-07 18:00:46",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd53b380000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:00:36",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "locked_out",
+        "reason": "",
+        "sys_id": "596d7484c3a83e1024163942b40131ba",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "calendar_integration",
+        "reason": "",
+        "sys_id": "596d7484c3a83e1024163942b40131b9",
+        "newvalue": "1",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "sys_class_name",
+        "reason": "",
+        "sys_id": "556d7484c3a83e1024163942b40131ba",
+        "newvalue": "sys_user",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "name",
+        "reason": "",
+        "sys_id": "516d7484c3a83e1024163942b40131ba",
+        "newvalue": "Test User",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "notification",
+        "reason": "",
+        "sys_id": "1d6d7484c3a83e1024163942b40131b9",
+        "newvalue": "2",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "email",
+        "reason": "",
+        "sys_id": "196d7484c3a83e1024163942b40131ba",
+        "newvalue": "test_user_20251007_140046_3344@example.com",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "edu_status",
+        "reason": "",
+        "sys_id": "156d7484c3a83e1024163942b40131ba",
+        "newvalue": "faculty",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "active",
+        "reason": "",
+        "sys_id": "116d7484c3a83e1024163942b40131ba",
+        "newvalue": "1",
+        "sys_created_on": "2025-10-07 18:00:46",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd53bda0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "check_user_has_role",
+      "parameters": {
+        "user_id": "9d6d7484c3a83e1024163942b40131b8",
+        "role_id": "b05926fa0a0a0aa7000130023e0bde98"
+      }
+    },
+    "tool_response": "{\n  \"has_role\": false\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "1a7d3cc4c3a83e1024163942b4013133",
+        "newvalue": "2025-10-07 18:01:07",
+        "sys_created_on": "2025-10-07 18:01:07",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd58c9e0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:00:57",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "b36d7484c3a83e1024163942b40131be",
+        "newvalue": "2025-10-07 18:00:57",
+        "sys_created_on": "2025-10-07 18:00:57",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd564540000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:00:56",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "assign_roles_to_user",
+      "parameters": {
+        "user_id": "9d6d7484c3a83e1024163942b40131b8",
+        "roles": [
+          "user"
+        ]
+      }
+    },
+    "tool_response": "{\n  \"result\": true\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "818d3cc4c3a83e1024163942b4013139",
+        "newvalue": "2025-10-07 18:01:18",
+        "sys_created_on": "2025-10-07 18:01:18",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd5b6770000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:01:07",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "check_user_has_role",
+      "parameters": {
+        "user_id": "9d6d7484c3a83e1024163942b40131b8",
+        "role_id": "b05926fa0a0a0aa7000130023e0bde98"
+      }
+    },
+    "tool_response": "{\n  \"has_role\": true\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "278d3cc4c3a83e1024163942b401313c",
+        "newvalue": "2025-10-07 18:01:28",
+        "sys_created_on": "2025-10-07 18:01:28",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd5dea70000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:01:18",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "818d3cc4c3a83e1024163942b4013139",
+        "newvalue": "2025-10-07 18:01:18",
+        "sys_created_on": "2025-10-07 18:01:18",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd5b6770000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:01:07",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "9d6d7484c3a83e1024163942b40131b8",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": false
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User updated successfully\",\n  \"user_id\": \"9d6d7484c3a83e1024163942b40131b8\",\n  \"user_name\": \"test_user_20251007_140046_3344\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "4e9dbcc4c3a83e1024163942b40131a0",
+        "newvalue": "2025-10-07 18:01:38",
+        "sys_created_on": "2025-10-07 18:01:38",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd607190000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:01:28",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "active",
+        "reason": "",
+        "sys_id": "e78d3cc4c3a83e1024163942b4013152",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 18:01:28",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd5df570000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "1",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "locked_out",
+        "reason": "",
+        "sys_id": "6b8d3cc4c3a83e1024163942b4013152",
+        "newvalue": "1",
+        "sys_created_on": "2025-10-07 18:01:28",
+        "documentkey": "9d6d7484c3a83e1024163942b40131b8",
+        "internal_checkpoint": "199bfd5df570000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_user",
+        "user": "admin",
+        "oldvalue": "0",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "278d3cc4c3a83e1024163942b401313c",
+        "newvalue": "2025-10-07 18:01:28",
+        "sys_created_on": "2025-10-07 18:01:28",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd5dea70000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:01:18",
+        "sys_created_by": "guest"
+      }
+    ]
+  }
+]

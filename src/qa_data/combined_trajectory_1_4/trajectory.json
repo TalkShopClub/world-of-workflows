@@ -1,0 +1,3522 @@
+[
+  {
+    "action": {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "EMAIL is slow when an attachment is involved",
+        "urgency": "1",
+        "impact": "1"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident created successfully",
+      "incident_id": "c3d609bc53103210f8bb51a0a0490e2a",
+      "incident_number": "INC0010434"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "value",
+          "newvalue": "New",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c3d609bc53103210f8bb51a0a0490e2a",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c3d609bc53103210f8bb51a0a0490e2a",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c3d609bc53103210f8bb51a0a0490e2a",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:21:52",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:21:52",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-27 16:21:52",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-27 16:04:05"
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "35420982d732220035ae23c7ce610393",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-27 16:21:52",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0010434",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-27 17:21:52",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "EMAIL is slow when an attachment is involved",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:21:52",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "cbd609bc53103210f8bb51a0a0490e2d",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "c3d609bc53103210f8bb51a0a0490e2a",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-27 16:21:52",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "c3d609bc53103210f8bb51a0a0490e2a",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-27 16:21:52",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-27 17:21:52",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-27 18:21:52",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0010434",
+          "tablename": "incident",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 78,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 77,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sla_breakdown_by_assignment",
+          "incident",
+          "task_sla",
+          "metric_instance",
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Can't launch 64-bit Windows 7 virtual machine",
+        "urgency": "1",
+        "impact": "2",
+        "assigned_to": "005d500b536073005e0addeeff7b12f4"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident created successfully",
+      "incident_id": "7b18c93453503210f8bb51a0a0490e95",
+      "incident_number": "INC0010435"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "id",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "In Progress",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:27:23",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:27:23",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:27:23",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "005d500b536073005e0addeeff7b12f4",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Lakshya Gupta",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0010435",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-27 16:27:23",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-03 06:32:37",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-27 16:27:23",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-27 16:24:51"
+        },
+        {
+          "fieldname": "schedule",
+          "newvalue": "08fcd0830a0a0b2600079f56b1adb9ae",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0010435",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-27 16:27:23",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:27:23",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-29 23:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "005d500b536073005e0addeeff7b12f4",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "005d500b536073005e0addeeff7b12f4",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 08:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Can't launch 64-bit Windows 7 virtual machine",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "fb18897453503210f8bb51a0a0490e38",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-27 16:27:23",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "af420982d732220035ae23c7ce6103f3",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-29 23:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 88,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 87,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "incident",
+          "sla_breakdown_by_assignment",
+          "sys_user",
+          "task_sla",
+          "metric_instance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Forgot email password",
+        "urgency": "1",
+        "impact": "1",
+        "assigned_to": "02826bf03710200044e0bfc8bcbe5d55"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident created successfully",
+      "incident_id": "f42909b453503210f8bb51a0a0490e90",
+      "incident_number": "INC0010436"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "user",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d55",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "advanced",
+          "newvalue": "0",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d55",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Incident assigned to me",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "5d078413c0a801640144dc7bc70871ce",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Primary Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "device",
+          "newvalue": "ad29cdb453503210f8bb51a0a0490e2e",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "collection",
+          "newvalue": "incident",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "jimmie.barninger@example.com",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "In Progress",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "f42909b453503210f8bb51a0a0490e90",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "f42909b453503210f8bb51a0a0490e90",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "f42909b453503210f8bb51a0a0490e90",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "f42909b453503210f8bb51a0a0490e90",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:31:49",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:31:49",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:31:49",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Jimmie Barninger",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "f42909b453503210f8bb51a0a0490e90",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "f42909b453503210f8bb51a0a0490e90",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0010436",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-27 17:31:49",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-27 16:31:49",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-27 16:31:49",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0010436",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d55",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Forgot email password",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-27 16:31:49",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "35420982d732220035ae23c7ce610393",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:31:49",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 01:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-27 16:31:49",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-27 16:27:23"
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "702909b453503210f8bb51a0a0490e94",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d55",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-27 17:31:49",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-27 18:31:49",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 101,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 100,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "incident",
+          "cmn_notif_device",
+          "metric_instance",
+          "cmn_notif_message",
+          "task_sla",
+          "sla_breakdown_by_assignment",
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "c3d609bc53103210f8bb51a0a0490e2a",
+        "assigned_to": "02826bf03710200044e0bfc8bcbe5d5e"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident updated successfully",
+      "incident_id": "c3d609bc53103210f8bb51a0a0490e2a",
+      "incident_number": "INC0010434"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "device",
+          "newvalue": "a24a853853503210f8bb51a0a0490ee3",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "collection",
+          "newvalue": "incident",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d5e",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "advanced",
+          "newvalue": "0",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Primary Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Incident assigned to me",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "0",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "melinda.carleton@example.com",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "5d078413c0a801640144dc7bc70871ce",
+          "tablename": "cmn_notif_message",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d5e",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "2",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-27 16:36:50",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c3d609bc53103210f8bb51a0a0490e2a",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d5e",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-27 16:36:50",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:36:50",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "In Progress",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:14:58",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:36:50",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:14:58",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:13:08"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d5e",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:14:58",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:13:08"
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c3d609bc53103210f8bb51a0a0490e2a",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d5e",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "24.94",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "21.89"
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-27 18:36:50",
+          "tablename": "incident",
+          "oldvalue": "2025-09-27 18:21:52"
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:36:50",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Melinda Carleton",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "c3d609bc53103210f8bb51a0a0490e2a",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-27 16:36:50",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-27 16:36:50",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "2025-09-27 16:35:00"
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "cbd609bc53103210f8bb51a0a0490e2d",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-27 16:36:49",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-27 16:31:49"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 54,
+        "num_modified_entries": 10,
+        "num_deleted_entries": 0,
+        "num_created_entries": 44,
+        "operation_type": [
+          "get",
+          "put"
+        ],
+        "tables_modified": [
+          "cmn_notif_device",
+          "cmn_notif_message",
+          "incident",
+          "metric_instance",
+          "sys_user",
+          "sla_breakdown_by_assignment"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "7b18c93453503210f8bb51a0a0490e95",
+        "impact": "1",
+        "urgency": "1"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident updated successfully",
+      "incident_id": "7b18c93453503210f8bb51a0a0490e95",
+      "incident_number": "INC0010435"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:27:23",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "23.75",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "005d500b536073005e0addeeff7b12f4",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "has_breached",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "timezone",
+          "newvalue": "America/Los_Angeles",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "d46b4db853103210f8bb51a0a0490ea3",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "23.75",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage_status",
+          "newvalue": "[]",
+          "tablename": "stage_state",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "0.43",
+          "tablename": "task_sla",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla",
+          "newvalue": "35420982d732220035ae23c7ce610393",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 00:45:45",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:41:37",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "planned_end_time",
+          "newvalue": "2025-09-27 17:27:23",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-27 16:41:37",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "2025-09-27 16:27:23"
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "cancelled",
+          "tablename": "task_sla",
+          "oldvalue": "in_progress"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "005d500b536073005e0addeeff7b12f4",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-03 06:18:23",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-03 06:32:37"
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "d46b4db853103210f8bb51a0a0490ea3",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-27 16:41:37",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:14:15",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-27 16:41:37",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-27 16:41:37",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "task_sla",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:14:15",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:14:14",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "23.75",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 00:45:45",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-27 16:41:37",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:14:15",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:14:15",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "column_renderer",
+          "newvalue": "007c2f021b020100adca1e094f0713b4",
+          "tablename": "stage_state",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:14:14",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "end_time",
+          "newvalue": "2025-09-27 16:41:37",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-27 16:27:23",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "original_breach_time",
+          "newvalue": "2025-09-27 17:27:23",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-27 18:41:37",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-27 16:41:37",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-27 16:36:49"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 62,
+        "num_modified_entries": 11,
+        "num_deleted_entries": 0,
+        "num_created_entries": 51,
+        "operation_type": [
+          "get",
+          "put"
+        ],
+        "tables_modified": [
+          "stage_state",
+          "task_sla",
+          "incident",
+          "sla_breakdown_by_assignment",
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "7b18c93453503210f8bb51a0a0490e95",
+        "assigned_to": "02826bf03710200044e0bfc8bcbe5d55"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Incident updated successfully",
+      "incident_id": "7b18c93453503210f8bb51a0a0490e95",
+      "incident_number": "INC0010435"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "id",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f0791ac0a808ae008f0a2b1dc1030c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:43:33",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-27 16:43:33",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:16:10",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "assigned_to",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Jimmie Barninger",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-27 16:43:33",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:01:56",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d55",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:01:56",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:00:00"
+        },
+        {
+          "fieldname": "activity_due",
+          "newvalue": "2025-09-27 18:43:33",
+          "tablename": "incident",
+          "oldvalue": "2025-09-27 18:41:37"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-27 16:43:33",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-27 16:41:37"
+        },
+        {
+          "fieldname": "breached",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "post_breach",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "3.22",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "02826bf03710200044e0bfc8bcbe5d55",
+          "tablename": "incident",
+          "oldvalue": "005d500b536073005e0addeeff7b12f4"
+        },
+        {
+          "fieldname": "task_sla",
+          "newvalue": "d46b4db853103210f8bb51a0a0490ea3",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task",
+          "newvalue": "7b18c93453503210f8bb51a0a0490e95",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-27 16:43:33",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-09-27 16:43:33",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "2025-09-27 16:41:37"
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retroactive",
+          "newvalue": "0",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sla_breakdown_definition",
+          "newvalue": "0b2a6b0c57a01300ff01ac11ac94f91b",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "end",
+          "newvalue": "2025-09-27 16:43:33",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 31,
+        "num_modified_entries": 9,
+        "num_deleted_entries": 0,
+        "num_created_entries": 22,
+        "operation_type": [
+          "get",
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident",
+          "sla_breakdown_by_assignment",
+          "metric_instance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "IT Support Team"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": "IT Support Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "IT Support Team",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "IT Support Team",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "HR Department"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": "HR Department"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "HR Department",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "HR Department",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Finance Team"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "27c7c26d53543610f8bb51a0a0490e0f",
+      "group_name": "Finance Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Finance Team",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "27c7c26d53543610f8bb51a0a0490e0f",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Finance Team",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "manager": "5137153cc611227c000bbd1bd8cd2005"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": "IT Support Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:681ccaf9c0a8016400b98a06818d57c7"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:9ee1b13dc6112271007f9d0efdb69cd0"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:46b87022a9fe198101a78787e40d7547"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "upload_status",
+          "newvalue": "1",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_window_end",
+          "newvalue": "2025-09-30 05:08:47",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_log",
+          "newvalue": "71ba466153943610f8bb51a0a0490e1c",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_number",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "num_retries",
+          "newvalue": "0",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_status",
+          "newvalue": "1",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_size",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_type",
+          "newvalue": "ua_gcf_cp_hourly",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_window_start",
+          "newvalue": "2025-09-30 04:08:47",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "num_records",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_id",
+          "newvalue": "31ba466164943610b41b6791b856a51c",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "46b87022a9fe198101a78787e40d7547",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 13,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 13,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "ua_upload_log_details",
+          "sys_user_grmember",
+          "ua_upload_log"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "manager": "46b87022a9fe198101a78787e40d7547"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": "HR Department"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "46b87022a9fe198101a78787e40d7547",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "27c7c26d53543610f8bb51a0a0490e0f",
+        "manager": "9ee1b13dc6112271007f9d0efdb69cd0"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "27c7c26d53543610f8bb51a0a0490e0f",
+      "group_name": "Finance Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members removed from the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members removed from the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:681ccaf9c0a8016400b98a06818d57c7"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members removed from the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  }
+]

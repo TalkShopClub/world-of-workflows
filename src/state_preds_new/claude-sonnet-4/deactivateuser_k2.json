@@ -1,0 +1,64 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:26:03.093709",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/deactivateuser.json",
+    "k": 2,
+    "total_actions_predicted": 2,
+    "total_states_generated": 2
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140851_2398",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_140851_2398@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "7b3f7c48c3a83e1024163942b4013140",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": false
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    }
+  ]
+}

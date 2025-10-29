@@ -1,0 +1,111 @@
+{
+  "model": "anthropic/claude-sonnet-4.5",
+  "generated_at": "2025-10-14T15:57:31.159410",
+  "total_files": 17,
+  "successful": 17,
+  "failed": 0,
+  "results": [
+    {
+      "file": "approvechangerequest.json",
+      "status": "success",
+      "num_tool_calls": 17,
+      "schema_size": 233308
+    },
+    {
+      "file": "assignuserrole.json",
+      "status": "success",
+      "num_tool_calls": 29,
+      "schema_size": 249778
+    },
+    {
+      "file": "catalogitem.json",
+      "status": "success",
+      "num_tool_calls": 49,
+      "schema_size": 349187
+    },
+    {
+      "file": "changeuserinfo.json",
+      "status": "success",
+      "num_tool_calls": 58,
+      "schema_size": 362658
+    },
+    {
+      "file": "createhardwareasset.json",
+      "status": "success",
+      "num_tool_calls": 76,
+      "schema_size": 460046
+    },
+    {
+      "file": "createhierarchy.json",
+      "status": "success",
+      "num_tool_calls": 91,
+      "schema_size": 477638
+    },
+    {
+      "file": "createrequest.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 323922
+    },
+    {
+      "file": "deactivateuser.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 326783
+    },
+    {
+      "file": "incident.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 322197
+    },
+    {
+      "file": "knowledgebasearticle.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 324020
+    },
+    {
+      "file": "movecatalogitem.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 268123
+    },
+    {
+      "file": "promoteuser.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 297850
+    },
+    {
+      "file": "publishknowledgebasearticle.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 319684
+    },
+    {
+      "file": "rejectchangerequest.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 416795
+    },
+    {
+      "file": "removeuserfromgroup.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 410531
+    },
+    {
+      "file": "transferasset.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 458245
+    },
+    {
+      "file": "usergroupasset.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 421864
+    }
+  ]
+}

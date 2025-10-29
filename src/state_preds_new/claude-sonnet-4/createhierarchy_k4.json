@@ -1,0 +1,102 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:25:27.931525",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/createhierarchy.json",
+    "k": 4,
+    "total_actions_predicted": 4,
+    "total_states_generated": 4
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140209_6530",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_140209_6530@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "test_group_a_20251007_140209_2035",
+        "description": "Parent group A managed by test_user_20251007_140209_6530",
+        "manager": "edbd3008c3a83e1024163942b40131b8",
+        "parent": null,
+        "type": null,
+        "email": null,
+        "members": null,
+        "active": true
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "test_group_b_20251007_140209_4626",
+        "description": "Child group B managed by test_user_20251007_140209_6530 with parent group A",
+        "manager": "edbd3008c3a83e1024163942b40131b8",
+        "parent": "00cd3008c3a83e1024163942b40131be",
+        "type": null,
+        "email": null,
+        "members": null,
+        "active": true
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "edbd3008c3a83e1024163942b40131b8",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": false
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    }
+  ]
+}

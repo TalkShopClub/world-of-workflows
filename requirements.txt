@@ -1,0 +1,28 @@
+# Core dependencies
+openai>=1.12.0
+python-dotenv>=1.0.0
+
+# ServiceNow and MCP
+servicenow-mcp>=0.1.1
+mcp-use>=1.4.0
+
+# LangChain and LLM integrations
+langchain-openai>=0.1.0
+langfuse>=2.15.0
+
+# Data validation and models
+pydantic>=2.5.0
+
+# Utility libraries
+tqdm>=4.66.0
+numpy>=1.24.0
+pytz>=2024.1
+tyro>=0.8.0
+
+# Optional dependencies for specialized functionality
+torch>=2.0.0
+
+# For ServiceNow instance management (if needed for task execution)
+# Note: browsergym may have additional sub-dependencies
+browsergym>=0.1.0
+

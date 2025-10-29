@@ -1,0 +1,460 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-20T02:36:38.049039",
+    "model": "openai/o3",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/incident1.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Server outage in production environment",
+        "description": "The server is down and we are unable to access the production environment",
+        "impact": "1",
+        "urgency": "1"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "John.Doe.250",
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com",
+        "department": "IT"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "3c1c1c39c39872107bd371edd4013147",
+        "assigned_to": "ae7cd479c39872107bd371edd401313f"
+      }
+    },
+    {
+      "tool_name": "add_comment",
+      "parameters": {
+        "incident_id": "3c1c1c39c39872107bd371edd4013147",
+        "comment": "There seems to be a power outage in the server room.",
+        "is_work_note": true
+      }
+    },
+    {
+      "tool_name": "resolve_incident",
+      "parameters": {
+        "incident_id": "3c1c1c39c39872107bd371edd4013147",
+        "resolution_code": "Resolved by caller",
+        "resolution_notes": "Power is restored"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 10:00:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 09:59:58"
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0030001",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Server outage in production environment",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "The server is down and we are unable to access the production environment",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-10-20 10:00:00",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0030001",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 21,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 20,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-26 10:15:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-26 10:14:59"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-26 10:14:59",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-26 10:14:57"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "John.Doe.250",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "John",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Doe",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "john.doe@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "department",
+          "newvalue": "IT",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 9,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:12",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:00:09"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:09",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:00:06"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "ae7cd479c39872107bd371edd401313f",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "90.15",
+          "tablename": "task_sla",
+          "oldvalue": "84.21"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-02 12:00:08",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 12:00:06"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-07 00:00:08",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-07 00:00:06"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 23:59:50",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 02:59:54"
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 11:59:50",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 11:59:56"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 8,
+        "num_modified_entries": 8,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident",
+          "task_sla"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:05:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:04:59"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:04:59",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:04:57"
+        },
+        {
+          "fieldname": "work_notes",
+          "newvalue": "There seems to be a power outage in the server room.",
+          "tablename": "incident",
+          "oldvalue": "JOURNAL FIELD ADDITION"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "state",
+          "newvalue": "6",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "6",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "close_code",
+          "newvalue": "Resolved by caller",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "close_notes",
+          "newvalue": "Power is restored",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "resolved_at",
+          "newvalue": "2025-09-25 21:00:00",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "resolved_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:59:55",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:59:50"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:59:55"
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "100",
+          "tablename": "task_sla",
+          "oldvalue": "80"
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "100",
+          "tablename": "task_sla",
+          "oldvalue": "70"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 02:00:00"
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 01:30:00"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 12,
+        "num_modified_entries": 12,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "incident",
+          "sys_user",
+          "task_sla"
+        ]
+      }
+    }
+  ]
+}

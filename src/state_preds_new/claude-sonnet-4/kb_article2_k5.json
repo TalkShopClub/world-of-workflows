@@ -1,0 +1,408 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:16:08.328009",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/kb_article2.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_knowledge_base",
+      "parameters": {
+        "title": "Skyfall code best practices",
+        "description": "How to write good code for Skyfall and become a better developer",
+        "owner": "admin"
+      }
+    },
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "title": "How to write good ML code",
+        "text": "Writing good ML code is important for the success of the company, here are some tips to help you write good ML code",
+        "short_description": "How to write good ML code",
+        "knowledge_base": "6eaa7cf1c35c72107bd371edd40131bf",
+        "category": "educational"
+      }
+    },
+    {
+      "tool_name": "publish_article",
+      "parameters": {
+        "article_id": "f18b38f9c35c72107bd371edd4013181"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "f18b38f9c35c72107bd371edd4013181",
+        "keywords": "ML, code"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "f18b38f9c35c72107bd371edd4013181",
+        "category": "Tutorial",
+        "title": "Write good ML code"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Skyfall code best practices",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "How to write good code for Skyfall and become a better developer",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "owner",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_version",
+          "newvalue": "3",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "kb_knowledge",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain_path",
+          "newvalue": "/",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "application",
+          "newvalue": "global",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 10,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "kb_knowledge_base",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "How to write good ML code",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "text",
+          "newvalue": "Writing good ML code is important for the success of the company, here are some tips to help you write good ML code",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_state",
+          "newvalue": "draft",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_knowledge_base",
+          "newvalue": "6eaa7cf1c35c72107bd371edd40131bf",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "educational",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "article_type",
+          "newvalue": "text",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "author",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "kb_knowledge",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "KB0000001",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "topic",
+          "newvalue": "General",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_count",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "helpful_count",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_view_count",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "rating",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "disable_commenting",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "disable_suggesting",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_attachments",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "view_as_allowed",
+          "newvalue": "1",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "direct",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "flagged",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "generated_with_now_assist",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain_path",
+          "newvalue": "/",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 25,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "kb_knowledge",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "workflow_state",
+          "newvalue": "published",
+          "tablename": "kb_knowledge",
+          "oldvalue": "draft"
+        },
+        {
+          "fieldname": "published",
+          "newvalue": "2025-09-25",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "kb_knowledge",
+          "oldvalue": "1"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 4,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "kb_knowledge",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "meta",
+          "newvalue": "ML, code",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "kb_knowledge"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "Tutorial",
+          "tablename": "kb_knowledge",
+          "oldvalue": "General"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Write good ML code",
+          "tablename": "kb_knowledge",
+          "oldvalue": "How to write good ML code"
+        },
+        {
+          "fieldname": "sys_mod_count",
+          "newvalue": "1",
+          "tablename": "kb_knowledge",
+          "oldvalue": "0"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 4,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "kb_knowledge",
+          "sys_user"
+        ]
+      }
+    }
+  ]
+}

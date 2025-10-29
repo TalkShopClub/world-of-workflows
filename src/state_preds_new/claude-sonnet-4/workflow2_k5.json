@@ -1,0 +1,81 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:25:42.724005",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/workflow2.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_workflow",
+      "parameters": {
+        "name": "Asset Approval Workflow",
+        "description": "Approving assets for the company"
+      }
+    },
+    {
+      "tool_name": "add_workflow_activity",
+      "parameters": {
+        "workflow_version_id": "fff3f5a2eb113200c2b9666cd206fecf",
+        "name": "Asset Approval Workflow",
+        "description": "Approving assets for the company",
+        "activity_type": "approval"
+      }
+    },
+    {
+      "tool_name": "add_workflow_activity",
+      "parameters": {
+        "workflow_version_id": "fff3f5a2eb113200c2b9666cd206fecf",
+        "name": "Asset Approval Workflow II",
+        "description": "Approving assets for HR in the company",
+        "activity_type": "approval"
+      }
+    },
+    {
+      "tool_name": "delete_workflow_activity",
+      "parameters": {
+        "activity_id": "479264b1c3d872107bd371edd401315e"
+      }
+    },
+    {
+      "tool_name": "delete_workflow",
+      "parameters": {
+        "workflow_id": "a6fed479c39872107bd371edd401314a"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    }
+  ]
+}

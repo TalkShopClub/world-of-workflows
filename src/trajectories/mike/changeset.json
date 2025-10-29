@@ -1,0 +1,220 @@
+[
+  {
+    "action": {
+      "tool_name": "create_changeset",
+      "parameters": {
+        "name": "Business Rule Fix",
+        "application": "Business Rules"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Changeset created successfully\",\n  \"changeset\": {\n    \"base_update_set\": \"\",\n    \"parent\": \"\",\n    \"origin_sys_id\": \"\",\n    \"completed_on\": \"2025-09-30 19:07:54\",\n    \"installed_from\": \"\",\n    \"sys_mod_count\": \"0\",\n    \"description\": \"\",\n    \"remote_sys_id\": \"\",\n    \"sys_updated_on\": \"2025-09-30 19:07:54\",\n    \"is_default\": \"false\",\n    \"sys_tags\": \"\",\n    \"merged_to\": \"\",\n    \"sys_id\": \"2ca985b5c39c72107bd371edd4013173\",\n    \"sys_updated_by\": \"admin\",\n    \"application\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"release_date\": \"\",\n    \"sys_created_on\": \"2025-09-30 19:07:54\",\n    \"name\": \"Business Rule Fix\",\n    \"install_date\": \"\",\n    \"state\": \"in progress\",\n    \"completed_by\": \"\",\n    \"sys_created_by\": \"admin\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "application",
+        "reason": "",
+        "sys_id": "e0a985b5c39c72107bd371edd4013174",
+        "newvalue": "global",
+        "sys_created_on": "2025-09-30 19:07:54",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c062ddc0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "is_default",
+        "reason": "",
+        "sys_id": "a0a985b5c39c72107bd371edd4013174",
+        "newvalue": "0",
+        "sys_created_on": "2025-09-30 19:07:54",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c062ddc0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "state",
+        "reason": "",
+        "sys_id": "64a985b5c39c72107bd371edd4013174",
+        "newvalue": "in progress",
+        "sys_created_on": "2025-09-30 19:07:54",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c062ddc0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "completed_on",
+        "reason": "",
+        "sys_id": "60a985b5c39c72107bd371edd4013174",
+        "newvalue": "2025-09-30 19:07:54",
+        "sys_created_on": "2025-09-30 19:07:54",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c062ddc0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "name",
+        "reason": "",
+        "sys_id": "24a985b5c39c72107bd371edd4013174",
+        "newvalue": "Business Rule Fix",
+        "sys_created_on": "2025-09-30 19:07:54",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c062ddc0000001",
+        "record_checkpoint": "0",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"application\",\n      \"newvalue\": \"global\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"is_default\",\n      \"newvalue\": \"0\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"state\",\n      \"newvalue\": \"in progress\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"completed_on\",\n      \"newvalue\": \"2025-09-30 19:07:54\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"name\",\n      \"newvalue\": \"Business Rule Fix\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 5,\n    \"num_modified_entries\": 0,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 5,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"sys_update_set\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "update_changeset",
+      "parameters": {
+        "changeset_id": "2ca985b5c39c72107bd371edd4013173",
+        "state": "Completed"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Changeset updated successfully\",\n  \"changeset\": {\n    \"base_update_set\": \"\",\n    \"parent\": \"\",\n    \"origin_sys_id\": \"\",\n    \"completed_on\": \"2025-09-30 19:07:54\",\n    \"installed_from\": \"\",\n    \"sys_mod_count\": \"0\",\n    \"description\": \"\",\n    \"remote_sys_id\": \"\",\n    \"sys_updated_on\": \"2025-09-30 19:07:54\",\n    \"is_default\": \"false\",\n    \"sys_tags\": \"\",\n    \"merged_to\": \"\",\n    \"sys_id\": \"2ca985b5c39c72107bd371edd4013173\",\n    \"sys_updated_by\": \"admin\",\n    \"application\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"release_date\": \"\",\n    \"sys_created_on\": \"2025-09-30 19:07:54\",\n    \"name\": \"Business Rule Fix\",\n    \"install_date\": \"\",\n    \"state\": \"in progress\",\n    \"completed_by\": \"\",\n    \"sys_created_by\": \"admin\"\n  }\n}",
+    "audits": [],
+    "state_diff": "{\n  \"sysauditrecord\": [],\n  \"additional_information\": {\n    \"num_audits\": 0,\n    \"num_modified_entries\": 0,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 0,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": []\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "commit_changeset",
+      "parameters": {
+        "changeset_id": "2ca985b5c39c72107bd371edd4013173",
+        "commit_message": "a new update set for business rules"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Changeset committed successfully\",\n  \"changeset\": {\n    \"base_update_set\": \"\",\n    \"parent\": \"\",\n    \"origin_sys_id\": \"\",\n    \"completed_on\": \"2025-09-30 19:13:38\",\n    \"installed_from\": \"\",\n    \"sys_mod_count\": \"1\",\n    \"description\": \"a new update set for business rules\",\n    \"remote_sys_id\": \"\",\n    \"sys_updated_on\": \"2025-09-30 19:13:38\",\n    \"is_default\": \"false\",\n    \"sys_tags\": \"\",\n    \"merged_to\": \"\",\n    \"sys_id\": \"2ca985b5c39c72107bd371edd4013173\",\n    \"sys_updated_by\": \"admin\",\n    \"application\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"release_date\": \"\",\n    \"sys_created_on\": \"2025-09-30 19:07:54\",\n    \"name\": \"Business Rule Fix\",\n    \"install_date\": \"\",\n    \"state\": \"complete\",\n    \"completed_by\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n      \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n    },\n    \"sys_created_by\": \"admin\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "description",
+        "reason": "",
+        "sys_id": "d4fa49f1c3dc72107bd371edd40131c5",
+        "newvalue": "a new update set for business rules",
+        "sys_created_on": "2025-09-30 19:13:38",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c0b6c690000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "completed_on",
+        "reason": "",
+        "sys_id": "94fa49f1c3dc72107bd371edd40131c5",
+        "newvalue": "2025-09-30 19:13:38",
+        "sys_created_on": "2025-09-30 19:13:38",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c0b6c690000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "2025-09-30 19:07:54",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "completed_by",
+        "reason": "",
+        "sys_id": "58fa49f1c3dc72107bd371edd40131c5",
+        "newvalue": "6816f79cc0a8016401c5a33be04be441",
+        "sys_created_on": "2025-09-30 19:13:38",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c0b6c690000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "state",
+        "reason": "",
+        "sys_id": "18fa49f1c3dc72107bd371edd40131c5",
+        "newvalue": "complete",
+        "sys_created_on": "2025-09-30 19:13:38",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c0b6c690000001",
+        "record_checkpoint": "1",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "in progress",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"description\",\n      \"newvalue\": \"a new update set for business rules\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"completed_on\",\n      \"newvalue\": \"2025-09-30 19:13:38\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"2025-09-30 19:07:54\"\n    },\n    {\n      \"fieldname\": \"completed_by\",\n      \"newvalue\": \"6816f79cc0a8016401c5a33be04be441\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"\"\n    },\n    {\n      \"fieldname\": \"state\",\n      \"newvalue\": \"complete\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"in progress\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 4,\n    \"num_modified_entries\": 2,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 2,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"sys_update_set\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "update_changeset",
+      "parameters": {
+        "changeset_id": "2ca985b5c39c72107bd371edd4013173",
+        "description": "an updated update set for business rules"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Changeset updated successfully\",\n  \"changeset\": {\n    \"base_update_set\": \"\",\n    \"parent\": \"\",\n    \"origin_sys_id\": \"\",\n    \"completed_on\": \"2025-09-30 19:13:38\",\n    \"installed_from\": \"\",\n    \"sys_mod_count\": \"2\",\n    \"description\": \"an updated update set for business rules\",\n    \"remote_sys_id\": \"\",\n    \"sys_updated_on\": \"2025-09-30 19:19:58\",\n    \"is_default\": \"false\",\n    \"sys_tags\": \"\",\n    \"merged_to\": \"\",\n    \"sys_id\": \"2ca985b5c39c72107bd371edd4013173\",\n    \"sys_updated_by\": \"admin\",\n    \"application\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"release_date\": \"\",\n    \"sys_created_on\": \"2025-09-30 19:07:54\",\n    \"name\": \"Business Rule Fix\",\n    \"install_date\": \"\",\n    \"state\": \"complete\",\n    \"completed_by\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n      \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n    },\n    \"sys_created_by\": \"admin\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "description",
+        "reason": "",
+        "sys_id": "016c0d75c3dc72107bd371edd4013138",
+        "newvalue": "an updated update set for business rules",
+        "sys_created_on": "2025-09-30 19:19:58",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c1138a50000001",
+        "record_checkpoint": "2",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "a new update set for business rules",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"description\",\n      \"newvalue\": \"an updated update set for business rules\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"a new update set for business rules\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 1,\n    \"num_modified_entries\": 1,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 0,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"sys_update_set\"\n    ]\n  }\n}"
+  },
+  {
+    "action": {
+      "tool_name": "update_changeset",
+      "parameters": {
+        "changeset_id": "2ca985b5c39c72107bd371edd4013173",
+        "state": "in progress"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Changeset updated successfully\",\n  \"changeset\": {\n    \"base_update_set\": \"\",\n    \"parent\": \"\",\n    \"origin_sys_id\": \"\",\n    \"completed_on\": \"2025-09-30 19:13:38\",\n    \"installed_from\": \"\",\n    \"sys_mod_count\": \"3\",\n    \"description\": \"an updated update set for business rules\",\n    \"remote_sys_id\": \"\",\n    \"sys_updated_on\": \"2025-09-30 19:20:43\",\n    \"is_default\": \"false\",\n    \"sys_tags\": \"\",\n    \"merged_to\": \"\",\n    \"sys_id\": \"2ca985b5c39c72107bd371edd4013173\",\n    \"sys_updated_by\": \"admin\",\n    \"application\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_scope/global\",\n      \"value\": \"global\"\n    },\n    \"release_date\": \"\",\n    \"sys_created_on\": \"2025-09-30 19:07:54\",\n    \"name\": \"Business Rule Fix\",\n    \"install_date\": \"\",\n    \"state\": \"in progress\",\n    \"completed_by\": {\n      \"link\": \"https://dev268210.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\",\n      \"value\": \"6816f79cc0a8016401c5a33be04be441\"\n    },\n    \"sys_created_by\": \"admin\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "state",
+        "reason": "",
+        "sys_id": "0c9ccdb1c3dc72107bd371edd40131a6",
+        "newvalue": "in progress",
+        "sys_created_on": "2025-09-30 19:20:43",
+        "documentkey": "2ca985b5c39c72107bd371edd4013173",
+        "internal_checkpoint": "1999c11e8460000001",
+        "record_checkpoint": "3",
+        "tablename": "sys_update_set",
+        "user": "admin",
+        "oldvalue": "complete",
+        "sys_created_by": "admin"
+      }
+    ],
+    "state_diff": "{\n  \"sysauditrecord\": [\n    {\n      \"fieldname\": \"state\",\n      \"newvalue\": \"in progress\",\n      \"tablename\": \"sys_update_set\",\n      \"oldvalue\": \"complete\"\n    }\n  ],\n  \"additional_information\": {\n    \"num_audits\": 1,\n    \"num_modified_entries\": 1,\n    \"num_deleted_entries\": 0,\n    \"num_created_entries\": 0,\n    \"operation_type\": [\n      \"put\"\n    ],\n    \"tables_modified\": [\n      \"sys_update_set\"\n    ]\n  }\n}"
+  }
+]

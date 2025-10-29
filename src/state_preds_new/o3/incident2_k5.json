@@ -1,0 +1,474 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-20T02:49:48.534459",
+    "model": "openai/o3",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/incident2.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "broken AC"
+      }
+    },
+    {
+      "tool_name": "add_comment",
+      "parameters": {
+        "incident_id": "f59e70fdc35c72107bd371edd40131ef",
+        "comment": "AC is not working and the room is very hot"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "f59e70fdc35c72107bd371edd40131ef",
+        "state": "6",
+        "urgency": "3"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "f59e70fdc35c72107bd371edd40131ef",
+        "priority": "1",
+        "impact": "2",
+        "urgency": "2"
+      }
+    },
+    {
+      "tool_name": "resolve_incident",
+      "parameters": {
+        "incident_id": "f59e70fdc35c72107bd371edd40131ef",
+        "resolution_code": "Duplicate",
+        "resolution_notes": "This is a duplicate incident"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:59:57"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:59:57",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:59:55"
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "5",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-25 20:59:55",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "INC0026875",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "broken AC",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0026875",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 30,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 28,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident",
+          "metric_instance"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:26",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:23"
+        },
+        {
+          "fieldname": "comments",
+          "newvalue": "AC is not working and the room is very hot",
+          "tablename": "incident",
+          "oldvalue": "JOURNAL FIELD ADDITION"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:05:13",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:05:10"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:05:10",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:05:08"
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "6",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "6",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "5",
+          "tablename": "incident",
+          "oldvalue": "3"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 6,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:05:10",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:05:07"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:05:07",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:05:05"
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": "3"
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": "3"
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "2",
+          "tablename": "incident",
+          "oldvalue": "3"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 5,
+        "num_modified_entries": 5,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:05:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:04:57"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:04:57",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:04:55"
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "6",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "incident_state",
+          "newvalue": "6",
+          "tablename": "incident",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "close_code",
+          "newvalue": "Duplicate",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "close_notes",
+          "newvalue": "This is a duplicate incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "resolved_at",
+          "newvalue": "2025-09-25 21:05:00",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "resolved_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_updated_on",
+          "newvalue": "2025-09-25 21:05:00",
+          "tablename": "incident",
+          "oldvalue": "2025-09-25 20:45:12"
+        },
+        {
+          "fieldname": "sys_mod_count",
+          "newvalue": "4",
+          "tablename": "incident",
+          "oldvalue": "3"
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": "0"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 12,
+        "num_modified_entries": 12,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "incident"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,825 @@
+{
+  "trajectory_file": "assignuserrole.json",
+  "generated_at": "2025-10-20T01:30:25.313477",
+  "num_actions": 5,
+  "num_tool_calls": 10,
+  "schema_context_size": 25802,
+  "tool_calls": [
+    {
+      "observation_id": "3920a1de2f78d16a",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'sys_user_role', 'fields': ['sys_id', 'name'], 'filters': 'sys_id=b05926fa0a0a0aa7000130023e0bde98', 'limit': 1}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "sys_id": "b05926fa0a0a0aa7000130023e0bde98",
+            "name": "user"
+          }
+        ]
+      },
+      "start_time": "2025-10-20T05:29:55.423000+00:00",
+      "end_time": "2025-10-20T05:29:55.635000+00:00"
+    },
+    {
+      "observation_id": "3a8f4105d2f111c4",
+      "name": "get_user",
+      "type": "TOOL",
+      "input": "{'user_id': None, 'user_name': 'admin', 'email': None}",
+      "output": {
+        "success": true,
+        "message": "User found",
+        "user": {
+          "calendar_integration": "Outlook",
+          "country": null,
+          "user_password": "********",
+          "last_login_time": "2025-10-19 22:29:40",
+          "source": "",
+          "sys_updated_on": "2025-08-01 07:17:07",
+          "building": "",
+          "web_service_access_only": "false",
+          "notification": "Enable",
+          "enable_multifactor_authn": "false",
+          "sys_updated_by": "guest",
+          "sys_created_on": "2007-07-03 11:48:47",
+          "sys_domain": {
+            "display_value": "global",
+            "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global"
+          },
+          "state": "",
+          "vip": "false",
+          "sys_created_by": "fred.luddy",
+          "zip": "",
+          "home_phone": "",
+          "time_format": null,
+          "last_login": "2025-10-17",
+          "default_perspective": "",
+          "active": "true",
+          "sys_domain_path": "",
+          "cost_center": "",
+          "phone": "",
+          "name": "System Administrator",
+          "employee_number": "",
+          "password_needs_reset": "false",
+          "gender": null,
+          "city": "",
+          "failed_attempts": "0",
+          "user_name": "admin",
+          "roles": "admin",
+          "title": "System Administrator",
+          "sys_class_name": "User",
+          "sys_id": "6816f79cc0a8016401c5a33be04be441",
+          "federated_id": "iNE/5X5pGeyGaCbm6c3s+FHoSYZ4pKw+uYIHuExrag8=",
+          "internal_integration_user": "false",
+          "ldap_server": "",
+          "mobile_phone": "",
+          "street": "",
+          "company": "",
+          "department": {
+            "display_value": "Finance",
+            "link": "https://dev185199.service-now.com/api/now/table/cmn_department/a581ab703710200044e0bfc8bcbe5de8"
+          },
+          "first_name": "System",
+          "email": "admin@example.com",
+          "introduction": null,
+          "preferred_language": null,
+          "manager": "",
+          "locked_out": "false",
+          "sys_mod_count": "75",
+          "last_name": "Administrator",
+          "photo": "",
+          "avatar": "a5d3c898c3222010ae17dd981840dd8b.iix",
+          "middle_name": "",
+          "sys_tags": "",
+          "time_zone": null,
+          "schedule": "",
+          "date_format": null,
+          "location": ""
+        }
+      },
+      "start_time": "2025-10-20T05:29:40.679000+00:00",
+      "end_time": "2025-10-20T05:29:40.920000+00:00"
+    },
+    {
+      "observation_id": "98928766041ec07e",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'sys_user_has_role', 'fields': ['sys_id', 'role', 'user'], 'filters': 'user=9d6d7484c3a83e1024163942b40131b8', 'limit': 10}",
+      "output": {
+        "success": true,
+        "message": "Found 1 records",
+        "data": [
+          {
+            "sys_id": "aa7df8c4c3a83e1024163942b4013168",
+            "role": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_role/b05926fa0a0a0aa7000130023e0bde98",
+              "value": "b05926fa0a0a0aa7000130023e0bde98"
+            },
+            "user": {
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user/9d6d7484c3a83e1024163942b40131b8",
+              "value": "9d6d7484c3a83e1024163942b40131b8"
+            }
+          }
+        ]
+      },
+      "start_time": "2025-10-20T05:29:32.356000+00:00",
+      "end_time": "2025-10-20T05:29:32.567000+00:00"
+    },
+    {
+      "observation_id": "068ed35fdc9e786a",
+      "name": "get_user",
+      "type": "TOOL",
+      "input": "{'user_id': '9d6d7484c3a83e1024163942b40131b8', 'user_name': None, 'email': None}",
+      "output": {
+        "success": true,
+        "message": "User found",
+        "user": {
+          "calendar_integration": "Outlook",
+          "country": null,
+          "user_password": "********",
+          "last_login_time": "",
+          "source": "",
+          "sys_updated_on": "2025-10-07 11:01:28",
+          "building": "",
+          "web_service_access_only": "false",
+          "notification": "Enable",
+          "enable_multifactor_authn": "false",
+          "sys_updated_by": "admin",
+          "sys_created_on": "2025-10-07 11:00:46",
+          "sys_domain": {
+            "display_value": "global",
+            "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global"
+          },
+          "state": "",
+          "vip": "false",
+          "sys_created_by": "admin",
+          "zip": "",
+          "home_phone": "",
+          "time_format": null,
+          "last_login": "",
+          "default_perspective": "",
+          "active": "false",
+          "sys_domain_path": "/",
+          "cost_center": "",
+          "phone": "",
+          "name": "Test User",
+          "employee_number": "",
+          "password_needs_reset": "false",
+          "gender": null,
+          "city": "",
+          "failed_attempts": "",
+          "user_name": "test_user_20251007_140046_3344",
+          "roles": "",
+          "title": "",
+          "sys_class_name": "User",
+          "sys_id": "9d6d7484c3a83e1024163942b40131b8",
+          "federated_id": "yAFV/I967HxqsB9NKuf9T+zVNa60reZv15FOCppUQBk=",
+          "internal_integration_user": "false",
+          "ldap_server": "",
+          "mobile_phone": "",
+          "street": "",
+          "company": "",
+          "department": "",
+          "first_name": "Test",
+          "email": "test_user_20251007_140046_3344@example.com",
+          "introduction": null,
+          "preferred_language": null,
+          "manager": "",
+          "locked_out": "true",
+          "sys_mod_count": "1",
+          "last_name": "User",
+          "photo": "",
+          "avatar": "",
+          "middle_name": "",
+          "sys_tags": "",
+          "time_zone": null,
+          "schedule": "",
+          "date_format": null,
+          "location": ""
+        }
+      },
+      "start_time": "2025-10-20T05:29:19.573000+00:00",
+      "end_time": "2025-10-20T05:29:19.830000+00:00"
+    },
+    {
+      "observation_id": "e29fa65fc355819b",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'stage_state', 'fields': None, 'filters': 'document=ba1df0c4c3a83e1024163942b4013127', 'limit': 10}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-20T05:28:18.718000+00:00",
+      "end_time": "2025-10-20T05:28:18.940000+00:00"
+    },
+    {
+      "observation_id": "7af6d425fa7d3115",
+      "name": "list_change_requests",
+      "type": "TOOL",
+      "input": "{'limit': 1, 'offset': 0, 'state': None, 'type': None, 'category': None, 'assignment_group': None, 'timeframe': None, 'query': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "change_requests": [
+          {
+            "parent": "",
+            "reason": null,
+            "watch_list": "",
+            "upon_reject": "Cancel all future Tasks",
+            "sys_updated_on": "2025-10-07 10:59:52",
+            "type": "Normal",
+            "approval_history": "",
+            "number": "CHG0030091",
+            "test_plan": "",
+            "cab_delegate": "",
+            "requested_by_date": "",
+            "state": "New",
+            "sys_created_by": "admin",
+            "knowledge": "false",
+            "order": "",
+            "phase": "Requested",
+            "cmdb_ci": "",
+            "delivery_plan": "",
+            "contract": "",
+            "impact": "3 - Low",
+            "active": "true",
+            "work_notes_list": "",
+            "priority": "4 - Low",
+            "sys_domain_path": "/",
+            "cab_recommendation": "",
+            "production_system": "false",
+            "review_date": "",
+            "business_duration": "",
+            "group_list": "",
+            "requested_by": {
+              "display_value": "System Administrator",
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441"
+            },
+            "change_plan": "",
+            "approval_set": "",
+            "copied_from": "",
+            "implementation_plan": "",
+            "universal_request": "",
+            "end_date": "",
+            "short_description": "Test Change Request 20251007_135930",
+            "correlation_display": "",
+            "delivery_task": "",
+            "work_start": "",
+            "additional_assignee_list": "",
+            "outside_maintenance_schedule": "false",
+            "std_change_producer_version": "",
+            "service_offering": "",
+            "sys_class_name": "Change Request",
+            "closed_by": "",
+            "follow_up": "",
+            "reassignment_count": "0",
+            "review_status": "",
+            "assigned_to": "",
+            "start_date": "",
+            "sla_due": "UNKNOWN",
+            "comments_and_work_notes": "2025-10-07 10:59:52 - System Administrator (Work notes)\nChange request submitted for approval at 20251007_135930\n\n2025-10-07 10:59:41 - System Administrator (Work notes)\nInitial assessment completed. Ready for approval.\n\n",
+            "escalation": "Normal",
+            "upon_approval": "Proceed to Next Task",
+            "correlation_id": "",
+            "made_sla": "true",
+            "backout_plan": "",
+            "conflict_status": "Not Run",
+            "task_effective_number": "CHG0030091",
+            "sys_updated_by": "admin",
+            "opened_by": {
+              "display_value": "System Administrator",
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441"
+            },
+            "user_input": "",
+            "sys_created_on": "2025-10-07 10:59:31",
+            "on_hold_task": "",
+            "sys_domain": {
+              "display_value": "global",
+              "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global"
+            },
+            "route_reason": "",
+            "closed_at": "",
+            "review_comments": "",
+            "business_service": "",
+            "time_worked": "",
+            "chg_model": {
+              "display_value": "Normal",
+              "link": "https://dev185199.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2"
+            },
+            "expected_start": "",
+            "opened_at": "2025-10-07 10:59:31",
+            "work_end": "",
+            "phase_state": "Open",
+            "work_notes": "2025-10-07 10:59:52 - System Administrator (Work notes)\nChange request submitted for approval at 20251007_135930\n\n2025-10-07 10:59:41 - System Administrator (Work notes)\nInitial assessment completed. Ready for approval.\n\n",
+            "close_code": null,
+            "assignment_group": "",
+            "description": "This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.",
+            "on_hold_reason": "",
+            "calendar_duration": "",
+            "close_notes": "",
+            "sys_id": "ba1df0c4c3a83e1024163942b4013127",
+            "contact_type": null,
+            "cab_required": "false",
+            "urgency": "3 - Low",
+            "scope": "Medium",
+            "company": "",
+            "justification": "",
+            "activity_due": "UNKNOWN",
+            "comments": "",
+            "approval": "Not Yet Requested",
+            "due_date": "",
+            "sys_mod_count": "2",
+            "on_hold": "false",
+            "sys_tags": "",
+            "cab_date_time": "",
+            "conflict_last_run": "",
+            "unauthorized": "false",
+            "location": "",
+            "risk": "Low",
+            "category": "Other",
+            "risk_impact_analysis": ""
+          }
+        ],
+        "count": 1,
+        "total": 1
+      },
+      "start_time": "2025-10-20T05:28:00.278000+00:00",
+      "end_time": "2025-10-20T05:28:00.514000+00:00"
+    },
+    {
+      "observation_id": "2c6a26a10d22a077",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'task_sla', 'fields': None, 'filters': 'task=ba1df0c4c3a83e1024163942b4013127', 'limit': 10}",
+      "output": {
+        "success": true,
+        "message": "Found 0 records",
+        "data": []
+      },
+      "start_time": "2025-10-20T05:27:44.324000+00:00",
+      "end_time": "2025-10-20T05:27:44.524000+00:00"
+    },
+    {
+      "observation_id": "6c3a7f9c4480b2bc",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'metric_instance', 'fields': None, 'filters': 'id=ba1df0c4c3a83e1024163942b4013127', 'limit': 10}",
+      "output": {
+        "success": true,
+        "message": "Found 2 records",
+        "data": [
+          {
+            "start": "2025-10-07 17:59:31",
+            "sys_mod_count": "0",
+            "calculation_complete": "false",
+            "sys_updated_on": "2025-10-07 17:59:35",
+            "duration": "",
+            "sys_id": "8c2d34c4c3a83e1024163942b40131b1",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "approval",
+            "sys_created_on": "2025-10-07 17:59:35",
+            "field_value": "not requested",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/40c1b8dc0a2581020017b100e99646ba",
+              "value": "40c1b8dc0a2581020017b100e99646ba"
+            },
+            "end": "",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/change_request/ba1df0c4c3a83e1024163942b4013127",
+              "value": "ba1df0c4c3a83e1024163942b4013127"
+            },
+            "value": "Not Yet Requested",
+            "sys_created_by": "system",
+            "table": "change_request"
+          },
+          {
+            "start": "2025-10-07 17:59:31",
+            "sys_mod_count": "0",
+            "calculation_complete": "false",
+            "sys_updated_on": "2025-10-07 17:59:35",
+            "duration": "",
+            "sys_id": "802d34c4c3a83e1024163942b40131b2",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "type",
+            "sys_created_on": "2025-10-07 17:59:35",
+            "field_value": "normal",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/462cf6520a25810200ebe763047cc273",
+              "value": "462cf6520a25810200ebe763047cc273"
+            },
+            "end": "",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/change_request/ba1df0c4c3a83e1024163942b4013127",
+              "value": "ba1df0c4c3a83e1024163942b4013127"
+            },
+            "value": "Normal",
+            "sys_created_by": "system",
+            "table": "change_request"
+          }
+        ]
+      },
+      "start_time": "2025-10-20T05:27:33.601000+00:00",
+      "end_time": "2025-10-20T05:27:33.818000+00:00"
+    },
+    {
+      "observation_id": "26045363c53e73e6",
+      "name": "search_any_table",
+      "type": "TOOL",
+      "input": "{'table': 'metric_instance', 'fields': None, 'filters': 'document=ba1df0c4c3a83e1024163942b4013127', 'limit': 10}",
+      "output": {
+        "success": true,
+        "message": "Found 10 records",
+        "data": [
+          {
+            "start": "",
+            "sys_mod_count": "0",
+            "calculation_complete": "true",
+            "sys_updated_on": "2025-10-06 04:21:20",
+            "duration": "",
+            "sys_id": "00483ce3c354ba1024163942b4013135",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "",
+            "sys_created_on": "2025-10-06 04:21:20",
+            "field_value": "false",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/35f3dc69c0a808ae0008665731c17d03",
+              "value": "35f3dc69c0a808ae0008665731c17d03"
+            },
+            "end": "",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/incident/af3878e3c354ba1024163942b40131bc",
+              "value": "af3878e3c354ba1024163942b40131bc"
+            },
+            "value": "false",
+            "sys_created_by": "system",
+            "table": "incident"
+          },
+          {
+            "start": "2025-09-26 13:50:27",
+            "sys_mod_count": "0",
+            "calculation_complete": "false",
+            "sys_updated_on": "2025-09-26 13:50:30",
+            "duration": "",
+            "sys_id": "00aadfd8c35cb21024163942b40131bd",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "incident_state",
+            "sys_created_on": "2025-09-26 13:50:30",
+            "field_value": "2",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/35f2b283c0a808ae000b7132cd0a4f55",
+              "value": "35f2b283c0a808ae000b7132cd0a4f55"
+            },
+            "end": "",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/incident/579a131cc35cb21024163942b401312a",
+              "value": "579a131cc35cb21024163942b401312a"
+            },
+            "value": "In Progress",
+            "sys_created_by": "system",
+            "table": "incident"
+          },
+          {
+            "start": "2025-10-01 05:21:12",
+            "sys_mod_count": "0",
+            "calculation_complete": "false",
+            "sys_updated_on": "2025-10-01 05:21:15",
+            "duration": "",
+            "sys_id": "01069b3dc3dcb21024163942b4013151",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "active",
+            "sys_created_on": "2025-10-01 05:21:15",
+            "field_value": "true",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/39d631fcc0a808ae00486d7bad874380",
+              "value": "39d631fcc0a808ae00486d7bad874380"
+            },
+            "end": "",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/incident/54069b3dc3dcb21024163942b401319d",
+              "value": "54069b3dc3dcb21024163942b401319d"
+            },
+            "value": "true",
+            "sys_created_by": "system",
+            "table": "incident"
+          },
+          {
+            "start": "",
+            "sys_mod_count": "0",
+            "calculation_complete": "true",
+            "sys_updated_on": "2025-10-01 05:39:00",
+            "duration": "",
+            "sys_id": "011a53b1c310f21024163942b401312d",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "",
+            "sys_created_on": "2025-10-01 05:39:00",
+            "field_value": "false",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/35f3dc69c0a808ae0008665731c17d03",
+              "value": "35f3dc69c0a808ae0008665731c17d03"
+            },
+            "end": "",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/incident/a41a13b1c310f21024163942b40131fe",
+              "value": "a41a13b1c310f21024163942b40131fe"
+            },
+            "value": "false",
+            "sys_created_by": "system",
+            "table": "incident"
+          },
+          {
+            "start": "2025-09-30 21:16:48",
+            "sys_mod_count": "0",
+            "calculation_complete": "false",
+            "sys_updated_on": "2025-09-30 21:16:50",
+            "duration": "",
+            "sys_id": "012769f9c3d4b21024163942b40131f8",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "type",
+            "sys_created_on": "2025-09-30 21:16:50",
+            "field_value": "normal",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/462cf6520a25810200ebe763047cc273",
+              "value": "462cf6520a25810200ebe763047cc273"
+            },
+            "end": "",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/change_request/ec2769f9c3d4b21024163942b40131ce",
+              "value": "ec2769f9c3d4b21024163942b40131ce"
+            },
+            "value": "Normal",
+            "sys_created_by": "system",
+            "table": "change_request"
+          },
+          {
+            "start": "2025-09-30 04:20:41",
+            "sys_mod_count": "0",
+            "calculation_complete": "false",
+            "sys_updated_on": "2025-09-30 04:20:45",
+            "duration": "",
+            "sys_id": "019e79adc394721024163942b401313a",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "incident_state",
+            "sys_created_on": "2025-09-30 04:20:45",
+            "field_value": "1",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/35f2b283c0a808ae000b7132cd0a4f55",
+              "value": "35f2b283c0a808ae000b7132cd0a4f55"
+            },
+            "end": "",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/incident/009e79adc394721024163942b401311c",
+              "value": "009e79adc394721024163942b401311c"
+            },
+            "value": "New",
+            "sys_created_by": "system",
+            "table": "incident"
+          },
+          {
+            "start": "2025-09-30 05:22:56",
+            "sys_mod_count": "0",
+            "calculation_complete": "false",
+            "sys_updated_on": "2025-09-30 05:23:00",
+            "duration": "",
+            "sys_id": "01dc0aedc3d4721024163942b4013139",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "incident_state",
+            "sys_created_on": "2025-09-30 05:23:00",
+            "field_value": "1",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/35f2b283c0a808ae000b7132cd0a4f55",
+              "value": "35f2b283c0a808ae000b7132cd0a4f55"
+            },
+            "end": "",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/incident/c8dcc6edc3d4721024163942b40131d4",
+              "value": "c8dcc6edc3d4721024163942b40131d4"
+            },
+            "value": "New",
+            "sys_created_by": "system",
+            "table": "incident"
+          },
+          {
+            "start": "2025-10-02 03:55:57",
+            "sys_mod_count": "1",
+            "calculation_complete": "true",
+            "sys_updated_on": "2025-10-02 03:56:00",
+            "duration": "1970-01-01 00:00:01",
+            "sys_id": "021c4416c394361024163942b4013145",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "incident_state",
+            "sys_created_on": "2025-10-02 03:56:00",
+            "field_value": "1",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/35f2b283c0a808ae000b7132cd0a4f55",
+              "value": "35f2b283c0a808ae000b7132cd0a4f55"
+            },
+            "end": "2025-10-02 03:55:58",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/incident/151c4416c394361024163942b4013164",
+              "value": "151c4416c394361024163942b4013164"
+            },
+            "value": "New",
+            "sys_created_by": "system",
+            "table": "incident"
+          },
+          {
+            "start": "2025-10-02 03:55:58",
+            "sys_mod_count": "1",
+            "calculation_complete": "true",
+            "sys_updated_on": "2025-10-09 04:00:05",
+            "duration": "1970-01-08 00:04:02",
+            "sys_id": "021c4416c394361024163942b4013146",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "incident_state",
+            "sys_created_on": "2025-10-02 03:56:00",
+            "field_value": "6",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/35f2b283c0a808ae000b7132cd0a4f55",
+              "value": "35f2b283c0a808ae000b7132cd0a4f55"
+            },
+            "end": "2025-10-09 04:00:00",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/incident/151c4416c394361024163942b4013164",
+              "value": "151c4416c394361024163942b4013164"
+            },
+            "value": "Resolved",
+            "sys_created_by": "system",
+            "table": "incident"
+          },
+          {
+            "start": "",
+            "sys_mod_count": "0",
+            "calculation_complete": "true",
+            "sys_updated_on": "2025-09-30 15:49:30",
+            "duration": "",
+            "sys_id": "023c5075c390b21024163942b40131ac",
+            "business_duration": "",
+            "sys_updated_by": "system",
+            "field": "",
+            "sys_created_on": "2025-09-30 15:49:30",
+            "field_value": "false",
+            "definition": {
+              "link": "https://dev185199.service-now.com/api/now/table/metric_definition/35f3dc69c0a808ae0008665731c17d03",
+              "value": "35f3dc69c0a808ae0008665731c17d03"
+            },
+            "end": "",
+            "id": {
+              "link": "https://dev185199.service-now.com/api/now/table/incident/813c5075c390b21024163942b40131b6",
+              "value": "813c5075c390b21024163942b40131b6"
+            },
+            "value": "false",
+            "sys_created_by": "system",
+            "table": "incident"
+          }
+        ]
+      },
+      "start_time": "2025-10-20T05:27:12.526000+00:00",
+      "end_time": "2025-10-20T05:27:13.084000+00:00"
+    },
+    {
+      "observation_id": "9b8761256304bc94",
+      "name": "get_change_request_details",
+      "type": "TOOL",
+      "input": "{'change_id': 'ba1df0c4c3a83e1024163942b4013127'}",
+      "output": {
+        "success": true,
+        "change_request": {
+          "parent": "",
+          "reason": null,
+          "watch_list": "",
+          "upon_reject": "Cancel all future Tasks",
+          "sys_updated_on": "2025-10-07 10:59:52",
+          "type": "Normal",
+          "approval_history": "",
+          "number": "CHG0030091",
+          "test_plan": "",
+          "cab_delegate": "",
+          "requested_by_date": "",
+          "state": "New",
+          "sys_created_by": "admin",
+          "knowledge": "false",
+          "order": "",
+          "phase": "Requested",
+          "cmdb_ci": "",
+          "delivery_plan": "",
+          "contract": "",
+          "impact": "3 - Low",
+          "active": "true",
+          "work_notes_list": "",
+          "priority": "4 - Low",
+          "sys_domain_path": "/",
+          "cab_recommendation": "",
+          "production_system": "false",
+          "review_date": "",
+          "business_duration": "",
+          "group_list": "",
+          "requested_by": {
+            "display_value": "System Administrator",
+            "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441"
+          },
+          "change_plan": "",
+          "approval_set": "",
+          "copied_from": "",
+          "implementation_plan": "",
+          "universal_request": "",
+          "end_date": "",
+          "short_description": "Test Change Request 20251007_135930",
+          "correlation_display": "",
+          "delivery_task": "",
+          "work_start": "",
+          "additional_assignee_list": "",
+          "outside_maintenance_schedule": "false",
+          "std_change_producer_version": "",
+          "service_offering": "",
+          "sys_class_name": "Change Request",
+          "closed_by": "",
+          "follow_up": "",
+          "reassignment_count": "0",
+          "review_status": "",
+          "assigned_to": "",
+          "start_date": "",
+          "sla_due": "UNKNOWN",
+          "comments_and_work_notes": "2025-10-07 10:59:52 - System Administrator (Work notes)\nChange request submitted for approval at 20251007_135930\n\n2025-10-07 10:59:41 - System Administrator (Work notes)\nInitial assessment completed. Ready for approval.\n\n",
+          "escalation": "Normal",
+          "upon_approval": "Proceed to Next Task",
+          "correlation_id": "",
+          "made_sla": "true",
+          "backout_plan": "",
+          "conflict_status": "Not Run",
+          "task_effective_number": "CHG0030091",
+          "sys_updated_by": "admin",
+          "opened_by": {
+            "display_value": "System Administrator",
+            "link": "https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441"
+          },
+          "user_input": "",
+          "sys_created_on": "2025-10-07 10:59:31",
+          "on_hold_task": "",
+          "sys_domain": {
+            "display_value": "global",
+            "link": "https://dev185199.service-now.com/api/now/table/sys_user_group/global"
+          },
+          "route_reason": "",
+          "closed_at": "",
+          "review_comments": "",
+          "business_service": "",
+          "time_worked": "",
+          "chg_model": {
+            "display_value": "Normal",
+            "link": "https://dev185199.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2"
+          },
+          "expected_start": "",
+          "opened_at": "2025-10-07 10:59:31",
+          "work_end": "",
+          "phase_state": "Open",
+          "work_notes": "2025-10-07 10:59:52 - System Administrator (Work notes)\nChange request submitted for approval at 20251007_135930\n\n2025-10-07 10:59:41 - System Administrator (Work notes)\nInitial assessment completed. Ready for approval.\n\n",
+          "close_code": null,
+          "assignment_group": "",
+          "description": "This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.",
+          "on_hold_reason": "",
+          "calendar_duration": "",
+          "close_notes": "",
+          "sys_id": "ba1df0c4c3a83e1024163942b4013127",
+          "contact_type": null,
+          "cab_required": "false",
+          "urgency": "3 - Low",
+          "scope": "Medium",
+          "company": "",
+          "justification": "",
+          "activity_due": "UNKNOWN",
+          "comments": "",
+          "approval": "Not Yet Requested",
+          "due_date": "",
+          "sys_mod_count": "2",
+          "on_hold": "false",
+          "sys_tags": "",
+          "cab_date_time": "",
+          "conflict_last_run": "",
+          "unauthorized": "false",
+          "location": "",
+          "risk": "Low",
+          "category": "Other",
+          "risk_impact_analysis": ""
+        },
+        "tasks": []
+      },
+      "start_time": "2025-10-20T05:26:57.226000+00:00",
+      "end_time": "2025-10-20T05:26:58.663000+00:00"
+    }
+  ],
+  "schema_context": "## Retrieved Schema Information\n\nThe following information was retrieved by calling MCP tools:\n\n### Tool Call 1: search_any_table\n**Input:** \"{'table': 'sys_user_role', 'fields': ['sys_id', 'name'], 'filters': 'sys_id=b05926fa0a0a0aa7000130023e0bde98', 'limit': 1}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"sys_id\": \"b05926fa0a0a0aa7000130023e0bde98\",\n      \"name\": \"user\"\n    }\n  ]\n}\n```\n\n### Tool Call 2: get_user\n**Input:** \"{'user_id': None, 'user_name': 'admin', 'email': None}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"User found\",\n  \"user\": {\n    \"calendar_integration\": \"Outlook\",\n    \"country\": null,\n    \"user_password\": \"********\",\n    \"last_login_time\": \"2025-10-19 22:29:40\",\n    \"source\": \"\",\n    \"sys_updated_on\": \"2025-08-01 07:17:07\",\n    \"building\": \"\",\n    \"web_service_access_only\": \"false\",\n    \"notification\": \"Enable\",\n    \"enable_multifactor_authn\": \"false\",\n    \"sys_updated_by\": \"guest\",\n    \"sys_created_on\": \"2007-07-03 11:48:47\",\n    \"sys_domain\": {\n      \"display_value\": \"global\",\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\"\n    },\n    \"state\": \"\",\n    \"vip\": \"false\",\n    \"sys_created_by\": \"fred.luddy\",\n    \"zip\": \"\",\n    \"home_phone\": \"\",\n    \"time_format\": null,\n    \"last_login\": \"2025-10-17\",\n    \"default_perspective\": \"\",\n    \"active\": \"true\",\n    \"sys_domain_path\": \"\",\n    \"cost_center\": \"\",\n    \"phone\": \"\",\n    \"name\": \"System Administrator\",\n    \"employee_number\": \"\",\n    \"password_needs_reset\": \"false\",\n    \"gender\": null,\n    \"city\": \"\",\n    \"failed_attempts\": \"0\",\n    \"user_name\": \"admin\",\n    \"roles\": \"admin\",\n    \"title\": \"System Administrator\",\n    \"sys_class_name\": \"User\",\n    \"sys_id\": \"6816f79cc0a8016401c5a33be04be441\",\n    \"federated_id\": \"iNE/5X5pGeyGaCbm6c3s+FHoSYZ4pKw+uYIHuExrag8=\",\n    \"internal_integration_user\": \"false\",\n    \"ldap_server\": \"\",\n    \"mobile_phone\": \"\",\n    \"street\": \"\",\n    \"company\": \"\",\n    \"department\": {\n      \"display_value\": \"Finance\",\n      \"link\": \"https://dev185199.service-now.com/api/now/table/cmn_department/a581ab703710200044e0bfc8bcbe5de8\"\n    },\n    \"first_name\": \"System\",\n    \"email\": \"admin@example.com\",\n    \"introduction\": null,\n    \"preferred_language\": null,\n    \"manager\": \"\",\n    \"locked_out\": \"false\",\n    \"sys_mod_count\": \"75\",\n    \"last_name\": \"Administrator\",\n    \"photo\": \"\",\n    \"avatar\": \"a5d3c898c3222010ae17dd981840dd8b.iix\",\n    \"middle_name\": \"\",\n    \"sys_tags\": \"\",\n    \"time_zone\": null,\n    \"schedule\": \"\",\n    \"date_format\": null,\n    \"location\": \"\"\n  }\n}\n```\n\n### Tool Call 3: search_any_table\n**Input:** \"{'table': 'sys_user_has_role', 'fields': ['sys_id', 'role', 'user'], 'filters': 'user=9d6d7484c3a83e1024163942b40131b8', 'limit': 10}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 1 records\",\n  \"data\": [\n    {\n      \"sys_id\": \"aa7df8c4c3a83e1024163942b4013168\",\n      \"role\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_role/b05926fa0a0a0aa7000130023e0bde98\",\n        \"value\": \"b05926fa0a0a0aa7000130023e0bde98\"\n      },\n      \"user\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/9d6d7484c3a83e1024163942b40131b8\",\n        \"value\": \"9d6d7484c3a83e1024163942b40131b8\"\n      }\n    }\n  ]\n}\n```\n\n### Tool Call 4: get_user\n**Input:** \"{'user_id': '9d6d7484c3a83e1024163942b40131b8', 'user_name': None, 'email': None}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"User found\",\n  \"user\": {\n    \"calendar_integration\": \"Outlook\",\n    \"country\": null,\n    \"user_password\": \"********\",\n    \"last_login_time\": \"\",\n    \"source\": \"\",\n    \"sys_updated_on\": \"2025-10-07 11:01:28\",\n    \"building\": \"\",\n    \"web_service_access_only\": \"false\",\n    \"notification\": \"Enable\",\n    \"enable_multifactor_authn\": \"false\",\n    \"sys_updated_by\": \"admin\",\n    \"sys_created_on\": \"2025-10-07 11:00:46\",\n    \"sys_domain\": {\n      \"display_value\": \"global\",\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\"\n    },\n    \"state\": \"\",\n    \"vip\": \"false\",\n    \"sys_created_by\": \"admin\",\n    \"zip\": \"\",\n    \"home_phone\": \"\",\n    \"time_format\": null,\n    \"last_login\": \"\",\n    \"default_perspective\": \"\",\n    \"active\": \"false\",\n    \"sys_domain_path\": \"/\",\n    \"cost_center\": \"\",\n    \"phone\": \"\",\n    \"name\": \"Test User\",\n    \"employee_number\": \"\",\n    \"password_needs_reset\": \"false\",\n    \"gender\": null,\n    \"city\": \"\",\n    \"failed_attempts\": \"\",\n    \"user_name\": \"test_user_20251007_140046_3344\",\n    \"roles\": \"\",\n    \"title\": \"\",\n    \"sys_class_name\": \"User\",\n    \"sys_id\": \"9d6d7484c3a83e1024163942b40131b8\",\n    \"federated_id\": \"yAFV/I967HxqsB9NKuf9T+zVNa60reZv15FOCppUQBk=\",\n    \"internal_integration_user\": \"false\",\n    \"ldap_server\": \"\",\n    \"mobile_phone\": \"\",\n    \"street\": \"\",\n    \"company\": \"\",\n    \"department\": \"\",\n    \"first_name\": \"Test\",\n    \"email\": \"test_user_20251007_140046_3344@example.com\",\n    \"introduction\": null,\n    \"preferred_language\": null,\n    \"manager\": \"\",\n    \"locked_out\": \"true\",\n    \"sys_mod_count\": \"1\",\n    \"last_name\": \"User\",\n    \"photo\": \"\",\n    \"avatar\": \"\",\n    \"middle_name\": \"\",\n    \"sys_tags\": \"\",\n    \"time_zone\": null,\n    \"schedule\": \"\",\n    \"date_format\": null,\n    \"location\": \"\"\n  }\n}\n```\n\n### Tool Call 5: search_any_table\n**Input:** \"{'table': 'stage_state', 'fields': None, 'filters': 'document=ba1df0c4c3a83e1024163942b4013127', 'limit': 10}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 6: list_change_requests\n**Input:** \"{'limit': 1, 'offset': 0, 'state': None, 'type': None, 'category': None, 'assignment_group': None, 'timeframe': None, 'query': 'sys_id=ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"change_requests\": [\n    {\n      \"parent\": \"\",\n      \"reason\": null,\n      \"watch_list\": \"\",\n      \"upon_reject\": \"Cancel all future Tasks\",\n      \"sys_updated_on\": \"2025-10-07 10:59:52\",\n      \"type\": \"Normal\",\n      \"approval_history\": \"\",\n      \"number\": \"CHG0030091\",\n      \"test_plan\": \"\",\n      \"cab_delegate\": \"\",\n      \"requested_by_date\": \"\",\n      \"state\": \"New\",\n      \"sys_created_by\": \"admin\",\n      \"knowledge\": \"false\",\n      \"order\": \"\",\n      \"phase\": \"Requested\",\n      \"cmdb_ci\": \"\",\n      \"delivery_plan\": \"\",\n      \"contract\": \"\",\n      \"impact\": \"3 - Low\",\n      \"active\": \"true\",\n      \"work_notes_list\": \"\",\n      \"priority\": \"4 - Low\",\n      \"sys_domain_path\": \"/\",\n      \"cab_recommendation\": \"\",\n      \"production_system\": \"false\",\n      \"review_date\": \"\",\n      \"business_duration\": \"\",\n      \"group_list\": \"\",\n      \"requested_by\": {\n        \"display_value\": \"System Administrator\",\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\"\n      },\n      \"change_plan\": \"\",\n      \"approval_set\": \"\",\n      \"copied_from\": \"\",\n      \"implementation_plan\": \"\",\n      \"universal_request\": \"\",\n      \"end_date\": \"\",\n      \"short_description\": \"Test Change Request 20251007_135930\",\n      \"correlation_display\": \"\",\n      \"delivery_task\": \"\",\n      \"work_start\": \"\",\n      \"additional_assignee_list\": \"\",\n      \"outside_maintenance_schedule\": \"false\",\n      \"std_change_producer_version\": \"\",\n      \"service_offering\": \"\",\n      \"sys_class_name\": \"Change Request\",\n      \"closed_by\": \"\",\n      \"follow_up\": \"\",\n      \"reassignment_count\": \"0\",\n      \"review_status\": \"\",\n      \"assigned_to\": \"\",\n      \"start_date\": \"\",\n      \"sla_due\": \"UNKNOWN\",\n      \"comments_and_work_notes\": \"2025-10-07 10:59:52 - System Administrator (Work notes)\\nChange request submitted for approval at 20251007_135930\\n\\n2025-10-07 10:59:41 - System Administrator (Work notes)\\nInitial assessment completed. Ready for approval.\\n\\n\",\n      \"escalation\": \"Normal\",\n      \"upon_approval\": \"Proceed to Next Task\",\n      \"correlation_id\": \"\",\n      \"made_sla\": \"true\",\n      \"backout_plan\": \"\",\n      \"conflict_status\": \"Not Run\",\n      \"task_effective_number\": \"CHG0030091\",\n      \"sys_updated_by\": \"admin\",\n      \"opened_by\": {\n        \"display_value\": \"System Administrator\",\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\"\n      },\n      \"user_input\": \"\",\n      \"sys_created_on\": \"2025-10-07 10:59:31\",\n      \"on_hold_task\": \"\",\n      \"sys_domain\": {\n        \"display_value\": \"global\",\n        \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\"\n      },\n      \"route_reason\": \"\",\n      \"closed_at\": \"\",\n      \"review_comments\": \"\",\n      \"business_service\": \"\",\n      \"time_worked\": \"\",\n      \"chg_model\": {\n        \"display_value\": \"Normal\",\n        \"link\": \"https://dev185199.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2\"\n      },\n      \"expected_start\": \"\",\n      \"opened_at\": \"2025-10-07 10:59:31\",\n      \"work_end\": \"\",\n      \"phase_state\": \"Open\",\n      \"work_notes\": \"2025-10-07 10:59:52 - System Administrator (Work notes)\\nChange request submitted for approval at 20251007_135930\\n\\n2025-10-07 10:59:41 - System Administrator (Work notes)\\nInitial assessment completed. Ready for approval.\\n\\n\",\n      \"close_code\": null,\n      \"assignment_group\": \"\",\n      \"description\": \"This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.\",\n      \"on_hold_reason\": \"\",\n      \"calendar_duration\": \"\",\n      \"close_notes\": \"\",\n      \"sys_id\": \"ba1df0c4c3a83e1024163942b4013127\",\n      \"contact_type\": null,\n      \"cab_required\": \"false\",\n      \"urgency\": \"3 - Low\",\n      \"scope\": \"Medium\",\n      \"company\": \"\",\n      \"justification\": \"\",\n      \"activity_due\": \"UNKNOWN\",\n      \"comments\": \"\",\n      \"approval\": \"Not Yet Requested\",\n      \"due_date\": \"\",\n      \"sys_mod_count\": \"2\",\n      \"on_hold\": \"false\",\n      \"sys_tags\": \"\",\n      \"cab_date_time\": \"\",\n      \"conflict_last_run\": \"\",\n      \"unauthorized\": \"false\",\n      \"location\": \"\",\n      \"risk\": \"Low\",\n      \"category\": \"Other\",\n      \"risk_impact_analysis\": \"\"\n    }\n  ],\n  \"count\": 1,\n  \"total\": 1\n}\n```\n\n### Tool Call 7: search_any_table\n**Input:** \"{'table': 'task_sla', 'fields': None, 'filters': 'task=ba1df0c4c3a83e1024163942b4013127', 'limit': 10}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 0 records\",\n  \"data\": []\n}\n```\n\n### Tool Call 8: search_any_table\n**Input:** \"{'table': 'metric_instance', 'fields': None, 'filters': 'id=ba1df0c4c3a83e1024163942b4013127', 'limit': 10}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 2 records\",\n  \"data\": [\n    {\n      \"start\": \"2025-10-07 17:59:31\",\n      \"sys_mod_count\": \"0\",\n      \"calculation_complete\": \"false\",\n      \"sys_updated_on\": \"2025-10-07 17:59:35\",\n      \"duration\": \"\",\n      \"sys_id\": \"8c2d34c4c3a83e1024163942b40131b1\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"approval\",\n      \"sys_created_on\": \"2025-10-07 17:59:35\",\n      \"field_value\": \"not requested\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/40c1b8dc0a2581020017b100e99646ba\",\n        \"value\": \"40c1b8dc0a2581020017b100e99646ba\"\n      },\n      \"end\": \"\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/change_request/ba1df0c4c3a83e1024163942b4013127\",\n        \"value\": \"ba1df0c4c3a83e1024163942b4013127\"\n      },\n      \"value\": \"Not Yet Requested\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"change_request\"\n    },\n    {\n      \"start\": \"2025-10-07 17:59:31\",\n      \"sys_mod_count\": \"0\",\n      \"calculation_complete\": \"false\",\n      \"sys_updated_on\": \"2025-10-07 17:59:35\",\n      \"duration\": \"\",\n      \"sys_id\": \"802d34c4c3a83e1024163942b40131b2\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"type\",\n      \"sys_created_on\": \"2025-10-07 17:59:35\",\n      \"field_value\": \"normal\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/462cf6520a25810200ebe763047cc273\",\n        \"value\": \"462cf6520a25810200ebe763047cc273\"\n      },\n      \"end\": \"\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/change_request/ba1df0c4c3a83e1024163942b4013127\",\n        \"value\": \"ba1df0c4c3a83e1024163942b4013127\"\n      },\n      \"value\": \"Normal\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"change_request\"\n    }\n  ]\n}\n```\n\n### Tool Call 9: search_any_table\n**Input:** \"{'table': 'metric_instance', 'fields': None, 'filters': 'document=ba1df0c4c3a83e1024163942b4013127', 'limit': 10}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"message\": \"Found 10 records\",\n  \"data\": [\n    {\n      \"start\": \"\",\n      \"sys_mod_count\": \"0\",\n      \"calculation_complete\": \"true\",\n      \"sys_updated_on\": \"2025-10-06 04:21:20\",\n      \"duration\": \"\",\n      \"sys_id\": \"00483ce3c354ba1024163942b4013135\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"\",\n      \"sys_created_on\": \"2025-10-06 04:21:20\",\n      \"field_value\": \"false\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/35f3dc69c0a808ae0008665731c17d03\",\n        \"value\": \"35f3dc69c0a808ae0008665731c17d03\"\n      },\n      \"end\": \"\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/incident/af3878e3c354ba1024163942b40131bc\",\n        \"value\": \"af3878e3c354ba1024163942b40131bc\"\n      },\n      \"value\": \"false\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"incident\"\n    },\n    {\n      \"start\": \"2025-09-26 13:50:27\",\n      \"sys_mod_count\": \"0\",\n      \"calculation_complete\": \"false\",\n      \"sys_updated_on\": \"2025-09-26 13:50:30\",\n      \"duration\": \"\",\n      \"sys_id\": \"00aadfd8c35cb21024163942b40131bd\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"incident_state\",\n      \"sys_created_on\": \"2025-09-26 13:50:30\",\n      \"field_value\": \"2\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/35f2b283c0a808ae000b7132cd0a4f55\",\n        \"value\": \"35f2b283c0a808ae000b7132cd0a4f55\"\n      },\n      \"end\": \"\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/incident/579a131cc35cb21024163942b401312a\",\n        \"value\": \"579a131cc35cb21024163942b401312a\"\n      },\n      \"value\": \"In Progress\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"incident\"\n    },\n    {\n      \"start\": \"2025-10-01 05:21:12\",\n      \"sys_mod_count\": \"0\",\n      \"calculation_complete\": \"false\",\n      \"sys_updated_on\": \"2025-10-01 05:21:15\",\n      \"duration\": \"\",\n      \"sys_id\": \"01069b3dc3dcb21024163942b4013151\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"active\",\n      \"sys_created_on\": \"2025-10-01 05:21:15\",\n      \"field_value\": \"true\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/39d631fcc0a808ae00486d7bad874380\",\n        \"value\": \"39d631fcc0a808ae00486d7bad874380\"\n      },\n      \"end\": \"\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/incident/54069b3dc3dcb21024163942b401319d\",\n        \"value\": \"54069b3dc3dcb21024163942b401319d\"\n      },\n      \"value\": \"true\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"incident\"\n    },\n    {\n      \"start\": \"\",\n      \"sys_mod_count\": \"0\",\n      \"calculation_complete\": \"true\",\n      \"sys_updated_on\": \"2025-10-01 05:39:00\",\n      \"duration\": \"\",\n      \"sys_id\": \"011a53b1c310f21024163942b401312d\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"\",\n      \"sys_created_on\": \"2025-10-01 05:39:00\",\n      \"field_value\": \"false\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/35f3dc69c0a808ae0008665731c17d03\",\n        \"value\": \"35f3dc69c0a808ae0008665731c17d03\"\n      },\n      \"end\": \"\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/incident/a41a13b1c310f21024163942b40131fe\",\n        \"value\": \"a41a13b1c310f21024163942b40131fe\"\n      },\n      \"value\": \"false\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"incident\"\n    },\n    {\n      \"start\": \"2025-09-30 21:16:48\",\n      \"sys_mod_count\": \"0\",\n      \"calculation_complete\": \"false\",\n      \"sys_updated_on\": \"2025-09-30 21:16:50\",\n      \"duration\": \"\",\n      \"sys_id\": \"012769f9c3d4b21024163942b40131f8\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"type\",\n      \"sys_created_on\": \"2025-09-30 21:16:50\",\n      \"field_value\": \"normal\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/462cf6520a25810200ebe763047cc273\",\n        \"value\": \"462cf6520a25810200ebe763047cc273\"\n      },\n      \"end\": \"\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/change_request/ec2769f9c3d4b21024163942b40131ce\",\n        \"value\": \"ec2769f9c3d4b21024163942b40131ce\"\n      },\n      \"value\": \"Normal\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"change_request\"\n    },\n    {\n      \"start\": \"2025-09-30 04:20:41\",\n      \"sys_mod_count\": \"0\",\n      \"calculation_complete\": \"false\",\n      \"sys_updated_on\": \"2025-09-30 04:20:45\",\n      \"duration\": \"\",\n      \"sys_id\": \"019e79adc394721024163942b401313a\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"incident_state\",\n      \"sys_created_on\": \"2025-09-30 04:20:45\",\n      \"field_value\": \"1\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/35f2b283c0a808ae000b7132cd0a4f55\",\n        \"value\": \"35f2b283c0a808ae000b7132cd0a4f55\"\n      },\n      \"end\": \"\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/incident/009e79adc394721024163942b401311c\",\n        \"value\": \"009e79adc394721024163942b401311c\"\n      },\n      \"value\": \"New\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"incident\"\n    },\n    {\n      \"start\": \"2025-09-30 05:22:56\",\n      \"sys_mod_count\": \"0\",\n      \"calculation_complete\": \"false\",\n      \"sys_updated_on\": \"2025-09-30 05:23:00\",\n      \"duration\": \"\",\n      \"sys_id\": \"01dc0aedc3d4721024163942b4013139\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"incident_state\",\n      \"sys_created_on\": \"2025-09-30 05:23:00\",\n      \"field_value\": \"1\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/35f2b283c0a808ae000b7132cd0a4f55\",\n        \"value\": \"35f2b283c0a808ae000b7132cd0a4f55\"\n      },\n      \"end\": \"\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/incident/c8dcc6edc3d4721024163942b40131d4\",\n        \"value\": \"c8dcc6edc3d4721024163942b40131d4\"\n      },\n      \"value\": \"New\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"incident\"\n    },\n    {\n      \"start\": \"2025-10-02 03:55:57\",\n      \"sys_mod_count\": \"1\",\n      \"calculation_complete\": \"true\",\n      \"sys_updated_on\": \"2025-10-02 03:56:00\",\n      \"duration\": \"1970-01-01 00:00:01\",\n      \"sys_id\": \"021c4416c394361024163942b4013145\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"incident_state\",\n      \"sys_created_on\": \"2025-10-02 03:56:00\",\n      \"field_value\": \"1\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/35f2b283c0a808ae000b7132cd0a4f55\",\n        \"value\": \"35f2b283c0a808ae000b7132cd0a4f55\"\n      },\n      \"end\": \"2025-10-02 03:55:58\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/incident/151c4416c394361024163942b4013164\",\n        \"value\": \"151c4416c394361024163942b4013164\"\n      },\n      \"value\": \"New\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"incident\"\n    },\n    {\n      \"start\": \"2025-10-02 03:55:58\",\n      \"sys_mod_count\": \"1\",\n      \"calculation_complete\": \"true\",\n      \"sys_updated_on\": \"2025-10-09 04:00:05\",\n      \"duration\": \"1970-01-08 00:04:02\",\n      \"sys_id\": \"021c4416c394361024163942b4013146\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"incident_state\",\n      \"sys_created_on\": \"2025-10-02 03:56:00\",\n      \"field_value\": \"6\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/35f2b283c0a808ae000b7132cd0a4f55\",\n        \"value\": \"35f2b283c0a808ae000b7132cd0a4f55\"\n      },\n      \"end\": \"2025-10-09 04:00:00\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/incident/151c4416c394361024163942b4013164\",\n        \"value\": \"151c4416c394361024163942b4013164\"\n      },\n      \"value\": \"Resolved\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"incident\"\n    },\n    {\n      \"start\": \"\",\n      \"sys_mod_count\": \"0\",\n      \"calculation_complete\": \"true\",\n      \"sys_updated_on\": \"2025-09-30 15:49:30\",\n      \"duration\": \"\",\n      \"sys_id\": \"023c5075c390b21024163942b40131ac\",\n      \"business_duration\": \"\",\n      \"sys_updated_by\": \"system\",\n      \"field\": \"\",\n      \"sys_created_on\": \"2025-09-30 15:49:30\",\n      \"field_value\": \"false\",\n      \"definition\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/metric_definition/35f3dc69c0a808ae0008665731c17d03\",\n        \"value\": \"35f3dc69c0a808ae0008665731c17d03\"\n      },\n      \"end\": \"\",\n      \"id\": {\n        \"link\": \"https://dev185199.service-now.com/api/now/table/incident/813c5075c390b21024163942b40131b6\",\n        \"value\": \"813c5075c390b21024163942b40131b6\"\n      },\n      \"value\": \"false\",\n      \"sys_created_by\": \"system\",\n      \"table\": \"incident\"\n    }\n  ]\n}\n```\n\n### Tool Call 10: get_change_request_details\n**Input:** \"{'change_id': 'ba1df0c4c3a83e1024163942b4013127'}\"\n\n**Output:**\n```json\n{\n  \"success\": true,\n  \"change_request\": {\n    \"parent\": \"\",\n    \"reason\": null,\n    \"watch_list\": \"\",\n    \"upon_reject\": \"Cancel all future Tasks\",\n    \"sys_updated_on\": \"2025-10-07 10:59:52\",\n    \"type\": \"Normal\",\n    \"approval_history\": \"\",\n    \"number\": \"CHG0030091\",\n    \"test_plan\": \"\",\n    \"cab_delegate\": \"\",\n    \"requested_by_date\": \"\",\n    \"state\": \"New\",\n    \"sys_created_by\": \"admin\",\n    \"knowledge\": \"false\",\n    \"order\": \"\",\n    \"phase\": \"Requested\",\n    \"cmdb_ci\": \"\",\n    \"delivery_plan\": \"\",\n    \"contract\": \"\",\n    \"impact\": \"3 - Low\",\n    \"active\": \"true\",\n    \"work_notes_list\": \"\",\n    \"priority\": \"4 - Low\",\n    \"sys_domain_path\": \"/\",\n    \"cab_recommendation\": \"\",\n    \"production_system\": \"false\",\n    \"review_date\": \"\",\n    \"business_duration\": \"\",\n    \"group_list\": \"\",\n    \"requested_by\": {\n      \"display_value\": \"System Administrator\",\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\"\n    },\n    \"change_plan\": \"\",\n    \"approval_set\": \"\",\n    \"copied_from\": \"\",\n    \"implementation_plan\": \"\",\n    \"universal_request\": \"\",\n    \"end_date\": \"\",\n    \"short_description\": \"Test Change Request 20251007_135930\",\n    \"correlation_display\": \"\",\n    \"delivery_task\": \"\",\n    \"work_start\": \"\",\n    \"additional_assignee_list\": \"\",\n    \"outside_maintenance_schedule\": \"false\",\n    \"std_change_producer_version\": \"\",\n    \"service_offering\": \"\",\n    \"sys_class_name\": \"Change Request\",\n    \"closed_by\": \"\",\n    \"follow_up\": \"\",\n    \"reassignment_count\": \"0\",\n    \"review_status\": \"\",\n    \"assigned_to\": \"\",\n    \"start_date\": \"\",\n    \"sla_due\": \"UNKNOWN\",\n    \"comments_and_work_notes\": \"2025-10-07 10:59:52 - System Administrator (Work notes)\\nChange request submitted for approval at 20251007_135930\\n\\n2025-10-07 10:59:41 - System Administrator (Work notes)\\nInitial assessment completed. Ready for approval.\\n\\n\",\n    \"escalation\": \"Normal\",\n    \"upon_approval\": \"Proceed to Next Task\",\n    \"correlation_id\": \"\",\n    \"made_sla\": \"true\",\n    \"backout_plan\": \"\",\n    \"conflict_status\": \"Not Run\",\n    \"task_effective_number\": \"CHG0030091\",\n    \"sys_updated_by\": \"admin\",\n    \"opened_by\": {\n      \"display_value\": \"System Administrator\",\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441\"\n    },\n    \"user_input\": \"\",\n    \"sys_created_on\": \"2025-10-07 10:59:31\",\n    \"on_hold_task\": \"\",\n    \"sys_domain\": {\n      \"display_value\": \"global\",\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sys_user_group/global\"\n    },\n    \"route_reason\": \"\",\n    \"closed_at\": \"\",\n    \"review_comments\": \"\",\n    \"business_service\": \"\",\n    \"time_worked\": \"\",\n    \"chg_model\": {\n      \"display_value\": \"Normal\",\n      \"link\": \"https://dev185199.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2\"\n    },\n    \"expected_start\": \"\",\n    \"opened_at\": \"2025-10-07 10:59:31\",\n    \"work_end\": \"\",\n    \"phase_state\": \"Open\",\n    \"work_notes\": \"2025-10-07 10:59:52 - System Administrator (Work notes)\\nChange request submitted for approval at 20251007_135930\\n\\n2025-10-07 10:59:41 - System Administrator (Work notes)\\nInitial assessment completed. Ready for approval.\\n\\n\",\n    \"close_code\": null,\n    \"assignment_group\": \"\",\n    \"description\": \"This is a test change request created at 20251007_135930 for testing purposes. Updated with additional details.\",\n    \"on_hold_reason\": \"\",\n    \"calendar_duration\": \"\",\n    \"close_notes\": \"\",\n    \"sys_id\": \"ba1df0c4c3a83e1024163942b4013127\",\n    \"contact_type\": null,\n    \"cab_required\": \"false\",\n    \"urgency\": \"3 - Low\",\n    \"scope\": \"Medium\",\n    \"company\": \"\",\n    \"justification\": \"\",\n    \"activity_due\": \"UNKNOWN\",\n    \"comments\": \"\",\n    \"approval\": \"Not Yet Requested\",\n    \"due_date\": \"\",\n    \"sys_mod_count\": \"2\",\n    \"on_hold\": \"false\",\n    \"sys_tags\": \"\",\n    \"cab_date_time\": \"\",\n    \"conflict_last_run\": \"\",\n    \"unauthorized\": \"false\",\n    \"location\": \"\",\n    \"risk\": \"Low\",\n    \"category\": \"Other\",\n    \"risk_impact_analysis\": \"\"\n  },\n  \"tasks\": []\n}\n```\n\n"
+}

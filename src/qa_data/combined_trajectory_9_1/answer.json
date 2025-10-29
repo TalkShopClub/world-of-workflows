@@ -1,0 +1,20 @@
+{
+  "invalid_action_idxs": [
+    10,
+    24,
+    36,
+    47
+  ],
+  "invalid_policy_names": [
+    "Assets cannot be assigned to users who already have more than 5 active assets",
+    "Inactive users cannot be assigned as managers of active users",
+    "Users cannot be removed from groups they manage",
+    "Incidents with priority 1 cannot be assigned to users who already have more than 3 priority 1 incidents"
+  ],
+  "invalid_policy_nums": [
+    8,
+    10,
+    9,
+    2
+  ]
+}

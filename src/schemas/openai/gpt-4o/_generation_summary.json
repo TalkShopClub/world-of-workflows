@@ -1,0 +1,15 @@
+{
+  "model": "openai/gpt-4o",
+  "generated_at": "2025-10-17T16:15:14.606764",
+  "total_files": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "file": "approvechangerequest.json",
+      "status": "success",
+      "num_tool_calls": 2,
+      "schema_size": 13926
+    }
+  ]
+}

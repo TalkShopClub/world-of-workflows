@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    7,
+    14,
+    27
+  ],
+  "invalid_policy_names": [
+    "Ticket being resolved must have someone assigned to the ticket.",
+    "Assets that cost over $10000 cannot be transferred",
+    "Users cannot be removed from groups they manage"
+  ],
+  "invalid_policy_nums": [
+    1,
+    6,
+    9
+  ]
+}

@@ -1,0 +1,623 @@
+[
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "IT Support Team"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": "IT Support Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "IT Support Team",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "IT Support Team",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "HR Department"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": "HR Department"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "HR Department",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "HR Department",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Finance Team"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "27c7c26d53543610f8bb51a0a0490e0f",
+      "group_name": "Finance Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Finance Team",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "27c7c26d53543610f8bb51a0a0490e0f",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Finance Team",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "manager": "5137153cc611227c000bbd1bd8cd2005"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": "IT Support Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:681ccaf9c0a8016400b98a06818d57c7"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:9ee1b13dc6112271007f9d0efdb69cd0"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:46b87022a9fe198101a78787e40d7547"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "upload_status",
+          "newvalue": "1",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_window_end",
+          "newvalue": "2025-09-30 05:08:47",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_log",
+          "newvalue": "71ba466153943610f8bb51a0a0490e1c",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_number",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "num_retries",
+          "newvalue": "0",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_status",
+          "newvalue": "1",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_size",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_type",
+          "newvalue": "ua_gcf_cp_hourly",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_window_start",
+          "newvalue": "2025-09-30 04:08:47",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "num_records",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_id",
+          "newvalue": "31ba466164943610b41b6791b856a51c",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "46b87022a9fe198101a78787e40d7547",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 13,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 13,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "ua_upload_log_details",
+          "sys_user_grmember",
+          "ua_upload_log"
+        ]
+      }
+    }
+  }
+]

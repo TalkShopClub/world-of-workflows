@@ -1,0 +1,500 @@
+[
+  {
+    "action": {
+      "tool_name": "create_knowledge_base",
+      "parameters": {
+        "title": "Test Knowledge Base 20251007_135704",
+        "description": "Test knowledge base created at 20251007_135704",
+        "owner": null,
+        "managers": null,
+        "publish_workflow": "Knowledge - Instant Publish",
+        "retire_workflow": "Knowledge - Instant Retire"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Knowledge base created successfully\",\n  \"kb_id\": \"078c7884c3a83e1024163942b401314e\",\n  \"kb_name\": \"Test Knowledge Base 20251007_135704\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "b99c3884c3a83e1024163942b40131af",
+        "newvalue": "2025-10-07 17:57:15",
+        "sys_created_on": "2025-10-07 17:57:15",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd201d60000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:57:04",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "create_category",
+      "parameters": {
+        "title": "Test Category 20251007_135704",
+        "description": "Test category for Test Knowledge Base 20251007_135704",
+        "knowledge_base": "078c7884c3a83e1024163942b401314e",
+        "parent_category": null,
+        "parent_table": null,
+        "active": true
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Category created successfully\",\n  \"category_id\": \"f99c7884c3a83e1024163942b401317b\",\n  \"category_name\": \"Test Category 20251007_135704\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "1cac3884c3a83e1024163942b40131b2",
+        "newvalue": "2025-10-07 17:57:25",
+        "sys_created_on": "2025-10-07 17:57:25",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd22a200000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:57:15",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "b99c3884c3a83e1024163942b40131af",
+        "newvalue": "2025-10-07 17:57:15",
+        "sys_created_on": "2025-10-07 17:57:15",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd201d60000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:57:04",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "create_article",
+      "parameters": {
+        "title": "Test Article 20251007_135704",
+        "text": "<p>This is a test article created at 20251007_135704. It contains sample content for testing purposes.</p>",
+        "short_description": "Test article for Test Knowledge Base 20251007_135704",
+        "knowledge_base": "078c7884c3a83e1024163942b401314e",
+        "category": "f99c7884c3a83e1024163942b401317b",
+        "keywords": null,
+        "article_type": "html"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Article created successfully\",\n  \"article_id\": \"5cacf884c3a83e1024163942b401314b\",\n  \"article_title\": \"Test Article 20251007_135704\",\n  \"workflow_state\": \"published\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "beac3884c3a83e1024163942b40131b5",
+        "newvalue": "2025-10-07 17:57:36",
+        "sys_created_on": "2025-10-07 17:57:36",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd253df0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:57:25",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "view_as_allowed",
+        "reason": "",
+        "sys_id": "dcacf884c3a83e1024163942b401316c",
+        "newvalue": "1",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "disable_suggesting",
+        "reason": "",
+        "sys_id": "dcacf884c3a83e1024163942b401316b",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "author",
+        "reason": "",
+        "sys_id": "d8acf884c3a83e1024163942b401316c",
+        "newvalue": "6816f79cc0a8016401c5a33be04be441",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "workflow_state",
+        "reason": "",
+        "sys_id": "d4acf884c3a83e1024163942b401316c",
+        "newvalue": "published",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "flagged",
+        "reason": "",
+        "sys_id": "d0acf884c3a83e1024163942b401316c",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "kb_knowledge_base",
+        "reason": "",
+        "sys_id": "9cacf884c3a83e1024163942b401316c",
+        "newvalue": "078c7884c3a83e1024163942b401314e",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "generated_with_now_assist",
+        "reason": "",
+        "sys_id": "9cacf884c3a83e1024163942b401316b",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "article_type",
+        "reason": "",
+        "sys_id": "98acf884c3a83e1024163942b401316c",
+        "newvalue": "text",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "valid_to",
+        "reason": "",
+        "sys_id": "94acf884c3a83e1024163942b401316c",
+        "newvalue": "2100-01-01",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "use_count",
+        "reason": "",
+        "sys_id": "90acf884c3a83e1024163942b401316c",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "helpful_count",
+        "reason": "",
+        "sys_id": "5cacf884c3a83e1024163942b401316c",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "direct",
+        "reason": "",
+        "sys_id": "5cacf884c3a83e1024163942b401316b",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "display_attachments",
+        "reason": "",
+        "sys_id": "58acf884c3a83e1024163942b401316c",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "sys_domain",
+        "reason": "",
+        "sys_id": "54acf884c3a83e1024163942b401316c",
+        "newvalue": "global",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "kb_category",
+        "reason": "",
+        "sys_id": "50acf884c3a83e1024163942b401316d",
+        "newvalue": "f99c7884c3a83e1024163942b401317b",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "number",
+        "reason": "",
+        "sys_id": "50acf884c3a83e1024163942b401316c",
+        "newvalue": "KB0010455",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "active",
+        "reason": "",
+        "sys_id": "1cacf884c3a83e1024163942b401316c",
+        "newvalue": "1",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "short_description",
+        "reason": "",
+        "sys_id": "1cacf884c3a83e1024163942b401316b",
+        "newvalue": "Test Article 20251007_135704",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "text",
+        "reason": "",
+        "sys_id": "18acf884c3a83e1024163942b401316c",
+        "newvalue": "<p>This is a test article created at 20251007_135704. It contains sample content for testing purposes.</p>",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "disable_commenting",
+        "reason": "",
+        "sys_id": "14acf884c3a83e1024163942b401316c",
+        "newvalue": "0",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "topic",
+        "reason": "",
+        "sys_id": "10acf884c3a83e1024163942b401316d",
+        "newvalue": "General",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      },
+      {
+        "fieldname": "sys_class_name",
+        "reason": "",
+        "sys_id": "10acf884c3a83e1024163942b401316c",
+        "newvalue": "kb_knowledge",
+        "sys_created_on": "2025-10-07 17:57:26",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd22c0e0000001",
+        "record_checkpoint": "0",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "",
+        "sys_created_by": "admin"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "5cacf884c3a83e1024163942b401314b",
+        "title": null,
+        "text": "<p>This is a test article created at 20251007_135704. It contains sample content for testing purposes.</p><p><strong>Comment:</strong> This article has been updated with additional information.</p>",
+        "short_description": null,
+        "category": null,
+        "keywords": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Article updated successfully\",\n  \"article_id\": \"5cacf884c3a83e1024163942b401314b\",\n  \"article_title\": \"Test Article 20251007_135704\",\n  \"workflow_state\": \"published\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "d1bc3c84c3a83e1024163942b4013108",
+        "newvalue": "2025-10-07 17:57:46",
+        "sys_created_on": "2025-10-07 17:57:46",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd27c7e0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:57:36",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "beac3884c3a83e1024163942b40131b5",
+        "newvalue": "2025-10-07 17:57:36",
+        "sys_created_on": "2025-10-07 17:57:36",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd253df0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:57:25",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "text",
+        "reason": "",
+        "sys_id": "76ac3c84c3a83e1024163942b401312c",
+        "newvalue": "<p>This is a test article created at 20251007_135704. It contains sample content for testing purposes.</p><p><strong>Comment:</strong> This article has been updated with additional information.</p>",
+        "sys_created_on": "2025-10-07 17:57:36",
+        "documentkey": "5cacf884c3a83e1024163942b401314b",
+        "internal_checkpoint": "199bfd254ac0000001",
+        "record_checkpoint": "1",
+        "tablename": "kb_knowledge",
+        "user": "admin",
+        "oldvalue": "<p>This is a test article created at 20251007_135704. It contains sample content for testing purposes.</p>",
+        "sys_created_by": "admin"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "publish_article",
+      "parameters": {
+        "article_id": "5cacf884c3a83e1024163942b401314b",
+        "workflow_state": "published",
+        "workflow_version": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Article published successfully\",\n  \"article_id\": \"5cacf884c3a83e1024163942b401314b\",\n  \"article_title\": \"Test Article 20251007_135704\",\n  \"workflow_state\": \"published\"\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "d1bc3c84c3a83e1024163942b4013108",
+        "newvalue": "2025-10-07 17:57:46",
+        "sys_created_on": "2025-10-07 17:57:46",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfd27c7e0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 17:57:36",
+        "sys_created_by": "guest"
+      }
+    ]
+  }
+]

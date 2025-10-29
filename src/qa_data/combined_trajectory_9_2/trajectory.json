@@ -1,0 +1,4726 @@
+[
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "D001",
+        "assigned_to": "5137153cc611227c000bbd1bd8cd2005",
+        "model": "Dell Inc. XPS 15z",
+        "cost": "3000"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: 4b8e316153543610f8bb51a0a0490e4d",
+      "asset_id": "4b8e316153543610f8bb51a0a0490e4d",
+      "asset_tag": "D001"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "0c43b1e0c611227501522de219997e4a",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "4b8e316153543610f8bb51a0a0490e4d",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "4f8e316153543610f8bb51a0a0490e35",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "4b8e316153543610f8bb51a0a0490e4d",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010128",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "f90afd120a0a0b9100c6c302ba9bd056",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "D001 - Dell Inc. XPS 15z",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "4b8e316153543610f8bb51a0a0490e4d",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "3000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "4b8e316153543610f8bb51a0a0490e4d",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "D001",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fx_currency_instance",
+          "alm_hardware",
+          "fm_expense_line"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "I001",
+        "assigned_to": "681ccaf9c0a8016400b98a06818d57c7",
+        "model": "Iris 5875",
+        "cost": "4000"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: 85ceb56d53143610f8bb51a0a0490e35",
+      "asset_id": "85ceb56d53143610f8bb51a0a0490e35",
+      "asset_tag": "I001"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "85ceb56d53143610f8bb51a0a0490e35",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "09ce356153543610f8bb51a0a0490ec9",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "85ceb56d53143610f8bb51a0a0490e35",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010129",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "I001 - Iris 5875",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "25ab9ddd0a0a0bb3003572b22b3b4e55",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "85ceb56d53143610f8bb51a0a0490e35",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "I001",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "85ceb56d53143610f8bb51a0a0490e35",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "5f5fbcc3c0a8010e00f3b27814f3b96b",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "alm_hardware",
+          "fx_currency_instance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "A001",
+        "assigned_to": "5137153cc611227c000bbd1bd8cd2005",
+        "model": "Acer Notebook Battery",
+        "cost": "2000"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: 13ee396153543610f8bb51a0a0490e83",
+      "asset_id": "13ee396153543610f8bb51a0a0490e83",
+      "asset_tag": "A001"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "13ee396153543610f8bb51a0a0490e83",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010130",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "13ee396153543610f8bb51a0a0490e83",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "a3ee396153543610f8bb51a0a0490e76",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "13ee396153543610f8bb51a0a0490e83",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "A001",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "13ee396153543610f8bb51a0a0490e83",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "26431e62ac10a501177f7cd98f0de15e",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "f90afd120a0a0b9100c6c302ba9bd056",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "A001 - Acer Notebook Battery",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "fx_currency_instance",
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "D002",
+        "assigned_to": "9ee1b13dc6112271007f9d0efdb69cd0",
+        "model": "Dell Inc. XPS 15z",
+        "cost": "3000"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: 8e1f396153543610f8bb51a0a0490e8b",
+      "asset_id": "8e1f396153543610f8bb51a0a0490e8b",
+      "asset_tag": "D002"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "asset",
+          "newvalue": "8e1f396153543610f8bb51a0a0490e8b",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "5e1ff96153543610f8bb51a0a0490eed",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "8e1f396153543610f8bb51a0a0490e8b",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010131",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "3000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "f90ad9120a0a0b91005146ebac892a09",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "D002 - Dell Inc. XPS 15z",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "8e1f396153543610f8bb51a0a0490e8b",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "8e1f396153543610f8bb51a0a0490e8b",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "D002",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "0c43b1e0c611227501522de219997e4a",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "fx_currency_instance",
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "A003",
+        "model": "Acer Notebook Battery",
+        "cost": "2000"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: 30af3d6153543610f8bb51a0a0490e46",
+      "asset_id": "30af3d6153543610f8bb51a0a0490e46",
+      "asset_tag": "A003"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "A003 - Acer Notebook Battery",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "30af3d6153543610f8bb51a0a0490e46",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "8dafb5a153543610f8bb51a0a0490ee0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "A003",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010132",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "26431e62ac10a501177f7cd98f0de15e",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "30af3d6153543610f8bb51a0a0490e46",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "30af3d6153543610f8bb51a0a0490e46",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "30af3d6153543610f8bb51a0a0490e46",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 38,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 37,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fx_currency_instance",
+          "alm_hardware",
+          "fm_expense_line"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "I002",
+        "assigned_to": "5137153cc611227c000bbd1bd8cd2005",
+        "model": "Iris 5875",
+        "cost": "4000"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: 13cff5a153543610f8bb51a0a0490eb9",
+      "asset_id": "13cff5a153543610f8bb51a0a0490eb9",
+      "asset_tag": "I002"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010133",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "13cff5a153543610f8bb51a0a0490eb9",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "I002",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "13cff5a153543610f8bb51a0a0490eb9",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "5f5fbcc3c0a8010e00f3b27814f3b96b",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "13cff5a153543610f8bb51a0a0490eb9",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "e7cfb9a153543610f8bb51a0a0490ef9",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "13cff5a153543610f8bb51a0a0490eb9",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "f90afd120a0a0b9100c6c302ba9bd056",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "I002 - Iris 5875",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "alm_hardware",
+          "fx_currency_instance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "A002",
+        "assigned_to": "681ccaf9c0a8016400b98a06818d57c7",
+        "model": "Acer Notebook Battery",
+        "cost": "2000"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: c5ff7ded53143610f8bb51a0a0490e3d",
+      "asset_id": "c5ff7ded53143610f8bb51a0a0490e3d",
+      "asset_tag": "A002"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "asset",
+          "newvalue": "c5ff7ded53143610f8bb51a0a0490e3d",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c9ff7da153543610f8bb51a0a0490e32",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010134",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "c5ff7ded53143610f8bb51a0a0490e3d",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "A002 - Acer Notebook Battery",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "25ab9ddd0a0a0bb3003572b22b3b4e55",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c5ff7ded53143610f8bb51a0a0490e3d",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "A002",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c5ff7ded53143610f8bb51a0a0490e3d",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "26431e62ac10a501177f7cd98f0de15e",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "alm_hardware",
+          "fx_currency_instance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "D003",
+        "assigned_to": "5137153cc611227c000bbd1bd8cd2005",
+        "model": "Dell Inc. XPS 15z",
+        "cost": "3000"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: c9208ea153543610f8bb51a0a0490e0f",
+      "asset_id": "c9208ea153543610f8bb51a0a0490e0f",
+      "asset_tag": "D003"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010135",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "f90afd120a0a0b9100c6c302ba9bd056",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "D003 - Dell Inc. XPS 15z",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "3000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c9208ea153543610f8bb51a0a0490e0f",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c9208ea153543610f8bb51a0a0490e0f",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "D003",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "c9208ea153543610f8bb51a0a0490e0f",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "d52042e153543610f8bb51a0a0490ec1",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "0c43b1e0c611227501522de219997e4a",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "c9208ea153543610f8bb51a0a0490e0f",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "3000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "fx_currency_instance",
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "I003",
+        "assigned_to": "5137153cc611227c000bbd1bd8cd2005",
+        "model": "Iris 5875",
+        "cost": "4000"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: 964082e153543610f8bb51a0a0490e84",
+      "asset_id": "964082e153543610f8bb51a0a0490e84",
+      "asset_tag": "I003"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010136",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "964082e153543610f8bb51a0a0490e84",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "ea4046e153543610f8bb51a0a0490e18",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "964082e153543610f8bb51a0a0490e84",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "I003 - Iris 5875",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "f90afd120a0a0b9100c6c302ba9bd056",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "964082e153543610f8bb51a0a0490e84",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "I003",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "964082e153543610f8bb51a0a0490e84",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "5f5fbcc3c0a8010e00f3b27814f3b96b",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fx_currency_instance",
+          "alm_hardware",
+          "fm_expense_line"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "transfer_asset",
+      "parameters": {
+        "asset_id": "c5ff7ded53143610f8bb51a0a0490e3d",
+        "new_assigned_to": "9ee1b13dc6112271007f9d0efdb69cd0"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Asset transferred successfully to 9ee1b13dc6112271007f9d0efdb69cd0",
+      "asset_id": "c5ff7ded53143610f8bb51a0a0490e3d",
+      "asset_tag": "A002"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "alm_hardware",
+          "oldvalue": "681ccaf9c0a8016400b98a06818d57c7"
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "f90ad9120a0a0b91005146ebac892a09",
+          "tablename": "alm_hardware",
+          "oldvalue": "25ab9ddd0a0a0bb3003572b22b3b4e55"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "transfer_asset",
+      "parameters": {
+        "asset_id": "30af3d6153543610f8bb51a0a0490e46",
+        "new_assigned_to": "5137153cc611227c000bbd1bd8cd2005"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Asset transferred successfully to 5137153cc611227c000bbd1bd8cd2005",
+      "asset_id": "30af3d6153543610f8bb51a0a0490e46",
+      "asset_tag": "A003"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "location",
+          "newvalue": "f90afd120a0a0b9100c6c302ba9bd056",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "D123",
+        "cost": "4500",
+        "assigned_to": "5137153cc611227c000bbd1bd8cd2005",
+        "model": "Dell Inc. XPS 15z"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: a355b9e953d03610f8bb51a0a0490e02",
+      "asset_id": "a355b9e953d03610f8bb51a0a0490e02",
+      "asset_tag": "D123"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "asset",
+          "newvalue": "a355b9e953d03610f8bb51a0a0490e02",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "4500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7b55f12553143610f8bb51a0a0490e70",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "a355b9e953d03610f8bb51a0a0490e02",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "f90afd120a0a0b9100c6c302ba9bd056",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "D123 - Dell Inc. XPS 15z",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "4500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "a355b9e953d03610f8bb51a0a0490e02",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010121",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "a355b9e953d03610f8bb51a0a0490e02",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "D123",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "4500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "0c43b1e0c611227501522de219997e4a",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fx_currency_instance",
+          "alm_hardware",
+          "fm_expense_line"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "I120",
+        "cost": "12000",
+        "assigned_to": "681ccaf9c0a8016400b98a06818d57c7",
+        "model": "Iris 5875"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: d8d5352553143610f8bb51a0a0490e43",
+      "asset_id": "d8d5352553143610f8bb51a0a0490e43",
+      "asset_tag": "I120"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "12000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "25ab9ddd0a0a0bb3003572b22b3b4e55",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "I120 - Iris 5875",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "d8d5352553143610f8bb51a0a0490e43",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "d8d5352553143610f8bb51a0a0490e43",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "12000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "1cd53d2553143610f8bb51a0a0490edc",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "12000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "d8d5352553143610f8bb51a0a0490e43",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "I120",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "d8d5352553143610f8bb51a0a0490e43",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "5f5fbcc3c0a8010e00f3b27814f3b96b",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "12000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010122",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "12000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "fx_currency_instance",
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "A120",
+        "cost": "2000",
+        "assigned_to": "9ee1b13dc6112271007f9d0efdb69cd0",
+        "model": "Acer Notebook Battery"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: c206352153143610f8bb51a0a0490ec2",
+      "asset_id": "c206352153143610f8bb51a0a0490ec2",
+      "asset_tag": "A120"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "source_id",
+          "newvalue": "c206352153143610f8bb51a0a0490ec2",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010123",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "9e06716553143610f8bb51a0a0490ec1",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "c206352153143610f8bb51a0a0490ec2",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "f90ad9120a0a0b91005146ebac892a09",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "A120 - Acer Notebook Battery",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c206352153143610f8bb51a0a0490ec2",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "A120",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "c206352153143610f8bb51a0a0490ec2",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "26431e62ac10a501177f7cd98f0de15e",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "2000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "fx_currency_instance",
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_hardware_asset",
+      "parameters": {
+        "asset_id": "a355b9e953d03610f8bb51a0a0490e02",
+        "cost": "6500"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset updated successfully",
+      "asset_id": "a355b9e953d03610f8bb51a0a0490e02",
+      "asset_tag": "D123"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "6500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "4500"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "6500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "4500"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "6500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "4500"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "6500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "4500"
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "6500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "4500"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 5,
+        "num_modified_entries": 5,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [],
+        "tables_modified": [
+          "fx_currency_instance",
+          "fm_expense_line"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "transfer_asset",
+      "parameters": {
+        "asset_id": "c206352153143610f8bb51a0a0490ec2",
+        "new_assigned_to": "5137153cc611227c000bbd1bd8cd2005"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Asset transferred successfully to 5137153cc611227c000bbd1bd8cd2005",
+      "asset_id": "c206352153143610f8bb51a0a0490ec2",
+      "asset_tag": "A120"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "location",
+          "newvalue": "f90afd120a0a0b9100c6c302ba9bd056",
+          "tablename": "alm_hardware",
+          "oldvalue": "f90ad9120a0a0b91005146ebac892a09"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "alm_hardware",
+          "oldvalue": "9ee1b13dc6112271007f9d0efdb69cd0"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "D120",
+        "cost": "12000",
+        "assigned_to": "681ccaf9c0a8016400b98a06818d57c7",
+        "model": "Dell Inc. XPS 15z"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Hardware asset created successfully. The sys_id of the asset is: 67577da553143610f8bb51a0a0490eb1",
+      "asset_id": "67577da553143610f8bb51a0a0490eb1",
+      "asset_tag": "D120"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "source_id",
+          "newvalue": "67577da553143610f8bb51a0a0490eb1",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "12000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010124",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-09-30",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "12000",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "67577da553143610f8bb51a0a0490eb1",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "bb577da553143610f8bb51a0a0490e52",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "12000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "0c43b1e0c611227501522de219997e4a",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "12000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "D120 - Dell Inc. XPS 15z",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "salvage_value",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "location",
+          "newvalue": "25ab9ddd0a0a0bb3003572b22b3b4e55",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "67577da553143610f8bb51a0a0490eb1",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "D120",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "67577da553143610f8bb51a0a0490eb1",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "12000",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 41,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 40,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fx_currency_instance",
+          "fm_expense_line",
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "transfer_asset",
+      "parameters": {
+        "asset_id": "67577da553143610f8bb51a0a0490eb1",
+        "new_assigned_to": "46b87022a9fe198101a78787e40d7547"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Asset transferred successfully to 46b87022a9fe198101a78787e40d7547",
+      "asset_id": "67577da553143610f8bb51a0a0490eb1",
+      "asset_tag": "D120"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "location",
+          "newvalue": "25ab8fba0a0a0bb300486d4adc1c02e6",
+          "tablename": "alm_hardware",
+          "oldvalue": "25ab9ddd0a0a0bb3003572b22b3b4e55"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "46b87022a9fe198101a78787e40d7547",
+          "tablename": "alm_hardware",
+          "oldvalue": "681ccaf9c0a8016400b98a06818d57c7"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "transfer_asset",
+      "parameters": {
+        "asset_id": "a355b9e953d03610f8bb51a0a0490e02",
+        "new_assigned_to": "9ee1b13dc6112271007f9d0efdb69cd0"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Asset transferred successfully to 9ee1b13dc6112271007f9d0efdb69cd0",
+      "asset_id": "a355b9e953d03610f8bb51a0a0490e02",
+      "asset_tag": "D123"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "location",
+          "newvalue": "f90ad9120a0a0b91005146ebac892a09",
+          "tablename": "alm_hardware",
+          "oldvalue": "f90afd120a0a0b9100c6c302ba9bd056"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "alm_hardware",
+          "oldvalue": "5137153cc611227c000bbd1bd8cd2005"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "IT Support Team"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": "IT Support Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "IT Support Team",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "IT Support Team",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "HR Department"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": "HR Department"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "name",
+          "newvalue": "HR Department",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "HR Department",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Finance Team"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group created successfully",
+      "group_id": "27c7c26d53543610f8bb51a0a0490e0f",
+      "group_name": "Finance Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Finance Team",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "27c7c26d53543610f8bb51a0a0490e0f",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Finance Team",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 11,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "asmt_assessable_record",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "manager": "5137153cc611227c000bbd1bd8cd2005"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": "IT Support Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:681ccaf9c0a8016400b98a06818d57c7"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "681ccaf9c0a8016400b98a06818d57c7",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:9ee1b13dc6112271007f9d0efdb69cd0"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "3f7706a953543610f8bb51a0a0490ebe",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "5137153cc611227c000bbd1bd8cd2005",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:46b87022a9fe198101a78787e40d7547"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members added to the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "upload_status",
+          "newvalue": "1",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_window_end",
+          "newvalue": "2025-09-30 05:08:47",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_log",
+          "newvalue": "71ba466153943610f8bb51a0a0490e1c",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_number",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "num_retries",
+          "newvalue": "0",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_status",
+          "newvalue": "1",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_size",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_type",
+          "newvalue": "ua_gcf_cp_hourly",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "payload_window_start",
+          "newvalue": "2025-09-30 04:08:47",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "num_records",
+          "newvalue": "0",
+          "tablename": "ua_upload_log_details",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upload_id",
+          "newvalue": "31ba466164943610b41b6791b856a51c",
+          "tablename": "ua_upload_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "group",
+          "newvalue": "a1a7c26d53543610f8bb51a0a0490e07",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "46b87022a9fe198101a78787e40d7547",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 13,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 13,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "ua_upload_log_details",
+          "sys_user_grmember",
+          "ua_upload_log"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "manager": "46b87022a9fe198101a78787e40d7547"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": "HR Department"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "46b87022a9fe198101a78787e40d7547",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "27c7c26d53543610f8bb51a0a0490e0f",
+        "manager": "9ee1b13dc6112271007f9d0efdb69cd0"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Group updated successfully",
+      "group_id": "27c7c26d53543610f8bb51a0a0490e0f",
+      "group_name": "Finance Team"
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "9ee1b13dc6112271007f9d0efdb69cd0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members removed from the group successfully",
+      "group_id": "3f7706a953543610f8bb51a0a0490ebe",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:5137153cc611227c000bbd1bd8cd2005"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members removed from the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+        "members": [
+          "sys_id:681ccaf9c0a8016400b98a06818d57c7"
+        ]
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "All members removed from the group successfully",
+      "group_id": "a1a7c26d53543610f8bb51a0a0490e07",
+      "group_name": null
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,1851 @@
+[
+  {
+    "action": {
+      "tool_name": "create_change_request",
+      "parameters": {
+        "short_description": "Reboot Windows Server",
+        "type": "normal",
+        "risk": "4",
+        "start_date": "2025-10-03 10:00:00"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Change request created successfully",
+      "change_request": {
+        "parent": "",
+        "reason": "",
+        "watch_list": "",
+        "upon_reject": "cancel",
+        "sys_updated_on": "2025-09-29 21:50:11",
+        "type": "normal",
+        "approval_history": "",
+        "number": "CHG0030004",
+        "test_plan": "",
+        "cab_delegate": "",
+        "requested_by_date": "",
+        "state": "-5",
+        "sys_created_by": "admin",
+        "knowledge": "false",
+        "order": "",
+        "phase": "requested",
+        "cmdb_ci": "",
+        "delivery_plan": "",
+        "contract": "",
+        "impact": "3",
+        "active": "true",
+        "work_notes_list": "",
+        "priority": "4",
+        "sys_domain_path": "/",
+        "cab_recommendation": "",
+        "production_system": "false",
+        "review_date": "",
+        "business_duration": "",
+        "group_list": "",
+        "requested_by": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+          "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "change_plan": "",
+        "approval_set": "",
+        "copied_from": "",
+        "implementation_plan": "",
+        "universal_request": "",
+        "end_date": "",
+        "short_description": "Reboot Windows Server",
+        "correlation_display": "",
+        "delivery_task": "",
+        "work_start": "",
+        "additional_assignee_list": "",
+        "outside_maintenance_schedule": "false",
+        "std_change_producer_version": "",
+        "service_offering": "",
+        "sys_class_name": "change_request",
+        "closed_by": "",
+        "follow_up": "",
+        "reassignment_count": "0",
+        "review_status": "",
+        "assigned_to": "",
+        "start_date": "2025-10-03 10:00:00",
+        "sla_due": "",
+        "comments_and_work_notes": "",
+        "escalation": "0",
+        "upon_approval": "proceed",
+        "correlation_id": "",
+        "made_sla": "true",
+        "backout_plan": "",
+        "conflict_status": "Not Run",
+        "task_effective_number": "CHG0030004",
+        "sys_updated_by": "admin",
+        "opened_by": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+          "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "user_input": "",
+        "sys_created_on": "2025-09-29 21:50:11",
+        "on_hold_task": "",
+        "sys_domain": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user_group/global",
+          "value": "global"
+        },
+        "route_reason": "",
+        "closed_at": "",
+        "review_comments": "",
+        "business_service": "",
+        "time_worked": "",
+        "chg_model": {
+          "link": "https://dev281136.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2",
+          "value": "007c4001c343101035ae3f52c1d3aeb2"
+        },
+        "expected_start": "",
+        "opened_at": "2025-09-29 21:50:11",
+        "work_end": "",
+        "phase_state": "open",
+        "work_notes": "",
+        "close_code": "",
+        "assignment_group": "",
+        "description": "",
+        "on_hold_reason": "",
+        "calendar_duration": "",
+        "close_notes": "",
+        "sys_id": "73252c29535cf210f8bb51a0a0490e26",
+        "contact_type": "",
+        "cab_required": "false",
+        "urgency": "3",
+        "scope": "3",
+        "company": "",
+        "justification": "",
+        "activity_due": "",
+        "comments": "",
+        "approval": "not requested",
+        "due_date": "",
+        "sys_mod_count": "0",
+        "on_hold": "false",
+        "sys_tags": "",
+        "cab_date_time": "",
+        "conflict_last_run": "",
+        "unauthorized": "false",
+        "location": "",
+        "risk": "4",
+        "category": "Other",
+        "risk_impact_analysis": ""
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "table",
+          "newvalue": "change_request",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "approval",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "normal",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Not Yet Requested",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Normal",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "type",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "73252c29535cf210f8bb51a0a0490e26",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "73252c29535cf210f8bb51a0a0490e26",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 21:50:11",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "40c1b8dc0a2581020017b100e99646ba",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "462cf6520a25810200ebe763047cc273",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 21:50:11",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "change_request",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "not requested",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "CHG0030004",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "risk",
+          "newvalue": "4",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "scope",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "outside_maintenance_schedule",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-29 21:50:11",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "4",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "conflict_status",
+          "newvalue": "Not Run",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "-5",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "unauthorized",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_date",
+          "newvalue": "2025-10-03 10:00:00",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Reboot Windows Server",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "chg_model",
+          "newvalue": "007c4001c343101035ae3f52c1d3aeb2",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "CHG0030004",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "on_hold",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cab_required",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "requested_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "Other",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "normal",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "change_request",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "phase_state",
+          "newvalue": "open",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "production_system",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "phase",
+          "newvalue": "requested",
+          "tablename": "change_request",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 50,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 50,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "change_request",
+          "metric_instance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_change_request",
+      "parameters": {
+        "short_description": "Database Migration",
+        "type": "normal",
+        "risk": "3",
+        "start_date": "2025-10-13 10:00:00"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Change request created successfully",
+      "change_request": {
+        "parent": "",
+        "reason": "",
+        "watch_list": "",
+        "upon_reject": "cancel",
+        "sys_updated_on": "2025-09-29 21:52:39",
+        "type": "normal",
+        "approval_history": "",
+        "number": "CHG0030005",
+        "test_plan": "",
+        "cab_delegate": "",
+        "requested_by_date": "",
+        "state": "-5",
+        "sys_created_by": "admin",
+        "knowledge": "false",
+        "order": "",
+        "phase": "requested",
+        "cmdb_ci": "",
+        "delivery_plan": "",
+        "contract": "",
+        "impact": "3",
+        "active": "true",
+        "work_notes_list": "",
+        "priority": "4",
+        "sys_domain_path": "/",
+        "cab_recommendation": "",
+        "production_system": "false",
+        "review_date": "",
+        "business_duration": "",
+        "group_list": "",
+        "requested_by": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+          "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "change_plan": "",
+        "approval_set": "",
+        "copied_from": "",
+        "implementation_plan": "",
+        "universal_request": "",
+        "end_date": "",
+        "short_description": "Database Migration",
+        "correlation_display": "",
+        "delivery_task": "",
+        "work_start": "",
+        "additional_assignee_list": "",
+        "outside_maintenance_schedule": "false",
+        "std_change_producer_version": "",
+        "service_offering": "",
+        "sys_class_name": "change_request",
+        "closed_by": "",
+        "follow_up": "",
+        "reassignment_count": "0",
+        "review_status": "",
+        "assigned_to": "",
+        "start_date": "2025-10-13 10:00:00",
+        "sla_due": "",
+        "comments_and_work_notes": "",
+        "escalation": "0",
+        "upon_approval": "proceed",
+        "correlation_id": "",
+        "made_sla": "true",
+        "backout_plan": "",
+        "conflict_status": "Not Run",
+        "task_effective_number": "CHG0030005",
+        "sys_updated_by": "admin",
+        "opened_by": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+          "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "user_input": "",
+        "sys_created_on": "2025-09-29 21:52:39",
+        "on_hold_task": "",
+        "sys_domain": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user_group/global",
+          "value": "global"
+        },
+        "route_reason": "",
+        "closed_at": "",
+        "review_comments": "",
+        "business_service": "",
+        "time_worked": "",
+        "chg_model": {
+          "link": "https://dev281136.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2",
+          "value": "007c4001c343101035ae3f52c1d3aeb2"
+        },
+        "expected_start": "",
+        "opened_at": "2025-09-29 21:52:39",
+        "work_end": "",
+        "phase_state": "open",
+        "work_notes": "",
+        "close_code": "",
+        "assignment_group": "",
+        "description": "",
+        "on_hold_reason": "",
+        "calendar_duration": "",
+        "close_notes": "",
+        "sys_id": "b3b5a469535cf210f8bb51a0a0490e4e",
+        "contact_type": "",
+        "cab_required": "false",
+        "urgency": "3",
+        "scope": "3",
+        "company": "",
+        "justification": "",
+        "activity_due": "",
+        "comments": "",
+        "approval": "not requested",
+        "due_date": "",
+        "sys_mod_count": "0",
+        "on_hold": "false",
+        "sys_tags": "",
+        "cab_date_time": "",
+        "conflict_last_run": "",
+        "unauthorized": "false",
+        "location": "",
+        "risk": "3",
+        "category": "Other",
+        "risk_impact_analysis": ""
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "table",
+          "newvalue": "change_request",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "462cf6520a25810200ebe763047cc273",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "not requested",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 21:52:39",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "change_request",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Not Yet Requested",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "normal",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "approval",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Normal",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "b3b5a469535cf210f8bb51a0a0490e4e",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "type",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "b3b5a469535cf210f8bb51a0a0490e4e",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "40c1b8dc0a2581020017b100e99646ba",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 21:52:39",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "conflict_status",
+          "newvalue": "Not Run",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "-5",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "unauthorized",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_date",
+          "newvalue": "2025-10-13 10:00:00",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Database Migration",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "chg_model",
+          "newvalue": "007c4001c343101035ae3f52c1d3aeb2",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "CHG0030005",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "on_hold",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cab_required",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "requested_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "Other",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "normal",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "change_request",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "phase_state",
+          "newvalue": "open",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "production_system",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "phase",
+          "newvalue": "requested",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "risk",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "scope",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "outside_maintenance_schedule",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-29 21:52:39",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "4",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "CHG0030005",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 50,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 50,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "metric_instance",
+          "change_request"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_change_request",
+      "parameters": {
+        "short_description": "Server Upgrade",
+        "type": "normal",
+        "risk": "4",
+        "start_date": "2025-11-05 10:00:00"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Change request created successfully",
+      "change_request": {
+        "parent": "",
+        "reason": "",
+        "watch_list": "",
+        "upon_reject": "cancel",
+        "sys_updated_on": "2025-09-29 21:53:56",
+        "type": "normal",
+        "approval_history": "",
+        "number": "CHG0030006",
+        "test_plan": "",
+        "cab_delegate": "",
+        "requested_by_date": "",
+        "state": "-5",
+        "sys_created_by": "admin",
+        "knowledge": "false",
+        "order": "",
+        "phase": "requested",
+        "cmdb_ci": "",
+        "delivery_plan": "",
+        "contract": "",
+        "impact": "3",
+        "active": "true",
+        "work_notes_list": "",
+        "priority": "4",
+        "sys_domain_path": "/",
+        "cab_recommendation": "",
+        "production_system": "false",
+        "review_date": "",
+        "business_duration": "",
+        "group_list": "",
+        "requested_by": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+          "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "change_plan": "",
+        "approval_set": "",
+        "copied_from": "",
+        "implementation_plan": "",
+        "universal_request": "",
+        "end_date": "",
+        "short_description": "Server Upgrade",
+        "correlation_display": "",
+        "delivery_task": "",
+        "work_start": "",
+        "additional_assignee_list": "",
+        "outside_maintenance_schedule": "false",
+        "std_change_producer_version": "",
+        "service_offering": "",
+        "sys_class_name": "change_request",
+        "closed_by": "",
+        "follow_up": "",
+        "reassignment_count": "0",
+        "review_status": "",
+        "assigned_to": "",
+        "start_date": "2025-11-05 10:00:00",
+        "sla_due": "",
+        "comments_and_work_notes": "",
+        "escalation": "0",
+        "upon_approval": "proceed",
+        "correlation_id": "",
+        "made_sla": "true",
+        "backout_plan": "",
+        "conflict_status": "Not Run",
+        "task_effective_number": "CHG0030006",
+        "sys_updated_by": "admin",
+        "opened_by": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+          "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "user_input": "",
+        "sys_created_on": "2025-09-29 21:53:56",
+        "on_hold_task": "",
+        "sys_domain": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user_group/global",
+          "value": "global"
+        },
+        "route_reason": "",
+        "closed_at": "",
+        "review_comments": "",
+        "business_service": "",
+        "time_worked": "",
+        "chg_model": {
+          "link": "https://dev281136.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2",
+          "value": "007c4001c343101035ae3f52c1d3aeb2"
+        },
+        "expected_start": "",
+        "opened_at": "2025-09-29 21:53:56",
+        "work_end": "",
+        "phase_state": "open",
+        "work_notes": "",
+        "close_code": "",
+        "assignment_group": "",
+        "description": "",
+        "on_hold_reason": "",
+        "calendar_duration": "",
+        "close_notes": "",
+        "sys_id": "be0660a9535cf210f8bb51a0a0490e6d",
+        "contact_type": "",
+        "cab_required": "false",
+        "urgency": "3",
+        "scope": "3",
+        "company": "",
+        "justification": "",
+        "activity_due": "",
+        "comments": "",
+        "approval": "not requested",
+        "due_date": "",
+        "sys_mod_count": "0",
+        "on_hold": "false",
+        "sys_tags": "",
+        "cab_date_time": "",
+        "conflict_last_run": "",
+        "unauthorized": "false",
+        "location": "",
+        "risk": "4",
+        "category": "Other",
+        "risk_impact_analysis": ""
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Normal",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "be0660a9535cf210f8bb51a0a0490e6d",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "agent",
+          "newvalue": "mid.server.*",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "type",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "queue",
+          "newvalue": "output",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sequence",
+          "newvalue": "1999777e2200000001",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "be0660a9535cf210f8bb51a0a0490e6d",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "40c1b8dc0a2581020017b100e99646ba",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 21:53:56",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "change_request",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "processed",
+          "newvalue": "2025-09-29 21:54:00",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "462cf6520a25810200ebe763047cc273",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "not requested",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 21:53:56",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "topic",
+          "newvalue": "HeartbeatProbe",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "change_request",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Not Yet Requested",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "0",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "normal",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "approval",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "chg_model",
+          "newvalue": "007c4001c343101035ae3f52c1d3aeb2",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "conflict_status",
+          "newvalue": "Not Run",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "-5",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "unauthorized",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_date",
+          "newvalue": "2025-11-05 10:00:00",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Server Upgrade",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "CHG0030006",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "on_hold",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cab_required",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "requested_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "phase",
+          "newvalue": "requested",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "Other",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "normal",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "change_request",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "phase_state",
+          "newvalue": "open",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "production_system",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "CHG0030006",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "risk",
+          "newvalue": "4",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "scope",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "outside_maintenance_schedule",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-29 21:53:56",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "4",
+          "tablename": "change_request",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 58,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 58,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "metric_instance",
+          "change_request",
+          "ecc_queue"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_change_request",
+      "parameters": {
+        "short_description": "Network Maintenance",
+        "type": "emergency",
+        "risk": "2",
+        "start_date": "2025-10-28 10:00:00"
+      }
+    },
+    "tool_response": {
+      "success": true,
+      "message": "Change request created successfully",
+      "change_request": {
+        "parent": "",
+        "reason": "",
+        "watch_list": "",
+        "upon_reject": "cancel",
+        "sys_updated_on": "2025-09-29 21:55:21",
+        "type": "normal",
+        "approval_history": "",
+        "number": "CHG0030007",
+        "test_plan": "",
+        "cab_delegate": "",
+        "requested_by_date": "",
+        "state": "-5",
+        "sys_created_by": "admin",
+        "knowledge": "false",
+        "order": "",
+        "phase": "requested",
+        "cmdb_ci": "",
+        "delivery_plan": "",
+        "contract": "",
+        "impact": "3",
+        "active": "true",
+        "work_notes_list": "",
+        "priority": "4",
+        "sys_domain_path": "/",
+        "cab_recommendation": "",
+        "production_system": "false",
+        "review_date": "",
+        "business_duration": "",
+        "group_list": "",
+        "requested_by": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+          "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "change_plan": "",
+        "approval_set": "",
+        "copied_from": "",
+        "implementation_plan": "",
+        "universal_request": "",
+        "end_date": "",
+        "short_description": "Network Maintenance",
+        "correlation_display": "",
+        "delivery_task": "",
+        "work_start": "",
+        "additional_assignee_list": "",
+        "outside_maintenance_schedule": "false",
+        "std_change_producer_version": "",
+        "service_offering": "",
+        "sys_class_name": "change_request",
+        "closed_by": "",
+        "follow_up": "",
+        "reassignment_count": "0",
+        "review_status": "",
+        "assigned_to": "",
+        "start_date": "2025-10-28 10:00:00",
+        "sla_due": "",
+        "comments_and_work_notes": "",
+        "escalation": "0",
+        "upon_approval": "proceed",
+        "correlation_id": "",
+        "made_sla": "true",
+        "backout_plan": "",
+        "conflict_status": "Not Run",
+        "task_effective_number": "CHG0030007",
+        "sys_updated_by": "admin",
+        "opened_by": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+          "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "user_input": "",
+        "sys_created_on": "2025-09-29 21:55:21",
+        "on_hold_task": "",
+        "sys_domain": {
+          "link": "https://dev281136.service-now.com/api/now/table/sys_user_group/global",
+          "value": "global"
+        },
+        "route_reason": "",
+        "closed_at": "",
+        "review_comments": "",
+        "business_service": "",
+        "time_worked": "",
+        "chg_model": {
+          "link": "https://dev281136.service-now.com/api/now/table/chg_model/007c4001c343101035ae3f52c1d3aeb2",
+          "value": "007c4001c343101035ae3f52c1d3aeb2"
+        },
+        "expected_start": "",
+        "opened_at": "2025-09-29 21:55:21",
+        "work_end": "",
+        "phase_state": "open",
+        "work_notes": "",
+        "close_code": "",
+        "assignment_group": "",
+        "description": "",
+        "on_hold_reason": "",
+        "calendar_duration": "",
+        "close_notes": "",
+        "sys_id": "e75628a9535cf210f8bb51a0a0490e6c",
+        "contact_type": "",
+        "cab_required": "false",
+        "urgency": "3",
+        "scope": "3",
+        "company": "",
+        "justification": "",
+        "activity_due": "",
+        "comments": "",
+        "approval": "not requested",
+        "due_date": "",
+        "sys_mod_count": "0",
+        "on_hold": "false",
+        "sys_tags": "",
+        "cab_date_time": "",
+        "conflict_last_run": "",
+        "unauthorized": "false",
+        "location": "",
+        "risk": "2",
+        "category": "Other",
+        "risk_impact_analysis": ""
+      }
+    },
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "table",
+          "newvalue": "change_request",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "462cf6520a25810200ebe763047cc273",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "not requested",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 21:55:21",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "change_request",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Not Yet Requested",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "normal",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "approval",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Normal",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "e75628a9535cf210f8bb51a0a0490e6c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "type",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "e75628a9535cf210f8bb51a0a0490e6c",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "40c1b8dc0a2581020017b100e99646ba",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-09-29 21:55:21",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "on_hold",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cab_required",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "requested_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "CHG0030007",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "change_request",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "phase_state",
+          "newvalue": "open",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "production_system",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "phase",
+          "newvalue": "requested",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "Other",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "normal",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "scope",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "outside_maintenance_schedule",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-29 21:55:21",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "4",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "CHG0030007",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "risk",
+          "newvalue": "2",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Network Maintenance",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "chg_model",
+          "newvalue": "007c4001c343101035ae3f52c1d3aeb2",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "conflict_status",
+          "newvalue": "Not Run",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "-5",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "unauthorized",
+          "newvalue": "0",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_date",
+          "newvalue": "2025-10-28 10:00:00",
+          "tablename": "change_request",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 50,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 50,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "metric_instance",
+          "change_request"
+        ]
+      }
+    }
+  }
+]

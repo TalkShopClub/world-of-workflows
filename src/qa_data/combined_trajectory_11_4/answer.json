@@ -1,0 +1,23 @@
+{
+  "invalid_action_idxs": [
+    13,
+    22,
+    34,
+    43,
+    52
+  ],
+  "invalid_policy_names": [
+    "Inactive users cannot be assigned as managers of active users",
+    "Incidents with priority 1 cannot be assigned to users who already have more than 3 priority 1 incidents",
+    "Catalog categories cannot be deleted if they contain active items",
+    "Catalog items cannot be moved to categories that are inactive",
+    "Serial numbers cannot be modified once asset is marked as 'In Use'"
+  ],
+  "invalid_policy_nums": [
+    10,
+    2,
+    3,
+    4,
+    7
+  ]
+}

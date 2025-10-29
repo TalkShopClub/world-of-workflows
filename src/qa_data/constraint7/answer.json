@@ -1,0 +1,4 @@
+{
+  "policy_name": "Assets that cost over $10000 cannot be transferred",
+  "invalid_action_idx": 6
+}

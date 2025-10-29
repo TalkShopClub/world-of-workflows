@@ -1,0 +1,97 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-14T01:25:45.581934",
+    "model": "anthropic/claude-sonnet-4",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/catalog_development2.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Meeting Room Booking",
+        "description": "Catalog category for meeting room booking",
+        "active": false
+      }
+    },
+    {
+      "tool_name": "create_catalog_item_variable",
+      "parameters": {
+        "catalog_item_id": "99c1de1081136500772e95d75e286273",
+        "name": "requested_for",
+        "type": "31",
+        "label": "Number of USB C Ports",
+        "mandatory": true
+      }
+    },
+    {
+      "tool_name": "update_catalog_category",
+      "parameters": {
+        "category_id": "64f91939c310b2107bd371edd401313b",
+        "title": "Office Supplies",
+        "active": true,
+        "order": 24,
+        "icon": "Meeting Room Booking"
+      }
+    },
+    {
+      "tool_name": "update_catalog_item_variable",
+      "parameters": {
+        "variable_id": "913bd9f5c310b2107bd371edd40131c2",
+        "label": "Sample_label_965",
+        "mandatory": false,
+        "help_text": "Sample_help_text_661",
+        "default_value": "Sample_default_value_404",
+        "description": "Sample_description_676",
+        "order": 39,
+        "reference_qualifier": "Sample_reference_qualifier_250",
+        "max_length": 27,
+        "min": 45,
+        "max": 96
+      }
+    },
+    {
+      "tool_name": "move_catalog_items",
+      "parameters": {
+        "item_ids": [
+          "99c1de1081136500772e95d75e286273"
+        ],
+        "target_category_id": "64f91939c310b2107bd371edd401313b"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    },
+    {
+      "sysauditrecord": [],
+      "additional_information": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient credits. Add more using https://openrouter.ai/settings/credits', 'code': 402}}"
+      }
+    }
+  ]
+}

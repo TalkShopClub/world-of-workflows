@@ -1,0 +1,464 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-16T19:40:03.697398",
+    "model": "google/gemini-2.5-pro",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/promoteuser.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "user_a_20251007_140912_5773",
+        "first_name": "User",
+        "last_name": "A",
+        "email": "user_a_20251007_140912_5773@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "user_b_20251007_140912_1334",
+        "first_name": "User",
+        "last_name": "B",
+        "email": "user_b_20251007_140912_1334@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "b85fbc48c3a83e1024163942b401318e",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": "db5fbc48c3a83e1024163942b4013193",
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": null
+      }
+    },
+    {
+      "tool_name": "assign_roles_to_user",
+      "parameters": {
+        "user_id": "db5fbc48c3a83e1024163942b4013193",
+        "roles": [
+          "admin"
+        ]
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "b85fbc48c3a83e1024163942b401318e",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": false
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 14:09:12",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 14:09:10"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "user_a_20251007_140912_5773",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "User",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "A",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "User A",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "user_a_20251007_140912_5773@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 12,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 11,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "user_name",
+          "newvalue": "user_b_20251007_140912_1334",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "User",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "B",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "User B",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "user_b_20251007_140912_1334@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_password",
+          "newvalue": "(Source pleasantly obscured)",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "introduction",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "preferred_language",
+          "newvalue": "en",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 17,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 17,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "db5fbc48c3a83e1024163942b4013193",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2024-05-22 10:00:03",
+          "tablename": "sys_user",
+          "oldvalue": "2024-05-22 10:00:00"
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "58.34",
+          "tablename": "task_sla",
+          "oldvalue": "55.12"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-02 09:30:00",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 08:00:00"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-04 15:00:00",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-04 12:00:00"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 08:30:00",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 10:00:00"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 6,
+        "num_modified_entries": 6,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "task_sla"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:28",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "role",
+          "newvalue": "2831a114c611228501d4ea6c309d626d",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "roles",
+          "newvalue": "admin",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "db5fbc48c3a83e1024163942b4013193",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_has_role",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "84.21",
+          "tablename": "task_sla",
+          "oldvalue": "79.04"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-02 12:00:03",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 06:09:04"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-07 00:00:03",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-06 15:09:19"
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 11:59:55",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 17:50:55"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-02 02:59:54",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 11:50:38"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:59"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 8,
+        "num_modified_entries": 8,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "task_sla"
+        ]
+      }
+    }
+  ]
+}

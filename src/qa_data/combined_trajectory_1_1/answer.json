@@ -1,0 +1,23 @@
+{
+  "invalid_action_idxs": [
+    5,
+    19,
+    27,
+    39,
+    49
+  ],
+  "invalid_policy_names": [
+    "Editing the assigned user for priority 1 incident ticket is not allowed unless there is no user assigned to the incident ticket",
+    "Inactive users cannot be assigned as managers of active users",
+    "Catalog items cannot be moved to categories that are inactive",
+    "Users cannot be removed from groups they manage",
+    "Ticket being resolved must have someone assigned to the ticket."
+  ],
+  "invalid_policy_nums": [
+    0,
+    10,
+    4,
+    9,
+    1
+  ]
+}

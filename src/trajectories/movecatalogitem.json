@@ -1,0 +1,162 @@
+[
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Source Category 20251007_140809",
+        "description": "Source category created at 20251007_140809",
+        "parent": null,
+        "icon": null,
+        "active": true,
+        "order": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Created catalog category: Source Category 20251007_140809\",\n  \"data\": {\n    \"sys_id\": \"e91f3848c3a83e1024163942b4013183\",\n    \"title\": \"Source Category 20251007_140809\",\n    \"description\": \"Source category created at 20251007_140809\",\n    \"parent\": \"\",\n    \"icon\": \"\",\n    \"active\": \"true\",\n    \"order\": \"0\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "e91f7848c3a83e1024163942b40131a5",
+        "newvalue": "2025-10-07 18:08:09",
+        "sys_created_on": "2025-10-07 18:08:09",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfdbfe200000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:07:59",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Target Category 20251007_140809",
+        "description": "Target category created at 20251007_140809",
+        "parent": null,
+        "icon": null,
+        "active": true,
+        "order": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Created catalog category: Target Category 20251007_140809\",\n  \"data\": {\n    \"sys_id\": \"482fb848c3a83e1024163942b40131b9\",\n    \"title\": \"Target Category 20251007_140809\",\n    \"description\": \"Target category created at 20251007_140809\",\n    \"parent\": \"\",\n    \"icon\": \"\",\n    \"active\": \"true\",\n    \"order\": \"0\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "ee2f7848c3a83e1024163942b40131ab",
+        "newvalue": "2025-10-07 18:08:30",
+        "sys_created_on": "2025-10-07 18:08:30",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfdc4ec70000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:08:20",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "4c2f7848c3a83e1024163942b40131a8",
+        "newvalue": "2025-10-07 18:08:20",
+        "sys_created_on": "2025-10-07 18:08:20",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfdc267a0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:08:09",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "name": "Test Catalog Item 20251007_140809",
+        "category": "e91f3848c3a83e1024163942b4013183",
+        "active": true,
+        "order": null,
+        "description": "Test catalog item created at 20251007_140809",
+        "price": null
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Created catalog item: Test Catalog Item 20251007_140809\",\n  \"data\": {\n    \"sys_id\": \"a22fb848c3a83e1024163942b40131bf\",\n    \"name\": \"Test Catalog Item 20251007_140809\",\n    \"short_description\": \"\",\n    \"category\": {\n      \"link\": \"https://dev185199.service-now.com/api/now/table/sc_category/e91f3848c3a83e1024163942b4013183\",\n      \"value\": \"e91f3848c3a83e1024163942b4013183\"\n    },\n    \"price\": \"0\",\n    \"active\": \"true\",\n    \"order\": \"0\"\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "413f7848c3a83e1024163942b40131af",
+        "newvalue": "2025-10-07 18:08:40",
+        "sys_created_on": "2025-10-07 18:08:40",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfdc779a0000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:08:30",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "ee2f7848c3a83e1024163942b40131ab",
+        "newvalue": "2025-10-07 18:08:30",
+        "sys_created_on": "2025-10-07 18:08:30",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfdc4ec70000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:08:20",
+        "sys_created_by": "guest"
+      }
+    ]
+  },
+  {
+    "action": {
+      "tool_name": "move_catalog_items",
+      "parameters": {
+        "item_ids": [
+          "a22fb848c3a83e1024163942b40131bf"
+        ],
+        "target_category_id": "482fb848c3a83e1024163942b40131b9"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Successfully moved 1 catalog items to category 482fb848c3a83e1024163942b40131b9\",\n  \"data\": {\n    \"moved_items_count\": 1\n  }\n}",
+    "audits": [
+      {
+        "fieldname": "last_login_time",
+        "reason": "",
+        "sys_id": "ff3f3c48c3a83e1024163942b40131ff",
+        "newvalue": "2025-10-07 18:08:51",
+        "sys_created_on": "2025-10-07 18:08:51",
+        "documentkey": "6816f79cc0a8016401c5a33be04be441",
+        "internal_checkpoint": "199bfdca2610000001",
+        "record_checkpoint": "75",
+        "tablename": "sys_user",
+        "user": "guest",
+        "oldvalue": "2025-10-07 18:08:40",
+        "sys_created_by": "guest"
+      },
+      {
+        "fieldname": "DELETED",
+        "reason": "",
+        "sys_id": "093f7c48c3a83e1024163942b401311a",
+        "newvalue": "DELETED",
+        "sys_created_on": "2025-10-07 18:08:41",
+        "documentkey": "6a2f3c48c3a83e1024163942b4013150",
+        "internal_checkpoint": "",
+        "record_checkpoint": "-1",
+        "tablename": "sc_cat_item_category",
+        "user": "admin",
+        "oldvalue": "DELETED",
+        "sys_created_by": "admin"
+      }
+    ]
+  }
+]

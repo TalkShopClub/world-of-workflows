@@ -1,0 +1,14 @@
+{
+  "invalid_action_idxs": [
+    8,
+    19
+  ],
+  "invalid_policy_names": [
+    "Users with email domains outside company domain cannot be assigned admin roles. The company domain is skyfall.ai",
+    "Assets cannot be assigned to users who already have more than 5 active assets"
+  ],
+  "invalid_policy_nums": [
+    11,
+    8
+  ]
+}

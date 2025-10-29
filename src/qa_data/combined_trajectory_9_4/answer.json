@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    10,
+    24,
+    31
+  ],
+  "invalid_policy_names": [
+    "Assets cannot be assigned to users who already have more than 5 active assets",
+    "Inactive users cannot be assigned as managers of active users",
+    "Assets that cost over $10000 cannot be transferred"
+  ],
+  "invalid_policy_nums": [
+    8,
+    10,
+    6
+  ]
+}

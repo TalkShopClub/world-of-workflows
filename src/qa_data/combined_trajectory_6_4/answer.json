@@ -1,0 +1,26 @@
+{
+  "invalid_action_idxs": [
+    6,
+    21,
+    27,
+    36,
+    45,
+    54
+  ],
+  "invalid_policy_names": [
+    "Change requests with risk level 'Moderate' or higher cannot be scheduled on Fridays",
+    "Inactive users cannot be assigned as managers of active users",
+    "Editing the assigned user for priority 1 incident ticket is not allowed unless there is no user assigned to the incident ticket",
+    "Serial numbers cannot be modified once asset is marked as 'In Use'",
+    "Incidents with priority 1 cannot be assigned to users who already have more than 3 priority 1 incidents",
+    "Ticket being resolved must have someone assigned to the ticket."
+  ],
+  "invalid_policy_nums": [
+    5,
+    10,
+    0,
+    7,
+    2,
+    1
+  ]
+}

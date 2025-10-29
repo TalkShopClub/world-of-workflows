@@ -1,0 +1,671 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-16T18:38:22.438935",
+    "model": "google/gemini-2.5-pro",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/catalog_management.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_catalog_category",
+      "parameters": {
+        "title": "Graphics Card"
+      }
+    },
+    {
+      "tool_name": "create_item_request",
+      "parameters": {
+        "cat_item": "Ipad Mini",
+        "requested_for": "Aaron Fisher",
+        "quantity": "4",
+        "state": "1",
+        "short_description": "requesting four Ipad Minis for Aaron Fisher"
+      }
+    },
+    {
+      "tool_name": "create_item_request",
+      "parameters": {
+        "cat_item": "Ipad Pro",
+        "requested_for": "Aaron Jenkins",
+        "quantity": "5",
+        "state": "1",
+        "short_description": "requesting four Ipad Minis for Aaron Jenkins"
+      }
+    },
+    {
+      "tool_name": "update_catalog_category",
+      "parameters": {
+        "category_id": "7a1d79e1c3d832107bd371edd401319a",
+        "title": "Nvidia GPU",
+        "description": "Nvidia GPU is a graphics processing unit for gaming and AI"
+      }
+    },
+    {
+      "tool_name": "order_catalog_item",
+      "parameters": {
+        "item": "Apple Watch",
+        "quantity": "2",
+        "requested_for": "Aaron Johnson"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:50",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:48"
+        },
+        {
+          "fieldname": "sys_package",
+          "newvalue": "global",
+          "tablename": "sys_metadata",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_scope",
+          "newvalue": "global",
+          "tablename": "sys_metadata",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sys_metadata",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_name",
+          "newvalue": "Graphics Card",
+          "tablename": "sys_metadata",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sc_catalog",
+          "newvalue": "e0d08b13c3330100c8b837659bba8fb4",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Graphics Card",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_category",
+          "tablename": "sc_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 10,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 9,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sys_metadata",
+          "sc_category"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:04",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "request_state",
+          "newvalue": "requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "requested_for",
+          "newvalue": "aaron.fisher",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "REQ0010001",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cat_item",
+          "newvalue": "Ipad Mini",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "request",
+          "newvalue": "REQ0010001",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "quantity",
+          "newvalue": "4",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "requested",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "requesting four Ipad Minis for Aaron Fisher",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "RITM0010001",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "requested_for",
+          "newvalue": "aaron.fisher",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "price",
+          "newvalue": "400",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "work_notes",
+          "newvalue": "Request submitted for: Aaron Fisher.",
+          "tablename": "sc_req_item",
+          "oldvalue": "JOURNAL FIELD ADDITION"
+        },
+        {
+          "fieldname": "request_item",
+          "newvalue": "RITM0010001",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "request",
+          "newvalue": "REQ0010001",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "requesting four Ipad Minis for Aaron Fisher",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "SCTASK0010001",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "4",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 31,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 29,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sc_request",
+          "sc_req_item",
+          "sc_task"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:04",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "in_progress",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "request",
+          "newvalue": "a6513f40c3d832107bd371edd401311f",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "request_state",
+          "newvalue": "requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "requesting four Ipad Minis for Aaron Jenkins",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "REQ0026874",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start_time",
+          "newvalue": "2025-09-25 20:51:02",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "business_pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "pause_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "task_sla",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "request_approved",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "RITM0026874",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "request_item",
+          "newvalue": "e6513f40c3d832107bd371edd401311f",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "quantity",
+          "newvalue": "5",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "SCTASK0026874",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Fulfillment",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 26,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 25,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_request",
+          "sc_req_item",
+          "sc_task",
+          "task_sla",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:04",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Nvidia GPU",
+          "tablename": "sc_category",
+          "oldvalue": "GPU"
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Nvidia GPU is a graphics processing unit for gaming and AI",
+          "tablename": "sc_category",
+          "oldvalue": "Graphics processing unit for gaming and AI"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sc_category"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:04",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "request_state",
+          "newvalue": "requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "price",
+          "newvalue": "798",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "REQ0021001",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "requested",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "quantity",
+          "newvalue": "2",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "RITM0021001",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Apple Watch",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "SCTASK0021001",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Procure hardware",
+          "tablename": "sc_task",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 17,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 16,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sc_request",
+          "sc_req_item",
+          "sc_task",
+          "sys_user"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "model": "google/gemini-2.5-pro",
+  "generated_at": "2025-10-15T17:19:24.198431",
+  "total_files": 20,
+  "successful": 20,
+  "failed": 0,
+  "results": [
+    {
+      "file": "catalog_development2.json",
+      "status": "success",
+      "num_tool_calls": 4,
+      "schema_size": 37137
+    },
+    {
+      "file": "catalog_management.json",
+      "status": "success",
+      "num_tool_calls": 12,
+      "schema_size": 163297
+    },
+    {
+      "file": "catalog_variable.json",
+      "status": "success",
+      "num_tool_calls": 13,
+      "schema_size": 199590
+    },
+    {
+      "file": "changeset.json",
+      "status": "success",
+      "num_tool_calls": 19,
+      "schema_size": 302192
+    },
+    {
+      "file": "composite1.json",
+      "status": "success",
+      "num_tool_calls": 25,
+      "schema_size": 428295
+    },
+    {
+      "file": "composite2.json",
+      "status": "success",
+      "num_tool_calls": 41,
+      "schema_size": 589229
+    },
+    {
+      "file": "composite3.json",
+      "status": "success",
+      "num_tool_calls": 43,
+      "schema_size": 789951
+    },
+    {
+      "file": "composite4.json",
+      "status": "success",
+      "num_tool_calls": 50,
+      "schema_size": 889810
+    },
+    {
+      "file": "composite5.json",
+      "status": "success",
+      "num_tool_calls": 55,
+      "schema_size": 1102809
+    },
+    {
+      "file": "incident1.json",
+      "status": "success",
+      "num_tool_calls": 58,
+      "schema_size": 1205401
+    },
+    {
+      "file": "incident2.json",
+      "status": "success",
+      "num_tool_calls": 63,
+      "schema_size": 1309976
+    },
+    {
+      "file": "kb_article.json",
+      "status": "success",
+      "num_tool_calls": 81,
+      "schema_size": 1409164
+    },
+    {
+      "file": "kb_article2.json",
+      "status": "success",
+      "num_tool_calls": 95,
+      "schema_size": 1602355
+    },
+    {
+      "file": "problem_management.json",
+      "status": "success",
+      "num_tool_calls": 99,
+      "schema_size": 1723355
+    },
+    {
+      "file": "script_development.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 1817432
+    },
+    {
+      "file": "script_development2.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 1909424
+    },
+    {
+      "file": "user_management.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 1956897
+    },
+    {
+      "file": "user_management2.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 1956897
+    },
+    {
+      "file": "workflow.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 1802788
+    },
+    {
+      "file": "workflow2.json",
+      "status": "success",
+      "num_tool_calls": 100,
+      "schema_size": 1734695
+    }
+  ]
+}
