@@ -69,26 +69,7 @@ def get_all_tables(return_sys_tables=False):
         # exception: sys_user is allowed.
         return [table.get('name') for table in resp.json().get('result') 
         if table.get('name') != 'sys_db_object' and not table.get('name').startswith('sn_') 
-        and not 'sys' in table.get('name')] + ['sys_user', 'sys_user_group', 'sys_user_grmember', 'sys_user_has_role', 'sys_user_role']
-
-def get_table_schema(table_name: str) -> List[Dict]:
-    """
-    Fetch the schema (fields/columns) for a given table from ServiceNow.
-    Returns a list of field metadata dictionaries.
-    """
-    table_base_url, auth, headers = get_workarena_snow_config()
-    resp = requests.get(
-        table_base_url + "sys_dictionary",
-        auth=auth,
-        headers=headers,
-        params={
-            "sysparm_query": f"name={table_name}",
-            "sysparm_fields": "element,column_label,internal_type,max_length,mandatory,reference",
-            "sysparm_limit": 10000
-        }
-    )
-    resp.raise_for_status()
-    return resp.json().get("result", [])
+        and not 'sys' in table.get('name')] + ['sys_user', 'sys_user_group', 'sys_user_grmember', 'sys_user_has_role', 'sys_user_role', 'sysapproval_approver', 'sysapproval_group']
 
 def toggle_auditing_for_table(table_name, toggle_to=True):
     """
@@ -349,27 +330,5 @@ def merge_state_diffs(instance: SNowInstance, document_keys: Tuple[str, str], fi
     return merged_state 
 
 if __name__ == "__main__":
-    # Toggle auditing for all tables  
-    # from time import perf_counter
-    # start_time = perf_counter()
-    # setup_auditing() 
-    # print(f"Time taken to setup auditing: {perf_counter() - start_time} seconds")
 
-    toggle_audit_inserts() # Enables auditing insertions to audited tables
-
-    all_tables = get_all_tables(return_sys_tables=True) 
-    all_tables_without_sys = get_all_tables(return_sys_tables=False)
-
-    print(f"Number of all tables: {len(all_tables)}")
-    print(f"Number of all tables without sys: {len(all_tables_without_sys)}")
-
-    # Toggle on auditing for all non sys tables (difference between all_tables and all_tables_without_sys)
-    system_tables = set(all_tables) - set(all_tables_without_sys)
-    print(f"Number of system tables: {len(system_tables)}")
-
-    for table in tqdm(all_tables_without_sys, desc="Toggling on auditing for non-system tables"):
-        toggle_auditing_for_table(table, toggle_to=True)
-
-    # Toggle off auditing for all system tables
-    for table in tqdm(system_tables, desc="Toggling off auditing for system tables"):
-        toggle_auditing_for_table(table, toggle_to=False)
+    setup_auditing()

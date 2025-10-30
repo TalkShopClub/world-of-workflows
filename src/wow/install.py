@@ -21,6 +21,7 @@ from .config import (
 from .api.user import set_user_preference
 from .instance import SNowInstance
 from .utils import url_login
+from .environment.states import setup_auditing
 
 
 def _set_sys_property(property_name: str, value: str):
@@ -379,6 +380,9 @@ def setup():
 
     # XXX: Install flows
     setup_workflows()
+
+    # Setup auditing in ServiceNow instance to allow for state tracking
+    setup_auditing()
 
     # Save installation date
     logging.info("Saving installation date")

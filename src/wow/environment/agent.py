@@ -9,7 +9,7 @@ One-pass generation where LLM outputs complete sequence, then tools are executed
 import asyncio
 import json
 import os
-from typing import List, Dict, Any, Literal, Optional
+from typing import List, Dict, Any, Literal, Optional, Tuple
 from enum import Enum
 from pydantic import BaseModel, Field, ConfigDict
 import openai
@@ -18,6 +18,9 @@ from servicenow_mcp.utils.config import ServerConfig
 from pathlib import Path
 import random
 import re
+from datetime import datetime
+import pytz
+from .states import get_sys_audit
 
 class operation(Enum):
     get = "get"
@@ -639,133 +642,24 @@ class WorldModelAgent:
             additional_information=additional_info
         )
 
+    async def run_mcp_action(self,tool_name: str, tool_params: Dict[str, Any]) -> Tuple[StateDiff, str]: 
+        """
+        Run an MCP action and return the state diff and tool response
+        Args:
+            tool_name: Name of the tool to run
+            tool_params: Parameters for the tool
 
+        Returns:
+            Tuple[StateDiff, str]: Tuple containing the ground truth state diff and the tool response
+        """
 
-async def demo_world_model():
-    """Demo the world model agent for multi-step state and action prediction"""
+        start_time = datetime.now(pytz.timezone('GMT')).strftime("%Y-%m-%d %H:%M:%S")
+        await asyncio.sleep(2)  
+        resp = await self.mcp_server._call_tool_impl(tool_name, tool_params)
+        await asyncio.sleep(10)  
+        end_time = datetime.now(pytz.timezone('GMT')).strftime("%Y-%m-%d %H:%M:%S") 
 
-    api_key = os.getenv("OPENAI_API_KEY")
-    agent = WorldModelAgent(api_key)
-    await agent.initialize_mcp_server("full")
+        audits = get_sys_audit(start_time, end_time)
+        ground_truth_state = self._generate_ground_truth_state(audits, resp[0].text, tool_name)
 
-    task = "Create a new incident, assign it to a user, and then close it"
-
-    print(f"🎯 Task: {task}")
-    print("="*60)
-
-    # Demo 1: Single-step predictions (k=1)
-    print(f"\n📍 DEMO 1: Single-step predictions (k=1)")
-    print(f"🚀 Predicting single action for task...")
-    
-    # Create example action for state prediction
-    example_action = ActionCall(
-        tool_name="create_incident",
-        parameters={
-            "priority": "High",
-            "short_description": "Server outage in production",
-            "description": "Critical server outage affecting multiple services"
-        }
-    )
-    
-    predicted_state = await agent.predict_state(task, example_action)
-    print(f"✅ Predicted State Changes for create_incident:")
-    print(f"   Audit records: {len(predicted_state.sysauditrecord)}")
-    print(f"   Operation type: {predicted_state.additional_information.operation_type}")
-    print(f"   Tables modified: {predicted_state.additional_information.tables_modified}")
-
-    # Demo 2: Multi-step state prediction (k=3)
-    print(f"\n📍 DEMO 2: Multi-step state prediction (k=3)")
-    actions = [
-        ActionCall(
-            tool_name="create_incident",
-            parameters={
-                "priority": "High",
-                "short_description": "Server outage",
-                "description": "Critical server outage"
-            }
-        ),
-        ActionCall(
-            tool_name="assign_incident",
-            parameters={
-                "incident_id": "INC123456",
-                "assigned_to": "admin"
-            }
-        ),
-        ActionCall(
-            tool_name="update_incident_state",
-            parameters={
-                "incident_id": "INC123456",
-                "state": "Resolved"
-            }
-        )
-    ]
-    
-    print(f"🔍 Predicting states for {len(actions)} sequential actions...")
-    predicted_states = await agent.predict_states(task, actions)
-    
-    for i, state in enumerate(predicted_states, 1):
-        print(f"✅ Step {i} State Changes:")
-        print(f"   Audit records: {len(state.sysauditrecord)}")
-        print(f"   Operation type: {state.additional_information.operation_type}")
-        print(f"   Tables modified: {state.additional_information.tables_modified}")
-
-    # Demo 3: Multi-step action prediction (k=2) 
-    print(f"\n📍 DEMO 3: Multi-step action prediction (k=2)")
-    
-    # Create example state diffs that we want to achieve
-    example_states = [
-        StateDiff(
-            sysauditrecord=[
-                SysAuditRecord(
-                    fieldname="priority",
-                    tablename="incident",
-                    oldvalue="",
-                    newvalue="High"
-                ),
-                SysAuditRecord(
-                    fieldname="short_description",
-                    tablename="incident", 
-                    oldvalue="",
-                    newvalue="Server outage"
-                )
-            ],
-            additional_information=AdditionalInformation(
-                num_audits=2,
-                num_modified_entries=0,
-                num_deleted_entries=0,
-                num_created_entries=1,
-                operation_type=[operation.post],
-                tables_modified=["incident"]
-            )
-        ),
-        StateDiff(
-            sysauditrecord=[
-                SysAuditRecord(
-                    fieldname="state",
-                    tablename="incident",
-                    oldvalue="New",
-                    newvalue="Resolved"
-                )
-            ],
-            additional_information=AdditionalInformation(
-                num_audits=1,
-                num_modified_entries=1,
-                num_deleted_entries=0,
-                num_created_entries=0,
-                operation_type=[operation.put],
-                tables_modified=["incident"]
-            )
-        )
-    ]
-    
-    print(f"🎯 Predicting actions for {len(example_states)} desired state changes...")
-    predicted_actions = await agent.predict_actions(task, example_states)
-    
-    for i, action in enumerate(predicted_actions, 1):
-        print(f"✅ Step {i} Predicted Action:")
-        print(f"   Tool: {action.tool_name}")
-        print(f"   Parameters: {action.parameters}")
-
-
-if __name__ == "__main__":
-    asyncio.run(demo_world_model())
+        return ground_truth_state, resp[0].text

@@ -12,16 +12,13 @@ This demonstrates:
 import asyncio
 import json
 from pathlib import Path
+import os
 
-from src.wow.environment.agent import WorldModelAgent, ActionCall, StateDiff
-from src.wow.environment.generators.actions import generate_action_predictions
-from src.wow.environment.generators.states import generate_task_state_predictions
-from src.wow.environment.generators.constraint_tasks import generate_constraint_violation_predictions
-from src.eval_pipeline import (
-    state_rollout_evaluation,
-    inverse_action_rollout_evaluation,
-    constraint_violation_evaluation
-)
+from wow.environment.agent import WorldModelAgent, ActionCall, StateDiff
+from wow.environment.generators.actions import generate_action_predictions
+from wow.environment.generators.states import generate_task_state_predictions
+from wow.environment.generators.constraint_tasks import generate_constraint_violation_predictions
+from wow.environment.evaluation import evaluate_constraint_predictions
 
 
 async def example_state_prediction():
@@ -53,31 +50,33 @@ async def example_action_prediction():
     print("EXAMPLE 2: Action Prediction")
     print("="*60)
 
-    agent = WorldModelAgent(model="anthropic/claude-sonnet-4.5")
+    agent = WorldModelAgent(model="openai/o3")
 
-    trajectory_file = Path("src/wow/data_files/trajectories/sample_trajectory.json")
-    if not trajectory_file.exists():
+    trajectory_file = Path("src/wow/data_files/trajectories/assignuserrole.json") # Picking one of the trajectories 
+    if not trajectory_file.exists(): 
         print(f"Trajectory file not found: {trajectory_file}")
         return
+
+    os.makedirs('example_predictions', exist_ok=True)
+    output_file = Path('example_predictions/assignuserrole_action_prediction.json')
 
     results = await generate_action_predictions(
         trajectory_file=trajectory_file,
         agent=agent,
-        max_state_diffs=20
+        max_state_diffs=20, 
+        output_file=output_file
     )
 
-    if results:
-        print(f"Predicted {results['predicted_actions']} actions")
-        print(f"Processing time: {results['processing_time_seconds']:.2f}s")
+    print(f"Action predictions saved to: {results['output_file']}")
 
 
-async def example_constraint_prediction():
+async def example_constraint_prediction(output_file: Path):
     """Example: Generate constraint violation predictions"""
     print("\n" + "="*60)
     print("EXAMPLE 3: Constraint Violation Prediction")
     print("="*60)
 
-    agent = WorldModelAgent(model="anthropic/claude-sonnet-4.5")
+    agent = WorldModelAgent(model="openai/o3")
     await agent.initialize_mcp_server("full")
 
     data_folder = Path("src/wow/data_files/constraint_violation_data")
@@ -88,9 +87,10 @@ async def example_constraint_prediction():
     results = await generate_constraint_violation_predictions(
         agent=agent,
         data_folder=data_folder,
-        trajectory_type="combined",
+        trajectory_type="original",
         mode="state_action",
-        perfect_schema=True
+        perfect_schema=True,
+        output_file=output_file
     )
 
     print(f"Processed {len(results['results'])} trajectories")
@@ -98,129 +98,25 @@ async def example_constraint_prediction():
     print(f"JSON errors: {results['metadata']['total_json_errors']}")
 
 
-async def example_constraint_evaluation():
-    """Example: Evaluate constraint violation predictions"""
-    print("\n" + "="*60)
-    print("EXAMPLE 4: Constraint Violation Evaluation")
-    print("="*60)
-
-    pred_constraint_nums = [1, 3]
-    pred_invalid_action_idxs = [2, 5]
-    gt_constraint_nums = [1, 3]
-    gt_invalid_action_idxs = [2, 5]
-
-    accuracy = constraint_violation_evaluation(
-        pred_constraint_nums,
-        pred_invalid_action_idxs,
-        gt_constraint_nums,
-        gt_invalid_action_idxs
-    )
-
-    print(f"Constraint violation accuracy: {accuracy}")
-
-
-async def example_state_evaluation():
-    """Example: Evaluate state predictions"""
-    print("\n" + "="*60)
-    print("EXAMPLE 5: State Prediction Evaluation")
-    print("="*60)
-
-    from src.wow.environment.agent import SysAuditRecord, AdditionalInformation, operation
-
-    predicted_state = StateDiff(
-        sysauditrecord=[
-            SysAuditRecord(
-                tablename="incident",
-                fieldname="state",
-                oldvalue="1",
-                newvalue="2"
-            )
-        ],
-        additional_information=AdditionalInformation(
-            num_audits=1,
-            num_modified_entries=1,
-            num_deleted_entries=0,
-            num_created_entries=0,
-            operation_type=[operation.put],
-            tables_modified=["incident"]
-        )
-    )
-
-    gt_state = StateDiff(
-        sysauditrecord=[
-            SysAuditRecord(
-                tablename="incident",
-                fieldname="state",
-                oldvalue="1",
-                newvalue="2"
-            )
-        ],
-        additional_information=AdditionalInformation(
-            num_audits=1,
-            num_modified_entries=1,
-            num_deleted_entries=0,
-            num_created_entries=0,
-            operation_type=[operation.put],
-            tables_modified=["incident"]
-        )
-    )
-
-    full_acc, partial_acc, side_effects = await state_rollout_evaluation(
-        [predicted_state],
-        [gt_state]
-    )
-
-    print(f"Full accuracy: {full_acc}")
-    print(f"Partial accuracy (sysaudit, additional_info): {partial_acc}")
-    print(f"Side effects: {side_effects}")
-
-
-async def example_action_evaluation():
-    """Example: Evaluate action predictions"""
-    print("\n" + "="*60)
-    print("EXAMPLE 6: Action Prediction Evaluation")
-    print("="*60)
-
-    predicted_actions = [
-        ActionCall(
-            tool_name="create_incident",
-            parameters={"short_description": "Server down"}
-        )
-    ]
-
-    gt_actions = [
-        ActionCall(
-            tool_name="create_incident",
-            parameters={"short_description": "Server down"}
-        )
-    ]
-
-    metrics = inverse_action_rollout_evaluation(predicted_actions, gt_actions)
-
-    for i, (tool_match, param_match, diffs) in enumerate(metrics):
-        print(f"\nAction {i+1}:")
-        print(f"  Tool match: {tool_match}")
-        print(f"  Param match: {param_match:.2%}")
-        print(f"  Diffs: {diffs}")
-
-
 async def main():
     """Run all examples"""
+
+    os.makedirs('example_predictions', exist_ok=True)
+
+    # await example_state_prediction()
+    # await example_action_prediction()
+
+    output_file = Path('example_predictions/original_constraint_prediction.json')
+    await example_constraint_prediction(output_file=output_file)
+
+    # Evaluate the constraint prediction
     print("\n" + "="*60)
-    print("World of Workflows - Example Usage")
+    print("Evaluating Constraint Predictions")
     print("="*60)
 
-    await example_state_prediction()
-    await example_action_prediction()
-    await example_constraint_prediction()
-    await example_constraint_evaluation()
-    await example_state_evaluation()
-    await example_action_evaluation()
-
-    print("\n" + "="*60)
-    print("All examples completed!")
-    print("="*60)
-
+    evaluation_results = evaluate_constraint_predictions(output_file)
+    print(f"Accuracy: {evaluation_results['accuracy']:.2%}")
+    print(f"Total predictions: {evaluation_results['total_predictions']}") 
 
 if __name__ == "__main__":
     asyncio.run(main())
