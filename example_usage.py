@@ -18,7 +18,7 @@ from wow.environment.agent import WorldModelAgent, ActionCall, StateDiff
 from wow.environment.generators.actions import generate_action_predictions
 from wow.environment.generators.states import generate_task_state_predictions
 from wow.environment.generators.constraint_tasks import generate_constraint_violation_predictions
-from src.eval_pipeline import constraint_violation_evaluation
+from wow.environment.evaluation import evaluate_constraint_predictions
 
 
 async def example_state_prediction():
@@ -101,16 +101,22 @@ async def example_constraint_prediction(output_file: Path):
 async def main():
     """Run all examples"""
 
+    os.makedirs('example_predictions', exist_ok=True)
+
     # await example_state_prediction()
     # await example_action_prediction()
 
-    os.makedirs('example_predictions', exist_ok=True)
     output_file = Path('example_predictions/original_constraint_prediction.json')
     await example_constraint_prediction(output_file=output_file)
 
-    # Evaluate the constraint prediction 
+    # Evaluate the constraint prediction
+    print("\n" + "="*60)
+    print("Evaluating Constraint Predictions")
+    print("="*60)
 
-
+    evaluation_results = evaluate_constraint_predictions(output_file)
+    print(f"Accuracy: {evaluation_results['accuracy']:.2%}")
+    print(f"Total predictions: {evaluation_results['total_predictions']}") 
 
 if __name__ == "__main__":
     asyncio.run(main())
