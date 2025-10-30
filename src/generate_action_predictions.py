@@ -9,7 +9,7 @@ import json
 import os
 import argparse
 from pathlib import Path
-from .world_model_agent import WorldModelAgent
+from wow.environment.agent import WorldModelAgent
 import time
 from datetime import datetime
 
@@ -44,7 +44,7 @@ def should_process_trajectory(trajectory_file, output_dir):
 
 def convert_audits_to_state_diff(audits):
     """Convert audit records to state_diff format"""
-    from .world_model_agent import StateDiff, SysAuditRecord, AdditionalInformation, operation
+    from wow.environment.agent import StateDiff, SysAuditRecord, AdditionalInformation, operation
     
     # Convert audits to SysAuditRecord format
     sysaudit_records = []

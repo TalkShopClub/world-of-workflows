@@ -14,11 +14,11 @@ from tqdm import tqdm
 from pathlib import Path
 import numpy as np
 
-from .world_model_agent import (
-    StateDiff, 
-    ActionCall, 
-    WorldModelAgent, 
-    SysAuditRecord, 
+from wow.environment.agent import (
+    StateDiff,
+    ActionCall,
+    WorldModelAgent,
+    SysAuditRecord,
 )
 
 

@@ -1,15 +1,12 @@
-import requests  
-import os 
-import re 
+import requests
+import os
+import re
 from tqdm import tqdm
 from typing import Dict, List, Optional, Tuple
-import os 
-import sys 
-sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
-from rest_apis.world_model_scripts.world_model_agent import SysAuditRecord
-from src.browsergym.workarena.instance import SNowInstance
-from src.browsergym.workarena.api.utils import table_api_call 
 from datetime import datetime, timedelta
+
+from ..instance import SNowInstance
+from ..api.utils import table_api_call
   
 def get_workarena_snow_config():
     """
