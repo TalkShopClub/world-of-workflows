@@ -51,11 +51,19 @@ async def solve_llm_with_tracing(
         Tuple of (final_result, intermediate_outputs_list)
     """
     # Look for mcp_config.json in the mcp_local folder
-    project_root = Path(__file__).parent.parent.parent
-    config_file_path = project_root / "mcp_local" / "mcp_config.json"
-
+    config_file_path = Path(__file__).parent.parent / "mcp_config.json"
     if not os.path.exists(config_file_path):
         raise FileNotFoundError(f"❌ MCP config file not found at: {config_file_path}")
+
+    # Replace config file with environment variables
+    with open(config_file_path, 'r') as f:
+        config = json.load(f)
+    config['mcpServers']['servicenow']['env']['SERVICENOW_INSTANCE_URL'] = os.getenv("SNOW_INSTANCE_URL")
+    config['mcpServers']['servicenow']['env']['SERVICENOW_USERNAME'] = os.getenv("SNOW_INSTANCE_UNAME")
+    config['mcpServers']['servicenow']['env']['SERVICENOW_PASSWORD'] = os.getenv("SNOW_INSTANCE_PWD")
+
+    with open(config_file_path, 'w') as f:
+        json.dump(config, f, indent=4)
 
     # Initialize Langfuse
     langfuse_client = Langfuse()
@@ -209,11 +217,20 @@ async def solve_llm(task_query: str, llm) -> str:
     """
     os.environ["MCP_TOOL_PACKAGE"] = 'get_request_tools'
     # Look for mcp_config.json in the mcp_local folder
-    project_root = Path(__file__).parent.parent.parent
-    config_file_path = project_root / "mcp_local" / "mcp_config.json"
+    config_file_path = Path(__file__).parent.parent / "mcp_config.json"
 
     if not os.path.exists(config_file_path):
         raise FileNotFoundError(f"❌ MCP config file not found at: {config_file_path}")
+
+    # Replace config file with environment variables
+    with open(config_file_path, 'r') as f:
+        config = json.load(f)
+    config['mcpServers']['servicenow']['env']['SERVICENOW_INSTANCE_URL'] = os.getenv("SNOW_INSTANCE_URL")
+    config['mcpServers']['servicenow']['env']['SERVICENOW_USERNAME'] = os.getenv("SNOW_INSTANCE_UNAME")
+    config['mcpServers']['servicenow']['env']['SERVICENOW_PASSWORD'] = os.getenv("SNOW_INSTANCE_PWD")
+
+    with open(config_file_path, 'w') as f:
+        json.dump(config, f, indent=4)
 
     try:
         # Create MCPClient from configuration file
@@ -292,12 +309,6 @@ async def agentic_schema_pipeline(
         model=openrouter_model,
         openai_api_base="https://openrouter.ai/api/v1",
         openai_api_key=os.getenv("OPENROUTER_API_KEY"),
-        model_kwargs={
-            "extra_headers": {
-                "HTTP-Referer": "https://github.com/your-repo",
-                "X-Title": "Agentic Schema Pipeline"
-            }
-        }
     )
     result, tool_calls = await solve_llm_with_tracing(
         task_query=schema_query,

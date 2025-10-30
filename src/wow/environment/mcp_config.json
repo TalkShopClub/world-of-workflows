@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "servicenow": {
+            "command": ".venv/bin/python",
+            "args": [
+                "-m",
+                "servicenow_mcp.cli"
+            ],
+            "env": {
+                "SERVICENOW_INSTANCE_URL": "To be replaced by script",
+                "SERVICENOW_USERNAME": "admin",
+                "SERVICENOW_PASSWORD": "To be replaced by script",
+                "SERVICENOW_AUTH_TYPE": "basic"
+            }
+        }
+    }
+}
