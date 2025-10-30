@@ -97,8 +97,8 @@ async def generate_constraint_violation_predictions(
         output_file: Output file path for results
     """
     if data_folder is None:
-        base_dir = Path(__file__).parent.parent.parent.parent
-        data_folder = base_dir / "constraint_violation_data"
+        base_dir = Path(__file__).parent.parent.parent
+        data_folder = base_dir / "data_files" / "constraint_violation_data"
 
     policies = _load_policies(data_folder)
     gt_trajectories, all_gt_answer_idxs, all_gt_constraint_nums = _load_trajectories(

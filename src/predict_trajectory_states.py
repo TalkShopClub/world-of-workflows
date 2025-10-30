@@ -272,8 +272,8 @@ Examples:
     )
     parser.add_argument("--model", help="Model name (e.g., 'anthropic/claude-sonnet-4', 'openai/gpt-4o')")
     parser.add_argument("--k", type=int, help="Number of actions to predict (1 to k)")
-    parser.add_argument("--trajectory_folder", nargs='?', default="trajectories", 
-                       help="Path to folder containing trajectory JSON files (default: trajectories)")
+    parser.add_argument("--trajectory_folder", nargs='?', default="wow/data_files/trajectories",
+                       help="Path to folder containing trajectory JSON files (default: wow/data_files/trajectories)")
     parser.add_argument(
         "--custom-schema-path",
         type=str,

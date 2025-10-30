@@ -291,7 +291,7 @@ async def main():
 
     # Setup paths
     script_dir = Path(__file__).parent
-    trajectories_dir = script_dir / "trajectories"
+    trajectories_dir = script_dir / "wow" / "data_files" / "trajectories"
     base_output_dir = script_dir / "action_predictions_results"
     base_output_dir.mkdir(exist_ok=True)
     

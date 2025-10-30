@@ -292,8 +292,8 @@ if __name__ == "__main__":
     agent = WorldModelAgent(model=model)
     asyncio.run(agent.initialize_mcp_server("full"))
 
-    # Load the QA dataset 
-    data_folder = Path(__file__).parent / "constraint_violation_data"
+    # Load the QA dataset
+    data_folder = Path(__file__).parent / "wow" / "data_files" / "constraint_violation_data"
     constraint_eval_folder_prefix = "llm_eval_constraint_violation_fixed"
     policies = [] 
     

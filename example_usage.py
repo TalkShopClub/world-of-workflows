@@ -55,7 +55,7 @@ async def example_action_prediction():
 
     agent = WorldModelAgent(model="anthropic/claude-sonnet-4.5")
 
-    trajectory_file = Path("src/trajectories/sample_trajectory.json")
+    trajectory_file = Path("src/wow/data_files/trajectories/sample_trajectory.json")
     if not trajectory_file.exists():
         print(f"Trajectory file not found: {trajectory_file}")
         return
@@ -80,7 +80,7 @@ async def example_constraint_prediction():
     agent = WorldModelAgent(model="anthropic/claude-sonnet-4.5")
     await agent.initialize_mcp_server("full")
 
-    data_folder = Path("src/constraint_violation_data")
+    data_folder = Path("src/wow/data_files/constraint_violation_data")
     if not data_folder.exists():
         print(f"Constraint data folder not found: {data_folder}")
         return

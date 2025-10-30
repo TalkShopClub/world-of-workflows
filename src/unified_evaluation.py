@@ -83,7 +83,7 @@ class StatePredictionEvaluator:
                 predictions.append(pred_data)
                 
                 # Find corresponding trajectory
-                traj_file = self.base_dir / "trajectories" / pred_file.name.replace(f'_k{k}.json', '.json')
+                traj_file = self.base_dir / "wow" / "data_files" / "trajectories" / pred_file.name.replace(f'_k{k}.json', '.json')
                 if traj_file.exists():
                     with open(traj_file, 'r') as tf:
                         trajectories.append(json.load(tf))
@@ -136,7 +136,7 @@ class ActionPredictionEvaluator:
         print(f"Model: {self.model_name}")
         
         action_pred_dir = self.base_dir / "action_predictions_results" / self.model_name
-        trajectories_dir = self.base_dir / "trajectories"
+        trajectories_dir = self.base_dir / "wow" / "data_files" / "trajectories"
         
         if not action_pred_dir.exists():
             print(f"❌ Action prediction directory not found: {action_pred_dir}")
