@@ -135,7 +135,6 @@ async def generate_action_predictions(
         "predicted_actions": len(predicted_actions),
         "processing_time_seconds": end_time - start_time,
         "custom_schema_used": custom_schema_path is not None,
-        "timestamp": datetime.now().isoformat(),
         "predictions": [action.model_dump() for action in predicted_actions]
     }
 
