@@ -1,0 +1,26 @@
+{
+  "invalid_action_idxs": [
+    7,
+    10,
+    15,
+    15,
+    20,
+    28
+  ],
+  "invalid_policy_names": [
+    "Users should not be assigned with the same role as their managers.", 
+    "Users should not be assigned with the same role as their managers.",
+    "A problem should always have an assigned user.",
+    "A user should not be assigned with more than 3 active incidents at a time.",
+    "A problem should always have an assigned user.",
+    "Flagged articles should not be published."
+  ],
+  "invalid_policy_nums": [
+    2,
+    2,
+    4,
+    3,
+    4,
+    1
+  ]
+}

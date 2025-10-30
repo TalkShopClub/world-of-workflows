@@ -1,0 +1,5 @@
+{
+    "policy_name": "Moving an US-based asset to a different country requires approval first.",
+    "invalid_action_idxs": [6],
+    "invalid_policy_nums": [0]
+  }

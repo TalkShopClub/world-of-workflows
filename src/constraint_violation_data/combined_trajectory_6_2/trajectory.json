@@ -1,0 +1,3759 @@
+[
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Larry.Bird.33",
+        "first_name": "Larry",
+        "last_name": "Bird",
+        "email": "larry.bird.33@example.com"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User created successfully. The sys_id of the user is: c80691ac537cb210f8bb51a0a0490ee4\",\n  \"user_id\": \"c80691ac537cb210f8bb51a0a0490ee4\",\n  \"user_name\": \"Larry.Bird.33\",\n  \"clearance_level\": null\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "status",
+          "newvalue": "2",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "verification",
+          "newvalue": "12c34f0deb6001006a668c505206fefd",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "vip",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Larry Bird",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "larry.bird.33@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hashed_user_id",
+          "newvalue": "d0dcbba33a85e596125b9f4cd71b139182042267ada50f98a3cf65e9716d4b97",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "edu_status",
+          "newvalue": "faculty",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Primary email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "enable_multifactor_authn",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Larry",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "Larry.Bird.33",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "identity_type",
+          "newvalue": "unclassified",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "larry.bird.33@example.com",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Bird",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_active_approver",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 31,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 31,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "cmn_notif_device",
+          "pwd_enrollment_snapshot",
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "ASSET_139",
+        "model": "Precision T3500 Workstation"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Hardware asset created successfully. The sys_id of the asset is: e23b9da053bcb210f8bb51a0a0490e1c\",\n  \"asset_id\": \"e23b9da053bcb210f8bb51a0a0490e1c\",\n  \"asset_tag\": \"ASSET_139\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "agent",
+          "newvalue": "mid.server.*",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "queue",
+          "newvalue": "output",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sequence",
+          "newvalue": "19a084cc49b0000001",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "processed",
+          "newvalue": "2025-10-21 19:44:00",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "topic",
+          "newvalue": "HeartbeatProbe",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "0",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "e23b9da053bcb210f8bb51a0a0490e1c",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "e23b9da053bcb210f8bb51a0a0490e1c",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "e23b9da053bcb210f8bb51a0a0490e1c",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010255",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "e23b9da053bcb210f8bb51a0a0490e1c",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Initial Setup Fee (15%)",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "fe3b556453bcb210f8bb51a0a0490ee0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Warranty Registration Fee",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "e23b9da053bcb210f8bb51a0a0490e1c",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010257",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "e23b9da053bcb210f8bb51a0a0490e1c",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "763b556453bcb210f8bb51a0a0490e6e",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010256",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "e23b9da053bcb210f8bb51a0a0490e1c",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "f63b556453bcb210f8bb51a0a0490e77",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "ASSET_139 -",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "ASSET_139",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "Precision T3500 Workstation",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 78,
+        "num_modified_entries": 4,
+        "num_deleted_entries": 0,
+        "num_created_entries": 74,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "ecc_queue",
+          "alm_hardware",
+          "fm_expense_line",
+          "fx_currency_instance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_hardware_asset",
+      "parameters": {
+        "asset_id": "e23b9da053bcb210f8bb51a0a0490e1c",
+        "environment": "Staging"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Hardware asset updated successfully\",\n  \"asset_id\": \"e23b9da053bcb210f8bb51a0a0490e1c\",\n  \"asset_tag\": \"ASSET_139\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "u_clearance",
+          "newvalue": "3",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_environment",
+          "newvalue": "2",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_user_clearance",
+      "parameters": {
+        "user_id": "c80691ac537cb210f8bb51a0a0490ee4",
+        "clearance_level": "3"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User clearance created successfully\",\n  \"user_id\": null,\n  \"user_name\": null,\n  \"clearance_level\": null\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "u_clearance_level",
+          "newvalue": "3",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [],
+        "tables_modified": [
+          "u_user_group_clearance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "ASSET_139_PRO",
+        "model": "Precision T3500 Workstation",
+        "environment": "Development",
+        "assigned_to": "c80691ac537cb210f8bb51a0a0490ee4"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Hardware asset created successfully. The sys_id of the asset is: 7f29a92453fcb210f8bb51a0a0490eed\",\n  \"asset_id\": \"7f29a92453fcb210f8bb51a0a0490eed\",\n  \"asset_tag\": \"ASSET_139_PRO\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "comments",
+          "newvalue": "TOTAL_RECORDS: 0\nASSET_CREATED: 0\nASSET_SKIPPED: 0\nCI_NEEDS_VERIFICATION: 0\nCI_DELETED: 0\nCI_ERROR: 0\nNOT_SUPPORTED: 0\n",
+          "tablename": "asset_job_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "status",
+          "newvalue": "in_progress",
+          "tablename": "asset_job_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "AJL0004330",
+          "tablename": "asset_job_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "status",
+          "newvalue": "completed",
+          "tablename": "asset_job_log",
+          "oldvalue": "in_progress"
+        },
+        {
+          "fieldname": "started_at",
+          "newvalue": "2025-10-21 20:45:00",
+          "tablename": "asset_job_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ended_at",
+          "newvalue": "2025-10-21 20:45:00",
+          "tablename": "asset_job_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Asset - Create asset delayed sync",
+          "tablename": "asset_job_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "0.02",
+          "tablename": "asset_job_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asset_job_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Warranty Registration Fee",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "7f29a92453fcb210f8bb51a0a0490eed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010260",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7f29a92453fcb210f8bb51a0a0490eed",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "7f29a92453fcb210f8bb51a0a0490eed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "1839e12853fcb210f8bb51a0a0490ecb",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Initial Setup Fee (15%)",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "7f29a92453fcb210f8bb51a0a0490eed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_clearance",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "7f29a92453fcb210f8bb51a0a0490eed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010259",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "1439e12853fcb210f8bb51a0a0490ece",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010258",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "4c39e12853fcb210f8bb51a0a0490e6c",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "7f29a92453fcb210f8bb51a0a0490eed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_environment",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "ASSET_139_PRO -",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "ASSET_139_PRO",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "Precision T3500 Workstation",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "7f29a92453fcb210f8bb51a0a0490eed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 85,
+        "num_modified_entries": 5,
+        "num_deleted_entries": 0,
+        "num_created_entries": 80,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fx_currency_instance",
+          "fm_expense_line",
+          "alm_hardware",
+          "asset_job_log"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "ASSET_139_MAX",
+        "model": "Precision T3500 Workstation",
+        "environment": "Development",
+        "assigned_to": "c80691ac537cb210f8bb51a0a0490ee4",
+        "vendor": "Boss Electronics"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Hardware asset created successfully. The sys_id of the asset is: 961a256853fcb210f8bb51a0a0490e24\",\n  \"asset_id\": \"961a256853fcb210f8bb51a0a0490e24\",\n  \"asset_tag\": \"ASSET_139_MAX\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "topic",
+          "newvalue": "HeartbeatProbe",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "0",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "agent",
+          "newvalue": "mid.server.*",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sequence",
+          "newvalue": "19a088847ac0000001",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "queue",
+          "newvalue": "output",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "processed",
+          "newvalue": "2025-10-21 20:49:00",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "ecc_queue",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "2a1ae56853fcb210f8bb51a0a0490e82",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "961a256853fcb210f8bb51a0a0490e24",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "961a256853fcb210f8bb51a0a0490e24",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010264",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "961a256853fcb210f8bb51a0a0490e24",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "a61ae56853fcb210f8bb51a0a0490e76",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "961a256853fcb210f8bb51a0a0490e24",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010263",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010262",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "961a256853fcb210f8bb51a0a0490e24",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "521ae56853fcb210f8bb51a0a0490e9d",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Initial Setup Fee (15%)",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "961a256853fcb210f8bb51a0a0490e24",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_clearance",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "961a256853fcb210f8bb51a0a0490e24",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010261",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "5e1ae56853fcb210f8bb51a0a0490e9f",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "961a256853fcb210f8bb51a0a0490e24",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "961a256853fcb210f8bb51a0a0490e24",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Warranty Registration Fee",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "ASSET_139_MAX -",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_environment",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "ASSET_139_MAX",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "Precision T3500 Workstation",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 102,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 99,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fx_currency_instance",
+          "fm_expense_line",
+          "alm_hardware",
+          "ecc_queue"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "ASSET_139_MAX_LITE",
+        "model": "Precision T3500 Workstation",
+        "assigned_to": "c80691ac537cb210f8bb51a0a0490ee4",
+        "required_clearance_level": 1
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Hardware asset created successfully. The sys_id of the asset is: e40ca9e853fcb210f8bb51a0a0490e5f\",\n  \"asset_id\": \"e40ca9e853fcb210f8bb51a0a0490e5f\",\n  \"asset_tag\": \"ASSET_139_MAX_LITE\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010274",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "e40ca9e853fcb210f8bb51a0a0490e5f",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Initial Setup Fee (15%)",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "e40ca9e853fcb210f8bb51a0a0490e5f",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "450c612c53fcb210f8bb51a0a0490e49",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "410c612c53fcb210f8bb51a0a0490e4c",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "e40ca9e853fcb210f8bb51a0a0490e5f",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_clearance_level",
+          "newvalue": "2",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": "3"
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "e40ca9e853fcb210f8bb51a0a0490e5f",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010273",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Warranty Registration Fee",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "e40ca9e853fcb210f8bb51a0a0490e5f",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "e40ca9e853fcb210f8bb51a0a0490e5f",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "e40ca9e853fcb210f8bb51a0a0490e5f",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010272",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "b40c212c53fcb210f8bb51a0a0490ebd",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "ASSET_139_MAX_LITE -",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "ASSET_139_MAX_LITE",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "Precision T3500 Workstation",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_clearance",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 76,
+        "num_modified_entries": 5,
+        "num_deleted_entries": 0,
+        "num_created_entries": 71,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "u_user_group_clearance",
+          "alm_hardware",
+          "fx_currency_instance",
+          "fm_expense_line"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "ASSET_139_AIR",
+        "model": "Precision T3500 Workstation",
+        "environment": "Staging"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Hardware asset created successfully. The sys_id of the asset is: 366335645330f210f8bb51a0a0490e71\",\n  \"asset_id\": \"366335645330f210f8bb51a0a0490e71\",\n  \"asset_tag\": \"ASSET_139_AIR\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Warranty Registration Fee",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "366335645330f210f8bb51a0a0490e71",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "0b63fd645330f210f8bb51a0a0490eda",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "366335645330f210f8bb51a0a0490e71",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Initial Setup Fee (15%)",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010283",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "366335645330f210f8bb51a0a0490e71",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "4f63fd645330f210f8bb51a0a0490ed7",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010282",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "366335645330f210f8bb51a0a0490e71",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "366335645330f210f8bb51a0a0490e71",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_clearance",
+          "newvalue": "3",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "366335645330f210f8bb51a0a0490e71",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "366331a45330f210f8bb51a0a0490e10",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "366335645330f210f8bb51a0a0490e71",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010281",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "ASSET_139_AIR -",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_environment",
+          "newvalue": "2",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "ASSET_139_AIR",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "Precision T3500 Workstation",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 72,
+        "num_modified_entries": 4,
+        "num_deleted_entries": 0,
+        "num_created_entries": 68,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "alm_hardware",
+          "fx_currency_instance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_hardware_asset",
+      "parameters": {
+        "asset_id": "366335645330f210f8bb51a0a0490e71",
+        "assigned_to": "c80691ac537cb210f8bb51a0a0490ee4"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Hardware asset updated successfully\",\n  \"asset_id\": \"366335645330f210f8bb51a0a0490e71\",\n  \"asset_tag\": \"ASSET_139_AIR\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "u_clearance_level",
+          "newvalue": "1",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": "2"
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "c80691ac537cb210f8bb51a0a0490ee4",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "alm_hardware",
+          "u_user_group_clearance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "George.Hack.33",
+        "first_name": "George",
+        "last_name": "Hack",
+        "email": "George.Hack.33@example.com"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User created successfully. The sys_id of the user is: e360f0d0c3303e107bd371edd401312d\",\n  \"user_id\": \"e360f0d0c3303e107bd371edd401312d\",\n  \"user_name\": \"George.Hack.33\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "verification",
+          "newvalue": "12c34f0deb6001006a668c505206fefd",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "e360f0d0c3303e107bd371edd401312d",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "status",
+          "newvalue": "2",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "George.Hack.33@example.com",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "George.Hack.33@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "edu_status",
+          "newvalue": "faculty",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "e360f0d0c3303e107bd371edd401312d",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "George",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "George.Hack.33",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "vip",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Hack",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hashed_user_id",
+          "newvalue": "3fefe41099dd06493fa1b2c2fc70b3444f0591d91418de622f9487999714a05e",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Primary email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "George Hack",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "enable_multifactor_authn",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 29,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 29,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "pwd_enrollment_snapshot",
+          "sys_user",
+          "cmn_notif_device"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Henry.Jackson.22",
+        "first_name": "Henry",
+        "last_name": "Jackson",
+        "email": "Henry.Jackson.22@example.com"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User created successfully. The sys_id of the user is: 61f03cd4c3303e107bd371edd4013178\",\n  \"user_id\": \"61f03cd4c3303e107bd371edd4013178\",\n  \"user_name\": \"Henry.Jackson.22\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "verification",
+          "newvalue": "12c34f0deb6001006a668c505206fefd",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "61f03cd4c3303e107bd371edd4013178",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "status",
+          "newvalue": "2",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "Henry.Jackson.22@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "Henry.Jackson.22@example.com",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "edu_status",
+          "newvalue": "faculty",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "vip",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "61f03cd4c3303e107bd371edd4013178",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Henry",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "Henry.Jackson.22",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Jackson",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hashed_user_id",
+          "newvalue": "70b00a0e47f6a2faafcee4fec6d768c01ee71f616885b6f6303d56fdd6ab423b",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "enable_multifactor_authn",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Primary email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Henry Jackson",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 29,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 29,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "cmn_notif_device",
+          "pwd_enrollment_snapshot",
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "61f03cd4c3303e107bd371edd4013178",
+        "manager": "e360f0d0c3303e107bd371edd401312d"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User updated successfully\",\n  \"user_id\": \"61f03cd4c3303e107bd371edd4013178\",\n  \"user_name\": \"Henry.Jackson.22\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "e360f0d0c3303e107bd371edd401312d",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "61f03cd4c3303e107bd371edd4013178",
+        "roles": [
+          "task_editor"
+        ]
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User updated successfully\",\n  \"user_id\": \"61f03cd4c3303e107bd371edd4013178\",\n  \"user_name\": \"Henry.Jackson.22\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "state",
+          "newvalue": "active",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "granted_by",
+          "newvalue": "not-applicable",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "61f03cd4c3303e107bd371edd4013178",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "role",
+          "newvalue": "0956f6390a0a0bc50064623d5d51c556",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 5,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 5,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_has_role"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "e360f0d0c3303e107bd371edd401312d",
+        "roles": [
+          "service_api_admin"
+        ]
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User updated successfully\",\n  \"user_id\": \"e360f0d0c3303e107bd371edd401312d\",\n  \"user_name\": \"George.Hack.33\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "user",
+          "newvalue": "e360f0d0c3303e107bd371edd401312d",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "role",
+          "newvalue": "0cd249e899a5221008ddd351c8920a2f",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "active",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "granted_by",
+          "newvalue": "not-applicable",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 5,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 5,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_has_role"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "service admin group",
+        "members": [
+          "sys_id:e360f0d0c3303e107bd371edd401312d"
+        ]
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Group created successfully\",\n  \"group_id\": \"62604dd0c3703e107bd371edd40131a3\",\n  \"group_name\": \"service admin group\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "granted_by",
+          "newvalue": "not-applicable",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "e360f0d0c3303e107bd371edd401312d",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "role",
+          "newvalue": "f8bfbd02eb202100216a87b9d106fe92",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "active",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "service admin group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "group",
+          "newvalue": "62604dd0c3703e107bd371edd40131a3",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "e360f0d0c3303e107bd371edd401312d",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "service admin group",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "62604dd0c3703e107bd371edd40131a3",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 18,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 18,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember",
+          "asmt_assessable_record",
+          "sys_user_has_role",
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "62604dd0c3703e107bd371edd40131a3",
+        "manager": "e360f0d0c3303e107bd371edd401312d"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Group updated successfully\",\n  \"group_id\": \"62604dd0c3703e107bd371edd40131a3\",\n  \"group_name\": \"service admin group\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "manager",
+          "newvalue": "e360f0d0c3303e107bd371edd401312d",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "62604dd0c3703e107bd371edd40131a3",
+        "members": [
+          "sys_id:61f03cd4c3303e107bd371edd4013178"
+        ]
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"All members added to the group successfully\",\n  \"group_id\": \"62604dd0c3703e107bd371edd40131a3\",\n  \"group_name\": null\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "granted_by",
+          "newvalue": "not-applicable",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "role",
+          "newvalue": "0cd249e899a5221008ddd351c8920a2f",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "61f03cd4c3303e107bd371edd4013178",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "active",
+          "tablename": "sys_user_has_role",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "group",
+          "newvalue": "62604dd0c3703e107bd371edd40131a3",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "61f03cd4c3303e107bd371edd4013178",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_has_role",
+          "sys_user_grmember"
+        ]
+      }
+    }
+  }
+]

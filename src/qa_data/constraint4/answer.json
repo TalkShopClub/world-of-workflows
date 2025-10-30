@@ -1,4 +1,0 @@
-{
-  "policy_name": "Catalog categories cannot be deleted if they contain active items",
-  "invalid_action_idx": 10
-}

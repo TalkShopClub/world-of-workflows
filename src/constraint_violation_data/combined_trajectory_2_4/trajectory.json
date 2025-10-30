@@ -1,0 +1,2648 @@
+[
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Fred.Jones.11",
+        "first_name": "Fred",
+        "last_name": "Jones",
+        "email": "Fred.Jones.11@example.com"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User created successfully. The sys_id of the user is: bd3928dcc3fcfa107bd371edd401314e\",\n  \"user_id\": \"bd3928dcc3fcfa107bd371edd401314e\",\n  \"user_name\": \"Fred.Jones.11\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "user",
+          "newvalue": "bd3928dcc3fcfa107bd371edd401314e",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "status",
+          "newvalue": "2",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "verification",
+          "newvalue": "12c34f0deb6001006a668c505206fefd",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Fred Jones",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "enable_multifactor_authn",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Primary email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "Fred.Jones.11@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "edu_status",
+          "newvalue": "faculty",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "vip",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "Fred.Jones.11@example.com",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Fred",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "Fred.Jones.11",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "bd3928dcc3fcfa107bd371edd401314e",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Jones",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hashed_user_id",
+          "newvalue": "7c26d92a73e410aea0fc7b8e5ae6dd38cfdbce2610cd10ea40fc913da4aecdf4",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 29,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 29,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "cmn_notif_device",
+          "pwd_enrollment_snapshot"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "bd3928dcc3fcfa107bd371edd401314e",
+        "department": "Knowledge Base",
+        "role": "Knowledge Base Manager"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User updated successfully\",\n  \"user_id\": \"bd3928dcc3fcfa107bd371edd401314e\",\n  \"user_name\": \"Fred.Jones.11\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "department",
+          "newvalue": "Knowledge Base",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_knowledge_base",
+      "parameters": {
+        "title": "Example KB 1",
+        "description": "This is a test knowledge base",
+        "manager": "bd3928dcc3fcfa107bd371edd401314e"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Knowledge base created successfully\",\n  \"kb_id\": \"e86c601cc3fcfa107bd371edd401310c\",\n  \"kb_name\": \"Example KB 1\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "kb_knowledge_base",
+          "newvalue": "e86c601cc3fcfa107bd371edd401310c",
+          "tablename": "kb_uc_cannot_contribute_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "kb_uc_can_read_mtom",
+          "tablename": "kb_uc_can_read_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_criteria",
+          "newvalue": "76f09af6cb1200108ad442fcf7076dbf",
+          "tablename": "kb_uc_cannot_read_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "kb_uc_cannot_contribute_mtom",
+          "tablename": "kb_uc_cannot_contribute_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_criteria",
+          "newvalue": "fb1166d64fff0200086eeed18110c7ab",
+          "tablename": "kb_uc_can_read_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "kb_uc_cannot_read_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "kb_uc_can_read_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_criteria",
+          "newvalue": "76f09af6cb1200108ad442fcf7076dbf",
+          "tablename": "kb_uc_cannot_contribute_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_knowledge_base",
+          "newvalue": "e86c601cc3fcfa107bd371edd401310c",
+          "tablename": "kb_uc_cannot_read_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_knowledge_base",
+          "newvalue": "e86c601cc3fcfa107bd371edd401310c",
+          "tablename": "kb_uc_can_read_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "kb_uc_cannot_contribute_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "kb_uc_cannot_read_mtom",
+          "tablename": "kb_uc_cannot_read_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_knowledge_base",
+          "newvalue": "e86c601cc3fcfa107bd371edd401310c",
+          "tablename": "kb_uc_can_contribute_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "disable_rating",
+          "newvalue": "0",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow",
+          "newvalue": "fbe441019f112100d8f8700c267fcf1a",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "disable_suggesting",
+          "newvalue": "0",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "kb_uc_can_contribute_mtom",
+          "tablename": "kb_uc_can_contribute_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "application",
+          "newvalue": "global",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "retire_workflow",
+          "newvalue": "3d18ef12c30031000096dfdc64d3aeb6",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "disable_commenting",
+          "newvalue": "0",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "title",
+          "newvalue": "Example KB 1",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_criteria",
+          "newvalue": "f9397919f79d52507787d3e543bfd6cd",
+          "tablename": "kb_uc_can_contribute_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "kb_knowledge",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "disable_category_editing",
+          "newvalue": "0",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "This is a test knowledge base",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "data_policy",
+          "newvalue": "ac6c601cc3fcfa107bd371edd401310c",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "disable_mark_as_helpful",
+          "newvalue": "0",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_version",
+          "newvalue": "3",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "kb_uc_can_contribute_mtom",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "enable_socialqa",
+          "newvalue": "0",
+          "tablename": "kb_knowledge_base",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 32,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 32,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "kb_uc_cannot_read_mtom",
+          "kb_uc_can_read_mtom",
+          "kb_knowledge_base",
+          "kb_uc_cannot_contribute_mtom",
+          "kb_uc_can_contribute_mtom"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_category",
+      "parameters": {
+        "title": "Example Category 1",
+        "description": "This is a test category",
+        "knowledge_base": "e86c601cc3fcfa107bd371edd401310c"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Category created successfully\",\n  \"category_id\": \"778de0d0c3303e107bd371edd4013128\",\n  \"category_name\": \"Example Category 1\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "kb_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "label",
+          "newvalue": "Example Category 1",
+          "tablename": "kb_category",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "kb_category",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 3,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "kb_category"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_article",
+      "parameters": {
+        "title": "Example Article 1",
+        "text": "This is a test article",
+        "short_description": "This is a test article",
+        "knowledge_base": "e86c601cc3fcfa107bd371edd401310c",
+        "category": "778de0d0c3303e107bd371edd4013128"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Article created successfully\",\n  \"article_id\": \"ff2e20d0c3303e107bd371edd40131a4\",\n  \"article_title\": \"Example Article 1\",\n  \"workflow_state\": \"published\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "author",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "wf_context",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "19a039863490000001",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ert_outlier_workflow_actions",
+          "newvalue": "b69c7e18eb532100ec9a82810206fea4",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ended",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "started",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "finished",
+          "tablename": "wf_executing",
+          "oldvalue": "executing"
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source",
+          "newvalue": "ENGINE",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "output_data",
+          "newvalue": "{}",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_state",
+          "newvalue": "published",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ert_outlier_workflow_actions",
+          "newvalue": "b69c7e18eb532100ec9a82810206fea4",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "message",
+          "newvalue": "terminating WorkArena Auto-Publish, state: finished",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "context",
+          "newvalue": "bf2e20d0c3303e107bd371edd40131a5",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_index",
+          "newvalue": "1",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "is_parent",
+          "newvalue": "0",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "kb_knowledge",
+          "tablename": "wf_workflow_binding",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_version",
+          "newvalue": "d922d5e48753b110b0fdc995dabb3534",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "auto_start",
+          "newvalue": "0",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "input_data",
+          "newvalue": "{}",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "flagged",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "previous_activity",
+          "newvalue": "732e20d0c3303e107bd371edd40131a8",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_transition_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow",
+          "newvalue": "6762d5e48753b110b0fdc995dabb353f",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "is_parent",
+          "newvalue": "0",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "view_as_allowed",
+          "newvalue": "1",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "disable_suggesting",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "started",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "is_parent",
+          "newvalue": "0",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "transition",
+          "newvalue": "2b6299e48753b110b0fdc995dabb359d",
+          "tablename": "wf_transition_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "output_data",
+          "newvalue": "{}",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "executing",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "context",
+          "newvalue": "bf2e20d0c3303e107bd371edd40131a5",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "article_type",
+          "newvalue": "text",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "finished",
+          "tablename": "wf_context",
+          "oldvalue": "executing"
+        },
+        {
+          "fieldname": "context",
+          "newvalue": "bf2e20d0c3303e107bd371edd40131a5",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_version",
+          "newvalue": "d922d5e48753b110b0fdc995dabb3534",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "finished",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ert_long_running_actions",
+          "newvalue": "51782761ac1464174baaeb9af4b9ae76,803b3c728f320100ec9a6441f0f923ef,b69c7e18eb532100ec9a82810206fea4",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "level",
+          "newvalue": "0",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_index",
+          "newvalue": "0",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "valid_to",
+          "newvalue": "2100-01-01",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source",
+          "newvalue": "ENGINE",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_version",
+          "newvalue": "d922d5e48753b110b0fdc995dabb3534",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity",
+          "newvalue": "e76299e48753b110b0fdc995dabb359b",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "ff2e20d0c3303e107bd371edd40131a4",
+          "tablename": "wf_workflow_binding",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "after_business_rules",
+          "newvalue": "0",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cumulated_avg_ert",
+          "newvalue": "0",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "executing",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "use_count",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_index",
+          "newvalue": "2",
+          "tablename": "wf_context",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "executing",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "rolled_back",
+          "newvalue": "0",
+          "tablename": "wf_transition_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "kb_knowledge",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify_termination",
+          "newvalue": "0",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_knowledge_base",
+          "newvalue": "e86c601cc3fcfa107bd371edd401310c",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "generated_with_now_assist",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "running_duration",
+          "newvalue": "1970-01-01 00:00:00",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "without_current_wf_actions",
+          "newvalue": "51782761ac1464174baaeb9af4b9ae76,b69c7e18eb532100ec9a82810206fea4",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "End",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notify_termination",
+          "newvalue": "0",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_index",
+          "newvalue": "0",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "ff2e20d0c3303e107bd371edd40131a4",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "context_map",
+          "newvalue": "{\"_page_name\":\"api/now/table/kb_knowledge\",\"_system_id\":\"app130181.aus191.service-now.com:dev268210002\",\"_logged_in_user\":\"admin\",\"_user\":\"admin\",\"_is_impersonating\":\"false\",\"_txid\":\"772ee89cc3bc\",\"_session_id\":\"332EE09CC3BCFA107BD371EDD40131BB\"}",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_attachments",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "without_current_wf_actions",
+          "newvalue": "51782761ac1464174baaeb9af4b9ae76,b69c7e18eb532100ec9a82810206fea4",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "context_map",
+          "newvalue": "{\"_page_name\":\"api/now/table/kb_knowledge\",\"_system_id\":\"app130181.aus191.service-now.com:dev268210002\",\"_logged_in_user\":\"admin\",\"_user\":\"admin\",\"_is_impersonating\":\"false\",\"_txid\":\"772ee89cc3bc\",\"_session_id\":\"332EE09CC3BCFA107BD371EDD40131BB\"}",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage",
+          "newvalue": "7a821de48753b110b0fdc995dabb35c3",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "started",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "context",
+          "newvalue": "bf2e20d0c3303e107bd371edd40131a5",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_index",
+          "newvalue": "1",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_count",
+          "newvalue": "0",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_version",
+          "newvalue": "d922d5e48753b110b0fdc995dabb3534",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "level",
+          "newvalue": "0",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "is_parent",
+          "newvalue": "0",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "started",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_version",
+          "newvalue": "d922d5e48753b110b0fdc995dabb3534",
+          "tablename": "wf_workflow_binding",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "started",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ert_outlier_workflow_actions",
+          "newvalue": "b69c7e18eb532100ec9a82810206fea4",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "context",
+          "newvalue": "bf2e20d0c3303e107bd371edd40131a5",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_category",
+          "newvalue": "778de0d0c3303e107bd371edd4013128",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "KB0010218",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_count",
+          "newvalue": "2",
+          "tablename": "wf_context",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "context",
+          "newvalue": "bf2e20d0c3303e107bd371edd40131a5",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "context",
+          "newvalue": "bf2e20d0c3303e107bd371edd40131a5",
+          "tablename": "wf_transition_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "started_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity",
+          "newvalue": "e76299e48753b110b0fdc995dabb359b",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "helpful_count",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "direct",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ended",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage_state",
+          "newvalue": "[{\"parameters\":[],\"duration\":\"\",\"state\":\"Complete\",\"order\":0,\"selected\":false,\"activityId\":\"ef6299e48753b110b0fdc995dabb359c\",\"stageId\":\"7a821de48753b110b0fdc995dabb35c3\",\"approvers\":[],\"title\":\"\",\"active\":true,\"name\":\"Published\",\"value\":\"published\"}]",
+          "tablename": "wf_context",
+          "oldvalue": "[{\"parameters\":[],\"duration\":\"\",\"state\":\"Complete\",\"order\":0,\"selected\":true,\"activityId\":\"ef6299e48753b110b0fdc995dabb359c\",\"stageId\":\"7a821de48753b110b0fdc995dabb35c3\",\"approvers\":[],\"title\":\"\",\"active\":true,\"name\":\"Published\",\"value\":\"published\"}]"
+        },
+        {
+          "fieldname": "output_data",
+          "newvalue": "{}",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "finished",
+          "tablename": "wf_executing",
+          "oldvalue": "executing"
+        },
+        {
+          "fieldname": "activity",
+          "newvalue": "ef6299e48753b110b0fdc995dabb359c",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ended",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "without_current_wf_actions",
+          "newvalue": "51782761ac1464174baaeb9af4b9ae76,b69c7e18eb532100ec9a82810206fea4",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "wf_log",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "text",
+          "newvalue": "This is a test article",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ert_long_running_actions",
+          "newvalue": "51782761ac1464174baaeb9af4b9ae76,803b3c728f320100ec9a6441f0f923ef,b69c7e18eb532100ec9a82810206fea4",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "wf_log",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage_state",
+          "newvalue": "[{\"parameters\":[],\"duration\":\"\",\"state\":\"Complete\",\"order\":0,\"selected\":true,\"activityId\":\"ef6299e48753b110b0fdc995dabb359c\",\"stageId\":\"7a821de48753b110b0fdc995dabb35c3\",\"approvers\":[],\"title\":\"\",\"active\":true,\"name\":\"Published\",\"value\":\"published\"}]",
+          "tablename": "wf_context",
+          "oldvalue": "[{\"parameters\":[],\"duration\":\"\",\"state\":\"Pending\",\"order\":0,\"selected\":false,\"stageId\":\"7a821de48753b110b0fdc995dabb35c3\",\"approvers\":[],\"active\":true,\"name\":\"Published\",\"value\":\"published\"}]"
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "finished",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "output_data",
+          "newvalue": "{}",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "WorkArena Auto-Publish",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "requires_ert",
+          "newvalue": "1",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "started",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "disable_commenting",
+          "newvalue": "0",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity",
+          "newvalue": "ef6299e48753b110b0fdc995dabb359c",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "input_data",
+          "newvalue": "{}",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "from_activity_history",
+          "newvalue": "732e20d0c3303e107bd371edd40131a8",
+          "tablename": "wf_transition_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "topic",
+          "newvalue": "General",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "kb_knowledge",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "wf_executing",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_version",
+          "newvalue": "d922d5e48753b110b0fdc995dabb3534",
+          "tablename": "wf_transition_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "column_renderer",
+          "newvalue": "a56213111b030100adca1e094f0713ac",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "19a039860c00000001",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Example Article 1",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "started",
+          "newvalue": "2025-10-20 21:48:29",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "ert_long_running_actions",
+          "newvalue": "51782761ac1464174baaeb9af4b9ae76,803b3c728f320100ec9a6441f0f923ef,b69c7e18eb532100ec9a82810206fea4",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "activity_index",
+          "newvalue": "1",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_version",
+          "newvalue": "d922d5e48753b110b0fdc995dabb3534",
+          "tablename": "wf_history",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "stage_state",
+          "newvalue": "[{\"parameters\":[],\"duration\":\"\",\"state\":\"Pending\",\"order\":0,\"selected\":false,\"stageId\":\"7a821de48753b110b0fdc995dabb35c3\",\"approvers\":[],\"active\":true,\"name\":\"Published\",\"value\":\"published\"}]",
+          "tablename": "wf_context",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "message",
+          "newvalue": "Workflow starting: WorkArena Auto-Publish, for KB0010218",
+          "tablename": "wf_log",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 129,
+        "num_modified_entries": 8,
+        "num_deleted_entries": 0,
+        "num_created_entries": 121,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "wf_transition_history",
+          "wf_context",
+          "kb_knowledge",
+          "wf_workflow_binding",
+          "wf_executing",
+          "wf_log",
+          "wf_history"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "ff2e20d0c3303e107bd371edd40131a4",
+        "author": "bd3928dcc3fcfa107bd371edd401314e"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Article updated successfully\",\n  \"article_id\": \"ff2e20d0c3303e107bd371edd40131a4\",\n  \"article_title\": \"Example Article 1\",\n  \"workflow_state\": \"published\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "author",
+          "newvalue": "bd3928dcc3fcfa107bd371edd401314e",
+          "tablename": "kb_knowledge",
+          "oldvalue": "6816f79cc0a8016401c5a33be04be441"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "kb_knowledge"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "bd3928dcc3fcfa107bd371edd401314e",
+        "department": "IT",
+        "role": "IT Manager"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User updated successfully\",\n  \"user_id\": \"bd3928dcc3fcfa107bd371edd401314e\",\n  \"user_name\": \"Fred.Jones.11\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "user",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "kb_feedback",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "session_id",
+          "newvalue": "glide.scheduler.worker.2",
+          "tablename": "kb_feedback",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "resolved",
+          "newvalue": "0",
+          "tablename": "kb_feedback",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "kb_feedback",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "flagged",
+          "newvalue": "1",
+          "tablename": "kb_knowledge",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "article",
+          "newvalue": "ff2e20d0c3303e107bd371edd40131a4",
+          "tablename": "kb_feedback",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "flagged",
+          "newvalue": "1",
+          "tablename": "kb_feedback",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "department",
+          "newvalue": "221f79b7c6112284005d646b76ab978c",
+          "tablename": "sys_user",
+          "oldvalue": "Knowledge Base"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 8,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 6,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "kb_knowledge",
+          "kb_feedback",
+          "sys_user"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "John.Summit.123",
+        "first_name": "John",
+        "last_name": "Summit",
+        "email": "john.summit.123@example.com",
+        "clearance_level": 3
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"User created successfully. The sys_id of the user is: 0529b96c5330f210f8bb51a0a0490eef\",\n  \"user_id\": \"0529b96c5330f210f8bb51a0a0490eef\",\n  \"user_name\": \"John.Summit.123\",\n  \"clearance_level\": null\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "status",
+          "newvalue": "2",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "verification",
+          "newvalue": "12c34f0deb6001006a668c505206fefd",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "0529b96c5330f210f8bb51a0a0490eef",
+          "tablename": "pwd_enrollment_snapshot",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "vip",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_clearance_level",
+          "newvalue": "3",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "order",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email_address",
+          "newvalue": "john.summit.123@example.com",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "0529b96c5330f210f8bb51a0a0490eef",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "john.summit.123@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "hashed_user_id",
+          "newvalue": "d23a9ebeedee9660dc672a25650399e9534a4c2d0d9c23758333a8291826f89d",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "edu_status",
+          "newvalue": "faculty",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "John Summit",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "enable_multifactor_authn",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "primary_email",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "John",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "John.Summit.123",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_user",
+          "newvalue": "0529b96c5330f210f8bb51a0a0490eef",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Summit",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Primary email",
+          "tablename": "cmn_notif_device",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_active_approver",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "identity_type",
+          "newvalue": "unclassified",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 33,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 33,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "u_user_group_clearance",
+          "sys_user",
+          "cmn_notif_device",
+          "pwd_enrollment_snapshot"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "ASSET_140",
+        "model": "Precision T3500 Workstation",
+        "environment": "Staging",
+        "assigned_to": "0529b96c5330f210f8bb51a0a0490eef"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Hardware asset created successfully. The sys_id of the asset is: 72497de45330f210f8bb51a0a0490e48\",\n  \"asset_id\": \"72497de45330f210f8bb51a0a0490e48\",\n  \"asset_tag\": \"ASSET_140\"\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "72497de45330f210f8bb51a0a0490e48",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "0529b96c5330f210f8bb51a0a0490eef",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "alm_hardware",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_clearance",
+          "newvalue": "3",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010286",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "72497de45330f210f8bb51a0a0490e48",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "4f497d6c5330f210f8bb51a0a0490ec4",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Initial Setup Fee (15%)",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "72497de45330f210f8bb51a0a0490e48",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "72497de45330f210f8bb51a0a0490e48",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010285",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "4b497d6c5330f210f8bb51a0a0490ec7",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "pending",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "500",
+          "tablename": "fm_expense_line",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "cost",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "72497de45330f210f8bb51a0a0490e48",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "500",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Warranty Registration Fee",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "0529b96c5330f210f8bb51a0a0490eef",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "eligible_for_refresh",
+          "newvalue": "0",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "ASSET_140",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "amount",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "one-time",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "alm_hardware",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "fm_expense_line",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "processed",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "0529b96c5330f210f8bb51a0a0490eef",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "Precision T3500 Workstation",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Automatically generated expense line for creation of asset",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "asset",
+          "newvalue": "72497de45330f210f8bb51a0a0490e48",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "07497d6c5330f210f8bb51a0a0490e91",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "1",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "date",
+          "newvalue": "2025-10-21",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "72497de45330f210f8bb51a0a0490e48",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "EXP0010284",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_environment",
+          "newvalue": "2",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "display_name",
+          "newvalue": "ASSET_140 -",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "0529b96c5330f210f8bb51a0a0490eef",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_amount",
+          "newvalue": "0",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "inherited",
+          "newvalue": "0",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "reference_currency",
+          "newvalue": "USD",
+          "tablename": "fx_currency_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "fm_expense_line",
+          "tablename": "fm_expense_line",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-01 00:31:01",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:41:02"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:27:54",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:17:53"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:28:59",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:18:58"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-01 00:28:59",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:18:58"
+        },
+        {
+          "fieldname": "sla_duration_percentage",
+          "newvalue": "46.5",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "29.81"
+        },
+        {
+          "fieldname": "business_percentage",
+          "newvalue": "48.31",
+          "tablename": "task_sla",
+          "oldvalue": "31.61"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-01 00:27:54",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "1970-01-01 00:17:53"
+        },
+        {
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 00:31:01",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 00:41:02"
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "48.31",
+          "tablename": "task_sla",
+          "oldvalue": "31.61"
+        },
+        {
+          "fieldname": "last_updated",
+          "newvalue": "2025-10-21 21:55:01",
+          "tablename": "sla_breakdown_by_assignment",
+          "oldvalue": "2025-10-21 21:45:00"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 86,
+        "num_modified_entries": 14,
+        "num_deleted_entries": 0,
+        "num_created_entries": 72,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "task_sla",
+          "sla_breakdown_by_assignment",
+          "fm_expense_line",
+          "fx_currency_instance",
+          "alm_hardware"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Applied Research Group",
+        "description": "Group for applied research"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Group created successfully\",\n  \"group_id\": \"7cbd95f053303210f8bb51a0a0490ef0\",\n  \"group_name\": \"Applied Research Group\",\n  \"clearance_level\": null\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "u_group",
+          "newvalue": "7cbd95f053303210f8bb51a0a0490ef0",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_clearance_level",
+          "newvalue": "5",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Applied Research Group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Applied Research Group",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "7cbd95f053303210f8bb51a0a0490ef0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Group for applied research",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 14,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 14,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "u_user_group_clearance",
+          "sys_user_group",
+          "asmt_assessable_record"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group_clearance",
+      "parameters": {
+        "group_id": "7cbd95f053303210f8bb51a0a0490ef0",
+        "clearance_level": "3"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Group clearance updated successfully\",\n  \"group_id\": \"7cbd95f053303210f8bb51a0a0490ef0\",\n  \"group_name\": null,\n  \"clearance_level\": 3\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "u_clearance_level",
+          "newvalue": "3",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": "5"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [],
+        "tables_modified": [
+          "u_user_group_clearance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Applied Research Engineers",
+        "description": "Group for applied research engineers"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Group created successfully\",\n  \"group_id\": \"79e06d3c53303210f8bb51a0a0490eee\",\n  \"group_name\": \"Applied Research Engineers\",\n  \"clearance_level\": null\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "u_clearance_level",
+          "newvalue": "5",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "u_group",
+          "newvalue": "79e06d3c53303210f8bb51a0a0490eee",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "include_members",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "description",
+          "newvalue": "Group for applied research engineers",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Applied Research Engineers",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "exclude_manager",
+          "newvalue": "0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_table",
+          "newvalue": "sys_user_group",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Applied Research Engineers",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "source_id",
+          "newvalue": "79e06d3c53303210f8bb51a0a0490eee",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "live_feed",
+          "newvalue": "0",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "metric_type",
+          "newvalue": "ee910ea7bf2201007a6d257b3f07398c",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "dm_display",
+          "newvalue": "1",
+          "tablename": "asmt_assessable_record",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 14,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 14,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_group",
+          "asmt_assessable_record",
+          "u_user_group_clearance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "7cbd95f053303210f8bb51a0a0490ef0",
+        "members": [
+          "sys_id:0529b96c5330f210f8bb51a0a0490eef"
+        ]
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"All members added to the group successfully\",\n  \"group_id\": \"7cbd95f053303210f8bb51a0a0490ef0\",\n  \"group_name\": null,\n  \"clearance_level\": null\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "user",
+          "newvalue": "0529b96c5330f210f8bb51a0a0490eef",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "group",
+          "newvalue": "7cbd95f053303210f8bb51a0a0490ef0",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "79e06d3c53303210f8bb51a0a0490eee",
+        "parent": "7cbd95f053303210f8bb51a0a0490ef0"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Group updated successfully\",\n  \"group_id\": \"79e06d3c53303210f8bb51a0a0490eee\",\n  \"group_name\": \"Applied Research Engineers\",\n  \"clearance_level\": null\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "parent",
+          "newvalue": "7cbd95f053303210f8bb51a0a0490ef0",
+          "tablename": "sys_user_group",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 1,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user_group"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "update_group_clearance",
+      "parameters": {
+        "group_id": "79e06d3c53303210f8bb51a0a0490eee",
+        "clearance_level": "2"
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"Group clearance updated successfully\",\n  \"group_id\": \"79e06d3c53303210f8bb51a0a0490eee\",\n  \"group_name\": null,\n  \"clearance_level\": 2\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "u_clearance_level",
+          "newvalue": "2",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": "5"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [],
+        "tables_modified": [
+          "u_user_group_clearance"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "7cbd95f053303210f8bb51a0a0490ef0",
+        "members": [
+          "sys_id:0529b96c5330f210f8bb51a0a0490eef"
+        ]
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"All members removed from the group successfully\",\n  \"group_id\": \"7cbd95f053303210f8bb51a0a0490ef0\",\n  \"group_name\": null,\n  \"clearance_level\": null\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "sys_user_grmember",
+          "oldvalue": "DELETED"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 1,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete",
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user_grmember"
+        ]
+      }
+    }
+  },
+  {
+    "action": {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "79e06d3c53303210f8bb51a0a0490eee",
+        "members": [
+          "sys_id:0529b96c5330f210f8bb51a0a0490eef"
+        ]
+      }
+    },
+    "tool_response": "{\n  \"success\": true,\n  \"message\": \"All members added to the group successfully\",\n  \"group_id\": \"79e06d3c53303210f8bb51a0a0490eee\",\n  \"group_name\": null,\n  \"clearance_level\": null\n}",
+    "ground_truth_state": {
+      "sysauditrecord": [
+        {
+          "fieldname": "assigned_to",
+          "newvalue": "",
+          "tablename": "alm_hardware",
+          "oldvalue": "0529b96c5330f210f8bb51a0a0490eef"
+        },
+        {
+          "fieldname": "u_clearance_level",
+          "newvalue": "2",
+          "tablename": "u_user_group_clearance",
+          "oldvalue": "3"
+        },
+        {
+          "fieldname": "user",
+          "newvalue": "0529b96c5330f210f8bb51a0a0490eef",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "group",
+          "newvalue": "79e06d3c53303210f8bb51a0a0490eee",
+          "tablename": "sys_user_grmember",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 2,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "alm_hardware",
+          "sys_user_grmember",
+          "u_user_group_clearance"
+        ]
+      }
+    }
+  }
+]

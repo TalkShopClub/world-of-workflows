@@ -1,0 +1,14 @@
+{
+  "invalid_action_idxs": [
+    4,
+    15
+  ],
+  "invalid_policy_names": [
+    "A problem should always have an assigned user.",
+    "Asset with value greater than 10000$ cannot be transferred to users who already have more than 2 active assets."
+  ],
+  "invalid_policy_nums": [
+    4,
+    9
+  ]
+}

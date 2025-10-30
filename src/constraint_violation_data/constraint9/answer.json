@@ -1,0 +1,5 @@
+{
+  "policy_name": "Priority 1 task derivative records cannot be cancelled, closed or rejected. They can only be resolved.",
+  "invalid_action_idxs": [12,12],
+  "invalid_policy_nums": [7,8]
+}

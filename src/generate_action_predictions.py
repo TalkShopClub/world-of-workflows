@@ -9,11 +9,7 @@ import json
 import os
 import argparse
 from pathlib import Path
-try:
-    from rest_apis.world_model_scripts.world_model_agent import WorldModelAgent
-except ImportError:
-    # Fallback for when running script directly
-    from world_model_agent import WorldModelAgent
+from .world_model_agent import WorldModelAgent
 import time
 from datetime import datetime
 
@@ -48,11 +44,7 @@ def should_process_trajectory(trajectory_file, output_dir):
 
 def convert_audits_to_state_diff(audits):
     """Convert audit records to state_diff format"""
-    try:
-        from rest_apis.world_model_scripts.world_model_agent import StateDiff, SysAuditRecord, AdditionalInformation, operation
-    except ImportError:
-        # Fallback for when running script directly
-        from world_model_agent import StateDiff, SysAuditRecord, AdditionalInformation, operation
+    from .world_model_agent import StateDiff, SysAuditRecord, AdditionalInformation, operation
     
     # Convert audits to SysAuditRecord format
     sysaudit_records = []

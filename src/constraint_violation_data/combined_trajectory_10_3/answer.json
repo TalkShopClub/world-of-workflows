@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    9,
+    19,
+    26
+  ],
+  "invalid_policy_names": [
+    "Asset with value greater than 10000$ cannot be transferred to users who already have more than 2 active assets.",
+    "Assets cannot be transferred to users whose clearance_level is below the asset's required_clearance_level.",
+    "Moving an US-based asset to a different country requires approval first."
+  ],
+  "invalid_policy_nums": [
+    9,
+    5,
+    0
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "invalid_action_idxs": [
+    4,
+    12
+  ],
+  "invalid_policy_names": [
+    "A problem should always have an assigned user.",
+    "Moving an US-based asset to a different country requires approval first."
+  ],
+  "invalid_policy_nums": [
+    4,
+    0
+  ]
+}

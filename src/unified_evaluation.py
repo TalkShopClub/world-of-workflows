@@ -23,28 +23,6 @@ from datetime import datetime
 from tqdm import tqdm
 import numpy as np
 
-# Import local modules
-try:
-    from .world_model_agent import (
-        WorldModelAgent, 
-        StateDiff, 
-        ActionCall, 
-        SysAuditRecord, 
-        AdditionalInformation, 
-        operation
-    )
-except ImportError:
-    # Fallback for direct script execution
-    from world_model_agent import (
-        WorldModelAgent, 
-        StateDiff, 
-        ActionCall, 
-        SysAuditRecord, 
-        AdditionalInformation, 
-        operation
-    )
-
-
 class StatePredictionEvaluator:
     """Evaluate state prediction accuracy"""
     
@@ -239,22 +217,23 @@ class ConstraintEvaluator:
     def evaluate_constraint_predictions(
         self, 
         mode: str = "state_action",
-        perfect_schema: bool = True
+        perfect_schema: bool = True,
+        trajectory_type: str = "combined"
     ) -> Dict[str, Any]:
         """Evaluate constraint violation predictions"""
+
+        assert mode in ["action_only", "state_action", "state_only"], "Invalid mode. Specify one of the following: action_only, state_action, state_only"
+        assert trajectory_type in ["original", "combined", "masked", "all"], "Invalid trajectory type. Specify one of the following: original, combined, masked, all"
+
         print(f"\n{'='*80}")
-        print("CONSTRAINT EVALUATION")
-        print(f"{'='*80}")
-        print(f"Model: {self.model_name}")
-        print(f"Mode: {mode}")
-        print(f"Perfect schema: {perfect_schema}")
+        print(f"Evaluating constraint predictions for model: {self.model_name}")
         
         # Look for evaluation results
-        eval_folder = f"{'perfect_schema' if perfect_schema else 'non_perfect_schema'}_{mode}_constraint_evals"
+        eval_folder = f"{'perfect_schema' if perfect_schema else 'non_perfect_schema'}_{mode}_{trajectory_type}_constraint_evals"
         results_dir = self.base_dir / "llm_evals" / "with_perturbations" / eval_folder
         
         if not results_dir.exists():
-            print(f"❌ Results directory not found: {results_dir}")
+            print(f"Results directory not found: {results_dir}")
             return {
                 'error': f"Directory not found: {results_dir}",
                 'success': False
@@ -264,7 +243,7 @@ class ConstraintEvaluator:
         pred_file = results_dir / f"{self.model_name.split('/')[-1]}_llm_violation_predictions.json"
         
         if not pred_file.exists():
-            print(f"❌ Prediction file not found: {pred_file}")
+            print(f"❌ Prediction file for {self.model_name.split('/')[-1]} not found: {pred_file}")
             return {
                 'error': f"File not found: {pred_file}",
                 'success': False
@@ -307,7 +286,6 @@ class ConstraintEvaluator:
         print(f"✅ Total cases: {len(accuracies)}")
         
         return results
-
 
 class UnifiedEvaluator:
     """Main evaluator that coordinates all three evaluation types"""
@@ -473,6 +451,14 @@ Examples:
         default='state_action',
         help='Mode for constraint evaluation (default: state_action)'
     )
+
+    parser.add_argument(
+        '--trajectory-type',
+        type=str,
+        choices=['original', 'combined', 'masked', 'all'],
+        default='combined',
+        help='Trajectory type for constraint evaluation (default: combined)'
+    )
     
     parser.add_argument(
         '--perfect-schema',
@@ -496,7 +482,8 @@ Examples:
         evaluation_type=args.evaluation_type,
         k_values=args.k_values,
         constraint_mode=args.constraint_mode,
-        perfect_schema=args.perfect_schema
+        perfect_schema=args.perfect_schema,
+        trajectory_type=args.trajectory_type
     )
 
 

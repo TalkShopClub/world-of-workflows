@@ -433,7 +433,7 @@ class WorldModelAgent:
 
         # If mode = "action_only", only retain the action and action_index fields
         if mode == "action_only":
-            sequence_with_index = [{"action_index": action["action_index"], "action": action["action"]} for action in sequence_with_index]
+            sequence_with_index = [{"action_index": action["action_index"], "action": action["action"], "tool_response": action["tool_response"]} for action in sequence_with_index]
         elif mode == "state_only": 
             sequence_with_index = [{"action_index": action["action_index"], "ground_truth_state": action["ground_truth_state"]} for action in sequence_with_index]
 

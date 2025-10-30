@@ -2,17 +2,14 @@ import os
 import asyncio
 from pathlib import Path
 import logging
-from io import StringIO
 
 from pydantic import BaseModel, Field
 from typing import List, Dict, Optional, Any
 import json
 
 # Third-party imports
-from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from mcp_use import MCPAgent, MCPClient
-from langfuse.langchain import CallbackHandler
 from langfuse import Langfuse
 
 

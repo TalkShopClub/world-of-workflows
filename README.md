@@ -20,6 +20,12 @@ uv venv --python 3.12
 uv pip install -e submodules/servicenow-mcp/
 ```
 
+3. Install the source package 
+```
+uv pip install -e . 
+wow-install
+``` 
+
 3. Run evaluation script
 ```bash
 .venv/bin/python -m src.unified_evaluation --help

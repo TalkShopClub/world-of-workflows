@@ -621,5 +621,3 @@ state/action pair 4:
         ]
       }}
     }}
-
-DO NOT USE search_any_table MCP tool

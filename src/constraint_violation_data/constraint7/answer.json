@@ -1,0 +1,5 @@
+{
+    "policy_name": "Cannot transfer user from one group to another if they would lose clearance and be forced to surrender assets.",
+    "invalid_action_idxs": [9],
+    "invalid_policy_nums": [6]
+  }

@@ -1,0 +1,26 @@
+{
+  "invalid_action_idxs": [
+    2,
+    7,
+    7,
+    17,
+    22,
+    36
+  ],
+  "invalid_policy_names": [
+    "Users should not be assigned with the same role as their managers.", 
+    "A problem should always have an assigned user.",
+    "A user should not be assigned with more than 3 active incidents at a time.",
+    "Cannot transfer user from one group to another if they would lose clearance and be forced to surrender assets.",
+    "A problem should always have an assigned user.",
+    "High priority requests cannot be rejected on grounds of inactive user."
+  ],
+  "invalid_policy_nums": [
+    2,
+    4,
+    3,
+    6,
+    4,
+    7
+  ]
+}

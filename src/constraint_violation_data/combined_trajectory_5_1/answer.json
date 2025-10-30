@@ -1,0 +1,23 @@
+{
+  "invalid_action_idxs": [
+    4,
+    14,
+    27,
+    27,
+    38
+  ],
+  "invalid_policy_names": [
+    "A problem should always have an assigned user.",
+    "Assets cannot be transferred to users whose clearance_level is below the asset's required_clearance_level.",
+    "High priority requests cannot be rejected on grounds of inactive user.",
+    "Priority 1 task derivative records cannot be cancelled, closed or rejected. They can only be resolved.",
+    "Asset with value greater than 10000$ cannot be transferred to users who already have more than 2 active assets."
+  ],
+  "invalid_policy_nums": [
+    4,
+    5,
+    7,
+    8,
+    9
+  ]
+}

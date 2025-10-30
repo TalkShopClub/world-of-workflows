@@ -14,33 +14,12 @@ from tqdm import tqdm
 from pathlib import Path
 import numpy as np
 
-# Import local modules (support both direct execution and module import)
-try:
-    from .world_model_agent import (
-        StateDiff, 
-        ActionCall, 
-        WorldModelAgent, 
-        SysAuditRecord, 
-        operation
-    )
-except ImportError:
-    from world_model_agent import (
-        StateDiff, 
-        ActionCall, 
-        WorldModelAgent, 
-        SysAuditRecord, 
-        operation
-    )
-
-# Import states module if needed
-try:
-    from .states import get_sys_audit
-except ImportError:
-    try:
-        from states import get_sys_audit
-    except ImportError:
-        def get_sys_audit(*args, **kwargs):
-            return []
+from .world_model_agent import (
+    StateDiff, 
+    ActionCall, 
+    WorldModelAgent, 
+    SysAuditRecord, 
+)
 
 
 def compute_full_rollout_accuracy(pred_state_diff: StateDiff, gt_state_diff: StateDiff) -> float:
@@ -310,116 +289,124 @@ if __name__ == "__main__":
     mode = args.mode
     model = args.model
     
-    # agent = WorldModelAgent(model=model)
-    # asyncio.run(agent.initialize_mcp_server("full"))
+    agent = WorldModelAgent(model=model)
+    asyncio.run(agent.initialize_mcp_server("full"))
 
-    # # Load the QA dataset 
-    # data_folder = Path(__file__).parent / "qa_data"
-    # policies = [] 
+    # Load the QA dataset 
+    data_folder = Path(__file__).parent / "constraint_violation_data"
+    constraint_eval_folder_prefix = "llm_eval_constraint_violation_fixed"
+    policies = [] 
     
-    # # Read all the policies from the data folder > constraint<number> > answer.json 
-    # for constraint_num in range(1, 13):
-    #     with open(data_folder / f"constraint{constraint_num}" / "answer.json", "r") as f:
-    #         policy = json.load(f)
-    #         policies.append(policy["policy_name"]) 
+    # Read all the policies from the data folder > constraint<number> > answer.json 
+    for constraint_num in range(1, 100):
+        try:
+            with open(data_folder / f"constraint{constraint_num}" / "answer.json", "r") as f:
+                policy = json.load(f)
+                policies.append(policy["policy_name"]) 
+        except FileNotFoundError:
+            break
 
-    # results = []
-    # gt_trajectories = [] 
-    # all_gt_answer_idxs = [] 
-    # all_gt_constraint_nums = [] 
-    # # Load all gt trajectories (original trajectory, combined trajectory, all masked perturbations) and their answer indices and constraint numbers
-    # for constraint_num in tqdm(range(1, 13), desc=f"Loading all trajectories"):
-        
-    #     if args.trajectory_type in ["original", "all"]:
-    #         # Load single constraint violation trajectory (original trajectory)
-    #         with open(data_folder / f"constraint{constraint_num}" / "trajectory.json", "r") as f:
-    #             gt_trajectory = json.load(f) 
-    #             gt_trajectories.append(gt_trajectory) 
+    results = []
+    gt_trajectories = [] 
+    all_gt_answer_idxs = [] 
+    all_gt_constraint_nums = [] 
 
-    #         # Load the answer for the original trajectory
-    #         with open(data_folder / f"constraint{constraint_num}" / "answer.json", "r") as f:
-    #             gt_answer_idx = json.load(f)["invalid_action_idx"]
-    #             gt_constraint_num = constraint_num - 1 
-    #             all_gt_answer_idxs.append([gt_answer_idx]) # Evaluation is done on lists of answer indices and constraint numbers so that combined perturbations can be evaluated as well. 
-    #             all_gt_constraint_nums.append([gt_constraint_num])
+    # Load all gt trajectories (original trajectory, combined trajectory, all masked perturbations) and their answer indices and constraint numbers
+    for constraint_num in tqdm(range(1, 100), desc=f"Loading all trajectories"):
+        if not os.path.exists(data_folder / f"constraint{constraint_num}" / "trajectory.json"):
+            break
 
-    #     if args.trajectory_type in ["combined", "all"]:
-    #         combined_trajectory_folders = []
-    #         for folder in sorted(os.listdir(data_folder)): 
-    #             if folder.startswith(f"combined_trajectory_{constraint_num}_"):
-    #                 combined_trajectory_folders.append(folder)
+        if args.trajectory_type in ["original", "all"]:
+            # Load single constraint violation trajectory (original trajectory)
+            with open(data_folder / f"constraint{constraint_num}" / "trajectory.json", "r") as f:
+                gt_trajectory = json.load(f) 
+                gt_trajectories.append(gt_trajectory) 
+
+            # Load the answer for the original trajectory
+            with open(data_folder / f"constraint{constraint_num}" / "answer.json", "r") as f:
+                answer = json.load(f)
+                all_gt_constraint_nums.append(answer["invalid_policy_nums"])
+                all_gt_answer_idxs.append(answer["invalid_action_idxs"]) # Evaluation is done on lists of answer indices and constraint numbers so that combined perturbations can be evaluated as well. 
+
+        if args.trajectory_type in ["combined", "all"]:
+            combined_trajectory_folders = []
+            for folder in sorted(os.listdir(data_folder)): 
+                if folder.startswith(f"combined_trajectory_{constraint_num}_"):
+                    combined_trajectory_folders.append(folder)
             
-    #         for folder in sorted(combined_trajectory_folders, key=lambda x: int(x.split("_")[-2])):
-    #             # Load combined constraint violation trajectories that includes the original trajectory
-    #             with open(data_folder / folder / "trajectory.json", "r") as f:
-    #                 combined_trajectory = json.load(f) 
-    #                 gt_trajectories.append(combined_trajectory) 
+            for folder in sorted(combined_trajectory_folders, key=lambda x: int(x.split("_")[-2])):
+                # Load combined constraint violation trajectories that includes the original trajectory
+                with open(data_folder / folder / "trajectory.json", "r") as f:
+                    combined_trajectory = json.load(f) 
+                    gt_trajectories.append(combined_trajectory) 
 
-    #             # Load the answer for the combined trajectory
-    #             with open(data_folder / folder / "answer.json", "r") as f:
-    #                 combined_answer = json.load(f)
-    #                 all_gt_answer_idxs.append(combined_answer["invalid_action_idxs"]) 
-    #                 all_gt_constraint_nums.append(combined_answer["invalid_policy_nums"])
+                # Load the answer for the combined trajectory
+                with open(data_folder / folder / "answer.json", "r") as f:
+                    combined_answer = json.load(f)
+                    all_gt_answer_idxs.append(combined_answer["invalid_action_idxs"]) 
+                    all_gt_constraint_nums.append(combined_answer["invalid_policy_nums"])
 
-    #     if args.trajectory_type in ["masked", "all"]:
-    #         # Load all masked perturbations of the original trajectory that avoid violating any constraint
-    #         for file in sorted(os.listdir(data_folder / f"perturbed_trajectory_{constraint_num}")):
-    #             if file != "answer.json":
-    #                 with open(data_folder / f"perturbed_trajectory_{constraint_num}" / file, "r") as f:
-    #                     perturbed_trajectory = json.load(f) 
-    #                     gt_trajectories.append(perturbed_trajectory)
-    #                     all_gt_answer_idxs.append([-1])
-    #                     all_gt_constraint_nums.append([-1])
+        if args.trajectory_type in ["masked", "all"]:
+            # Load all masked perturbations of the original trajectory that avoid violating any constraint
 
-    # # Predict constraint violation by LLM 
-    # total_input_tokens = 0
-    # total_cost = 0 
-    # total_json_errors = 0 
-    # context_window_errors = 0 
+            if os.path.exists(data_folder / f"perturbed_trajectory_{constraint_num}" / "trajectory.json"):
+                with open(data_folder / f"perturbed_trajectory_{constraint_num}" / "trajectory.json", "r") as f:
+                    perturbed_trajectory = json.load(f) 
+                    gt_trajectories.append(perturbed_trajectory)
+                    all_gt_answer_idxs.append([-1])
+                    all_gt_constraint_nums.append([-1])
 
-    # for trajectory, gt_answer_idxs, gt_constraint_nums in tqdm(zip(gt_trajectories, all_gt_answer_idxs, all_gt_constraint_nums), desc=f"Predicting constraint violation for {model.split('/')[-1]}", total=len(gt_trajectories)):
-    #     print(f"Length of trajectory: {len(trajectory)}")
-    #     print(f"Number of combined trajectories: {len(gt_constraint_nums)}")
-    #     try: 
-    #         pred_constraint_violation, usage = asyncio.run(agent.predict_constraint_violation(trajectory, policies, mode=mode, perfect_schema=perfect_schema))
-    #     except Exception as e:
-    #         context_window_errors += 1
-    #         continue
+    # Predict constraint violation by LLM 
+    total_input_tokens = 0
+    total_cost = 0 
+    total_json_errors = 0 
+    context_window_errors = 0 
 
-    #     total_input_tokens += usage.prompt_tokens
-    #     total_cost += usage.cost
-    #     print(f"Total input tokens so far: {total_input_tokens}")
-    #     print(f"Total cost so far: {total_cost}")
+    for trajectory, gt_answer_idxs, gt_constraint_nums in tqdm(zip(gt_trajectories, all_gt_answer_idxs, all_gt_constraint_nums), desc=f"Predicting constraint violation for {model.split('/')[-1]}", total=len(gt_trajectories)):
+        print(f"Length of trajectory: {len(trajectory)}")
+        print(f"Number of combined trajectories: {len(gt_constraint_nums)}")
+        try: 
+            pred_constraint_violation, usage = asyncio.run(agent.predict_constraint_violation(trajectory, policies, mode=mode, perfect_schema=perfect_schema))
+        except Exception as e:
+            context_window_errors += 1
+            continue
 
-    #     if pred_constraint_violation is None:
-    #         print(f"{model.split('/')[-1]} failed to output structured JSON")
-    #         total_json_errors += 1
+        total_input_tokens += usage.prompt_tokens
+        total_cost += usage.cost
+        print(f"Input tokens: {usage.prompt_tokens}")
+        print(f"Output tokens: {usage.completion_tokens}")
+        print(f"Total input tokens so far: {total_input_tokens}")
+        print(f"Total cost so far: {total_cost}")
 
-    #     result = {
-    #         "gt_answer_idxs": gt_answer_idxs,
-    #         "gt_constraint_nums": gt_constraint_nums,
-    #         "llm_constraint_nums": pred_constraint_violation["violated_policy_idxs"] if pred_constraint_violation is not None else [],
-    #         "llm_answer_idxs": pred_constraint_violation["invalid_action_idxs"] if pred_constraint_violation is not None else [],
-    #         "llm_reason": pred_constraint_violation["reason"] if pred_constraint_violation is not None else "",
-    #     }
+        if pred_constraint_violation is None:
+            print(f"{model.split('/')[-1]} failed to output structured JSON")
+            total_json_errors += 1
 
-    #     results.append(result) 
+        result = {
+            "gt_answer_idxs": gt_answer_idxs,
+            "gt_constraint_nums": gt_constraint_nums,
+            "llm_constraint_nums": pred_constraint_violation["violated_policy_idxs"] if pred_constraint_violation is not None else [],
+            "llm_answer_idxs": pred_constraint_violation["invalid_action_idxs"] if pred_constraint_violation is not None else [],
+            "llm_reason": pred_constraint_violation["reason"] if pred_constraint_violation is not None else "",
+        }
 
-    # # Save results 
-    # save_folder_name = f"{"perfect_schema" if perfect_schema else "non_perfect_schema"}_{mode}_{args.trajectory_type}_constraint_evals"
-    # save_path = Path(__file__).parent / "llm_evals" / "with_perturbations" /save_folder_name / f"{model.split('/')[-1]}_llm_violation_predictions.json"
-    # save_path.parent.mkdir(parents=True, exist_ok=True)
-    # with open(save_path, "w") as f:
-    #     json.dump(results, f, indent=2)
+        results.append(result) 
+
+    # Save results 
+    save_folder_name = f"{"perfect_schema" if perfect_schema else "non_perfect_schema"}_{mode}_{args.trajectory_type}_constraint_evals"
+    save_path = Path(__file__).parent / constraint_eval_folder_prefix / "with_perturbations" /save_folder_name / f"{model.split('/')[-1]}_llm_violation_predictions.json"
+    save_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(save_path, "w") as f:
+        json.dump(results, f, indent=2)
 
     # Read results from the save path
     save_folder_name = f"{"perfect_schema" if perfect_schema else "non_perfect_schema"}_{mode}_{args.trajectory_type}_constraint_evals"
-    save_path = Path(__file__).parent / "llm_evals" / "with_perturbations" /save_folder_name / f"{model.split('/')[-1]}_llm_violation_predictions.json"
+    save_path = Path(__file__).parent / constraint_eval_folder_prefix / "with_perturbations" /save_folder_name / f"{model.split('/')[-1]}_llm_violation_predictions.json"
     with open(save_path, "r") as f:
         results = json.load(f)
 
     # Evaluate the LLM violation predictions
-    results_path = Path(__file__).parent / "llm_evals" / "with_perturbations" /save_folder_name / "results" / f"{model.split('/')[-1]}.json"
+    results_path = Path(__file__).parent / constraint_eval_folder_prefix / "with_perturbations" /save_folder_name / "results" / f"{model.split('/')[-1]}.json"
     results_path.parent.mkdir(parents=True, exist_ok=True)
     constraint_violation_accuracies = []
 
@@ -433,24 +420,17 @@ if __name__ == "__main__":
         constraint_violation_accuracy = constraint_violation_evaluation(pred_constraint_nums, pred_invalid_action_idxs, gt_constraint_nums, gt_invalid_action_idxs)
         constraint_violation_accuracies.append(constraint_violation_accuracy)
 
-    with open(Path(__file__).parent / "qa_data" / f"combined_trajectory_1_3" / "trajectory.json", "r") as f:
-        temp_trajectory = json.load(f)
-    
-    temp_actions = [step["action"] for step in temp_trajectory]
-    with open("temp_actions.json", "w") as f:
-        json.dump(temp_actions, f, indent=2)
 
-
-    # with open(results_path, "w") as f:
-    #     json.dump({
-    #         "accuracy": np.mean(constraint_violation_accuracies), 
-    #         "total_input_tokens": total_input_tokens,
-    #         "total_cost": total_cost,
-    #         "total_json_errors": total_json_errors,
-    #         "context_window_errors": context_window_errors
-    #     }, f, indent=2)
+    with open(results_path, "w") as f:
+        json.dump({
+            "accuracy": np.mean(constraint_violation_accuracies), 
+            "total_input_tokens": total_input_tokens,
+            "total_cost": total_cost,
+            "total_json_errors": total_json_errors,
+            "context_window_errors": context_window_errors
+        }, f, indent=2)
 
     print(f"Constraint violation accuracy for {model}: {np.mean(constraint_violation_accuracies)}")
-    # print(f"Total input tokens: {total_input_tokens}")
-    # print(f"Total cost: {total_cost}")
-    # print(f"Total JSON errors: {total_json_errors}")
+    print(f"Total input tokens: {total_input_tokens}")
+    print(f"Total cost: {total_cost}")
+    print(f"Total JSON errors: {total_json_errors}")

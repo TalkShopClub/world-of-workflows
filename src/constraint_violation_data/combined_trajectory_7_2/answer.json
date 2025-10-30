@@ -1,0 +1,14 @@
+{
+  "invalid_action_idxs": [
+    9,
+    17
+  ],
+  "invalid_policy_names": [
+    "Cannot transfer user from one group to another if they would lose clearance and be forced to surrender assets.",
+    "Users should not be assigned with the same role as their managers."
+  ],
+  "invalid_policy_nums": [
+    6,
+    2
+  ]
+}
