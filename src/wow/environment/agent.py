@@ -642,15 +642,13 @@ class WorldModelAgent:
             additional_information=additional_info
         )
 
-    async def run_mcp_action(self,tool_name: str, tool_params: Dict[str, Any]) -> Tuple[StateDiff, str]: 
+    async def run_mcp_action(self,tool_name: str, tool_params: Dict[str, Any], out_file: Path): 
         """
         Run an MCP action and return the state diff and tool response
         Args:
             tool_name: Name of the tool to run
             tool_params: Parameters for the tool
-
-        Returns:
-            Tuple[StateDiff, str]: Tuple containing the ground truth state diff and the tool response
+            out_file: Path to the output file where the action, table audits, and tool response will be saved
         """
 
         start_time = datetime.now(pytz.timezone('GMT')).strftime("%Y-%m-%d %H:%M:%S")
@@ -662,4 +660,36 @@ class WorldModelAgent:
         audits = get_sys_audit(start_time, end_time)
         ground_truth_state = self._generate_ground_truth_state(audits, resp[0].text, tool_name)
 
-        return ground_truth_state, resp[0].text
+        resp = json.loads(resp[0].text)
+
+        out_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Load existing data or create new list
+        if out_file.exists() and out_file.stat().st_size > 0:
+            try:
+                with open(out_file, "r") as f:
+                    data = json.load(f)
+                    # Ensure data is a list
+                    if not isinstance(data, list):
+                        data = [data]
+            except json.JSONDecodeError:
+                # File exists but is corrupted, start fresh
+                data = []
+        else:
+            data = []
+
+        # Append new entry
+        data.append({
+            "action": {
+                "tool_name": tool_name,
+                "parameters": tool_params
+            },
+            "tool_response": resp,
+            "ground_truth_state": ground_truth_state.model_dump(mode='json')
+        })
+        
+        # Write back to file
+        with open(out_file, "w") as f:
+            json.dump(data, f, indent=2)
+
+        return resp 

@@ -39,7 +39,7 @@ async def example_state_prediction():
         {"tool_name": "update_incident", "parameters": {"sys_id": "inc123", "state": "2"}}
     ]
 
-    predicted_states = await agent.predict_states(actions, task_name="create_and_update_incident")
+    predicted_states = await agent.predict_states(actions, task="create_and_update_incident")
 
     print(f"Generated {len(predicted_states)} state predictions")
     for i, state in enumerate(predicted_states):
@@ -150,30 +150,43 @@ async def example_action_evaluation():
     else:
         print(f"❌ Error: {results.get('error')}")
 
+async def example_run_action(): 
+    """Example: Run an action and save the result to a file"""
+
+    agent = WorldModelAgent(model="openai/o3")
+    await agent.initialize_mcp_server("full")
+
+    out_file = Path('example_predictions/test_action.json')
+
+    tool_name = "create_user"
+    tool_params = {
+        "user_name": "marcus.chen",
+        "first_name": "Marcus",
+        "last_name": "Chen",
+        "email": "marcus.chen@example.com",
+    }
+    await agent.run_mcp_action(tool_name, tool_params, out_file)
 
 async def main():
     """Run all examples"""
 
     os.makedirs('example_predictions', exist_ok=True)
 
-    # await example_state_prediction()
-    # await example_action_prediction()
+    await example_state_prediction()
+    await example_action_prediction()
 
-    # output_file = Path('example_predictions/original_constraint_prediction.json')
-    # await example_constraint_prediction(output_file=output_file)
+    output_file = Path('example_predictions/original_constraint_prediction.json')
+    await example_constraint_prediction(output_file=output_file)
 
     # Evaluate the constraint prediction
-    # print("\n" + "="*60)
-    # print("Evaluating Constraint Predictions")
-    # print("="*60)
+    print("\n" + "="*60)
+    print("Evaluating Constraint Predictions")
+    print("="*60)
 
-    # evaluation_results = evaluate_constraint_predictions(output_file)
-    # print(f"Accuracy: {evaluation_results['accuracy']:.2%}")
-    # print(f"Total predictions: {evaluation_results['total_predictions']}")
+    evaluation_results = evaluate_constraint_predictions(output_file)
+    print(f"Accuracy: {evaluation_results['accuracy']:.2%}")
+    await example_run_action()
 
-    # Evaluate state and action predictions
-    await example_state_evaluation()
-    await example_action_evaluation() 
 
 if __name__ == "__main__":
     asyncio.run(main())

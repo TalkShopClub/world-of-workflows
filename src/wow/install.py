@@ -9,6 +9,7 @@ from datetime import datetime
 from playwright.sync_api import sync_playwright
 from tenacity import retry, stop_after_attempt, retry_if_exception_type
 from time import sleep
+import requests
 
 from .api.ui_themes import get_workarena_theme_variants
 from .api.utils import table_api_call
@@ -22,6 +23,8 @@ from .api.user import set_user_preference
 from .instance import SNowInstance
 from .utils import url_login
 from .environment.states import setup_auditing
+
+SNOW_API_HEADERS = {"Content-Type": "application/json", "Accept": "application/json"}
 
 
 def _set_sys_property(property_name: str, value: str):
@@ -343,6 +346,59 @@ def wipe_system_admin_preferences():
             instance=SNowInstance(), table=f"sys_user_preference/{pref['sys_id']}", method="DELETE"
         )
 
+def assign_flow_to_catalog_items():
+    """
+    Assign the flow to catalog items referenced in MCP tools in WoW.
+    """
+
+    logging.info("Assigning flow to catalog items...")
+    instance = SNowInstance()
+
+    catalog_items = [
+        "Developer Laptop (Mac)",
+        "iPad mini",
+        "iPad pro",
+        "Sales Laptop",
+        "Standard Laptop"
+    ]
+
+    # Get sys ids of catalog items
+    resp = requests.get(
+        f"{instance.snow_url}/api/now/table/sc_cat_item",
+        auth=instance.snow_credentials,
+        headers=SNOW_API_HEADERS,
+        params={
+            "sysparm_query": f"nameIN{','.join(catalog_items)}",
+            "sysparm_fields": "sys_id,name"
+        }
+    )
+    resp.raise_for_status()
+    catalog_item_sys_ids = [x['sys_id'] for x in resp.json()['result']]
+
+    # Get sys id of flow to assign to catalog items
+    resp = requests.get(
+        f"{instance.snow_url}/api/now/table/sys_hub_flow",
+        auth=instance.snow_credentials,
+        headers=SNOW_API_HEADERS,
+        params={
+            "sysparm_query": "name=Service Catalog item request",
+            "sysparm_fields": "sys_id,name"
+        }
+    )
+    resp.raise_for_status()
+    flow_sys_id = resp.json()['result'][0]['sys_id']
+
+    # Assign flow to catalog items and remove workflow
+    for catalog_item_sys_id in catalog_item_sys_ids:
+        resp = requests.patch(
+            f"{instance.snow_url}/api/now/table/sc_cat_item/{catalog_item_sys_id}",
+            auth=instance.snow_credentials,
+            headers=SNOW_API_HEADERS,
+            json={"flow_designer_flow": flow_sys_id, "workflow": ""}
+        )
+        resp.raise_for_status()
+    
+    logging.info("Flow assigned to catalog items successfully.")
 
 @tenacity.retry(
     stop=tenacity.stop_after_attempt(3),
@@ -383,6 +439,9 @@ def setup():
 
     # Setup auditing in ServiceNow instance to allow for state tracking
     setup_auditing()
+
+    # Assign flow to catalog items
+    assign_flow_to_catalog_items()
 
     # Save installation date
     logging.info("Saving installation date")
