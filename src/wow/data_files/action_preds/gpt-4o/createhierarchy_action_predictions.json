@@ -1,0 +1,45 @@
+{
+  "trajectory_file": "createhierarchy.json",
+  "total_steps": 4,
+  "valid_state_diffs": 4,
+  "predicted_actions": 4,
+  "processing_time_seconds": 12.955043077468872,
+  "timestamp": "2025-10-02T23:56:42.951241",
+  "predictions": [
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "test_group_a_20251002_234921_1989",
+        "description": "Parent group A managed by test_user_20251002_234921_3177",
+        "manager": "9e245d6ec35c761024163942b4013179",
+        "active": true,
+        "exclude_manager": false
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "test_group_b_20251002_234921_1332",
+        "description": "Child group B managed by test_user_20251002_234921_3177 with parent group A",
+        "manager": "9e245d6ec35c761024163942b4013179",
+        "parent": "62245d6ec35c761024163942b40131d6",
+        "active": true,
+        "exclude_manager": false
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "9e245d6ec35c761024163942b4013179",
+        "locked_out": true
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "9e245d6ec35c761024163942b4013179",
+        "active": false
+      }
+    }
+  ]
+}

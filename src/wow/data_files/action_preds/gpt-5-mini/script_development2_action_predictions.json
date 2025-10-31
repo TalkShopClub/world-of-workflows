@@ -1,0 +1,65 @@
+{
+  "trajectory_file": "script_development2.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 23.356012105941772,
+  "timestamp": "2025-10-03T10:53:49.608713",
+  "predictions": [
+    {
+      "tool_name": "create_script_include",
+      "parameters": {
+        "name": "data_sync",
+        "script": "function DataSync() { /* Sample script code */ }",
+        "description": "Sample code for data sync",
+        "api_name": "global.data_sync",
+        "client_callable": true,
+        "active": false,
+        "access": "package_private",
+        "sandbox_callable": false,
+        "mobile_callable": false
+      }
+    },
+    {
+      "tool_name": "create_changeset",
+      "parameters": {
+        "name": "data_sync",
+        "application": "global",
+        "description": "update set for data sync"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "developer.bob.283",
+        "first_name": "Bob",
+        "last_name": "Developer",
+        "email": "bob.developer@example.com",
+        "title": "Developer",
+        "department": "221f79b7c6112284005d646b76ab978c",
+        "notification": "2",
+        "calendar_integration": "1",
+        "edu_status": "faculty",
+        "active": true,
+        "enable_multifactor_authn": false,
+        "internal_integration_user": false,
+        "password_needs_reset": false
+      }
+    },
+    {
+      "tool_name": "update_script_include",
+      "parameters": {
+        "script_include_id": "data_sync",
+        "client_callable": false
+      }
+    },
+    {
+      "tool_name": "update_changeset",
+      "parameters": {
+        "changeset_id": "data_sync",
+        "state": "complete",
+        "developer": "6816f79cc0a8016401c5a33be04be441"
+      }
+    }
+  ]
+}

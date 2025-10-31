@@ -1,0 +1,36 @@
+{
+  "trajectory_file": "approvechangerequest.json",
+  "total_steps": 4,
+  "valid_state_diffs": 4,
+  "predicted_actions": 4,
+  "processing_time_seconds": 4.108583211898804,
+  "timestamp": "2025-10-02T23:57:13.715170",
+  "predictions": [
+    {
+      "tool_name": "submit_change_for_approval",
+      "parameters": {
+        "change_id": "change_request_id",
+        "approval_comments": "Change request submitted for approval at 20251002_234853"
+      }
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_id": "current_user_id"
+      }
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_id": "current_user_id"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "current_user_id",
+        "last_login_time": "2025-10-03 03:49:00"
+      }
+    }
+  ]
+}

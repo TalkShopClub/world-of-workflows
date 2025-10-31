@@ -1,0 +1,76 @@
+{
+  "trajectory_file": "workflow.json",
+  "task_name": "workflow",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 55.6040678024292,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:00:34.802551",
+  "predictions": [
+    {
+      "tool_name": "get_workflow_details",
+      "parameters": {
+        "action": "create_workflow",
+        "name": "GPU Order Workflow",
+        "description": "Workflow to order GPUs",
+        "access": "public",
+        "sys_domain": "global",
+        "template": "0"
+      }
+    },
+    {
+      "tool_name": "get_workflow_details",
+      "parameters": {
+        "action": "update_workflow",
+        "name": "GPU Order Workflow",
+        "fields": {
+          "description": "Workflow to order GPUs, temporarily disabled"
+        }
+      }
+    },
+    {
+      "tool_name": "get_workflow_activities",
+      "parameters": {
+        "action": "create_activity_with_condition",
+        "workflow_version": "fff3f5a2eb113200c2b9666cd206fecf",
+        "activity": {
+          "name": "Change Review Process",
+          "out_of_date": "0",
+          "timeout": "1970-01-01 00:00:00",
+          "is_parent": "0",
+          "activity_definition_updated": "0",
+          "pinned": "0",
+          "databus_lookup_id": "8"
+        },
+        "condition": {
+          "name": "Always",
+          "condition": "true",
+          "skip_during_generate": "0",
+          "order": "0",
+          "condition_type": "standard",
+          "else_flag": "0",
+          "is_positive": "1",
+          "event": "0"
+        }
+      }
+    },
+    {
+      "tool_name": "get_workflow_activities",
+      "parameters": {
+        "action": "update_activity",
+        "activity_id": "40758a6dc3d832107bd371edd4013127",
+        "fields": {
+          "name": "Knowledge Review Workflow"
+        }
+      }
+    },
+    {
+      "tool_name": "get_workflow_activities",
+      "parameters": {
+        "action": "delete_activity_variable",
+        "variable_id": "9f758a6dc3d832107bd371edd40131aa"
+      }
+    }
+  ]
+}

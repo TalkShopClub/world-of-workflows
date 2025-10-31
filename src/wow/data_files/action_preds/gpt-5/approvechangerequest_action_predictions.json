@@ -1,0 +1,28 @@
+{
+  "trajectory_file": "approvechangerequest.json",
+  "task_name": "approvechangerequest",
+  "total_steps": 4,
+  "valid_state_diffs": 4,
+  "predicted_actions": 4,
+  "processing_time_seconds": 50.269094705581665,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:53:24.099356",
+  "predictions": [
+    {
+      "tool_name": "list_change_requests",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_change_request_details",
+      "parameters": {}
+    },
+    {
+      "tool_name": "list_change_requests",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_change_request_details",
+      "parameters": {}
+    }
+  ]
+}

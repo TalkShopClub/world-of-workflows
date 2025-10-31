@@ -1,0 +1,36 @@
+{
+  "trajectory_file": "promoteuser.json",
+  "task_name": "promoteuser",
+  "total_steps": 6,
+  "valid_state_diffs": 6,
+  "predicted_actions": 6,
+  "processing_time_seconds": 51.279860973358154,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:57:58.194645",
+  "predictions": [
+    {
+      "tool_name": "list_users",
+      "parameters": {}
+    },
+    {
+      "tool_name": "list_users",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {}
+    },
+    {
+      "tool_name": "list_group_members",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {}
+    }
+  ]
+}

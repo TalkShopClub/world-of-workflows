@@ -1,0 +1,58 @@
+{
+  "trajectory_file": "publishknowledgebasearticle.json",
+  "task_name": "publishknowledgebasearticle",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 60.991907835006714,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:58:59.190556",
+  "predictions": [
+    {
+      "tool_name": "list_knowledge_bases",
+      "parameters": {
+        "query": "name=Test Knowledge Base 20251007_140343"
+      }
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_id": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "tool_name": "get_article",
+      "parameters": {
+        "knowledge_base_id": "981ef408c3a83e1024163942b4013133",
+        "category_id": "13eeb408c3a83e1024163942b4013195",
+        "short_description": "Test Article 20251007_140343",
+        "text": "<p>This is a test article created at 20251007_140343. It contains sample content for testing purposes.</p>",
+        "author_id": "6816f79cc0a8016401c5a33be04be441",
+        "article_type": "text",
+        "topic": "General",
+        "active": "1",
+        "workflow_state": "published",
+        "valid_to": "2100-01-01",
+        "display_attachments": "0",
+        "direct": "0",
+        "disable_commenting": "0",
+        "disable_suggesting": "0",
+        "view_as_allowed": "1",
+        "create_if_missing": "true"
+      }
+    },
+    {
+      "tool_name": "get_article",
+      "parameters": {
+        "article_number": "KB0010456",
+        "text": "<p>This is a test article created at 20251007_140343. It contains sample content for testing purposes.</p><p><strong>Updated:</strong> This article has been updated with additional information.</p>"
+      }
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_id": "6816f79cc0a8016401c5a33be04be441"
+      }
+    }
+  ]
+}

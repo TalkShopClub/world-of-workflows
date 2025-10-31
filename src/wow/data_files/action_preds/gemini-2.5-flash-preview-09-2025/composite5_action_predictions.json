@@ -1,0 +1,60 @@
+{
+  "trajectory_file": "composite5.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 3.8289196491241455,
+  "timestamp": "2025-10-03T09:51:04.682622",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "July.August.022",
+        "first_name": "July",
+        "last_name": "August",
+        "email": "july.august@example.com",
+        "fields": {
+          "edu_status": "faculty"
+        }
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Awesome Group",
+        "description": "A group of awesome people"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "July.March.032",
+        "first_name": "July",
+        "last_name": "March",
+        "email": "july.march@example.com",
+        "title": "Software Engineer",
+        "location": "16ff753837d0200044e0bfc8bcbe5d5f",
+        "fields": {
+          "edu_status": "faculty"
+        }
+      }
+    },
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Office chair broken",
+        "description": "The office chairs are broken and people have to sit on the floor",
+        "urgency": "1",
+        "impact": "1",
+        "assigned_to": "382b29f1c390b2107bd371edd40131cb"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "7d6be931c390b2107bd371edd4013103",
+        "assigned_to": "3c6aedfdc350b2107bd371edd401316a"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "trajectory_file": "catalogitem.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 56.99972200393677,
+  "timestamp": "2025-10-03T10:32:48.918806",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "jdoe",
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "jdoe@example.com"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "jdoe_sys_id"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "jdoe_sys_id"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "jdoe_sys_id",
+        "title": "Senior Software Engineer III"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "jdoe_sys_id"
+      }
+    }
+  ]
+}

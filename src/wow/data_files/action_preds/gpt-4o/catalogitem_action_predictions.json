@@ -1,0 +1,42 @@
+{
+  "trajectory_file": "catalogitem.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 7.140236139297485,
+  "timestamp": "2025-10-02T23:55:54.265972",
+  "predictions": [
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "sys_user_id",
+        "last_login_time": "2025-10-03 03:48:47"
+      }
+    },
+    {
+      "tool_name": "list_users",
+      "parameters": {
+        "limit": "1"
+      }
+    },
+    {
+      "tool_name": "list_users",
+      "parameters": {
+        "limit": "1"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "sys_user_id",
+        "last_login_time": "2025-10-03 03:48:53"
+      }
+    },
+    {
+      "tool_name": "list_users",
+      "parameters": {
+        "limit": "1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "trajectory_file": "user_management.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 2.7661688327789307,
+  "timestamp": "2025-10-03T09:50:21.672104",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Bob.Moss.209",
+        "first_name": "Bob",
+        "last_name": "Moss",
+        "email": "bobmoss@sample.com"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Expense Management",
+        "description": "Expense Approvers group for IT"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Richard.Sander.210",
+        "first_name": "Richard",
+        "last_name": "Sander",
+        "email": "richardsander@sample.com",
+        "title": "Expense Analysis"
+      }
+    },
+    {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "437bb7a5c3d472107bd371edd401310d",
+        "members": [
+          "28ba3365c35472107bd371edd40131b0",
+          "2cc73f69c39472107bd371edd4013179"
+        ]
+      }
+    },
+    {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "437bb7a5c3d472107bd371edd401310d",
+        "name": "Skyfall",
+        "description": "Group for awesome Skyfall people",
+        "manager": "28ba3365c35472107bd371edd40131b0"
+      }
+    }
+  ]
+}

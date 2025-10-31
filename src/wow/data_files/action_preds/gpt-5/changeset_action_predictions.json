@@ -1,0 +1,32 @@
+{
+  "trajectory_file": "changeset.json",
+  "task_name": "changeset",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 61.4403018951416,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:41:20.487409",
+  "predictions": [
+    {
+      "tool_name": "list_changesets",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_table_schema",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_changeset_details",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_changeset_details",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_changeset_details",
+      "parameters": {}
+    }
+  ]
+}

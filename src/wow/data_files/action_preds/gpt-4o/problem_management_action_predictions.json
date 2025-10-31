@@ -1,0 +1,52 @@
+{
+  "trajectory_file": "problem_management.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 9.307935953140259,
+  "timestamp": "2025-10-02T23:29:47.418945",
+  "predictions": [
+    {
+      "tool_name": "create_problem",
+      "parameters": {
+        "short_description": "Email server performance degradation",
+        "urgency": "3",
+        "impact": "3",
+        "assigned_to": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "tool_name": "create_knowledge_base",
+      "parameters": {
+        "title": "Sample Knowledge Base",
+        "description": "Knowledge base for IT support",
+        "owner": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "tool_name": "create_item_request",
+      "parameters": {
+        "cat_item": "Software installation and licensing information",
+        "requested_for": "6816f79cc0a8016401c5a33be04be441",
+        "quantity": "1",
+        "state": "New",
+        "short_description": "Request for software installation"
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "d2323f00c3d832107bd371edd40131ed",
+        "assigned_to": "000753bdc3ff6a107bd371edd40131ab"
+      }
+    },
+    {
+      "tool_name": "add_comment",
+      "parameters": {
+        "incident_id": "PRB0040290",
+        "comment": "Problem assigned to me",
+        "is_work_note": true
+      }
+    }
+  ]
+}

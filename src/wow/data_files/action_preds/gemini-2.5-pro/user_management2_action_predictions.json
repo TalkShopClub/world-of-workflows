@@ -1,0 +1,43 @@
+{
+  "trajectory_file": "user_management2.json",
+  "task_name": "user_management2",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 25.60325527191162,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:33:58.017330",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "first_name": "Ian",
+        "last_name": "Mack",
+        "user_name": "Ian.Mack.309",
+        "email": "ianmack@sample.com",
+        "department": "93b25282c0a8000b0b55c8ab34e2f1e6",
+        "edu_status": "faculty"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "first_name": "Chris",
+        "last_name": "Mack",
+        "user_name": "Chris.Mack.310",
+        "email": "chrismack@sample.com",
+        "department": "93b25282c0a8000b0b55c8ab34e2f1e6",
+        "edu_status": "faculty"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "fe4234fdc3d872107bd371edd40131c6",
+        "location": "16ff753837d0200044e0bfc8bcbe5d5f",
+        "manager": "6a22303dc31c72107bd371edd401312f",
+        "phone": "4019481942"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "trajectory_file": "assignuserrole.json",
+  "task_name": "assignuserrole",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 2.3517708778381348,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:19:24.820791",
+  "predictions": [
+    {
+      "tool_name": "search_any_table",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {}
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {}
+    }
+  ]
+}

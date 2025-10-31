@@ -1,0 +1,48 @@
+{
+  "trajectory_file": "kb_article.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 29.34016704559326,
+  "timestamp": "2025-10-03T11:14:55.335100",
+  "predictions": [
+    {
+      "tool_name": "publish_article",
+      "parameters": {
+        "article_id": "KB0010210",
+        "workflow_state": "published"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "KB0010210",
+        "short_description": "Security Best Practices for ServiceNow IT operations"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "KB0010210",
+        "category": "IT operations"
+      }
+    },
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "title": "HR Services with updated category",
+        "text": "HR services are provided to the employees of the organization.",
+        "short_description": "HR Services with updated category",
+        "knowledge_base": "Sample_knowledge_base_949",
+        "category": "HR Services"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "KB0010211",
+        "short_description": "HR guidelines"
+      }
+    }
+  ]
+}

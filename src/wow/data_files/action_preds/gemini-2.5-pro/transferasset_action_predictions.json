@@ -1,0 +1,33 @@
+{
+  "trajectory_file": "transferasset.json",
+  "task_name": "transferasset",
+  "total_steps": 7,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 63.71509504318237,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:45:32.074371",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "first_name": "User",
+        "last_name": "A"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "first_name": "User",
+        "last_name": "B"
+      }
+    },
+    {
+      "tool_name": "create_asset",
+      "parameters": {
+        "assigned_to": "54fb7c44c3a83e1024163942b40131c9",
+        "install_status": "1"
+      }
+    }
+  ]
+}

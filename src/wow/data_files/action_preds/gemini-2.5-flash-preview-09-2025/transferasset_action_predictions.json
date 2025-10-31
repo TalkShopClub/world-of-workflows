@@ -1,0 +1,68 @@
+{
+  "trajectory_file": "transferasset.json",
+  "total_steps": 7,
+  "valid_state_diffs": 7,
+  "predicted_actions": 7,
+  "processing_time_seconds": 3.451859951019287,
+  "timestamp": "2025-10-03T09:51:10.930756",
+  "predictions": [
+    {
+      "tool_name": "transfer_asset",
+      "parameters": {
+        "asset_id": "d2323f00c3d832107bd371edd40131ed",
+        "new_assigned_to": "1ae31de2c35c761024163942b4013134"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "1ee35d6ec3d4761024163942b401318e",
+        "active": false,
+        "fields": {
+          "locked_out": "true"
+        }
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "d2323f00c3d832107bd371edd40131ed",
+        "install_status": "1"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "1ae31de2c35c761024163942b4013134",
+        "active": true,
+        "fields": {
+          "locked_out": "false"
+        }
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "d2323f00c3d832107bd371edd40131ed",
+        "install_status": "6"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "1ee35d6ec3d4761024163942b401318e",
+        "active": true,
+        "fields": {
+          "locked_out": "false"
+        }
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "d2323f00c3d832107bd371edd40131ed",
+        "install_status": "1"
+      }
+    }
+  ]
+}

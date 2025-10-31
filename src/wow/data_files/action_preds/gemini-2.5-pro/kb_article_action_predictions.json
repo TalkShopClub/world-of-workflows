@@ -1,0 +1,35 @@
+{
+  "trajectory_file": "kb_article.json",
+  "task_name": "kb_article",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 29.848206996917725,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:47:08.928096",
+  "predictions": [
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "short_description": "Security Best Practices",
+        "text": "Security guidelines and compliance requirements",
+        "kb_knowledge_base": "Sample_knowledge_base_948",
+        "kb_category": "HR Services"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "62563d6dc35832107bd371edd4013158",
+        "short_description": "Security Best Practices for ServiceNow IT operations"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "62563d6dc35832107bd371edd4013158",
+        "kb_category": "IT operations"
+      }
+    }
+  ]
+}

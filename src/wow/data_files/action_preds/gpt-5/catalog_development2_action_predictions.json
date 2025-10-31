@@ -1,0 +1,79 @@
+{
+  "trajectory_file": "catalog_development2.json",
+  "task_name": "catalog_development2",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 73.1759250164032,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:44:37.826056",
+  "predictions": [
+    {
+      "tool_name": "create_sc_category",
+      "parameters": {
+        "title": "Meeting Room Booking",
+        "description": "Catalog category for meeting room booking",
+        "active": "0",
+        "order": "0",
+        "mobile_subcategory_render_type": "list",
+        "homepage_renderer": "47ebe8aa3742300054b6a3549dbe5dfa",
+        "mobile_hide_description": "0"
+      }
+    },
+    {
+      "tool_name": "create_item_option",
+      "parameters": {
+        "cat_item": "99c1de1081136500772e95d75e286273",
+        "question_text": "Number of USB C Ports",
+        "type": "31",
+        "mandatory": "1",
+        "visibility": "1",
+        "active": "1",
+        "currency": "USD",
+        "amount": "0",
+        "reference_currency": "USD",
+        "field_prices": [
+          "price_if_checked",
+          "rec_price_if_checked"
+        ],
+        "name": "requested_for",
+        "scale_min": "0",
+        "scale_max": "5",
+        "help_tag": "More information"
+      }
+    },
+    {
+      "tool_name": "update_sc_category",
+      "parameters": {
+        "category_id": "64f91939c310b2107bd371edd401313b",
+        "icon": "Meeting Room Booking",
+        "active": "1",
+        "order": "24",
+        "title": "Office Supplies"
+      }
+    },
+    {
+      "tool_name": "update_item_option",
+      "parameters": {
+        "cat_item": "99c1de1081136500772e95d75e286273",
+        "match_question_text": "Number of USB C Ports",
+        "question_text": "Sample_label_965",
+        "mandatory": "0",
+        "description": "Sample_description_676",
+        "default_value": "Sample_default_value_404",
+        "order": "39",
+        "reference_qual": "Sample_reference_qualifier_250",
+        "help_text": "Sample_help_text_661"
+      }
+    },
+    {
+      "tool_name": "update_cat_item_category",
+      "parameters": {
+        "sc_cat_item": "99c1de1081136500772e95d75e286273",
+        "sc_category": "64f91939c310b2107bd371edd401313b",
+        "update_pc_hardware_cat_item": "true",
+        "increment_version": "1"
+      }
+    }
+  ]
+}

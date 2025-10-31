@@ -17,11 +17,15 @@ import json
 import os
 import argparse
 import asyncio
+import re
 from pathlib import Path
 from typing import List, Dict, Any, Tuple, Optional
 from datetime import datetime
 from tqdm import tqdm
 import numpy as np
+
+from wow.environment.agent import StateDiff, SysAuditRecord, AdditionalInformation
+from eval_pipeline import compute_state_rollout_metrics
 
 class StatePredictionEvaluator:
     """Evaluate state prediction accuracy"""
@@ -48,7 +52,8 @@ class StatePredictionEvaluator:
             'k_evaluations': {}
         }
         
-        state_pred_dir = self.base_dir / "state_preds_new" / self.model_name
+        # Load state predictions from state_preds directory
+        state_pred_dir = self.base_dir / "wow" / "data_files" / "state_preds" / self.model_name
         
         if not state_pred_dir.exists():
             print(f"❌ State prediction directory not found: {state_pred_dir}")
@@ -65,46 +70,77 @@ class StatePredictionEvaluator:
         return results
     
     def _evaluate_k(self, pred_dir: Path, k: int) -> Dict[str, Any]:
-        """Evaluate predictions for a specific k value"""
-        prediction_files = list(pred_dir.glob(f"*_k{k}.json"))
+        """Evaluate state predictions for a specific k value"""
+        # Load all prediction files and filter those with file_k >= requested_k
+        # Files are named like: approvechangerequest_k4.json
+        # A file with k=5 can be used for k=1,2,3,4,5 evaluations
+        all_prediction_files = list(pred_dir.glob("*_k*.json"))
+        
+        # Exclude summary files
+        all_prediction_files = [f for f in all_prediction_files if not f.name.endswith("_summary.json")]
+        
+        # Filter files where file_k >= requested_k
+        prediction_files = []
+        for pred_file in all_prediction_files:
+            # Extract k value from filename (e.g., approvechangerequest_k4.json -> 4)
+            match = re.search(r'_k(\d+)\.json$', pred_file.name)
+            if match:
+                file_k = int(match.group(1))
+                if file_k >= k:
+                    prediction_files.append((pred_file, file_k))
         
         if not prediction_files:
             return {
                 'status': 'no_files',
-                'message': f'No prediction files found for k={k}'
+                'message': f'No prediction files found with k>={k}'
             }
         
-        trajectories = []
-        predictions = []
+        all_evaluations = []
         
-        for pred_file in tqdm(prediction_files, desc=f"Loading k={k}"):
-            with open(pred_file, 'r') as f:
-                pred_data = json.load(f)
-                predictions.append(pred_data)
+        for pred_file, file_k in tqdm(prediction_files, desc=f"Evaluating k={k}"):
+            try:
+                with open(pred_file, 'r') as f:
+                    pred_data = json.load(f)
                 
-                # Find corresponding trajectory
-                traj_file = self.base_dir / "wow" / "data_files" / "trajectories" / pred_file.name.replace(f'_k{k}.json', '.json')
-                if traj_file.exists():
-                    with open(traj_file, 'r') as tf:
-                        trajectories.append(json.load(tf))
-                else:
-                    trajectories.append(None)
-        
-        # Evaluate predictions
-        evaluations = []
-        for pred, traj in zip(predictions, trajectories):
-            if traj is None:
+                # Extract trajectory name from filename (e.g., approvechangerequest_k4.json -> approvechangerequest)
+                # Remove _k{digits}.json pattern
+                traj_filename = re.sub(r'_k\d+\.json$', '.json', pred_file.name)
+                traj_file = self.base_dir / "wow" / "data_files" / "trajectories" / traj_filename
+                
+                if not traj_file.exists():
+                    print(f"⚠️ Warning: Trajectory file not found: {traj_file}")
+                    continue
+                
+                with open(traj_file, 'r') as tf:
+                    traj_data = json.load(tf)
+                
+                eval_result = self._evaluate_single(pred_data, traj_data, k)
+                if eval_result:
+                    all_evaluations.append(eval_result)
+                    
+            except Exception as e:
+                print(f"⚠️ Warning: Error evaluating {pred_file}: {e}")
+                import traceback
+                traceback.print_exc()
                 continue
-            eval_result = self._evaluate_single(k, pred, traj)
-            evaluations.append(eval_result)
         
-        if evaluations:
-            avg_accuracy = np.mean([e.get('accuracy', 0) for e in evaluations])
+        if all_evaluations:
+            # Aggregate metrics across all files
+            total_steps = sum(e.get('num_steps', 0) for e in all_evaluations)
+            total_full_matches = sum(e.get('num_full_matches', 0) for e in all_evaluations)
+            avg_sysaudit_iou = np.mean([e.get('avg_sysaudit_iou', 0) for e in all_evaluations])
+            avg_additional_info_iou = np.mean([e.get('avg_additional_info_iou', 0) for e in all_evaluations])
+            
+            full_match_rate = total_full_matches / total_steps if total_steps > 0 else 0.0
+            
             return {
                 'status': 'success',
-                'num_files': len(evaluations),
-                'average_accuracy': avg_accuracy,
-                'details': evaluations
+                'num_files': len(all_evaluations),
+                'total_steps': total_steps,
+                'full_match_rate': full_match_rate,
+                'avg_sysaudit_iou': avg_sysaudit_iou,
+                'avg_additional_info_iou': avg_additional_info_iou,
+                'details': all_evaluations
             }
         else:
             return {
@@ -112,12 +148,178 @@ class StatePredictionEvaluator:
                 'num_files': 0
             }
     
-    def _evaluate_single(self, k: int, pred_data: Dict, traj_data: Dict) -> Dict[str, Any]:
-        """Evaluate a single prediction against ground truth"""
-        # Simplified evaluation - in practice, you'd compare state diffs
+    def _dict_to_state_diff(self, state_dict: Dict) -> Optional[StateDiff]:
+        """Convert dictionary to StateDiff object"""
+        try:
+            # Convert sysaudit records
+            sysaudit_records = []
+            for record_dict in state_dict.get('sysauditrecord', []):
+                sysaudit_records.append(SysAuditRecord(**record_dict))
+            
+            # Convert additional information
+            additional_info_dict = state_dict.get('additional_information', {})
+            # Handle operation_type enum values
+            if 'operation_type' in additional_info_dict:
+                op_types = additional_info_dict['operation_type']
+                if isinstance(op_types, list):
+                    # Convert string values to operation enum if needed
+                    from wow.environment.agent import operation
+                    additional_info_dict['operation_type'] = [
+                        op if isinstance(op, operation) else operation[op] if isinstance(op, str) and op in operation.__members__ else op
+                        for op in op_types
+                    ]
+            
+            additional_info = AdditionalInformation(**additional_info_dict)
+            
+            return StateDiff(
+                sysauditrecord=sysaudit_records,
+                additional_information=additional_info
+            )
+        except Exception as e:
+            print(f"⚠️ Warning: Error converting state dict to StateDiff: {e}")
+            return None
+    
+    def _extract_gt_state_diffs(self, trajectory: List[Dict], k: int) -> List[StateDiff]:
+        """Extract ground truth state diffs from trajectory"""
+        gt_state_diffs = []
+        
+        for step in trajectory[:k]:
+            state_diff_dict = None
+            
+            # Try different formats for state information
+            if "state_diff" in step:
+                if isinstance(step["state_diff"], str):
+                    try:
+                        state_diff_dict = json.loads(step["state_diff"])
+                    except json.JSONDecodeError:
+                        continue
+                else:
+                    state_diff_dict = step["state_diff"]
+            elif "ground_truth_state" in step:
+                if isinstance(step["ground_truth_state"], str):
+                    try:
+                        state_diff_dict = json.loads(step["ground_truth_state"])
+                    except json.JSONDecodeError:
+                        continue
+                else:
+                    state_diff_dict = step["ground_truth_state"]
+            elif "audits" in step and step["audits"]:
+                # Convert audits to state_diff format
+                state_diff_dict = self._convert_audits_to_state_diff(step["audits"])
+            
+            if state_diff_dict:
+                state_diff = self._dict_to_state_diff(state_diff_dict)
+                if state_diff:
+                    gt_state_diffs.append(state_diff)
+        
+        return gt_state_diffs
+    
+    def _convert_audits_to_state_diff(self, audits: List[Dict]) -> Dict:
+        """Convert audit records to state_diff format"""
+        from wow.environment.agent import operation
+        
+        sysaudit_records = []
+        tables_modified = set()
+        operation_types = set()
+        num_modified = 0
+        num_deleted = 0
+        num_created = 0
+        
+        for audit in audits:
+            # Create sysaudit record
+            sysaudit_records.append({
+                'tablename': audit.get('tablename', ''),
+                'fieldname': audit.get('fieldname', ''),
+                'oldvalue': audit.get('oldvalue', ''),
+                'newvalue': audit.get('newvalue', '')
+            })
+            
+            table = audit.get('tablename', '')
+            if table:
+                tables_modified.add(table)
+            
+            # Infer operation type from old/new values
+            old_val = audit.get('oldvalue', '')
+            new_val = audit.get('newvalue', '')
+            
+            if old_val == '' and new_val != '':
+                operation_types.add('post')
+                num_created += 1
+            elif old_val != '' and new_val == '':
+                operation_types.add('delete')
+                num_deleted += 1
+            elif old_val != '' and new_val != '':
+                operation_types.add('put')
+                num_modified += 1
+        
         return {
-            'accuracy': 0.0,  # Placeholder
-            'notes': 'Evaluation implementation needed'
+            'sysauditrecord': sysaudit_records,
+            'additional_information': {
+                'num_audits': len(audits),
+                'num_modified_entries': num_modified,
+                'num_deleted_entries': num_deleted,
+                'num_created_entries': num_created,
+                'operation_type': list(operation_types),
+                'tables_modified': list(tables_modified)
+            }
+        }
+    
+    def _evaluate_single(self, pred_data: Dict, traj_data: List[Dict], k: int) -> Optional[Dict[str, Any]]:
+        """
+        Evaluate a single state prediction against ground truth.
+        
+        Args:
+            pred_data: Prediction data from state_preds (contains 'predicted_states' list)
+            traj_data: Ground truth trajectory data (list of steps)
+            k: k value (number of steps to evaluate)
+        
+        Returns:
+            Dictionary with evaluation metrics
+        """
+        # Extract predicted states
+        predicted_states_dict = pred_data.get('predicted_states', [])
+        
+        # Extract ground truth state diffs from trajectory
+        gt_state_diffs = self._extract_gt_state_diffs(traj_data, k)
+        
+        # Convert predicted states to StateDiff objects
+        pred_state_diffs = []
+        for state_dict in predicted_states_dict[:k]:
+            state_diff = self._dict_to_state_diff(state_dict)
+            if state_diff:
+                pred_state_diffs.append(state_diff)
+        
+        # Match lengths - pad or truncate as needed
+        min_len = min(len(pred_state_diffs), len(gt_state_diffs))
+        if min_len == 0:
+            return None
+        
+        pred_state_diffs = pred_state_diffs[:min_len]
+        gt_state_diffs = gt_state_diffs[:min_len]
+        
+        # Use compute_state_rollout_metrics from eval_pipeline
+        full_rollout_acc, part_rollout_acc, _ = compute_state_rollout_metrics(
+            pred_state_diffs, gt_state_diffs
+        )
+        
+        # Calculate aggregate metrics
+        num_steps = len(full_rollout_acc)
+        num_full_matches = sum(1 for acc in full_rollout_acc if acc == 1.0)
+        
+        # Calculate average IoU for partial matches
+        sysaudit_ious = [iou[0] for iou in part_rollout_acc]
+        additional_info_ious = [iou[1] for iou in part_rollout_acc]
+        avg_sysaudit_iou = np.mean(sysaudit_ious) if sysaudit_ious else 0.0
+        avg_additional_info_iou = np.mean(additional_info_ious) if additional_info_ious else 0.0
+        
+        return {
+            'num_steps': num_steps,
+            'num_full_matches': num_full_matches,
+            'full_match_rate': num_full_matches / num_steps if num_steps > 0 else 0.0,
+            'avg_sysaudit_iou': avg_sysaudit_iou,
+            'avg_additional_info_iou': avg_additional_info_iou,
+            'full_rollout_acc': full_rollout_acc,
+            'partial_rollout_acc': [(float(iou[0]), float(iou[1])) for iou in part_rollout_acc]
         }
 
 
@@ -135,7 +337,7 @@ class ActionPredictionEvaluator:
         print(f"{'='*80}")
         print(f"Model: {self.model_name}")
         
-        action_pred_dir = self.base_dir / "action_predictions_results" / self.model_name
+        action_pred_dir = self.base_dir / "wow" / "data_files" / "action_preds" / self.model_name
         trajectories_dir = self.base_dir / "wow" / "data_files" / "trajectories"
         
         if not action_pred_dir.exists():
@@ -148,18 +350,29 @@ class ActionPredictionEvaluator:
             'timestamp': datetime.now().isoformat()
         }
         
-        # Find matching files
-        prediction_files = list(action_pred_dir.glob("*.json"))
+        # Find matching files (exclude summary files)
+        prediction_files = [f for f in action_pred_dir.glob("*.json") if not f.name.endswith("_summary.json")]
         trajectory_files = list(trajectories_dir.glob("*.json"))
         
         evaluations = []
         tool_name_matches = 0
-        param_matches = 0
+        perfect_matches = 0
         total_actions = 0
         
+        def normalize_param_value(val):
+            """Normalize parameter value for comparison"""
+            if val is None:
+                return None
+            if isinstance(val, bool):
+                return bool(val)
+            if isinstance(val, (int, float)):
+                return val
+            return str(val).strip()
+        
         for pred_file in tqdm(prediction_files, desc="Evaluating actions"):
-            # Find corresponding trajectory
-            traj_file = trajectories_dir / pred_file.name
+            # Find corresponding trajectory (strip _action_predictions suffix)
+            traj_filename = pred_file.name.replace("_action_predictions.json", ".json")
+            traj_file = trajectories_dir / traj_filename
             
             if not traj_file.exists():
                 continue
@@ -178,31 +391,33 @@ class ActionPredictionEvaluator:
             # Compare actions
             for gt_action, pred_action in zip(gt_actions[:len(pred_actions)], pred_actions):
                 total_actions += 1
-                
                 if gt_action.get('tool_name') == pred_action.get('tool_name'):
                     tool_name_matches += 1
-                
-                # Compare parameters
-                gt_params = gt_action.get('parameters', {})
-                pred_params = pred_action.get('parameters', {})
-                
-                for key in gt_params:
-                    if key in pred_params and gt_params[key] == pred_params[key]:
-                        param_matches += 1
+                    gt_params = gt_action.get('parameters', {})
+                    pred_params = pred_action.get('parameters', {})
+                    
+                    # Check if all GT parameters match predicted parameters
+                    params_match = True
+                    for key, gt_value in gt_params.items():
+                        pred_value = pred_params.get(key)
+                        if normalize_param_value(gt_value) != normalize_param_value(pred_value):
+                            params_match = False
+                            break
+                    perfect_matches += params_match
         
         tool_name_accuracy = tool_name_matches / total_actions if total_actions > 0 else 0
-        param_accuracy = param_matches / total_actions if total_actions > 0 else 0
+        perfect_match_accuracy = perfect_matches / total_actions if total_actions > 0 else 0
         
         results['metrics'] = {
             'tool_name_accuracy': tool_name_accuracy,
-            'parameter_accuracy': param_accuracy,
+            'perfect_match_accuracy': perfect_match_accuracy,
             'total_actions': total_actions,
             'tool_name_matches': tool_name_matches,
-            'parameter_matches': param_matches
+            'perfect_matches': perfect_matches
         }
         
         print(f"✅ Tool name accuracy: {tool_name_accuracy:.3f}")
-        print(f"✅ Parameter accuracy: {param_accuracy:.3f}")
+        print(f"✅ Perfect match accuracy (tool name + all parameters): {perfect_match_accuracy:.3f}")
         
         return results
 
@@ -301,7 +516,8 @@ class UnifiedEvaluator:
         evaluation_type: str = "all",
         k_values: List[int] = None,
         constraint_mode: str = "state_action",
-        perfect_schema: bool = True
+        perfect_schema: bool = True,
+        trajectory_type: str = "combined"
     ) -> Dict[str, Any]:
         """
         Run unified evaluation for all or specific evaluation types
@@ -347,7 +563,8 @@ class UnifiedEvaluator:
             try:
                 constraint_results = self.constraint_evaluator.evaluate_constraint_predictions(
                     mode=constraint_mode,
-                    perfect_schema=perfect_schema
+                    perfect_schema=perfect_schema,
+                    trajectory_type=trajectory_type
                 )
                 results['evaluations']['constraint_prediction'] = constraint_results
             except Exception as e:
@@ -394,6 +611,17 @@ class UnifiedEvaluator:
                         print(f"  {key}: {value:.3f}")
                     else:
                         print(f"  {key}: {value}")
+            elif 'k_evaluations' in eval_results:
+                for k_key, k_data in eval_results['k_evaluations'].items():
+                    if k_data.get('status') == 'success':
+                        print(f"  {k_key}:")
+                        print(f"    Full Match Rate: {k_data.get('full_match_rate', 0):.3f}")
+                        print(f"    Avg SysAudit IoU: {k_data.get('avg_sysaudit_iou', 0):.3f}")
+                        print(f"    Avg Additional Info IoU: {k_data.get('avg_additional_info_iou', 0):.3f}")
+                        print(f"    Total Steps: {k_data.get('total_steps', 0)}")
+                        print(f"    Files Evaluated: {k_data.get('num_files', 0)}")
+                    else:
+                        print(f"  {k_key}: {k_data.get('status', 'Unknown')}")
             elif 'average_accuracy' in eval_results:
                 print(f"  Average accuracy: {eval_results['average_accuracy']:.3f}")
             else:

@@ -1,0 +1,56 @@
+{
+  "trajectory_file": "composite4.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 28.099060773849487,
+  "timestamp": "2025-10-03T10:52:41.645209",
+  "predictions": [
+    {
+      "tool_name": "create_asset",
+      "parameters": {
+        "asset_tag": "9a07e1b5c350b2107bd371edd401312b",
+        "model": "Test Model",
+        "cost": "1000",
+        "purchase_date": "2025-09-30",
+        "comments": "Automatically generated asset"
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b",
+        "assigned_to": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "May.June.092",
+        "first_name": "May",
+        "last_name": "June",
+        "email": "may.june@example.com",
+        "active": true,
+        "fields": {
+          "notification": "2",
+          "edu_status": "faculty",
+          "calendar_integration": "1"
+        }
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b",
+        "assigned_to": "be48edfdc350b2107bd371edd4013162"
+      }
+    },
+    {
+      "tool_name": "delete_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b",
+        "reason": "Retire and remove associated expense"
+      }
+    }
+  ]
+}

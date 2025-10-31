@@ -1,0 +1,46 @@
+{
+  "trajectory_file": "workflow.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 7.577112197875977,
+  "timestamp": "2025-10-02T23:28:34.500795",
+  "predictions": [
+    {
+      "tool_name": "create_workflow",
+      "parameters": {
+        "name": "GPU Order Workflow",
+        "description": "Workflow to order GPUs",
+        "access": "public"
+      }
+    },
+    {
+      "tool_name": "update_workflow",
+      "parameters": {
+        "workflow_id": "sys_id_of_GPU_Order_Workflow",
+        "description": "Workflow to order GPUs, temporarily disabled"
+      }
+    },
+    {
+      "tool_name": "add_workflow_activity",
+      "parameters": {
+        "workflow_version_id": "version_id_of_GPU_Order_Workflow",
+        "name": "Change Review Process",
+        "activity_type": "approval"
+      }
+    },
+    {
+      "tool_name": "update_workflow_activity",
+      "parameters": {
+        "activity_id": "activity_id_of_Change_Review_Process",
+        "name": "Knowledge Review Workflow"
+      }
+    },
+    {
+      "tool_name": "delete_workflow_activity",
+      "parameters": {
+        "activity_id": "activity_id_of_variable_to_delete"
+      }
+    }
+  ]
+}

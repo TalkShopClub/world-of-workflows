@@ -1,0 +1,63 @@
+{
+  "trajectory_file": "composite4.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 12.135439157485962,
+  "timestamp": "2025-10-02T23:30:07.916830",
+  "predictions": [
+    {
+      "tool_name": "create_asset",
+      "parameters": {
+        "asset_tag": "9a07e1b5c350b2107bd371edd401312b",
+        "model": "Model X",
+        "serial_number": "SN123456",
+        "assigned_to": "6816f79cc0a8016401c5a33be04be441",
+        "location": "Warehouse A",
+        "cost": "1000",
+        "purchase_date": "2025-09-30",
+        "warranty_expiration": "2026-09-30",
+        "category": "Hardware",
+        "subcategory": "Computers"
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b",
+        "assigned_to": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "May.June.092",
+        "first_name": "May",
+        "last_name": "June",
+        "email": "may.june@example.com",
+        "title": "Software Engineer",
+        "department": "Engineering",
+        "manager": "6816f79cc0a8016401c5a33be04be441",
+        "roles": [
+          "itil"
+        ],
+        "active": true
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "be48edfdc350b2107bd371edd4013162",
+        "first_name": "May",
+        "last_name": "June",
+        "email": "may.june@example.com"
+      }
+    },
+    {
+      "tool_name": "delete_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b"
+      }
+    }
+  ]
+}

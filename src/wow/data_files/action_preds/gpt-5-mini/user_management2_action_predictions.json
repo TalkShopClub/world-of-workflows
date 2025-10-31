@@ -1,0 +1,88 @@
+{
+  "trajectory_file": "user_management2.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 687.7559471130371,
+  "timestamp": "2025-10-03T10:49:28.316096",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Ian.Mack.309",
+        "first_name": "Ian",
+        "last_name": "Mack",
+        "email": "ianmack@sample.com",
+        "active": true,
+        "fields": {
+          "department": "93b25282c0a8000b0b55c8ab34e2f1e6",
+          "notification": "2",
+          "calendar_integration": "1",
+          "password_needs_reset": "0",
+          "locked_out": "0",
+          "internal_integration_user": "0",
+          "enable_multifactor_authn": "0",
+          "edu_status": "faculty",
+          "vip": "0",
+          "web_service_access_only": "0",
+          "hashed_user_id": "71f5074ec88e0c91faf2c4dd967378ebc9eb7e60a401c91b50fc5890cf438e17",
+          "sys_class_name": "sys_user"
+        }
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Chris.Mack.310",
+        "first_name": "Chris",
+        "last_name": "Mack",
+        "email": "chrismack@sample.com",
+        "active": true,
+        "fields": {
+          "notification": "2",
+          "calendar_integration": "1",
+          "password_needs_reset": "0",
+          "locked_out": "0",
+          "internal_integration_user": "0",
+          "enable_multifactor_authn": "0",
+          "edu_status": "faculty",
+          "vip": "0",
+          "web_service_access_only": "0",
+          "hashed_user_id": "bee1280b29d5a2cc9ac8ea838c456373a133f190a84449c5880fa8801269ed04",
+          "sys_class_name": "sys_user",
+          "sys_domain": "global"
+        }
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "fe4234fdc3d872107bd371edd40131c6",
+        "location": "16ff753837d0200044e0bfc8bcbe5d5f",
+        "manager": "6a22303dc31c72107bd371edd401312f",
+        "phone": "4019481942"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Skyfall Human Resources",
+        "description": "Skyfall HR group",
+        "members": [
+          "6a22303dc31c72107bd371edd401312f",
+          "fe4234fdc3d872107bd371edd40131c6"
+        ],
+        "active": true
+      }
+    },
+    {
+      "tool_name": "remove_group_members",
+      "parameters": {
+        "group_id": "f60630b1c35c72107bd371edd40131d3",
+        "members": [
+          "fe4234fdc3d872107bd371edd40131c6"
+        ]
+      }
+    }
+  ]
+}

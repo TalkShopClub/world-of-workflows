@@ -1,0 +1,58 @@
+{
+  "trajectory_file": "promoteuser.json",
+  "total_steps": 6,
+  "valid_state_diffs": 6,
+  "predicted_actions": 6,
+  "processing_time_seconds": 9.393738985061646,
+  "timestamp": "2025-10-02T23:57:33.877508",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "user_b_20251002_234952_4251",
+        "first_name": "User",
+        "last_name": "B",
+        "email": "user_b_20251002_234952_4251@example.com",
+        "active": true,
+        "roles": [],
+        "manager": "0e4411aec35c761024163942b40131a7"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "000753bdc3ff6a107bd371edd40131ab",
+        "active": false,
+        "locked_out": true
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "000753bdc3ff6a107bd371edd40131ab",
+        "locked_out": false
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "000753bdc3ff6a107bd371edd40131ab",
+        "active": true
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "000753bdc3ff6a107bd371edd40131ab",
+        "locked_out": true
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "000753bdc3ff6a107bd371edd40131ab",
+        "active": false
+      }
+    }
+  ]
+}

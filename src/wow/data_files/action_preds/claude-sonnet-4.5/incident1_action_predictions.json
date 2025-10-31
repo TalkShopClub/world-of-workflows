@@ -1,0 +1,56 @@
+{
+  "trajectory_file": "incident1.json",
+  "task_name": "incident1",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 8.586536169052124,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T00:38:25.716051",
+  "predictions": [
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Server outage in production environment",
+        "description": "The server is down and we are unable to access the production environment",
+        "urgency": "1",
+        "impact": "1"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com",
+        "user_name": "John.Doe.250",
+        "department": "221f79b7c6112284005d646b76ab978c",
+        "edu_status": "faculty"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "3c1c1c39c39872107bd371edd4013147",
+        "assigned_to": "ae7cd479c39872107bd371edd401313f",
+        "state": "2"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "3c1c1c39c39872107bd371edd4013147",
+        "work_notes": "There seems to be a power outage in the server room."
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "3c1c1c39c39872107bd371edd4013147",
+        "state": "6",
+        "close_code": "Resolved by caller",
+        "close_notes": "Power is restored"
+      }
+    }
+  ]
+}

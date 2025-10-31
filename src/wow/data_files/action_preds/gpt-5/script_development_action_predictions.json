@@ -1,0 +1,59 @@
+{
+  "trajectory_file": "script_development.json",
+  "task_name": "script_development",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 48.865992069244385,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:06:38.304376",
+  "predictions": [
+    {
+      "tool_name": "create_script_include",
+      "parameters": {
+        "name": "UserValidation",
+        "script": "function DataSync() { /* Sample script code */ }",
+        "access": "package_private",
+        "client_callable": "0",
+        "mobile_callable": "0",
+        "sandbox_callable": "0",
+        "api_name": "global.UserValidation",
+        "active": "1"
+      }
+    },
+    {
+      "tool_name": "update_script_include",
+      "parameters": {
+        "name": "UserValidation",
+        "description": "Sample_description_420",
+        "script": "function ReportGenerator() { /* Sample script code */ }"
+      }
+    },
+    {
+      "tool_name": "delete_script_include",
+      "parameters": {
+        "name": "UserValidation"
+      }
+    },
+    {
+      "tool_name": "create_changeset",
+      "parameters": {
+        "application": "global",
+        "is_default": "0",
+        "state": "in progress",
+        "description": "Sample_description_296",
+        "name": "Sample Name 809",
+        "completed_on": "2025-09-30 05:28:34"
+      }
+    },
+    {
+      "tool_name": "update_changeset",
+      "parameters": {
+        "name": "Sample Name 809",
+        "completed_on": "2025-09-30 05:29:13",
+        "completed_by": "6816f79cc0a8016401c5a33be04be441",
+        "state": "complete"
+      }
+    }
+  ]
+}

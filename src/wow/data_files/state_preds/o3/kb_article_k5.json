@@ -1,0 +1,251 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-20T03:02:32.150249",
+    "model": "openai/o3",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/kb_article.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "text": "Security guidelines and compliance requirements",
+        "short_description": "Security Best Practices",
+        "knowledge_base": "Sample_knowledge_base_948",
+        "category": "HR Services"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "62563d6dc35832107bd371edd4013158",
+        "short_description": "Security Best Practices for ServiceNow IT operations"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "62563d6dc35832107bd371edd4013158",
+        "category": "IT operations"
+      }
+    },
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "text": "HR services are provided to the employees of the organization.",
+        "short_description": "HR Services with updated category",
+        "knowledge_base": "Sample_knowledge_base_949",
+        "category": "HR Services"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "b7c735e5c39832107bd371edd40131a6",
+        "short_description": "HR guidelines"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 14:22:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 14:22:03"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 14:22:03",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 14:22:01"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Security Best Practices",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "text",
+          "newvalue": "Security guidelines and compliance requirements",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "kb_knowledge_base",
+          "newvalue": "Sample_knowledge_base_948",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "HR Services",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "workflow_state",
+          "newvalue": "draft",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 5,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "kb_knowledge"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "short_description",
+          "newvalue": "Security Best Practices for ServiceNow IT operations",
+          "tablename": "kb_knowledge",
+          "oldvalue": "previous short description"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 1,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "kb_knowledge"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:29",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:26",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:24"
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "IT operations",
+          "tablename": "kb_knowledge",
+          "oldvalue": "General"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "kb_knowledge"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 10:15:03",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 10:15:00"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "HR Services with updated category",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "text",
+          "newvalue": "HR services are provided to the employees of the organization.",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "knowledge_base",
+          "newvalue": "Sample_knowledge_base_949",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "HR Services",
+          "tablename": "kb_knowledge",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 5,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 4,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "kb_knowledge"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:10",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:00:08"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 21:00:08",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 21:00:06"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "HR guidelines",
+          "tablename": "kb_knowledge",
+          "oldvalue": "Previous short description"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "kb_knowledge"
+        ]
+      }
+    }
+  ]
+}

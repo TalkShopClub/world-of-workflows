@@ -1,0 +1,35 @@
+{
+  "trajectory_file": "removeuserfromgroup.json",
+  "task_name": "removeuserfromgroup",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 30.79448390007019,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:32:27.061067",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "email": "test_user_20251007_140251_7745@example.com",
+        "first_name": "Test",
+        "last_name": "User",
+        "user_name": "test_user_20251007_140251_7745"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "test_group_20251007_140251_5006",
+        "description": "Test group for test_user_20251007_140251_7745"
+      }
+    },
+    {
+      "tool_name": "add_user_to_group",
+      "parameters": {
+        "group_name": "test_group_20251007_140251_5006",
+        "user_name": "test_user_20251007_140251_7745"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "trajectory_file": "rejectchangerequest.json",
+  "total_steps": 3,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 2.803762197494507,
+  "timestamp": "2025-10-03T09:50:36.993951",
+  "predictions": [
+    {
+      "tool_name": "create_change_request",
+      "parameters": {
+        "short_description": "Test Change Request 20251002_234900",
+        "description": "This is a test change request created at 20251002_234900 for testing purposes.",
+        "type": "normal",
+        "category": "Other",
+        "impact": "3",
+        "urgency": "3"
+      }
+    },
+    {
+      "tool_name": "submit_change_for_approval",
+      "parameters": {
+        "change_id": "CHG0030076",
+        "approval_comments": "Submitting for approval."
+      }
+    },
+    {
+      "tool_name": "approve_change",
+      "parameters": {
+        "change_id": "CHG0030076"
+      }
+    }
+  ]
+}

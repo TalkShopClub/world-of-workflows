@@ -1,0 +1,36 @@
+{
+  "trajectory_file": "problem_management.json",
+  "task_name": "problem_management",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 28.478612184524536,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T11:05:59.594846",
+  "predictions": [
+    {
+      "tool_name": "create_problem",
+      "parameters": {
+        "short_description": "Email server performance degradation",
+        "priority": "5",
+        "state": "101"
+      }
+    },
+    {
+      "tool_name": "create_knowledge_article",
+      "parameters": {
+        "short_description": "Problem Resolution Guide",
+        "text": "Software installation and licensing information",
+        "kb_knowledge_base": "Sample_knowledge_base_342",
+        "topic": "General"
+      }
+    },
+    {
+      "tool_name": "create_asset",
+      "parameters": {
+        "install_status": "1",
+        "description": "New asset creation triggering expense line"
+      }
+    }
+  ]
+}

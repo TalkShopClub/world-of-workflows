@@ -325,7 +325,7 @@ async def main():
     # Setup paths
     script_dir = Path(__file__).parent
     trajectories_dir = script_dir / args.trajectory_folder
-    base_output_dir = script_dir / "state_preds_new"
+    base_output_dir = script_dir / "state_preds"
     base_output_dir.mkdir(exist_ok=True)
     
     # Create model-specific subdirectory

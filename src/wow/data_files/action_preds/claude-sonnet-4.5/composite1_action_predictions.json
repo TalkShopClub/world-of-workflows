@@ -1,0 +1,59 @@
+{
+  "trajectory_file": "composite1.json",
+  "task_name": "composite1",
+  "total_steps": 6,
+  "valid_state_diffs": 6,
+  "predicted_actions": 6,
+  "processing_time_seconds": 8.47514796257019,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T00:37:35.606359",
+  "predictions": [
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "change_request",
+        "query": "short_description=Change request for Skyfall group"
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "alm_hardware",
+        "query": "install_status=2"
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "sys_user",
+        "query": "user_name=Mike.Wayne.101"
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "change_request",
+        "query": "number=CHG0030047",
+        "fields": "short_description",
+        "update": {
+          "short_description": "Change request for assigning rtx 4080 to mike wayne"
+        }
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "alm_hardware",
+        "query": "sys_id=271800b9c31872107bd371edd40131cc"
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "alm_hardware",
+        "query": "sys_id=271800b9c31872107bd371edd40131cc",
+        "delete": true
+      }
+    }
+  ]
+}

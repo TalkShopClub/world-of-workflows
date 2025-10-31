@@ -1,0 +1,55 @@
+{
+  "trajectory_file": "kb_article2.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 11.817926168441772,
+  "timestamp": "2025-10-02T23:28:46.320942",
+  "predictions": [
+    {
+      "tool_name": "update_catalog_item",
+      "parameters": {
+        "item_id": "6eaa7cf1c35c72107bd371edd40131bf",
+        "short_description": "Skyfall code best practices",
+        "description": "How to write good code for Skyfall and become a better developer",
+        "active": "1",
+        "category": "General"
+      }
+    },
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "title": "How to write good ML code",
+        "text": "Writing good ML code is important for the success of the company, here are some tips to help you write good ML code",
+        "short_description": "Write good ML code",
+        "knowledge_base": "6eaa7cf1c35c72107bd371edd40131bf",
+        "category": "Tutorial"
+      }
+    },
+    {
+      "tool_name": "update_article",
+      "parameters": {
+        "article_id": "KB0010213",
+        "short_description": "Write good ML code",
+        "text": "Writing good ML code is important for the success of the company, here are some tips to help you write good ML code",
+        "category": "Tutorial"
+      }
+    },
+    {
+      "tool_name": "update_workflow",
+      "parameters": {
+        "workflow_id": "6762d5e48753b110b0fdc995dabb353f",
+        "active": "0"
+      }
+    },
+    {
+      "tool_name": "create_knowledge_base",
+      "parameters": {
+        "title": "New Knowledge Base",
+        "description": "A new knowledge base for tutorials",
+        "owner": "6816f79cc0a8016401c5a33be04be441",
+        "managers": "6816f79cc0a8016401c5a33be04be441"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "trajectory_file": "createhardwareasset.json",
+  "task_name": "createhardwareasset",
+  "total_steps": 4,
+  "valid_state_diffs": 4,
+  "predicted_actions": 4,
+  "processing_time_seconds": 43.066267013549805,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:11:40.564551",
+  "predictions": [
+    {
+      "tool_name": "get_user",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_assets",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_assets",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {}
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "trajectory_file": "composite5.json",
+  "task_name": "composite5",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 31.343490839004517,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T11:15:30.070192",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "first_name": "July",
+        "last_name": "August",
+        "user_name": "July.August.022",
+        "email": "july.august@example.com"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Awesome Group",
+        "description": "A group of awesome people"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "first_name": "July",
+        "last_name": "March",
+        "user_name": "July.March.032",
+        "email": "july.march@example.com",
+        "title": "Software Engineer",
+        "location_id": "16ff753837d0200044e0bfc8bcbe5d5f"
+      }
+    }
+  ]
+}

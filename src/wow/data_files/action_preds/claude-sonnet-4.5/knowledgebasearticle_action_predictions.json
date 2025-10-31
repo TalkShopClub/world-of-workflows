@@ -1,0 +1,31 @@
+{
+  "trajectory_file": "knowledgebasearticle.json",
+  "task_name": "knowledgebasearticle",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 3.432523012161255,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:19:28.256422",
+  "predictions": [
+    {
+      "tool_name": "list_knowledge_bases",
+      "parameters": {}
+    },
+    {
+      "tool_name": "list_categories",
+      "parameters": {}
+    },
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "short_description": "Test Article 20251007_135704",
+        "text": "<p>This is a test article created at 20251007_135704. It contains sample content for testing purposes.</p>",
+        "kb_knowledge_base": "078c7884c3a83e1024163942b401314e",
+        "kb_category": "f99c7884c3a83e1024163942b401317b",
+        "topic": "General",
+        "workflow_state": "published"
+      }
+    }
+  ]
+}

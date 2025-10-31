@@ -1,0 +1,55 @@
+{
+  "trajectory_file": "composite4.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 2.4371368885040283,
+  "timestamp": "2025-10-03T09:50:45.168720",
+  "predictions": [
+    {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "HW-001",
+        "model": "Laptop Model X",
+        "cost": "1000",
+        "state": "1",
+        "fields": {
+          "purchase_date": "2025-09-30",
+          "model_category": "Hardware"
+        }
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b",
+        "assigned_to": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "May.June.092",
+        "first_name": "May",
+        "last_name": "June",
+        "email": "may.june@example.com",
+        "fields": {
+          "edu_status": "faculty"
+        }
+      }
+    },
+    {
+      "tool_name": "transfer_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b",
+        "new_assigned_to": "be48edfdc350b2107bd371edd4013162"
+      }
+    },
+    {
+      "tool_name": "delete_asset",
+      "parameters": {
+        "asset_id": "9a07e1b5c350b2107bd371edd401312b"
+      }
+    }
+  ]
+}

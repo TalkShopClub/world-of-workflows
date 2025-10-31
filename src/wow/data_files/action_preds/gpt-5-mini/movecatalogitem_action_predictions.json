@@ -1,0 +1,37 @@
+{
+  "trajectory_file": "movecatalogitem.json",
+  "total_steps": 4,
+  "valid_state_diffs": 4,
+  "predicted_actions": 4,
+  "processing_time_seconds": 29.714987993240356,
+  "timestamp": "2025-10-03T10:35:56.893872",
+  "predictions": [
+    {
+      "tool_name": "move_catalog_items",
+      "parameters": {
+        "item_ids": [
+          "item_sysid_123"
+        ],
+        "target_category_id": "target_cat_sysid_456"
+      }
+    },
+    {
+      "tool_name": "update_catalog_item",
+      "parameters": {
+        "item_id": "item_sysid_123"
+      }
+    },
+    {
+      "tool_name": "update_catalog_category",
+      "parameters": {
+        "category_id": "target_cat_sysid_456"
+      }
+    },
+    {
+      "tool_name": "list_users",
+      "parameters": {
+        "limit": "1"
+      }
+    }
+  ]
+}

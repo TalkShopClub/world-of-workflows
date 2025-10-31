@@ -1,0 +1,33 @@
+{
+  "trajectory_file": "promoteuser.json",
+  "task_name": "promoteuser",
+  "total_steps": 6,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 34.86406874656677,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:48:49.784539",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "first_name": "User",
+        "last_name": "A"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "first_name": "User",
+        "last_name": "B"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_name": "user_a_20251007_140912_5773",
+        "manager": "user_b_20251007_140912_1334"
+      }
+    }
+  ]
+}

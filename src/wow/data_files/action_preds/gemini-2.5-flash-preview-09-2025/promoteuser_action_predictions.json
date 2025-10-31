@@ -1,0 +1,75 @@
+{
+  "trajectory_file": "promoteuser.json",
+  "total_steps": 6,
+  "valid_state_diffs": 6,
+  "predicted_actions": 6,
+  "processing_time_seconds": 2.975238084793091,
+  "timestamp": "2025-10-03T09:51:23.470539",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "user_a_20251002_234952_8632",
+        "first_name": "User",
+        "last_name": "A",
+        "email": "user_a_20251002_234952_8632@example.com",
+        "fields": {
+          "manager": "0e4411aec35c761024163942b40131a7",
+          "edu_status": "faculty"
+        }
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "user_b_20251002_234952_4251",
+        "active": false,
+        "fields": {
+          "locked_out": "1"
+        }
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "user_b_20251002_234952_4251",
+        "first_name": "User",
+        "last_name": "B",
+        "email": "user_b_20251002_234952_4251@example.com",
+        "fields": {
+          "edu_status": "faculty"
+        }
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "user_a_20251002_234952_8632",
+        "active": false,
+        "fields": {
+          "locked_out": "1"
+        }
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "user_b_20251002_234952_4251",
+        "active": true,
+        "fields": {
+          "locked_out": "0"
+        }
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "user_a_20251002_234952_8632",
+        "active": true,
+        "fields": {
+          "locked_out": "0"
+        }
+      }
+    }
+  ]
+}

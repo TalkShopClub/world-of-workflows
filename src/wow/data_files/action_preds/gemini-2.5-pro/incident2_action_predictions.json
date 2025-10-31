@@ -1,0 +1,33 @@
+{
+  "trajectory_file": "incident2.json",
+  "task_name": "incident2",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 25.640483140945435,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:40:59.192231",
+  "predictions": [
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "broken AC"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_number": "INC0026902",
+        "comments": "AC is not working and the room is very hot"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_number": "INC0026902",
+        "impact": "2",
+        "urgency": "2"
+      }
+    }
+  ]
+}

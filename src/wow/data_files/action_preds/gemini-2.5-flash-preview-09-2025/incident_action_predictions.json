@@ -1,0 +1,40 @@
+{
+  "trajectory_file": "incident.json",
+  "total_steps": 4,
+  "valid_state_diffs": 4,
+  "predicted_actions": 4,
+  "processing_time_seconds": 2.4752509593963623,
+  "timestamp": "2025-10-03T09:50:09.695258",
+  "predictions": [
+    {
+      "tool_name": "resolve_incident",
+      "parameters": {
+        "incident_id": "INC0026874",
+        "resolution_code": "Resolved by caller",
+        "resolution_notes": "closed"
+      }
+    },
+    {
+      "tool_name": "add_comment",
+      "parameters": {
+        "incident_id": "INC0026874",
+        "comment": "Test comment added at 20251002_234840. This incident is being processed for testing purposes.",
+        "is_work_note": true
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "INC0026874",
+        "state": "6"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "INC0026874",
+        "close_notes": "closed"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "trajectory_file": "problem_management.json",
+  "task_name": "problem_management",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 38.176466941833496,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:34:36.196892",
+  "predictions": [
+    {
+      "tool_name": "create_problem",
+      "parameters": {
+        "short_description": "Email server performance degradation"
+      }
+    },
+    {
+      "tool_name": "create_knowledge_article",
+      "parameters": {
+        "kb_knowledge_base": "Sample_knowledge_base_342",
+        "short_description": "Problem Resolution Guide",
+        "text": "Software installation and licensing information"
+      }
+    },
+    {
+      "tool_name": "create_asset",
+      "parameters": {}
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "trajectory_file": "removeuserfromgroup.json",
+  "task_name": "removeuserfromgroup",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 64.08613109588623,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:10:57.494178",
+  "predictions": [
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140251_7745",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_140251_7745@example.com",
+        "active": "1"
+      }
+    },
+    {
+      "tool_name": "list_groups",
+      "parameters": {
+        "name": "test_group_20251007_140251_5006",
+        "description": "Test group for test_user_20251007_140251_7745",
+        "active": "1",
+        "include_members": "0",
+        "exclude_manager": "0"
+      }
+    },
+    {
+      "tool_name": "list_group_members",
+      "parameters": {
+        "group_id": "1aedf008c3a83e1024163942b40131fb",
+        "user_id": "f7ddb008c3a83e1024163942b4013168",
+        "action": "add"
+      }
+    },
+    {
+      "tool_name": "list_users",
+      "parameters": {
+        "query": "sys_id=f7ddb008c3a83e1024163942b4013168",
+        "limit": "1"
+      }
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_id": "f7ddb008c3a83e1024163942b4013168",
+        "active": "0",
+        "locked_out": "1"
+      }
+    }
+  ]
+}

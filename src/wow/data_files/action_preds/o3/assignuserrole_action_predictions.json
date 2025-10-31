@@ -1,0 +1,36 @@
+{
+  "trajectory_file": "assignuserrole.json",
+  "task_name": "assignuserrole",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 39.27127194404602,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T11:12:09.750566",
+  "predictions": [
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table_name": "sys_user",
+        "action": "insert",
+        "first_name": "Test",
+        "last_name": "User",
+        "user_name": "test_user_20251007_140046_3344",
+        "email": "test_user_20251007_140046_3344@example.com",
+        "active": "1"
+      }
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140046_3344"
+      }
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140046_3344"
+      }
+    }
+  ]
+}

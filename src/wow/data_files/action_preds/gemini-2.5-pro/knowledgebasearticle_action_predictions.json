@@ -1,0 +1,31 @@
+{
+  "trajectory_file": "knowledgebasearticle.json",
+  "task_name": "knowledgebasearticle",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 34.36760210990906,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:44:28.356839",
+  "predictions": [
+    {
+      "tool_name": "list_knowledge_bases",
+      "parameters": {}
+    },
+    {
+      "tool_name": "list_categories",
+      "parameters": {
+        "knowledge_base_id": "078c7884c3a83e1024163942b401314e"
+      }
+    },
+    {
+      "tool_name": "create_article",
+      "parameters": {
+        "short_description": "Test Article 20251007_135704",
+        "text": "<p>This is a test article created at 20251007_135704. It contains sample content for testing purposes.</p>",
+        "knowledge_base_id": "078c7884c3a83e1024163942b401314e",
+        "category_id": "f99c7884c3a83e1024163942b401317b"
+      }
+    }
+  ]
+}

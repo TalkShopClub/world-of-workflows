@@ -1,0 +1,39 @@
+{
+  "trajectory_file": "createhierarchy.json",
+  "task_name": "createhierarchy",
+  "total_steps": 4,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 4.37863826751709,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:19:22.466654",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140209_6530",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_140209_6530@example.com",
+        "edu_status": "faculty"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "test_group_a_20251007_140209_2035",
+        "description": "Parent group A managed by test_user_20251007_140209_6530",
+        "manager": "edbd3008c3a83e1024163942b40131b8"
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "test_group_b_20251007_140209_4626",
+        "description": "Child group B managed by test_user_20251007_140209_6530 with parent group A",
+        "manager": "edbd3008c3a83e1024163942b40131b8",
+        "parent": "00cd3008c3a83e1024163942b40131be"
+      }
+    }
+  ]
+}

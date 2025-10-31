@@ -1,0 +1,55 @@
+{
+  "trajectory_file": "kb_article2.json",
+  "task_name": "kb_article2",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 52.05740785598755,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T10:57:15.936441",
+  "predictions": [
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "kb_knowledge_base",
+        "method": "put",
+        "payload": {
+          "title": "Skyfall code best practices",
+          "description": "How to write good code for Skyfall and become a better developer",
+          "owner": "6816f79cc0a8016401c5a33be04be441",
+          "active": "true",
+          "disable_commenting": "false",
+          "disable_category_editing": "false",
+          "disable_suggesting": "false",
+          "disable_rating": "false"
+        }
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "kb_knowledge",
+        "method": "put",
+        "payload": {
+          "short_description": "How to write good ML code",
+          "text": "Writing good ML code is important for the success of the company, here are some tips to help you write good ML code",
+          "kb_knowledge_base": "6eaa7cf1c35c72107bd371edd40131bf",
+          "author": "6816f79cc0a8016401c5a33be04be441",
+          "article_type": "text",
+          "kb_category": "educational",
+          "topic": "General"
+        }
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "kb_knowledge",
+        "method": "put",
+        "payload": {
+          "workflow_state": "published"
+        }
+      }
+    }
+  ]
+}

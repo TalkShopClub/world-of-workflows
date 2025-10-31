@@ -1,0 +1,52 @@
+{
+  "trajectory_file": "composite2.json",
+  "task_name": "composite2",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 30.110638856887817,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T11:18:17.646166",
+  "predictions": [
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "method": "POST",
+        "table": "sys_user",
+        "payload": {
+          "first_name": "Steven",
+          "last_name": "Ding",
+          "name": "Steven Ding",
+          "user_name": "Steven.Ding.092",
+          "email": "stevending@example.com",
+          "active": "true"
+        }
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "method": "POST",
+        "table": "sys_user_group",
+        "payload": {
+          "name": "Skyfall collaborator group",
+          "description": "Skyfall collaborator group",
+          "manager": "a30d49f1c3dc72107bd371edd40131cf",
+          "active": "true"
+        }
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "method": "POST",
+        "table": "sys_user_group",
+        "payload": {
+          "name": "Skyfall Corp",
+          "description": "Skyfall Corp group",
+          "active": "true"
+        }
+      }
+    }
+  ]
+}

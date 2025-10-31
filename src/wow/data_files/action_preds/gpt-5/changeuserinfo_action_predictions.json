@@ -1,0 +1,46 @@
+{
+  "trajectory_file": "changeuserinfo.json",
+  "task_name": "changeuserinfo",
+  "total_steps": 3,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 44.53764510154724,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:03:39.510921",
+  "predictions": [
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140138_5570",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_140138_5570@example.com",
+        "phone": "555-0100",
+        "edu_status": "faculty",
+        "calendar_integration": "1",
+        "notification": "2",
+        "active": "1",
+        "locked_out": "0",
+        "vip": "0",
+        "web_service_access_only": "0",
+        "password_needs_reset": "0",
+        "enable_multifactor_authn": "0"
+      }
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140138_5570",
+        "phone": "555-5137"
+      }
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140138_5570",
+        "locked_out": "1",
+        "active": "0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "trajectory_file": "incident2.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 38.762877225875854,
+  "timestamp": "2025-10-03T10:55:02.064159",
+  "predictions": [
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "broken AC"
+      }
+    },
+    {
+      "tool_name": "add_comment",
+      "parameters": {
+        "incident_id": "INC0026902",
+        "comment": "AC is not working and the room is very hot",
+        "is_work_note": false
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "INC0026902",
+        "priority": "3",
+        "impact": "2",
+        "urgency": "2"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "INC0026902",
+        "assigned_to": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "INC0026902",
+        "state": "6",
+        "close_code": "Duplicate",
+        "close_notes": "This is a duplicate incident"
+      }
+    }
+  ]
+}

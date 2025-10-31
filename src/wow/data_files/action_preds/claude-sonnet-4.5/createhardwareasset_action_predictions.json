@@ -1,0 +1,36 @@
+{
+  "trajectory_file": "createhardwareasset.json",
+  "task_name": "createhardwareasset",
+  "total_steps": 4,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 4.838895797729492,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T01:19:04.965419",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "first_name": "Test",
+        "last_name": "User",
+        "user_name": "test_user_20251007_141047_7664",
+        "email": "test_user_20251007_141047_7664@example.com",
+        "edu_status": "faculty"
+      }
+    },
+    {
+      "tool_name": "update_hardware_asset",
+      "parameters": {
+        "asset_id": "some_hardware_asset_id",
+        "assigned_to": "00bf7488c3a83e1024163942b40131b9",
+        "install_status": "1"
+      }
+    },
+    {
+      "tool_name": "delete_hardware_asset",
+      "parameters": {
+        "asset_id": "some_hardware_asset_id"
+      }
+    }
+  ]
+}

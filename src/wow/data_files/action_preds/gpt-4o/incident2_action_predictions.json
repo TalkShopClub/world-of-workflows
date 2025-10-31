@@ -1,0 +1,48 @@
+{
+  "trajectory_file": "incident2.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 7.8669209480285645,
+  "timestamp": "2025-10-02T23:30:33.435897",
+  "predictions": [
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "broken AC",
+        "description": "AC is not working and the room is very hot"
+      }
+    },
+    {
+      "tool_name": "add_comment",
+      "parameters": {
+        "incident_id": "f59e70fdc35c72107bd371edd40131ef",
+        "comment": "AC is not working and the room is very hot",
+        "is_work_note": true
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "f59e70fdc35c72107bd371edd40131ef",
+        "urgency": "2",
+        "priority": "3"
+      }
+    },
+    {
+      "tool_name": "resolve_incident",
+      "parameters": {
+        "incident_id": "f59e70fdc35c72107bd371edd40131ef",
+        "resolution_code": "Duplicate",
+        "resolution_notes": "This is a duplicate incident"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "f59e70fdc35c72107bd371edd40131ef",
+        "state": "6"
+      }
+    }
+  ]
+}

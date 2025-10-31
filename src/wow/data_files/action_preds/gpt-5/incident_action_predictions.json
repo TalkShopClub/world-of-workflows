@@ -1,0 +1,44 @@
+{
+  "trajectory_file": "incident.json",
+  "task_name": "incident",
+  "total_steps": 4,
+  "valid_state_diffs": 4,
+  "predicted_actions": 4,
+  "processing_time_seconds": 37.362515926361084,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:05:49.436188",
+  "predictions": [
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Test Incident 20251007_135757",
+        "description": "This is a test incident created at 20251007_135757 for testing purposes."
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "number": "INC0010091",
+        "description": "This is a test incident created at 20251007_135757 for testing purposes. Updated with additional details.",
+        "work_notes": "Initial investigation completed. Working on resolution."
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "number": "INC0010091",
+        "work_notes": "Test comment added at 20251007_135757. This incident is being processed for testing purposes."
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "number": "INC0010091",
+        "state": "6",
+        "incident_state": "6",
+        "close_code": "Resolved by caller",
+        "close_notes": "closed"
+      }
+    }
+  ]
+}

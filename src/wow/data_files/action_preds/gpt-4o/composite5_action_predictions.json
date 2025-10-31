@@ -1,0 +1,71 @@
+{
+  "trajectory_file": "composite5.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 13.235402822494507,
+  "timestamp": "2025-10-02T23:31:06.489255",
+  "predictions": [
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "3c6aedfdc350b2107bd371edd401316a",
+        "first_name": "July",
+        "last_name": "August",
+        "email": "july.august@example.com",
+        "title": "Software Engineer",
+        "active": true,
+        "notification": "2",
+        "calendar_integration": "1",
+        "password_needs_reset": "0",
+        "enable_multifactor_authn": "0",
+        "locked_out": "0",
+        "sys_domain": "global"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "July.August.022",
+        "first_name": "July",
+        "last_name": "August",
+        "email": "july.august@example.com",
+        "active": true,
+        "roles": [
+          "role_id_1",
+          "role_id_2"
+        ]
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Awesome Group",
+        "description": "A group of awesome people",
+        "active": true
+      }
+    },
+    {
+      "tool_name": "create_catalog_item",
+      "parameters": {
+        "short_description": "Office chair broken",
+        "description": "The office chairs are broken and people have to sit on the floor",
+        "category": "furniture",
+        "price": "100",
+        "active": true
+      }
+    },
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Incident assigned to me",
+        "description": "Incident regarding the broken office chairs",
+        "requested_for": "3c6aedfdc350b2107bd371edd401316a",
+        "category": "inquiry",
+        "priority": "1",
+        "impact": "1",
+        "urgency": "1"
+      }
+    }
+  ]
+}

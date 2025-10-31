@@ -1,0 +1,38 @@
+{
+  "trajectory_file": "changeset.json",
+  "task_name": "changeset",
+  "total_steps": 5,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 32.07449388504028,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T11:13:24.999583",
+  "predictions": [
+    {
+      "tool_name": "create_update_set",
+      "parameters": {
+        "name": "Business Rule Fix",
+        "application": "global",
+        "is_default": "0",
+        "state": "in progress",
+        "completed_on": "2025-09-30 19:07:54"
+      }
+    },
+    {
+      "tool_name": "update_update_set",
+      "parameters": {
+        "update_set_id": "lookup_by_name:Business Rule Fix"
+      }
+    },
+    {
+      "tool_name": "update_update_set",
+      "parameters": {
+        "update_set_id": "lookup_by_name:Business Rule Fix",
+        "description": "a new update set for business rules",
+        "state": "complete",
+        "completed_by": "6816f79cc0a8016401c5a33be04be441",
+        "completed_on": "2025-09-30 19:13:38"
+      }
+    }
+  ]
+}

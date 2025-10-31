@@ -1,0 +1,28 @@
+{
+  "trajectory_file": "movecatalogitem.json",
+  "task_name": "movecatalogitem",
+  "total_steps": 4,
+  "valid_state_diffs": 4,
+  "predicted_actions": 4,
+  "processing_time_seconds": 69.65363478660583,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:07:47.960671",
+  "predictions": [
+    {
+      "tool_name": "list_catalog_items",
+      "parameters": {}
+    },
+    {
+      "tool_name": "get_catalog_item",
+      "parameters": {}
+    },
+    {
+      "tool_name": "list_catalog_categories",
+      "parameters": {}
+    },
+    {
+      "tool_name": "list_catalog_categories",
+      "parameters": {}
+    }
+  ]
+}

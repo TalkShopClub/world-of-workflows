@@ -1,0 +1,54 @@
+{
+  "trajectory_file": "catalog_variable.json",
+  "task_name": "catalog_variable",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 12.746193885803223,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T00:37:55.051213",
+  "predictions": [
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "item_option_new",
+        "query": "name=colour^cat_item=0cf7477237153000158bbfc8bcbe5dec"
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "item_option_new",
+        "sys_id": "ff845835c35872107bd371edd401314f",
+        "question_text": "Pixel installed software"
+      }
+    },
+    {
+      "tool_name": "get_catalog_item",
+      "parameters": {
+        "name": "Iphone 17",
+        "owner": "6816f79cc0a8016401c5a33be04be441",
+        "category": "b06546f23731300054b6a3549dbe5dd8",
+        "sc_catalogs": "e0d08b13c3330100c8b837659bba8fb4"
+      }
+    },
+    {
+      "tool_name": "list_catalog_item_variables",
+      "parameters": {
+        "cat_item": "1118583dc35872107bd371edd40131ac",
+        "name": "colour",
+        "question_text": "colour of the item",
+        "mandatory": "1"
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "sc_cat_item",
+        "sys_id": "1118583dc35872107bd371edd40131ac",
+        "category": "b06546f23731300054b6a3549dbe5dd8",
+        "sc_catalogs": "e0d08b13c3330100c8b837659bba8fb4"
+      }
+    }
+  ]
+}

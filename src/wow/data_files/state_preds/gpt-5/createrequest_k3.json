@@ -1,0 +1,433 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-20T00:44:01.680003",
+    "model": "openai/gpt-5",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/createrequest.json",
+    "k": 3,
+    "total_actions_predicted": 3,
+    "total_states_generated": 3
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "test_user_20251007_141015_6340",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_141015_6340@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    {
+      "tool_name": "create_item_request",
+      "parameters": {
+        "number": null,
+        "cat_item": "Test Catalog Item",
+        "requested_for": "949fb088c3a83e1024163942b40131d0",
+        "quantity": "1",
+        "request": null,
+        "state": "1",
+        "short_description": "Test item request created at 20251007_141015"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "949fb088c3a83e1024163942b40131d0",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": false
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 14:10:16",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 14:10:15"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 14:10:18",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 14:10:16"
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "test_user_20251007_141015_6340",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Test",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "User",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "test_user_20251007_141015_6340@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Test User",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 10,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 8,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 14:10:17",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 14:10:15"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-07 14:10:15",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-07 14:10:13"
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "REQ0010458",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-10-07 14:10:15",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "requested_for",
+          "newvalue": "949fb088c3a83e1024163942b40131d0",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_request",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sc_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "RITM0010459",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "task_effective_number",
+          "newvalue": "RITM0010459",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Test item request created at 20251007_141015",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "cat_item",
+          "newvalue": "Test Catalog Item",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "request",
+          "newvalue": "e3f9a6b0c0a8016401c5a33be04be999",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "requested_for",
+          "newvalue": "949fb088c3a83e1024163942b40131d0",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "quantity",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-10-07 14:10:15",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sc_req_item",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "sc_req_item",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "sc_req_item",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7841fb00c3d832107bd371edd4013181",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-10-07 14:10:15",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field_value",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "table",
+          "newvalue": "sc_req_item",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "id",
+          "newvalue": "7841fb00c3d832107bd371edd4013182",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "start",
+          "newvalue": "2025-10-07 14:10:15",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "field",
+          "newvalue": "state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "value",
+          "newvalue": "Open",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 40,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 38,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "sc_request",
+          "sc_req_item",
+          "metric_instance"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 09:00:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 09:00:00"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-10-20 09:00:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-10-20 08:59:58"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 3,
+        "num_modified_entries": 3,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    }
+  ]
+}

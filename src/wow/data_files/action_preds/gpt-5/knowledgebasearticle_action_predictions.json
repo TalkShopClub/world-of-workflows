@@ -1,0 +1,46 @@
+{
+  "trajectory_file": "knowledgebasearticle.json",
+  "task_name": "knowledgebasearticle",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 88.23900389671326,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:51:29.084881",
+  "predictions": [
+    {
+      "tool_name": "get_user",
+      "parameters": {}
+    },
+    {
+      "tool_name": "list_users",
+      "parameters": {
+        "limit": "1"
+      }
+    },
+    {
+      "tool_name": "create_knowledge_article",
+      "parameters": {
+        "short_description": "Test Article 20251007_135704",
+        "text": "<p>This is a test article created at 20251007_135704. It contains sample content for testing purposes.</p>",
+        "knowledge_base_id": "078c7884c3a83e1024163942b401314e",
+        "category_id": "f99c7884c3a83e1024163942b401317b",
+        "article_type": "text",
+        "workflow_state": "published",
+        "topic": "General",
+        "valid_to": "2100-01-01"
+      }
+    },
+    {
+      "tool_name": "update_knowledge_article",
+      "parameters": {
+        "article_number": "KB0010455",
+        "text": "<p>This is a test article created at 20251007_135704. It contains sample content for testing purposes.</p><p><strong>Comment:</strong> This article has been updated with additional information.</p>"
+      }
+    },
+    {
+      "tool_name": "get_user",
+      "parameters": {}
+    }
+  ]
+}

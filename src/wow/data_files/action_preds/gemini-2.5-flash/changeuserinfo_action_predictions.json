@@ -1,0 +1,47 @@
+{
+  "trajectory_file": "changeuserinfo.json",
+  "total_steps": 3,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 2.17341685295105,
+  "timestamp": "2025-10-03T09:50:04.160167",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "test_user_20251002_234915_5337",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251002_234915_5337@example.com",
+        "phone": "555-0100",
+        "active": true,
+        "fields": {
+          "edu_status": "faculty",
+          "notification": "2",
+          "calendar_integration": "1"
+        }
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "test_user_20251002_234915_5337",
+        "active": false,
+        "phone": "555-9617",
+        "fields": {
+          "locked_out": "1"
+        }
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "test_user_20251002_234915_5337",
+        "active": true,
+        "fields": {
+          "locked_out": "0"
+        }
+      }
+    }
+  ]
+}

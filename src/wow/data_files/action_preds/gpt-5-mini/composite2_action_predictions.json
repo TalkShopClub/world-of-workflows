@@ -1,0 +1,64 @@
+{
+  "trajectory_file": "composite2.json",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 22.813282012939453,
+  "timestamp": "2025-10-03T11:14:25.991239",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Steven.Ding.092",
+        "first_name": "Steven",
+        "last_name": "Ding",
+        "email": "stevending@example.com",
+        "active": true,
+        "fields": {
+          "enable_multifactor_authn": "0",
+          "calendar_integration": "1",
+          "notification": "2",
+          "edu_status": "faculty",
+          "web_service_access_only": "0",
+          "internal_integration_user": "0",
+          "vip": "0",
+          "hashed_user_id": "29230f88b0d80124b922179635306d01ab49b92a90256bfda7da9d985466d11f",
+          "password_needs_reset": "0"
+        }
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Skyfall collaborator group",
+        "description": "Skyfall collaborator group",
+        "manager": "a30d49f1c3dc72107bd371edd40131cf",
+        "active": true
+      }
+    },
+    {
+      "tool_name": "create_group",
+      "parameters": {
+        "name": "Skyfall Corp",
+        "description": "Skyfall Corp group",
+        "active": true
+      }
+    },
+    {
+      "tool_name": "update_group",
+      "parameters": {
+        "group_id": "66601df9c3dc72107bd371edd40131f3",
+        "parent": "4831dd3dc3dc72107bd371edd4013181"
+      }
+    },
+    {
+      "tool_name": "add_group_members",
+      "parameters": {
+        "group_id": "66601df9c3dc72107bd371edd40131f3",
+        "members": [
+          "a30d49f1c3dc72107bd371edd40131cf"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "trajectory_file": "composite3.json",
+  "task_name": "composite3",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 9.412160873413086,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T00:39:24.216041",
+  "predictions": [
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "Network problem",
+        "description": "Software license renewal required",
+        "caller_id": "john.doe",
+        "urgency": "2",
+        "impact": "2",
+        "category": "hardware"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "485025bdc310b2107bd371edd40131c1",
+        "short_description": "License renewal",
+        "description": "Network connectivity issues in building A"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "485025bdc310b2107bd371edd40131c1",
+        "short_description": "Database error",
+        "state": "2",
+        "category": "database"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "May.March.092",
+        "first_name": "May",
+        "last_name": "March",
+        "email": "may.march@example.com",
+        "title": "Software Engineer",
+        "department": "221f79b7c6112284005d646b76ab978c",
+        "location": "16ff753837d0200044e0bfc8bcbe5d5f"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_id": "485025bdc310b2107bd371edd40131c1",
+        "assigned_to": "2e81adf1c350b2107bd371edd401318a"
+      }
+    }
+  ]
+}

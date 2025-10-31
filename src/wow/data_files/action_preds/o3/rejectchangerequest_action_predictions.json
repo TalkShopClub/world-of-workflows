@@ -1,0 +1,36 @@
+{
+  "trajectory_file": "rejectchangerequest.json",
+  "task_name": "rejectchangerequest",
+  "total_steps": 3,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 85.8677499294281,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T11:08:17.944148",
+  "predictions": [
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table_name": "change_request",
+        "operation": "post",
+        "short_description": "Test Change Request 20251007_140013",
+        "description": "This is a test change request created at 20251007_140013 for testing purposes.",
+        "type": "normal",
+        "category": "Other",
+        "priority": "4"
+      }
+    },
+    {
+      "tool_name": "list_change_requests",
+      "parameters": {
+        "limit": "20"
+      }
+    },
+    {
+      "tool_name": "get_change_request_details",
+      "parameters": {
+        "change_request_number": "CHG0030092"
+      }
+    }
+  ]
+}

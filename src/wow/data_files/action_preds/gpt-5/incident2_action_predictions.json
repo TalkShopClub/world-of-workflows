@@ -1,0 +1,47 @@
+{
+  "trajectory_file": "incident2.json",
+  "task_name": "incident2",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 77.13654613494873,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-23T10:42:37.627473",
+  "predictions": [
+    {
+      "tool_name": "create_incident",
+      "parameters": {
+        "short_description": "broken AC"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_number": "INC0026902",
+        "comments": "AC is not working and the room is very hot"
+      }
+    },
+    {
+      "tool_name": "update_incident",
+      "parameters": {
+        "incident_number": "INC0026902",
+        "impact": "2",
+        "urgency": "2"
+      }
+    },
+    {
+      "tool_name": "update_task_sla_progress",
+      "parameters": {
+        "incident_number": "INC0026902"
+      }
+    },
+    {
+      "tool_name": "resolve_incident",
+      "parameters": {
+        "incident_number": "INC0026902",
+        "close_code": "Duplicate",
+        "close_notes": "This is a duplicate incident"
+      }
+    }
+  ]
+}

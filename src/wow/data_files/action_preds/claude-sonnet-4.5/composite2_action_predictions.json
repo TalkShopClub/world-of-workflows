@@ -1,0 +1,51 @@
+{
+  "trajectory_file": "composite2.json",
+  "task_name": "composite2",
+  "total_steps": 5,
+  "valid_state_diffs": 5,
+  "predicted_actions": 5,
+  "processing_time_seconds": 5.274439096450806,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T00:39:11.026243",
+  "predictions": [
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "sys_user",
+        "query": "user_name=Steven.Ding.092",
+        "limit": "1"
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "sys_user_group",
+        "query": "name=Skyfall collaborator group",
+        "limit": "1"
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "sys_user_group",
+        "query": "name=Skyfall Corp",
+        "limit": "1"
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "sys_user_group",
+        "query": "sys_id=66601df9c3dc72107bd371edd40131f3"
+      }
+    },
+    {
+      "tool_name": "search_any_table",
+      "parameters": {
+        "table": "sys_user_grmember",
+        "query": "user=a30d49f1c3dc72107bd371edd40131cf^group=66601df9c3dc72107bd371edd40131f3",
+        "limit": "1"
+      }
+    }
+  ]
+}

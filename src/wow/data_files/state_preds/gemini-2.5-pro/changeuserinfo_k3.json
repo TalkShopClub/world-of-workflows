@@ -1,0 +1,258 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-16T18:45:20.718436",
+    "model": "google/gemini-2.5-pro",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/changeuserinfo.json",
+    "k": 3,
+    "total_actions_predicted": 3,
+    "total_states_generated": 3
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "test_user_20251007_140138_5570",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_140138_5570@example.com",
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": "555-0100",
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": true,
+        "fields": null
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "4a9dbcc4c3a83e1024163942b40131ac",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": "555-5137",
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": null
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "4a9dbcc4c3a83e1024163942b40131ac",
+        "user_name": null,
+        "first_name": null,
+        "last_name": null,
+        "email": null,
+        "title": null,
+        "department": null,
+        "manager": null,
+        "roles": null,
+        "phone": null,
+        "mobile_phone": null,
+        "location": null,
+        "password": null,
+        "active": false
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "password_needs_reset",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Test",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "User",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "test_user_20251007_140138_5570",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "sys_user",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Test User",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "test_user_20251007_140138_5570@example.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "phone",
+          "newvalue": "555-0100",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "internal_integration_user",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "web_service_access_only",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "notification",
+          "newvalue": "2",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "calendar_integration",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 14,
+        "num_modified_entries": 0,
+        "num_deleted_entries": 0,
+        "num_created_entries": 14,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "phone",
+          "newvalue": "555-5137",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:04",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:05",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:51:02"
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "0",
+          "tablename": "sys_user",
+          "oldvalue": "1"
+        },
+        {
+          "fieldname": "locked_out",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": "0"
+        },
+        {
+          "fieldname": "percentage",
+          "newvalue": "85.00",
+          "tablename": "task_sla",
+          "oldvalue": "84.21"
+        },
+        {
+          "fieldname": "duration",
+          "newvalue": "1970-01-07 00:00:10",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-07 00:00:06"
+        },
+        {
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-02 12:00:10",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 12:00:06"
+        },
+        {
+          "fieldname": "time_left",
+          "newvalue": "1970-01-02 02:59:50",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 02:59:56"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 7,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "task_sla"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "trajectory_file": "createrequest.json",
+  "task_name": "createrequest",
+  "total_steps": 3,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 52.47551488876343,
+  "custom_schema_used": true,
+  "timestamp": "2025-10-21T11:06:52.072751",
+  "predictions": [
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "test_user_20251007_141015_6340",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test_user_20251007_141015_6340@example.com"
+      }
+    },
+    {
+      "tool_name": "order_catalog_item",
+      "parameters": {
+        "item_id": "098a2440c3683e1024163942b401310a",
+        "requested_for": "949fb088c3a83e1024163942b40131d0",
+        "quantity": "1",
+        "short_description": "Test item request created at 20251007_141015"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_name": "test_user_20251007_141015_6340",
+        "locked_out": "1",
+        "active": "0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "trajectory_file": "rejectchangerequest.json",
+  "total_steps": 3,
+  "valid_state_diffs": 3,
+  "predicted_actions": 3,
+  "processing_time_seconds": 8.13257384300232,
+  "timestamp": "2025-10-02T23:56:29.994203",
+  "predictions": [
+    {
+      "tool_name": "create_change_request",
+      "parameters": {
+        "short_description": "Test Change Request 20251002_234900",
+        "description": "This is a test change request created at 20251002_234900 for testing purposes.",
+        "type": "normal",
+        "risk": "4",
+        "impact": "3",
+        "category": "Other",
+        "requested_by": "6816f79cc0a8016401c5a33be04be441",
+        "assignment_group": null,
+        "state": "requested",
+        "priority": "4",
+        "cab_required": "0",
+        "unauthorized": "0",
+        "on_hold": "0",
+        "scope": "3",
+        "production_system": "0",
+        "knowledge": "0",
+        "opened_by": "6816f79cc0a8016401c5a33be04be441",
+        "work_notes": "Change request submitted for approval at 20251002_234900"
+      }
+    },
+    {
+      "tool_name": "list_users",
+      "parameters": {
+        "limit": "1"
+      }
+    },
+    {
+      "tool_name": "update_user",
+      "parameters": {
+        "user_id": "6816f79cc0a8016401c5a33be04be441",
+        "title": "Senior Software Engineer III"
+      }
+    }
+  ]
+}

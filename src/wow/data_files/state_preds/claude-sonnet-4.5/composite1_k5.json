@@ -1,0 +1,395 @@
+{
+  "prediction_info": {
+    "timestamp": "2025-10-17T11:45:11.887398",
+    "model": "anthropic/claude-sonnet-4.5",
+    "trajectory_file": "/Users/yliu/workarena_api/rest_apis/world_model_scripts/trajectories/composite1.json",
+    "k": 5,
+    "total_actions_predicted": 5,
+    "total_states_generated": 5
+  },
+  "action_calls": [
+    {
+      "tool_name": "create_change_request",
+      "parameters": {
+        "short_description": "Change request for Skyfall group",
+        "type": "Emergency",
+        "risk": "1",
+        "impact": "1",
+        "category": "IT"
+      }
+    },
+    {
+      "tool_name": "create_hardware_asset",
+      "parameters": {
+        "asset_tag": "NV4080-001",
+        "model": "Nvidia RTX 4080",
+        "state": "2",
+        "serial_number": "Sample_serial_number_297"
+      }
+    },
+    {
+      "tool_name": "create_user",
+      "parameters": {
+        "user_name": "Mike.Wayne.101",
+        "first_name": "Mike",
+        "last_name": "Wayne",
+        "email": "mikewayne@sample.com"
+      }
+    },
+    {
+      "tool_name": "update_change_request",
+      "parameters": {
+        "change_id": "d665c8fdc3d472107bd371edd4013126",
+        "short_description": "Change request for assigning rtx 4080 to mike wayne",
+        "state": "1",
+        "risk": "3"
+      }
+    },
+    {
+      "tool_name": "update_asset",
+      "parameters": {
+        "asset_id": "271800b9c31872107bd371edd40131cc",
+        "serial_number": "1234567890",
+        "comments": "NVIDIA RTX 4080 GPU"
+      }
+    }
+  ],
+  "predicted_states": [
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:52",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:50"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Change request for Skyfall group",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "type",
+          "newvalue": "Emergency",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "risk",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "impact",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "category",
+          "newvalue": "IT",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "priority",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "urgency",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "number",
+          "newvalue": "CHG0030001",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "change_request",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-25 20:50:50",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "change_request",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "change_request",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 18,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 17,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "change_request"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:28",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:26"
+        },
+        {
+          "fieldname": "asset_tag",
+          "newvalue": "NV4080-001",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "model",
+          "newvalue": "Nvidia RTX 4080",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "2",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "serial_number",
+          "newvalue": "Sample_serial_number_297",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "sys_class_name",
+          "newvalue": "alm_hardware",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "install_status",
+          "newvalue": "2",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "substatus",
+          "newvalue": "available",
+          "tablename": "alm_hardware",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 8,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 7,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user",
+          "alm_hardware"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:52",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:50"
+        },
+        {
+          "fieldname": "user_name",
+          "newvalue": "Mike.Wayne.101",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "first_name",
+          "newvalue": "Mike",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_name",
+          "newvalue": "Wayne",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "email",
+          "newvalue": "mikewayne@sample.com",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "name",
+          "newvalue": "Mike Wayne",
+          "tablename": "sys_user",
+          "oldvalue": ""
+        }
+      ],
+      "additional_information": {
+        "num_audits": 7,
+        "num_modified_entries": 1,
+        "num_deleted_entries": 0,
+        "num_created_entries": 6,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:00"
+        },
+        {
+          "fieldname": "short_description",
+          "newvalue": "Change request for assigning rtx 4080 to mike wayne",
+          "tablename": "change_request",
+          "oldvalue": "Previous short description value"
+        },
+        {
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "change_request",
+          "oldvalue": "Previous state value"
+        },
+        {
+          "fieldname": "risk",
+          "newvalue": "3",
+          "tablename": "change_request",
+          "oldvalue": "Previous risk value"
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:00",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:49:58"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 5,
+        "num_modified_entries": 5,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "change_request",
+          "sys_user"
+        ]
+      }
+    },
+    {
+      "sysauditrecord": [
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:52",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:50"
+        },
+        {
+          "fieldname": "serial_number",
+          "newvalue": "1234567890",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "comments",
+          "newvalue": "NVIDIA RTX 4080 GPU",
+          "tablename": "alm_asset",
+          "oldvalue": ""
+        },
+        {
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:50",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:48"
+        }
+      ],
+      "additional_information": {
+        "num_audits": 4,
+        "num_modified_entries": 4,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "alm_asset",
+          "sys_user"
+        ]
+      }
+    }
+  ]
+}
