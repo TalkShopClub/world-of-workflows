@@ -1,0 +1,14 @@
+{
+  "invalid_action_idxs": [
+    12,
+    20
+  ],
+  "invalid_policy_names": [
+    "High priority requests cannot be rejected on grounds of inactive user.",
+    "Users should not be assigned with the same role as their managers."
+  ],
+  "invalid_policy_nums": [
+    7,
+    2
+  ]
+}

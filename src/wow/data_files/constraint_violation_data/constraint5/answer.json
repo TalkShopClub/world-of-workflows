@@ -1,0 +1,5 @@
+{
+    "policy_name": "A problem should always have an assigned user.",
+    "invalid_action_idxs": [4],
+    "invalid_policy_nums": [4]
+  }

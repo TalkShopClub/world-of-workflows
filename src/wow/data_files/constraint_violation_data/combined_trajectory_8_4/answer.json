@@ -1,0 +1,14 @@
+{
+  "invalid_action_idxs": [
+    12,
+    22
+  ],
+  "invalid_policy_names": [
+    "High priority requests cannot be rejected on grounds of inactive user.",
+    "Cannot transfer user from one group to another if they would lose clearance and be forced to surrender assets."
+  ],
+  "invalid_policy_nums": [
+    7,
+    6
+  ]
+}

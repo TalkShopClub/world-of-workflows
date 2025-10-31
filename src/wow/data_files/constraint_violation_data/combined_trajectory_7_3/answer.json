@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    9,
+    18,
+    23
+  ],
+  "invalid_policy_names": [
+    "Cannot transfer user from one group to another if they would lose clearance and be forced to surrender assets.",
+    "Assets cannot be transferred to users whose clearance_level is below the asset's required_clearance_level.",
+    "A problem should always have an assigned user."
+  ],
+  "invalid_policy_nums": [
+    6,
+    5,
+    4
+  ]
+}

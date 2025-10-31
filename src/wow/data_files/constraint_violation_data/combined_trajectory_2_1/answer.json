@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    6,
+    19,
+    27
+  ],
+  "invalid_policy_names": [
+    "Flagged articles should not be published.",
+    "High priority requests cannot be rejected on grounds of inactive user.",
+    "Users should not be assigned with the same role as their managers."
+  ],
+  "invalid_policy_nums": [
+    1,
+    7,
+    2
+  ]
+}

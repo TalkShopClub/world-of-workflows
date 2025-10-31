@@ -1,0 +1,5 @@
+{
+    "policy_name": "Flagged articles should not be published.",
+    "invalid_action_idxs": [6],
+    "invalid_policy_nums": [1]
+  }

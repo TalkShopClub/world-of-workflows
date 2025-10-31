@@ -10,18 +10,48 @@ To understand the limitations of frontier LLMs as enterprise world models, we be
 
 # Installation
 
-1. Created Virtual Environment with UV/venv
+1. Create a developer instance in ServiceNow 
+
+    - Go to https://developer.servicenow.com/dev.do 
+    - Press "Sign In" in the top right part of the page 
+    - Press "New User? Get a ServiceNow ID" 
+    - Fill the form and your request for an instance will be initiated (This can take upto 10 mins to complete) 
+
+2. You should now see your URL and credentials. Based on this information, set the following environment variables:
+    - `SNOW_INSTANCE_URL`: The URL of your ServiceNow developer instance
+    - `SNOW_INSTANCE_UNAME`: The username, should be "admin"
+    - `SNOW_INSTANCE_PWD`: The password, make sure you place the value in quotes "" and be mindful of [escaping special shell characters](https://onlinelinuxtools.com/escape-shell-characters). Running `echo $SNOW_INSTANCE_PWD` should print the correct password.
+
+3. Log into your instance via a browser using the admin credentials. Close any popup that appears on the main screen (e.g., agreeing to analytics).
+
+4. Set other environment variables: 
+    - OPENROUTER_API_KEY (You can get one from [OpenRouter](https://openrouter.ai/))
+    - LANGFUSE_PUBLIC_KEY (For these, create an account on [Langfuse](https://langfuse.com/) and create a project. Each project has these associated keys that will be provided)
+    - LANGFUSE_SECRET_KEY
+    - LANGFUSE_HOST  
+
+5. Create Virtual Environment with uv
 ```bash
-uv venv --python 3.12
+uv venv .venv --python 3.12
+source .venv/bin/activate
 ```
 
-2. Install servicenow_mcp from Submodules
+6. Install servicenow_mcp from Submodules
 ```bash
 uv pip install -e submodules/servicenow-mcp/
 ```
 
-3. Run evaluation script
-```bash
-.venv/bin/python -m src.unified_evaluation --help
+7. Install the source package 
 ```
+uv pip install -e . 
+wow-install
+``` 
+
+8. Run example script
+```
+python example_usage.py
+```
+
+# Usage 
+
 

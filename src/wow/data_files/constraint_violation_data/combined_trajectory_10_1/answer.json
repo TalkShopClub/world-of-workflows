@@ -1,0 +1,20 @@
+{
+  "invalid_action_idxs": [
+    9,
+    23,
+    23,
+    37
+  ],
+  "invalid_policy_names": [
+    "Asset with value greater than 10000$ cannot be transferred to users who already have more than 2 active assets.",
+    "High priority requests cannot be rejected on grounds of inactive user.",
+    "Priority 1 task derivative records cannot be cancelled, closed or rejected. They can only be resolved.",
+    "High priority requests cannot be rejected on grounds of inactive user."
+  ],
+  "invalid_policy_nums": [
+    9,
+    7,
+    8,
+    7
+  ]
+}

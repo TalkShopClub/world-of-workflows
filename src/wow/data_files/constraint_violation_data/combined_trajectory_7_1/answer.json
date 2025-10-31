@@ -1,0 +1,26 @@
+{
+  "invalid_action_idxs": [
+    9,
+    12,
+    17,
+    17,
+    30,
+    37
+  ],
+  "invalid_policy_names": [
+    "Cannot transfer user from one group to another if they would lose clearance and be forced to surrender assets.",
+    "Users should not be assigned with the same role as their managers.",
+    "A problem should always have an assigned user.",
+    "A user should not be assigned with more than 3 active incidents at a time.",
+    "High priority requests cannot be rejected on grounds of inactive user.",
+    "Flagged articles should not be published."
+  ],
+  "invalid_policy_nums": [
+    6,
+    2,
+    4,
+    3,
+    7,
+    1
+  ]
+}

@@ -1,4 +1,0 @@
-{
-  "policy_name": "Serial numbers cannot be modified once asset is marked as 'In Use'",
-  "invalid_action_idx": 8
-}

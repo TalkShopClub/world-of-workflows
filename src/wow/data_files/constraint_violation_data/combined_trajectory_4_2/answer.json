@@ -1,0 +1,29 @@
+{
+  "invalid_action_idxs": [
+    2,
+    7,
+    7,
+    14,
+    23,
+    36,
+    36
+  ],
+  "invalid_policy_names": [
+    "Users should not be assigned with the same role as their managers.", 
+    "A problem should always have an assigned user.",
+    "A user should not be assigned with more than 3 active incidents at a time.",
+    "Moving an US-based asset to a different country requires approval first.",
+    "Assets cannot be transferred to users whose clearance_level is below the asset's required_clearance_level.",
+    "High priority requests cannot be rejected on grounds of inactive user.",
+    "Priority 1 task derivative records cannot be cancelled, closed or rejected. They can only be resolved."
+  ],
+  "invalid_policy_nums": [
+    2,
+    4,
+    3,
+    0,
+    5,
+    7,
+    8
+  ]
+}

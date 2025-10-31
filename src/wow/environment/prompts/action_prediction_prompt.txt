@@ -1,0 +1,623 @@
+You will be served as a enterprise world model for state prediction. Specifically, the system environment you are operating in is the ServiceNow developer instance.
+
+## ServiceNow platform backend domain logic 
+  - The oldValue for `work_notes` field in any table always says "JOURNAL FIELD ADDITION" and any newValue is added on top of the existing notes. This way, 
+  all the previous comments dont bloat the audit table. 
+  - Duration values in ServiceNow are specified as the number of days and time from January 1, 1970, 00:00:00. For example, "1970-01-04 12:00:00" means 
+  a duration of 3 days and 12 hours since that's how much more it is from 1 January 1970. 
+
+You will be given the input including the initial state, a sequence of state changes, the schema of all the tables, and a description of the user task. As a world model, your main task is to understand what actions will change the underlying state of the world and predict them. The state includes two major parts:
+
+1. The table audits have following JSON structure with four keys: fieldname, newvalue, tablename, and oldvalue. The following is an example of an update operation for the column short_description in table sc_req_item. There will usually be multiple table audits associated with one action.
+
+{{{{'fieldname': 'short_description',
+ 'newvalue': 'Updated sc_req_item from API',
+ 'tablename': 'sc_req_item',
+ 'oldvalue': 'Test sc_req_item from API',
+}}}}
+
+2. An AdditionalInformation section for each state that specifies the total number of audits (num_audits), updated columns (num_modified_entries), deleted columns (num_deleted_entries), created entries (num_created_entries), operation type (a list of operation types that the action performs, can only be [get, put, post, delete]), and all table names that appear in the table audits (tables_modified).
+
+There will be multiple state changes in a sequence, and your primary job is to identify the actions leading to each of the state change.
+
+Your output, which is a sequence of MCP tools as actions, should strictly follow this schema:
+[
+    "actions":{{
+        "tool_name": "tool 1",
+      "parameters": {{
+        "parameter 1": "value",
+        "parameter 2": "value
+        }}
+    }},
+    "actions":{{
+        "tool_name": "tool 1",
+      "parameters": {{
+        "parameter 1": "value",
+        "parameter 2": "value
+        }}
+    }},
+]
+
+## Table Schemas 
+These are the table schemas for some relevant tables. The keys in the dictionary are the table names and the entries correspond to the different columns for each table. 
+The column name is represented by "element", "mandatory" indicates whether it is a mandatory field, "reference" indicates whether the column value references to a different table 
+and "internal_type" indicates the data type for the column value. If the type is boolean, it actually means either a value of "0" or "1" instead of strings "true" or "false".
+"default_value" refers to the default value for the column if no value is specified. 
+Sometimes default_value is computed from a javascript code snippet. In such a case, "all_javascript_context" will have context about all the underlying JS code to
+help understand how the JS code is computed. ServiceNow scripting is used in these JS codes, so you are expected to know the basics of ServiceNow scripting.
+If "choices" is specified for a column, it means that the column can only hold one of those fixed string values. It also shows a corresponding "label" for 
+that value. This basically means that if this label is passed as the value of this field, it will be mapped to the corresponding "value" for that choice label. 
+{table_schema} 
+
+MCP tool schema (available actions), which you should refer to when predicting the actions:
+{mcp_tools}
+
+Some examples of actions and their corresponding states are:
+
+state/action pair 1:
+
+"action": {{
+      "tool_name": "list_users",
+      "parameters": {{
+        "limit": "1"
+      }}
+    }}
+
+"predicted_state": {{
+      "sysauditrecord": [
+        {{
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:52",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:50"
+        }},
+        {{
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:50",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:48"
+        }}
+      ],
+      "additional_information": {{
+        "num_audits": 2,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "get"
+        ],
+        "tables_modified": [
+          "sys_user"
+        ]
+      }}
+    }}
+
+state/action pair 2:
+
+"action": {{
+      "tool_name": "create_incident",
+      "parameters": {{
+        "short_description": "Test incident for few-shot example",
+        "description": "This is a test incident created for generating training examples"
+      }}
+    }}
+
+"predicted_state": {{
+      "sysauditrecord": [
+        {{
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:57",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:55"
+        }},
+        {{
+          "fieldname": "reassignment_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "definition",
+          "newvalue": "39d631fcc0a808ae00486d7bad874380",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "severity",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "priority",
+          "newvalue": "5",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "start",
+          "newvalue": "2025-09-25 20:50:55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "opened_at",
+          "newvalue": "2025-09-25 20:50:55",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "definition",
+          "newvalue": "35f2b283c0a808ae000b7132cd0a4f55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "child_incidents",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "field_value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "category",
+          "newvalue": "inquiry",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "sys_class_name",
+          "newvalue": "incident",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "field_value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "urgency",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "active",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "start",
+          "newvalue": "2025-09-25 20:50:55",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "sys_domain",
+          "newvalue": "global",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "number",
+          "newvalue": "INC0026874",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "value",
+          "newvalue": "false",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "made_sla",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "table",
+          "newvalue": "incident",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "calculation_complete",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "reopen_count",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "notify",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "field_value",
+          "newvalue": "1",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "field",
+          "newvalue": "active",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "incident_state",
+          "newvalue": "1",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "impact",
+          "newvalue": "3",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "value",
+          "newvalue": "New",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "opened_by",
+          "newvalue": "6816f79cc0a8016401c5a33be04be441",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "upon_reject",
+          "newvalue": "cancel",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "id",
+          "newvalue": "6841fb00c3d832107bd371edd401318e",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "upon_approval",
+          "newvalue": "proceed",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "value",
+          "newvalue": "true",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "approval",
+          "newvalue": "not requested",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "short_description",
+          "newvalue": "Test incident for few-shot example",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "field",
+          "newvalue": "incident_state",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "calculation_complete",
+          "newvalue": "0",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "description",
+          "newvalue": "This is a test incident created for generating training examples",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "knowledge",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "id",
+          "newvalue": "6841fb00c3d832107bd371edd401318e",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "task_effective_number",
+          "newvalue": "INC0026874",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "definition",
+          "newvalue": "35f3dc69c0a808ae0008665731c17d03",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "escalation",
+          "newvalue": "0",
+          "tablename": "incident",
+          "oldvalue": ""
+        }},
+        {{
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:55",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:52"
+        }},
+        {{
+          "fieldname": "id",
+          "newvalue": "6841fb00c3d832107bd371edd401318e",
+          "tablename": "metric_instance",
+          "oldvalue": ""
+        }}
+      ],
+      "additional_information": {{
+        "num_audits": 50,
+        "num_modified_entries": 2,
+        "num_deleted_entries": 0,
+        "num_created_entries": 48,
+        "operation_type": [
+          "post"
+        ],
+        "tables_modified": [
+          "metric_instance",
+          "incident",
+          "sys_user"
+        ]
+      }}
+    }}
+
+
+state/action pair 3:
+
+"action": {{
+      "tool_name": "update_user",
+      "parameters": {{
+        "user_id": "000753bdc3ff6a107bd371edd40131ab",
+        "title": "Senior Software Engineer III"
+      }}
+    }}
+
+"predicted_state": {{
+      "sysauditrecord": [
+        {{
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:51:02",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:59"
+        }},
+        {{
+          "fieldname": "percentage",
+          "newvalue": "84.21",
+          "tablename": "task_sla",
+          "oldvalue": "79.04"
+        }},
+        {{
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-02 12:00:04",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 06:09:05"
+        }},
+        {{
+          "fieldname": "business_percentage",
+          "newvalue": "75",
+          "tablename": "task_sla",
+          "oldvalue": "62.82"
+        }},
+        {{
+          "fieldname": "duration",
+          "newvalue": "1970-01-07 00:00:04",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-06 15:09:20"
+        }},
+        {{
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 11:59:53",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 17:50:53"
+        }},
+        {{
+          "fieldname": "time_left",
+          "newvalue": "1970-01-02 02:59:57",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 11:50:41"
+        }},
+        {{
+          "fieldname": "business_percentage",
+          "newvalue": "75",
+          "tablename": "task_sla",
+          "oldvalue": "62.82"
+        }},
+        {{
+          "fieldname": "percentage",
+          "newvalue": "84.21",
+          "tablename": "task_sla",
+          "oldvalue": "79.04"
+        }},
+        {{
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 11:59:55",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 17:50:55"
+        }},
+        {{
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:50:59",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:50:57"
+        }},
+        {{
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-02 12:00:03",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 06:09:04"
+        }},
+        {{
+          "fieldname": "duration",
+          "newvalue": "1970-01-07 00:00:03",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-06 15:09:19"
+        }},
+        {{
+          "fieldname": "percentage",
+          "newvalue": "84.21",
+          "tablename": "task_sla",
+          "oldvalue": "79.04"
+        }},
+        {{
+          "fieldname": "time_left",
+          "newvalue": "1970-01-02 02:59:54",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 11:50:38"
+        }},
+        {{
+          "fieldname": "business_percentage",
+          "newvalue": "75",
+          "tablename": "task_sla",
+          "oldvalue": "62.81"
+        }},
+        {{
+          "fieldname": "business_duration",
+          "newvalue": "1970-01-02 12:00:06",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 06:09:07"
+        }},
+        {{
+          "fieldname": "business_time_left",
+          "newvalue": "1970-01-01 11:59:56",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-01 17:50:56"
+        }},
+        {{
+          "fieldname": "time_left",
+          "newvalue": "1970-01-02 02:59:56",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-02 11:50:40"
+        }},
+        {{
+          "fieldname": "duration",
+          "newvalue": "1970-01-07 00:00:06",
+          "tablename": "task_sla",
+          "oldvalue": "1970-01-06 15:09:22"
+        }}
+      ],
+      "additional_information": {{
+        "num_audits": 20,
+        "num_modified_entries": 20,
+        "num_deleted_entries": 0,
+        "num_created_entries": 0,
+        "operation_type": [
+          "put"
+        ],
+        "tables_modified": [
+          "task_sla",
+          "sys_user"
+        ]
+      }}
+    }}
+
+state/action pair 4:
+
+"action": {{
+      "tool_name": "delete_asset",
+      "parameters": {{
+        "asset_id": "d2323f00c3d832107bd371edd40131ed"
+      }}
+    }}
+
+"predicted_state": {{
+      "sysauditrecord": [
+        {{
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:26",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:23"
+        }},
+        {{
+          "fieldname": "last_login_time",
+          "newvalue": "2025-09-25 20:55:23",
+          "tablename": "sys_user",
+          "oldvalue": "2025-09-25 20:55:21"
+        }},
+        {{
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "fm_expense_line",
+          "oldvalue": "DELETED"
+        }},
+        {{
+          "fieldname": "DELETED",
+          "newvalue": "DELETED",
+          "tablename": "alm_asset",
+          "oldvalue": "DELETED"
+        }}
+      ],
+      "additional_information": {{
+        "num_audits": 4,
+        "num_modified_entries": 4,
+        "num_deleted_entries": 2,
+        "num_created_entries": 0,
+        "operation_type": [
+          "delete"
+        ],
+        "tables_modified": [
+          "fm_expense_line",
+          "sys_user",
+          "alm_asset"
+        ]
+      }}
+    }}

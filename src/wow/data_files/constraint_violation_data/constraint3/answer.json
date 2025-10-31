@@ -1,0 +1,5 @@
+{
+    "policy_name": "Users should not be assigned with the same role as their managers.",
+    "invalid_action_idxs": [7],
+    "invalid_policy_nums": [2]
+  }

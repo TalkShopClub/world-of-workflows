@@ -1,4 +1,0 @@
-{
-  "policy_name": "Change requests with risk level 'Moderate' or higher cannot be scheduled on Fridays",
-  "invalid_action_idx": 6
-}

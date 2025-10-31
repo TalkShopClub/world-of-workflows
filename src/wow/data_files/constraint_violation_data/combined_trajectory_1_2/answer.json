@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    6,
+    14,
+    24
+  ],
+  "invalid_policy_names": [
+    "Moving an US-based asset to a different country requires approval first.",
+    "Users should not be assigned with the same role as their managers.",
+    "Cannot transfer user from one group to another if they would lose clearance and be forced to surrender assets."
+  ],
+  "invalid_policy_nums": [
+    0,
+    2,
+    6
+  ]
+}

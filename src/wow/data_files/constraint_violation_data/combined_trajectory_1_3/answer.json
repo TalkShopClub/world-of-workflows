@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    6,
+    19,
+    19
+  ],
+  "invalid_policy_names": [
+    "Moving an US-based asset to a different country requires approval first.",
+    "High priority requests cannot be rejected on grounds of inactive user.",
+    "Priority 1 task derivative records cannot be cancelled, closed or rejected. They can only be resolved."
+  ],
+  "invalid_policy_nums": [
+    0,
+    7,
+    8
+  ]
+}

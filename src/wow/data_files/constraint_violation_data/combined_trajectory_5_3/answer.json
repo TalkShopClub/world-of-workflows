@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    4,
+    15,
+    28
+  ],
+  "invalid_policy_names": [
+    "A problem should always have an assigned user.",
+    "Cannot transfer user from one group to another if they would lose clearance and be forced to surrender assets.",
+    "High priority requests cannot be rejected on grounds of inactive user."
+  ],
+  "invalid_policy_nums": [
+    4,
+    6,
+    7
+  ]
+}

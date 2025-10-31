@@ -1,0 +1,17 @@
+{
+  "invalid_action_idxs": [
+    7,
+    17,
+    25
+  ],
+  "invalid_policy_names": [
+    "Users should not be assigned with the same role as their managers.",
+    "Asset with value greater than 10000$ cannot be transferred to users who already have more than 2 active assets.",
+    "Moving an US-based asset to a different country requires approval first."
+  ],
+  "invalid_policy_nums": [
+    2,
+    9,
+    0
+  ]
+}
