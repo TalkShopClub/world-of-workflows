@@ -18,7 +18,11 @@ from wow.environment.agent import WorldModelAgent, ActionCall, StateDiff
 from wow.environment.generators.actions import generate_action_predictions
 from wow.environment.generators.states import generate_task_state_predictions
 from wow.environment.generators.constraint_tasks import generate_constraint_violation_predictions
-from wow.environment.evaluation import evaluate_constraint_predictions
+from wow.environment.evaluation import (
+    evaluate_constraint_predictions,
+    StatePredictionEvaluator,
+    ActionPredictionEvaluator
+)
 
 
 async def example_state_prediction():
@@ -35,7 +39,7 @@ async def example_state_prediction():
         {"tool_name": "update_incident", "parameters": {"sys_id": "inc123", "state": "2"}}
     ]
 
-    predicted_states = await agent.predict_states(actions, task_name="create_and_update_incident")
+    predicted_states = await agent.predict_states(actions, task="create_and_update_incident")
 
     print(f"Generated {len(predicted_states)} state predictions")
     for i, state in enumerate(predicted_states):
@@ -97,6 +101,55 @@ async def example_constraint_prediction(output_file: Path):
     print(f"Total cost: ${results['metadata']['total_cost']:.4f}")
     print(f"JSON errors: {results['metadata']['total_json_errors']}")
 
+
+async def example_state_evaluation():
+    """Example: Evaluate state predictions"""
+    print("\n" + "="*60)
+    print("EXAMPLE 4: State Prediction Evaluation")
+    print("="*60)
+
+    model_name = "claude-sonnet-4.5"
+    evaluator = StatePredictionEvaluator(model_name)
+    
+    # Evaluate state predictions for k=1, 2, 3, 4, 5
+    results = evaluator.evaluate_state_predictions(k_values=[1, 2, 3, 4, 5])
+    
+    if 'error' not in results:
+        print("\n📊 State Evaluation Results:")
+        for k_key, k_data in results.get('k_evaluations', {}).items():
+            if k_data.get('status') == 'success':
+                print(f"\n  {k_key}:")
+                print(f"    Full Match Rate: {k_data.get('full_match_rate', 0):.3f}")
+                print(f"    Avg SysAudit IoU: {k_data.get('avg_sysaudit_iou', 0):.3f}")
+                print(f"    Avg Additional Info IoU: {k_data.get('avg_additional_info_iou', 0):.3f}")
+                print(f"    Total Steps: {k_data.get('total_steps', 0)}")
+                print(f"    Files Evaluated: {k_data.get('num_files', 0)}")
+    else:
+        print(f"❌ Error: {results.get('error')}")
+
+
+async def example_action_evaluation():
+    """Example: Evaluate action predictions"""
+    print("\n" + "="*60)
+    print("EXAMPLE 5: Action Prediction Evaluation")
+    print("="*60)
+
+    model_name = "claude-sonnet-4.5"
+    evaluator = ActionPredictionEvaluator(model_name)
+    
+    results = evaluator.evaluate_action_predictions()
+    
+    if 'error' not in results:
+        metrics = results.get('metrics', {})
+        print("\n📊 Action Evaluation Results:")
+        print(f"    Tool Name Accuracy: {metrics.get('tool_name_accuracy', 0):.3f}")
+        print(f"    Perfect Match Accuracy: {metrics.get('perfect_match_accuracy', 0):.3f}")
+        print(f"    Total Actions: {metrics.get('total_actions', 0)}")
+        print(f"    Tool Name Matches: {metrics.get('tool_name_matches', 0)}")
+        print(f"    Perfect Matches: {metrics.get('perfect_matches', 0)}")
+    else:
+        print(f"❌ Error: {results.get('error')}")
+
 async def example_run_action(): 
     """Example: Run an action and save the result to a file"""
 
@@ -119,17 +172,21 @@ async def main():
 
     os.makedirs('example_predictions', exist_ok=True)
 
-    # await example_state_prediction()
-    # await example_action_prediction()
+    await example_state_prediction()
+    await example_action_prediction()
 
-    # Constraint prediction 
     output_file = Path('example_predictions/original_constraint_prediction.json')
     await example_constraint_prediction(output_file=output_file)
+
+    # Evaluate the constraint prediction
+    print("\n" + "="*60)
+    print("Evaluating Constraint Predictions")
+    print("="*60)
+
     evaluation_results = evaluate_constraint_predictions(output_file)
     print(f"Accuracy: {evaluation_results['accuracy']:.2%}")
-
-    # Run a sample action and save observations from environment
     await example_run_action()
+
 
 if __name__ == "__main__":
     asyncio.run(main())
