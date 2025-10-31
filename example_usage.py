@@ -25,7 +25,6 @@ from wow.environment.evaluation import (
     ActionPredictionEvaluator
 )
 
-
 async def example_state_prediction(output_dir: str = 'example_predictions'):
     """Example: Generate state predictions from action sequence"""
     print("\n" + "="*60)
@@ -98,7 +97,7 @@ async def example_custom_schema_state_prediction(output_dir: str = 'example_pred
         return print("No actions found in trajectory")
     
     # Use custom schema from anthropic/claude-sonnet-4.5 directory
-    custom_schema_path = Path("src/wow/data_files/schemas/anthropic/claude-sonnet-4.5")
+    custom_schema_path = Path("src/wow/data_files/schemas/anthropic/claude-sonnet-4.5/")
     if not custom_schema_path.exists():
         return print(f"Custom schema path not found: {custom_schema_path}")
     
@@ -197,7 +196,6 @@ async def example_custom_schema_action_prediction(output_dir: str = 'example_pre
         print(f"✅ Custom schema action predictions saved to: {results['output_file']}")
         print(f"   Predicted {results['predicted_actions']} actions")
         print(f"   Processing time: {results['processing_time_seconds']:.2f} seconds")
-        print(f"   Custom schema used: {results['custom_schema_used']}")
     else:
         print("❌ Failed to generate predictions")
 
@@ -298,9 +296,9 @@ async def main(output_dir: str = 'example_predictions'):
     
     os.makedirs(output_dir, exist_ok=True)
 
-    await example_state_prediction(output_dir=output_dir)
+    #await example_state_prediction(output_dir=output_dir)
     await example_custom_schema_state_prediction(output_dir=output_dir)
-    await example_action_prediction(output_dir=output_dir)
+    #await example_action_prediction(output_dir=output_dir)
     await example_custom_schema_action_prediction(output_dir=output_dir)
 
     # output_file = Path(output_dir) / 'original_constraint_prediction.json'

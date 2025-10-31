@@ -128,7 +128,7 @@ class WorldModelAgent:
             print(f"⚠️ Error reading tool mapping: {e}")
             return ["unknown"]
 
-    def _build_state_prediction_prompt(self, action: Dict, previous_states: Optional[List[StateDiff]] = None, task: str = None) -> str:
+    def _build_state_prediction_prompt(self, action: Dict, previous_states: Optional[List[StateDiff]] = None, custom_schema_path: str = None) -> str:
         """Build prompt for state prediction given task and action"""
         with open(Path(__file__).parent / "prompts" / "state_prediction_prompt.txt", "r") as f:
             prompt_template = f.read()
@@ -145,34 +145,25 @@ class WorldModelAgent:
         with open(Path(__file__).parent / "prompts" / "tool_request_mapping.json", "r") as f:
             tool_request_mapping = json.load(f)
         
-        filtered_schemas = {table: schema for table, schema in table_schemas.items() 
+        if custom_schema_path:
+            with open(custom_schema_path, "r") as f:
+                filtered_schemas = json.load(f)["schema_context"]
+        else:
+            filtered_schemas = {table: schema for table, schema in table_schemas.items() 
                           if table in tables_to_include}
         
         included_tools = [tool for tool,tool_type  in tool_request_mapping.items() if 'get' not in tool_type or len(tool_type) > 1]
         included_tools_specs = [tool for tool in tool_specifications if tool['name'] in included_tools]
 
-        prompt_template = prompt_template.format(mcp_tools=included_tools_specs, table_schema=json.dumps(filtered_schemas, indent=2))
-        
-        # Serialize previous states to JSON, limiting to last 3 states to prevent token overflow
-        previous_states_json = "None"
-        if previous_states:
-            # Only include the most recent states to prevent token overflow
-            recent_states = previous_states[-3:]  # Limit to last 3 states
-            previous_states_json = json.dumps(
-                [state.model_dump(mode='json') if isinstance(state, StateDiff) else state 
-                 for state in recent_states],
-                indent=2
-            )
-            if len(previous_states) > 3:
-                previous_states_json = f"[Note: Showing last 3 of {len(previous_states)} previous states]\n{previous_states_json}"
+        prompt_template = prompt_template.format(mcp_tools=included_tools_specs, table_schema=filtered_schemas)
         
         state_prediction_prompt = prompt_template + f"""
 
         ## Previous States from earlier to latest
-        {previous_states_json}
+        {previous_states}
 
         ## Given Action
-        Action: {json.dumps(action, indent=2)}
+        Action: {action}
 
         Predict the resulting state change as a JSON array. 
 
@@ -180,92 +171,6 @@ class WorldModelAgent:
         
         return state_prediction_prompt
 
-    def _build_custom_state_prediction_prompt(self, action: Dict, task: str, custom_schema_path: str, previous_states: Optional[List[StateDiff]] = None) -> str:
-        """Build prompt for state prediction using task-specific custom schemas"""
-        with open(Path(__file__).parent / "prompts" / "state_prediction_prompt.txt", "r") as f:
-            prompt_template = f.read()
-        
-        # Load custom schema for the specific task
-        task_schema_file = Path(custom_schema_path) / f"{task.lower()}.json"
-        
-        if not task_schema_file.exists():
-            raise FileNotFoundError(f"Custom schema file not found: {task_schema_file}")
-        
-        with open(task_schema_file, "r") as f:
-            task_schema_data = json.load(f)
-        
-        # Extract tool_calls from the custom schema
-        tool_calls = task_schema_data.get("tool_calls", [])
-        
-        if not tool_calls:
-            raise ValueError(f"No tool_calls found in custom schema: {task_schema_file}")
-        
-        # Convert tool_calls to MCP tool specifications format
-        included_tools_specs = []
-        for tool_call in tool_calls:
-            tool_spec = {
-                "name": tool_call.get("name", ""),
-                "description": f"Tool call from {task} task",
-                "parameters": {}
-            }
-            
-            # Parse input parameters if available
-            input_str = tool_call.get("input", "{}")
-            try:
-                if isinstance(input_str, str):
-                    tool_spec["parameters"] = json.loads(input_str)
-                else:
-                    tool_spec["parameters"] = input_str
-            except json.JSONDecodeError:
-                tool_spec["parameters"] = {}
-            
-            included_tools_specs.append(tool_spec)
-        
-        # For table schemas, we'll use a minimal set since we're focusing on tool_calls
-        # You could extend this to extract table schemas from the custom schema if needed
-        minimal_table_schemas = {
-            "incident": {
-                "short_description": {"element": "short_description", "mandatory": True, "internal_type": "string"},
-                "description": {"element": "description", "mandatory": False, "internal_type": "string"},
-                "state": {"element": "state", "mandatory": True, "internal_type": "string"},
-                "priority": {"element": "priority", "mandatory": True, "internal_type": "string"}
-            }
-        }
-        
-        prompt_template = prompt_template.format(
-            mcp_tools=json.dumps(included_tools_specs, indent=2), 
-            table_schema=json.dumps(minimal_table_schemas, indent=2)
-        )
-        
-        # Serialize previous states to JSON, limiting to last 3 states to prevent token overflow
-        previous_states_json = "None"
-        if previous_states:
-            # Only include the most recent states to prevent token overflow
-            recent_states = previous_states[-3:]  # Limit to last 3 states
-            previous_states_json = json.dumps(
-                [state.model_dump(mode='json') if isinstance(state, StateDiff) else state 
-                 for state in recent_states],
-                indent=2
-            )
-            if len(previous_states) > 3:
-                previous_states_json = f"[Note: Showing last 3 of {len(previous_states)} previous states]\n{previous_states_json}"
-        
-        state_prediction_prompt = prompt_template + f"""
-
-        ## Previous States from earlier to latest
-        {previous_states_json}
-
-        ## Given Action
-        Action: {json.dumps(action, indent=2)}
-
-        ## Task-Specific Context
-        This prediction is for the '{task}' task using custom schema with {len(tool_calls)} tool calls.
-
-        Predict the resulting state change as a JSON array. 
-
-        Output ONLY the JSON array without code blocks or comments."""
-        
-        return state_prediction_prompt
 
     def _truncate_state_diff(self, state_diff: Dict, max_audits: int = 20) -> Dict:
         """Truncate state diff to reduce token usage by limiting audit records"""
@@ -285,7 +190,7 @@ class WorldModelAgent:
         
         return truncated
 
-    def _build_action_prediction_prompt(self, state_diffs: List[Dict], task: str = None) -> str:
+    def _build_action_prediction_prompt(self, state_diffs: List[Dict], custom_schema_path: str = None) -> str:
         """Build prompt for multi-step action prediction given task and k state diffs"""
         with open(Path(__file__).parent / "prompts" / "action_prediction_prompt.txt", "r") as f:
             prompt_template = f.read()
@@ -302,154 +207,33 @@ class WorldModelAgent:
         with open(Path(__file__).parent / "prompts" / "tool_request_mapping.json", "r") as f:
             tool_request_mapping = json.load(f)
         
-        # Extract only tables that are actually referenced in the state_diffs
-        referenced_tables = set()
-        for state_diff in state_diffs:
-            if isinstance(state_diff, dict) and "additional_information" in state_diff and isinstance(state_diff["additional_information"], dict):
-                tables = state_diff["additional_information"].get("tables_modified", [])
-                if isinstance(tables, list):
-                    referenced_tables.update(tables)
-        
-        # Filter schemas: prefer referenced tables, fall back to full schema if none found
-        if referenced_tables:
-            filtered_schemas = {table: schema for table, schema in table_schemas.items() 
-                              if table in referenced_tables}
-        print(f"Feeding schema of {len(filtered_schemas)} tables to the LLM")
-        
-        included_tools = [tool for tool, tool_type in tool_request_mapping.items() if 'get' not in tool_type or len(tool_type) > 1]
-        included_tools_specs = [tool for tool in tool_specifications if tool['name'] in included_tools]
-        
-        # Log component sizes before formatting
-        template_size = len(prompt_template)
-        table_schemas_size = len(json.dumps(filtered_schemas, indent=2))
-        tools_specs_size = len(json.dumps(included_tools_specs, indent=2))
-        
-        prompt_template = prompt_template.format(mcp_tools=included_tools_specs, table_schema=json.dumps(filtered_schemas, indent=2))
-        
-        # Format state diffs for the prompt, truncating large ones
-        state_diffs_str = ""
-        for i, state_diff in enumerate(state_diffs):
-            truncated_diff = self._truncate_state_diff(state_diff, max_audits=20)
-            state_diffs_str += f"Step {i}: {json.dumps(truncated_diff, indent=2)}\n"
-        
-        state_diffs_size = len(state_diffs_str)
-        
-        action_prediction_prompt = prompt_template + f"""
-        Given these {len(state_diffs)} sequential state changes that should occur:
-        {state_diffs_str}
-
-        Predict the {len(state_diffs)} actions that would lead to these state changes as a JSON array:
-        [Action1, Action2, ..., Action{len(state_diffs)}]
-
-        Each Action should follow this schema:
-        {{
-        "tool_name": "name_of_tool",
-        "parameters": {{"param1": "value1", "param2": "value2"}}
-        }}
-
-        Output ONLY the JSON array without code blocks or comments."""
-        
-        # Calculate prompt statistics
-        prompt_size = len(action_prediction_prompt)
-        # Rough token estimation: ~4 characters per token (conservative estimate)
-        estimated_tokens = prompt_size / 4
-        
-        # Log prompt statistics
-        print(f"\n📊 Action Prediction Prompt Statistics:")
-        print(f"   Prompt template: {template_size:,} chars (~{template_size/4:,.0f} tokens)")
-        print(f"   Table schemas: {table_schemas_size:,} chars (~{table_schemas_size/4:,.0f} tokens)")
-        print(f"   Tool specifications ({len(included_tools_specs)} tools): {tools_specs_size:,} chars (~{tools_specs_size/4:,.0f} tokens)")
-        print(f"   State diffs ({len(state_diffs)} diffs): {state_diffs_size:,} chars (~{state_diffs_size/4:,.0f} tokens)")
-        print(f"   Total prompt: {prompt_size:,} chars (~{estimated_tokens:,.0f} tokens)")
-        
-        return action_prediction_prompt
-
-    def _build_custom_action_prediction_prompt(self, state_diffs: List[Dict], task: str, custom_schema_path: str) -> str:
-        """Build prompt for action prediction using task-specific custom schemas"""
-        with open(Path(__file__).parent / "prompts" / "action_prediction_prompt.txt", "r") as f:
-            prompt_template = f.read()
-        
-        # Load custom schema for the specific task
-        task_schema_file = Path(custom_schema_path) / f"{task.lower()}.json"
-        
-        if not task_schema_file.exists():
-            raise FileNotFoundError(f"Custom schema file not found: {task_schema_file}")
-        
-        with open(task_schema_file, "r") as f:
-            task_schema_data = json.load(f)
-        
-        # Extract tool_calls from the custom schema
-        tool_calls = task_schema_data.get("tool_calls", [])
-        
-        if not tool_calls:
-            raise ValueError(f"No tool_calls found in custom schema: {task_schema_file}")
-        
-        # Load MCP tool specifications to look up actual tool specs
-        with open(Path(__file__).parent / "prompts" / "mcp_tool_specifications.json", "r") as f:
-            all_tool_specifications = json.load(f)
-        
-        # Extract unique tool names from custom schema tool_calls
-        # Filter out observation/search tools (like search_any_table, get_table_schema)
-        observation_tools = {"search_any_table", "get_table_schema", "list_tables", "get_table_definition"}
-        custom_tool_names = set()
-        for tool_call in tool_calls:
-            tool_name = tool_call.get("name", "")
-            if tool_name and tool_name not in observation_tools:
-                custom_tool_names.add(tool_name)
-        
-        # Look up actual MCP tool specifications for tools found in custom schema
-        included_tools_specs = []
-        for tool_spec in all_tool_specifications:
-            if tool_spec.get("name") in custom_tool_names:
-                included_tools_specs.append(tool_spec)
-        
-        # If no tools found from custom schema, use full schema approach instead
-        if not included_tools_specs:
-            print(f"⚠️ No matching MCP tools found in custom schema, falling back to full schema")
-            # Use full schema approach - same as regular action prediction
-            with open(Path(__file__).parent / "prompts" / "all_table_schemas.json", "r") as f:
-                table_schemas = json.load(f)
-            with open(Path(__file__).parent / "prompts" / "all_unique_tables.json", "r") as f:
-                tables_to_include = json.load(f)
-            filtered_schemas = {table: schema for table, schema in table_schemas.items() 
-                              if table in tables_to_include}
-            
-            with open(Path(__file__).parent / "prompts" / "tool_request_mapping.json", "r") as f:
-                tool_request_mapping = json.load(f)
-            included_tools = [tool for tool, tool_type in tool_request_mapping.items() 
-                            if 'get' not in tool_type or len(tool_type) > 1]
-            included_tools_specs = [tool for tool in all_tool_specifications if tool['name'] in included_tools]
-            
-            table_schemas_to_use = filtered_schemas
+        if custom_schema_path:
+            with open(custom_schema_path, "r") as f:
+                filtered_schemas = json.load(f)["schema_context"]
         else:
-            # Use minimal table schemas for custom schema
-            minimal_table_schemas = {
-                "incident": {
-                    "short_description": {"element": "short_description", "mandatory": True, "internal_type": "string"},
-                    "description": {"element": "description", "mandatory": False, "internal_type": "string"},
-                    "state": {"element": "state", "mandatory": True, "internal_type": "string"},
-                    "priority": {"element": "priority", "mandatory": True, "internal_type": "string"}
-                }
-            }
-            table_schemas_to_use = minimal_table_schemas
+            referenced_tables = set()
+            for state_diff in state_diffs:
+                if isinstance(state_diff, dict) and "additional_information" in state_diff and isinstance(state_diff["additional_information"], dict):
+                    tables = state_diff["additional_information"].get("tables_modified", [])
+                    if isinstance(tables, list):
+                        referenced_tables.update(tables)
+            filtered_schemas = {table: schema for table, schema in table_schemas.items() 
+                          if table in tables_to_include and table in referenced_tables}
+            
         
-        prompt_template = prompt_template.format(
-            mcp_tools=json.dumps(included_tools_specs, indent=2), 
-            table_schema=json.dumps(table_schemas_to_use, indent=2)
-        )
+        included_tools = [tool for tool,tool_type  in tool_request_mapping.items() if 'get' not in tool_type or len(tool_type) > 1]
+        included_tools_specs = [tool for tool in tool_specifications if tool['name'] in included_tools]
+
+        prompt_template = prompt_template.format(mcp_tools=included_tools_specs,  table_schema=filtered_schemas)
         
-        # Format state diffs for the prompt, truncating large ones
+        # Format state diffs for the prompt
         state_diffs_str = ""
         for i, state_diff in enumerate(state_diffs):
-            truncated_diff = self._truncate_state_diff(state_diff, max_audits=15)
-            state_diffs_str += f"Step {i}: {json.dumps(truncated_diff, indent=2)}\n"
+            state_diffs_str += f"Step {i}: {json.dumps(state_diff, indent=2)}\n"
         
         action_prediction_prompt = prompt_template + f"""
         Given these {len(state_diffs)} sequential state changes that should occur:
         {state_diffs_str}
-
-        ## Task-Specific Context
-        This prediction is for the '{task}' task using custom schema with {len(included_tools_specs)} MCP tools.
 
         Predict the {len(state_diffs)} actions that would lead to these state changes as a JSON array:
         [Action1, Action2, ..., Action{len(state_diffs)}]
@@ -554,7 +338,7 @@ class WorldModelAgent:
         predicted_states = []
         for action in actions:
             messages = [
-                {"role": "user", "content": self._build_state_prediction_prompt(action, predicted_states, task)}
+                {"role": "user", "content": self._build_state_prediction_prompt(action, predicted_states)}
             ]
 
             response = await self.client.chat.completions.create(
@@ -583,10 +367,16 @@ class WorldModelAgent:
         Returns:
             List of predicted StateDiff objects
         """ 
+        # Build full path to custom schema file
+        task_schema_file = Path(custom_schema_path) / f"{task.lower()}.json"
+        
+        if not task_schema_file.exists():
+            raise FileNotFoundError(f"Custom schema file not found: {task_schema_file}")
+        
         predicted_states = []
         for action in actions:
             messages = [
-                {"role": "user", "content": self._build_custom_state_prediction_prompt(action, task, custom_schema_path, predicted_states)}
+                {"role": "user", "content": self._build_state_prediction_prompt(action, predicted_states, custom_schema_path=str(task_schema_file))}
             ]
 
             response = await self.client.chat.completions.create(
@@ -605,7 +395,7 @@ class WorldModelAgent:
     async def predict_actions(self, state_diffs: List[Dict], task: str = None) -> List[ActionCall]:
         """Predict k actions that would lead to k given state diffs"""
         messages = [
-            {"role": "user", "content": self._build_action_prediction_prompt(state_diffs, task)}
+            {"role": "user", "content": self._build_action_prediction_prompt(state_diffs)}
         ]
 
         response = await self.client.chat.completions.create(
@@ -623,8 +413,14 @@ class WorldModelAgent:
 
     async def predict_actions_custom(self, state_diffs: List[Dict], task: str, custom_schema_path: str) -> List[ActionCall]:
         """Predict k actions that would lead to k given state diffs using custom task-specific schemas"""
+        # Build full path to custom schema file
+        task_schema_file = Path(custom_schema_path) / f"{task.lower()}.json"
+        
+        if not task_schema_file.exists():
+            raise FileNotFoundError(f"Custom schema file not found: {task_schema_file}")
+        
         messages = [
-            {"role": "user", "content": self._build_custom_action_prediction_prompt(state_diffs, task, custom_schema_path)}
+            {"role": "user", "content": self._build_action_prediction_prompt(state_diffs, custom_schema_path=str(task_schema_file))}
         ]
 
         response = await self.client.chat.completions.create(
