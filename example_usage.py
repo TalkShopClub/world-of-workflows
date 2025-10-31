@@ -26,7 +26,7 @@ from wow.environment.evaluation import (
 )
 
 
-async def example_state_prediction():
+async def example_state_prediction(output_dir: str = 'example_predictions'):
     """Example: Generate state predictions from action sequence"""
     print("\n" + "="*60)
     print("EXAMPLE 1: State Prediction")
@@ -40,13 +40,32 @@ async def example_state_prediction():
         {"tool_name": "update_incident", "parameters": {"sys_id": "inc123", "state": "2"}}
     ]
 
-    predicted_states = await agent.predict_states(actions, task="create_and_update_incident")
+    task = "create_and_update_incident"
+    predicted_states = await agent.predict_states(actions, task=task)
 
     print(f"Generated {len(predicted_states)} state predictions")
     for i, state in enumerate(predicted_states):
         print(f"\nState {i+1}:")
         print(f"  Tables modified: {state.additional_information.tables_modified}")
         print(f"  Num audits: {state.additional_information.num_audits}")
+    
+    # Save results
+    os.makedirs(output_dir, exist_ok=True)
+    output_file = Path(output_dir) / 'create_and_update_incident_state_prediction.json'
+    
+    results = {
+        "task_name": task,
+        "custom_schema_used": False,
+        "num_actions": len(actions),
+        "actions": actions,
+        "predicted_states": [state.model_dump(mode='json') for state in predicted_states],
+        "num_predictions": len(predicted_states)
+    }
+    
+    with open(output_file, "w") as f:
+        json.dump(results, f, indent=2)
+    
+    print(f"\n💾 Results saved to: {output_file}")
 
 
 async def example_custom_schema_state_prediction(output_dir: str = 'example_predictions'):
@@ -279,7 +298,7 @@ async def main(output_dir: str = 'example_predictions'):
     
     os.makedirs(output_dir, exist_ok=True)
 
-    await example_state_prediction()
+    await example_state_prediction(output_dir=output_dir)
     await example_custom_schema_state_prediction(output_dir=output_dir)
     await example_action_prediction(output_dir=output_dir)
     await example_custom_schema_action_prediction(output_dir=output_dir)
