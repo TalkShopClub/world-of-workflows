@@ -302,18 +302,37 @@ class WorldModelAgent:
         with open(Path(__file__).parent / "prompts" / "tool_request_mapping.json", "r") as f:
             tool_request_mapping = json.load(f)
         
-        filtered_schemas = {table: schema for table, schema in table_schemas.items() 
-                          if table in tables_to_include}
+        # Extract only tables that are actually referenced in the state_diffs
+        referenced_tables = set()
+        for state_diff in state_diffs:
+            if isinstance(state_diff, dict) and "additional_information" in state_diff and isinstance(state_diff["additional_information"], dict):
+                tables = state_diff["additional_information"].get("tables_modified", [])
+                if isinstance(tables, list):
+                    referenced_tables.update(tables)
+        
+        # Filter schemas: prefer referenced tables, fall back to full schema if none found
+        if referenced_tables:
+            filtered_schemas = {table: schema for table, schema in table_schemas.items() 
+                              if table in referenced_tables}
+        print(f"Feeding schema of {len(filtered_schemas)} tables to the LLM")
         
         included_tools = [tool for tool, tool_type in tool_request_mapping.items() if 'get' not in tool_type or len(tool_type) > 1]
         included_tools_specs = [tool for tool in tool_specifications if tool['name'] in included_tools]
-
+        
+        # Log component sizes before formatting
+        template_size = len(prompt_template)
+        table_schemas_size = len(json.dumps(filtered_schemas, indent=2))
+        tools_specs_size = len(json.dumps(included_tools_specs, indent=2))
+        
         prompt_template = prompt_template.format(mcp_tools=included_tools_specs, table_schema=json.dumps(filtered_schemas, indent=2))
         
-        # Format state diffs for the prompt
+        # Format state diffs for the prompt, truncating large ones
         state_diffs_str = ""
         for i, state_diff in enumerate(state_diffs):
-            state_diffs_str += f"Step {i}: {json.dumps(state_diff, indent=2)}\n"
+            truncated_diff = self._truncate_state_diff(state_diff, max_audits=20)
+            state_diffs_str += f"Step {i}: {json.dumps(truncated_diff, indent=2)}\n"
+        
+        state_diffs_size = len(state_diffs_str)
         
         action_prediction_prompt = prompt_template + f"""
         Given these {len(state_diffs)} sequential state changes that should occur:
@@ -329,6 +348,19 @@ class WorldModelAgent:
         }}
 
         Output ONLY the JSON array without code blocks or comments."""
+        
+        # Calculate prompt statistics
+        prompt_size = len(action_prediction_prompt)
+        # Rough token estimation: ~4 characters per token (conservative estimate)
+        estimated_tokens = prompt_size / 4
+        
+        # Log prompt statistics
+        print(f"\n📊 Action Prediction Prompt Statistics:")
+        print(f"   Prompt template: {template_size:,} chars (~{template_size/4:,.0f} tokens)")
+        print(f"   Table schemas: {table_schemas_size:,} chars (~{table_schemas_size/4:,.0f} tokens)")
+        print(f"   Tool specifications ({len(included_tools_specs)} tools): {tools_specs_size:,} chars (~{tools_specs_size/4:,.0f} tokens)")
+        print(f"   State diffs ({len(state_diffs)} diffs): {state_diffs_size:,} chars (~{state_diffs_size/4:,.0f} tokens)")
+        print(f"   Total prompt: {prompt_size:,} chars (~{estimated_tokens:,.0f} tokens)")
         
         return action_prediction_prompt
 
@@ -405,13 +437,6 @@ class WorldModelAgent:
             mcp_tools=json.dumps(included_tools_specs, indent=2), 
             table_schema=json.dumps(table_schemas_to_use, indent=2)
         )
-        
-        # Limit state diffs to prevent token overflow
-        MAX_STATE_DIFFS = 10
-        original_count = len(state_diffs)
-        if len(state_diffs) > MAX_STATE_DIFFS:
-            state_diffs = state_diffs[:MAX_STATE_DIFFS]
-            print(f"⚠️ Limiting state diffs to {MAX_STATE_DIFFS} to prevent token overflow (had {original_count} total)")
         
         # Format state diffs for the prompt, truncating large ones
         state_diffs_str = ""

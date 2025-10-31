@@ -139,8 +139,7 @@ async def generate_action_predictions(
     }
 
     if output_file is None:
-        base_dir = Path(__file__).parent.parent.parent
-        output_dir = base_dir / "action_predictions_results"
+        output_dir = Path(__file__).parent.parent.parent / "action_predictions_results"
         output_dir.mkdir(exist_ok=True)
         output_file = output_dir / f"{trajectory_file.stem}_action_predictions.json"
 

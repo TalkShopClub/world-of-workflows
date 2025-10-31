@@ -10,6 +10,7 @@ This demonstrates:
 """
 
 import asyncio
+import argparse
 import json
 from pathlib import Path
 import os
@@ -48,7 +49,79 @@ async def example_state_prediction():
         print(f"  Num audits: {state.additional_information.num_audits}")
 
 
-async def example_action_prediction():
+async def example_custom_schema_state_prediction(output_dir: str = 'example_predictions'):
+    """Example: Generate state predictions using custom schema"""
+    print("\n" + "="*60)
+    print("EXAMPLE 1b: Custom Schema State Prediction")
+    print("="*60)
+
+    agent = WorldModelAgent(model="anthropic/claude-sonnet-4.5")
+    await agent.initialize_mcp_server("full")
+
+    # Load actions from trajectory file
+    trajectory_file = Path("src/wow/data_files/trajectories/assignuserrole.json")
+    if not trajectory_file.exists(): 
+        return print(f"Trajectory file not found: {trajectory_file}")
+    
+    with open(trajectory_file, "r") as f:
+        trajectory = json.load(f)
+    
+    # Extract actions from trajectory (limit to first 2 for testing)
+    actions = []
+    for step in trajectory[:2]:
+        if "action" in step and step["action"]:
+            actions.append({
+                "tool_name": step["action"].get("tool_name", ""),
+                "parameters": step["action"].get("parameters", {})
+            })
+    
+    if not actions:
+        return print("No actions found in trajectory")
+    
+    # Use custom schema from anthropic/claude-sonnet-4.5 directory
+    custom_schema_path = Path("src/wow/data_files/schemas/anthropic/claude-sonnet-4.5")
+    if not custom_schema_path.exists():
+        return print(f"Custom schema path not found: {custom_schema_path}")
+    
+    task_name = trajectory_file.stem
+    
+    print(f"Predicting states for {len(actions)} actions using custom schema...")
+    print(f"Actions: {[a['tool_name'] for a in actions]}")
+    
+    predicted_states = await agent.predict_states_custom(
+        actions, 
+        task=task_name, 
+        custom_schema_path=str(custom_schema_path)
+    )
+
+    print(f"\n✅ Generated {len(predicted_states)} state predictions")
+    for i, state in enumerate(predicted_states):
+        print(f"\nState {i+1}:")
+        print(f"  Tables modified: {state.additional_information.tables_modified}")
+        print(f"  Num audits: {state.additional_information.num_audits}")
+        print(f"  Operation types: {[str(op) for op in state.additional_information.operation_type]}")
+    
+    # Save results
+    os.makedirs(output_dir, exist_ok=True)
+    output_file = Path(output_dir) / 'assignuserrole_custom_schema_state_prediction.json'
+    
+    results = {
+        "task_name": task_name,
+        "custom_schema_used": True,
+        "custom_schema_path": str(custom_schema_path),
+        "num_actions": len(actions),
+        "actions": actions,
+        "predicted_states": [state.model_dump(mode='json') for state in predicted_states],
+        "num_predictions": len(predicted_states)
+    }
+    
+    with open(output_file, "w") as f:
+        json.dump(results, f, indent=2)
+    
+    print(f"\n💾 Results saved to: {output_file}")
+
+
+async def example_action_prediction(output_dir: str = 'example_predictions'):
     """Example: Generate action predictions from state changes"""
     print("\n" + "="*60)
     print("EXAMPLE 2: Action Prediction")
@@ -60,8 +133,8 @@ async def example_action_prediction():
     if not trajectory_file.exists(): 
         return print(f"Trajectory file not found: {trajectory_file}")
 
-    os.makedirs('example_predictions', exist_ok=True)
-    output_file = Path('example_predictions/assignuserrole_action_prediction.json')
+    os.makedirs(output_dir, exist_ok=True)
+    output_file = Path(output_dir) / 'assignuserrole_action_prediction.json'
 
     results = await generate_action_predictions(
         trajectory_file=trajectory_file,
@@ -73,7 +146,7 @@ async def example_action_prediction():
     print(f"Action predictions saved to: {results['output_file']}")
 
 
-async def example_custom_schema_action_prediction():
+async def example_custom_schema_action_prediction(output_dir: str = 'example_predictions'):
     """Example: Generate action predictions using custom schema"""
     print("\n" + "="*60)
     print("EXAMPLE 2b: Custom Schema Action Prediction")
@@ -90,8 +163,8 @@ async def example_custom_schema_action_prediction():
     if not custom_schema_path.exists():
         return print(f"Custom schema path not found: {custom_schema_path}")
 
-    os.makedirs('example_predictions', exist_ok=True)
-    output_file = Path('example_predictions/assignuserrole_custom_schema_action_prediction.json')
+    os.makedirs(output_dir, exist_ok=True)
+    output_file = Path(output_dir) / 'assignuserrole_custom_schema_action_prediction.json'
 
     results = await generate_action_predictions(
         trajectory_file=trajectory_file,
@@ -183,13 +256,14 @@ async def example_action_evaluation():
     else:
         print(f"❌ Error: {results.get('error')}")
 
-async def example_run_action(): 
+async def example_run_action(output_dir: str = 'example_predictions'): 
     """Example: Run an action and save the result to a file"""
 
     agent = WorldModelAgent(model="openai/o3")
     await agent.initialize_mcp_server("full")
 
-    out_file = Path('example_predictions/test_action.json')
+    os.makedirs(output_dir, exist_ok=True)
+    out_file = Path(output_dir) / 'test_action.json'
 
     tool_name = "create_user"
     tool_params = {
@@ -200,16 +274,17 @@ async def example_run_action():
     }
     await agent.run_mcp_action(tool_name, tool_params, out_file)
 
-async def main():
+async def main(output_dir: str = 'example_predictions'):
     """Run all examples"""
+    
+    os.makedirs(output_dir, exist_ok=True)
 
-    os.makedirs('example_predictions', exist_ok=True)
+    await example_state_prediction()
+    await example_custom_schema_state_prediction(output_dir=output_dir)
+    await example_action_prediction(output_dir=output_dir)
+    await example_custom_schema_action_prediction(output_dir=output_dir)
 
-    # await example_state_prediction()
-    # await example_action_prediction()
-    await example_custom_schema_action_prediction()
-
-    # output_file = Path('example_predictions/original_constraint_prediction.json')
+    # output_file = Path(output_dir) / 'original_constraint_prediction.json'
     # await example_constraint_prediction(output_file=output_file)
 
     # # Evaluate the constraint prediction
@@ -219,8 +294,17 @@ async def main():
 
     # evaluation_results = evaluate_constraint_predictions(output_file)
     # print(f"Accuracy: {evaluation_results['accuracy']:.2%}")
-    # await example_run_action()
+    # await example_run_action(output_dir=output_dir)
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    parser = argparse.ArgumentParser(description="Example usage of the world-of-workflows package")
+    parser.add_argument(
+        "--output-dir",
+        type=str,
+        default="example_predictions",
+        help="Output directory for prediction files (default: 'example_predictions')"
+    )
+    args = parser.parse_args()
+    
+    asyncio.run(main(output_dir=args.output_dir))
