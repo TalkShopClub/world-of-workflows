@@ -438,10 +438,19 @@ async def _run_state_prediction(
         action = item["action"]
 
         # Build prompt for this action
+        # Limit previous states to last 3 to prevent token overflow
+        recent_states = previous_states[-3:] if len(previous_states) > 3 else previous_states
+        previous_states_json = json.dumps(
+            [s.dict() if hasattr(s, 'dict') else s for s in recent_states], 
+            indent=2
+        )
+        if len(previous_states) > 3:
+            previous_states_json = f"[Note: Showing last 3 of {len(previous_states)} previous states]\n{previous_states_json}"
+        
         state_prediction_prompt = prompt_base + f"""
 
         ## Previous States from earlier to latest
-        {json.dumps([s.dict() if hasattr(s, 'dict') else s for s in previous_states], indent=2)}
+        {previous_states_json}
 
         ## Given Action
         Action: {json.dumps(action, indent=2)}

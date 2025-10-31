@@ -144,7 +144,13 @@ async def generate_action_predictions(
         output_dir.mkdir(exist_ok=True)
         output_file = output_dir / f"{trajectory_file.stem}_action_predictions.json"
 
+    # Ensure output directory exists
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    
     with open(output_file, "w") as f:
         json.dump(results, f, indent=2)
+
+    # Add output_file to results for caller convenience
+    results["output_file"] = str(output_file)
 
     return results

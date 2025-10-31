@@ -215,16 +215,11 @@ class StatePredictionEvaluator:
         else:
             self.base_dir = base_dir
         
-    def evaluate_state_predictions(self, k_values: List[int] = None) -> Dict[str, Any]:
+    def evaluate_state_predictions(self, k_values: List[int] = [1, 2, 3, 4, 5]) -> Dict[str, Any]:
         """Evaluate state predictions for given k values"""
-        if k_values is None:
-            k_values = [1, 2, 3, 4, 5]
         
-        print(f"\n{'='*80}")
-        print("STATE PREDICTION EVALUATION")
-        print(f"{'='*80}")
-        print(f"Model: {self.model_name}")
-        print(f"K values: {k_values}")
+        print(f"\n{'='*80}\nSTATE PREDICTION EVALUATION\n{'='*80}")
+        print(f"Model: {self.model_name}\nK values: {k_values}")
         
         results = {
             'model': self.model_name,
@@ -245,16 +240,14 @@ class StatePredictionEvaluator:
         
         for k in k_values:
             print(f"\n📊 Evaluating k={k}...")
-            k_results = self._evaluate_k(state_pred_dir, k)
-            results['k_evaluations'][f'k={k}'] = k_results
+            results['k_evaluations'][f'k={k}'] = self._evaluate_k(state_pred_dir, k)
         
         return results
     
     def _evaluate_k(self, pred_dir: Path, k: int) -> Dict[str, Any]:
         """Evaluate state predictions for a specific k value"""
         # Load all prediction files and filter those with file_k >= requested_k
-        all_prediction_files = list(pred_dir.glob("*_k*.json"))
-        all_prediction_files = [f for f in all_prediction_files if not f.name.endswith("_summary.json")]
+        all_prediction_files = list(pred_dir.glob("*_k[0-9].json"))
         
         # Filter files where file_k >= requested_k
         prediction_files = []

@@ -58,8 +58,7 @@ async def example_action_prediction():
 
     trajectory_file = Path("src/wow/data_files/trajectories/assignuserrole.json") # Picking one of the trajectories 
     if not trajectory_file.exists(): 
-        print(f"Trajectory file not found: {trajectory_file}")
-        return
+        return print(f"Trajectory file not found: {trajectory_file}")
 
     os.makedirs('example_predictions', exist_ok=True)
     output_file = Path('example_predictions/assignuserrole_action_prediction.json')
@@ -72,6 +71,43 @@ async def example_action_prediction():
     )
 
     print(f"Action predictions saved to: {results['output_file']}")
+
+
+async def example_custom_schema_action_prediction():
+    """Example: Generate action predictions using custom schema"""
+    print("\n" + "="*60)
+    print("EXAMPLE 2b: Custom Schema Action Prediction")
+    print("="*60)
+
+    agent = WorldModelAgent(model="openai/o3")
+
+    trajectory_file = Path("src/wow/data_files/trajectories/assignuserrole.json")
+    if not trajectory_file.exists(): 
+        return print(f"Trajectory file not found: {trajectory_file}")
+
+    # Use custom schema from anthropic/claude-sonnet-4.5 directory
+    custom_schema_path = Path("src/wow/data_files/schemas/anthropic/claude-sonnet-4.5")
+    if not custom_schema_path.exists():
+        return print(f"Custom schema path not found: {custom_schema_path}")
+
+    os.makedirs('example_predictions', exist_ok=True)
+    output_file = Path('example_predictions/assignuserrole_custom_schema_action_prediction.json')
+
+    results = await generate_action_predictions(
+        trajectory_file=trajectory_file,
+        agent=agent,
+        max_state_diffs=10,  # Limit to 10 to avoid token overflow
+        custom_schema_path=str(custom_schema_path),
+        output_file=output_file
+    )
+
+    if results:
+        print(f"✅ Custom schema action predictions saved to: {results['output_file']}")
+        print(f"   Predicted {results['predicted_actions']} actions")
+        print(f"   Processing time: {results['processing_time_seconds']:.2f} seconds")
+        print(f"   Custom schema used: {results['custom_schema_used']}")
+    else:
+        print("❌ Failed to generate predictions")
 
 
 async def example_constraint_prediction(output_file: Path):
@@ -114,18 +150,16 @@ async def example_state_evaluation():
     # Evaluate state predictions for k=1, 2, 3, 4, 5
     results = evaluator.evaluate_state_predictions(k_values=[1, 2, 3, 4, 5])
     
-    if 'error' not in results:
-        print("\n📊 State Evaluation Results:")
-        for k_key, k_data in results.get('k_evaluations', {}).items():
-            if k_data.get('status') == 'success':
-                print(f"\n  {k_key}:")
-                print(f"    Full Match Rate: {k_data.get('full_match_rate', 0):.3f}")
-                print(f"    Avg SysAudit IoU: {k_data.get('avg_sysaudit_iou', 0):.3f}")
-                print(f"    Avg Additional Info IoU: {k_data.get('avg_additional_info_iou', 0):.3f}")
-                print(f"    Total Steps: {k_data.get('total_steps', 0)}")
-                print(f"    Files Evaluated: {k_data.get('num_files', 0)}")
-    else:
-        print(f"❌ Error: {results.get('error')}")
+    if 'error' in results:
+        return print(f"❌ Error: {results.get('error')}")
+    print("\n📊 State Evaluation Results:")
+    for k_key, k_data in results.get('k_evaluations', {}).items():
+        if k_data.get('status') != 'success': continue
+        print(f"\n  {k_key}:")
+        print(f"    Full Match Rate: {k_data.get('full_match_rate', 0):.3f}")
+        print(f"    Avg SysAudit IoU: {k_data.get('avg_sysaudit_iou', 0):.3f}")
+        print(f"    Total Steps: {k_data.get('total_steps', 0)}")
+        print(f"    Files Evaluated: {k_data.get('num_files', 0)}")
 
 
 async def example_action_evaluation():
@@ -136,7 +170,6 @@ async def example_action_evaluation():
 
     model_name = "claude-sonnet-4.5"
     evaluator = ActionPredictionEvaluator(model_name)
-    
     results = evaluator.evaluate_action_predictions()
     
     if 'error' not in results:
@@ -172,20 +205,21 @@ async def main():
 
     os.makedirs('example_predictions', exist_ok=True)
 
-    await example_state_prediction()
-    await example_action_prediction()
+    # await example_state_prediction()
+    # await example_action_prediction()
+    await example_custom_schema_action_prediction()
 
-    output_file = Path('example_predictions/original_constraint_prediction.json')
-    await example_constraint_prediction(output_file=output_file)
+    # output_file = Path('example_predictions/original_constraint_prediction.json')
+    # await example_constraint_prediction(output_file=output_file)
 
-    # Evaluate the constraint prediction
-    print("\n" + "="*60)
-    print("Evaluating Constraint Predictions")
-    print("="*60)
+    # # Evaluate the constraint prediction
+    # print("\n" + "="*60)
+    # print("Evaluating Constraint Predictions")
+    # print("="*60)
 
-    evaluation_results = evaluate_constraint_predictions(output_file)
-    print(f"Accuracy: {evaluation_results['accuracy']:.2%}")
-    await example_run_action()
+    # evaluation_results = evaluate_constraint_predictions(output_file)
+    # print(f"Accuracy: {evaluation_results['accuracy']:.2%}")
+    # await example_run_action()
 
 
 if __name__ == "__main__":
