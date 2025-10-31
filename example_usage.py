@@ -97,6 +97,22 @@ async def example_constraint_prediction(output_file: Path):
     print(f"Total cost: ${results['metadata']['total_cost']:.4f}")
     print(f"JSON errors: {results['metadata']['total_json_errors']}")
 
+async def example_run_action(): 
+    """Example: Run an action and save the result to a file"""
+
+    agent = WorldModelAgent(model="openai/o3")
+    await agent.initialize_mcp_server("full")
+
+    out_file = Path('example_predictions/test_action.json')
+
+    tool_name = "create_user"
+    tool_params = {
+        "user_name": "marcus.chen",
+        "first_name": "Marcus",
+        "last_name": "Chen",
+        "email": "marcus.chen@example.com",
+    }
+    await agent.run_mcp_action(tool_name, tool_params, out_file)
 
 async def main():
     """Run all examples"""
@@ -106,17 +122,14 @@ async def main():
     # await example_state_prediction()
     # await example_action_prediction()
 
+    # Constraint prediction 
     output_file = Path('example_predictions/original_constraint_prediction.json')
     await example_constraint_prediction(output_file=output_file)
-
-    # Evaluate the constraint prediction
-    print("\n" + "="*60)
-    print("Evaluating Constraint Predictions")
-    print("="*60)
-
     evaluation_results = evaluate_constraint_predictions(output_file)
     print(f"Accuracy: {evaluation_results['accuracy']:.2%}")
-    print(f"Total predictions: {evaluation_results['total_predictions']}") 
+
+    # Run a sample action and save observations from environment
+    await example_run_action()
 
 if __name__ == "__main__":
     asyncio.run(main())
